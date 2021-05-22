@@ -1,0 +1,50 @@
+political_decisions = {
+	
+	claim_central_america = {
+	
+		potential = {
+			OR = {
+				tag = SUS
+				tag = CUM
+			}
+			NOT = { has_country_flag = claim_central_america }
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			is_greater_power = yes
+		}
+		
+		effect = {
+			badboy = 10
+			add_accepted_culture = central_american
+			add_core = 2186
+			add_core = 2187
+			add_core = 2188
+			add_core = 2189
+			add_core = 2191
+			add_core = 2192
+			add_core = 2193
+			add_core = 2194
+			add_core = 2195
+			add_core = 2196
+			add_core = 2197
+			add_core = 2198
+			add_core = 2199
+			add_core = 2200
+			add_core = 2201
+			add_core = 2202
+			add_core = 2203
+			set_country_flag = claim_central_america
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	
+}

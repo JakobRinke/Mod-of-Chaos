@@ -1,0 +1,50 @@
+political_decisions = {
+	
+	claim_south_germany = {
+	
+		potential = {
+			tag = AUS
+			exists = GER
+			NOT = { has_country_flag = claim_south_germany }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+		}
+		
+		effect = {
+			BAV = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BAD = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			WUR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SGM = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			set_country_flag = claim_south_germany
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,7 @@
+owner = CLM
+controller = CLM
+add_core = CLM
+trade_goods = cattle
+terrain = montane_forest
+life_rating = 34
+add_core = SUS

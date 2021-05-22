@@ -1,0 +1,92 @@
+political_decisions = {
+	
+	greater_Persia = {
+	
+		potential = {
+			tag = PER
+			NOT = { has_country_flag = greater_Persia }
+		}
+		
+		
+		allow = {
+			
+		}
+		
+		effect = {
+			badboy = 10
+			add_accepted_culture = pashtun
+			add_accepted_culture = tajik
+			add_accepted_culture = uzbek
+			add_accepted_culture = kyrgyz
+			add_accepted_culture = baluchi
+			AFG = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KHI = {
+				all_core = {
+					add_core = THIS
+				}
+			}		
+			BUK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KOK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KAL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MAK = {
+				all_core = {
+					add_core = THIS
+				}
+			}		
+			set_country_flag = greater_Persia				
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+	
+	great_Showdown = {
+	
+		potential = {
+			tag = PER
+			NOT = { has_country_flag = great_Showdown }
+			exists = TUR
+		}
+		
+		
+		allow = {
+			civilized = yes
+		}
+		
+		effect = {
+			
+			
+			TUR = {
+				country_event = 969696
+			}
+			
+			
+			set_country_flag = great_Showdown				
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+}

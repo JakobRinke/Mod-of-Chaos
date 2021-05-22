@@ -1,0 +1,51 @@
+political_decisions
+{
+
+
+	SUS_Form = {
+		potential = {
+			OR = {
+				tag = CHL	
+				tag = BRZ
+				tag = ARC
+				tag = ARG
+				tag = BOL
+				tag = CLM
+				tag = ECU
+				tag = PEU
+				tag = PRG
+				tag = URU
+				tag = VNZ
+			}
+			NOT = {
+				has_global_flag = SUS_FORMED
+			}		
+		}
+		
+		allow = {
+			civilized = yes	
+		}
+		
+		effect = {
+			badboy = 25			
+			prestige = -50								
+			change_tag = SUS
+			set_global_flag = SUS_FORMED
+			add_accepted_culture = brazilian
+			add_accepted_culture = north_andean
+			add_accepted_culture = south_andean
+			add_accepted_culture = amazonian
+			add_accepted_culture = platinean	
+			add_accepted_culture = afro_brazilian		
+		}
+		ai_will_do = {					
+			factor = 0.05
+			 modifier = {
+                factor = 0
+                year = 1936
+            }
+		}
+	}
+	
+	
+}

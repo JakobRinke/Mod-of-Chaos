@@ -1,0 +1,84 @@
+political_decisions = {
+	
+	reject_neutrality = {
+	
+		potential = {
+			OR = {
+				tag = ITA
+				tag = GER
+				tag = FRA
+				tag = AUS
+				tag = KUK
+				tag = DNB
+			}
+			NOT = { has_country_flag = Swiss_Embrace }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+		}
+		
+		effect = {
+			badboy = 7.5
+			add_accepted_culture = swiss
+			add_core = 611
+			add_core = 603
+			add_core = 604
+			add_core = 605
+			add_core = 606
+			add_core = 2568
+			add_core = 609
+			add_core = 607
+			add_core = 608
+			
+			set_country_flag = Swiss_Embrace
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	
+	
+	
+	annex_swiss = {
+	
+		potential = {
+			OR = {
+				tag = ITA
+				tag = GER
+				tag = FRA
+				tag = AUS
+				tag = KUK
+				tag = DNB
+			}
+			NOT = { has_country_flag = annex_swiss }
+			has_country_flag = Swiss_Embrace
+			exists = SWI
+		}
+		
+		
+		allow = {
+			SWI = {
+				in_sphere = THIS
+			}
+		}
+		
+		effect = {
+			inherit = SWI
+			set_country_flag = annex_swiss
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+}

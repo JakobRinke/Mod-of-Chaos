@@ -1,0 +1,39 @@
+political_decisions = {
+	
+	claim_Hawaii11 = {
+	
+		potential = {
+			OR = {
+				tag = USA
+				tag = CUM
+				tag = SUS
+				tag = JAP
+				tag = TKG
+			}
+			NOT = { has_country_flag = claim_Hawaii }
+		}
+		
+		
+		allow = {
+			state_n_government = 1
+			is_greater_power = yes
+		}
+		
+		effect = {
+			HAW = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = claim_Hawaii
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	
+}

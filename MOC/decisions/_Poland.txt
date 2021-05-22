@@ -1,0 +1,38 @@
+political_decisions = {
+	
+	make_peace_with_polish = {
+	
+		potential = {
+			OR = {
+				tag = RUS
+				tag = GER
+			}
+			NOT = { has_country_flag = Polish_Embrace }
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			is_greater_power = yes
+		}
+		
+		effect = {
+			badboy = 20
+			add_accepted_culture = polish
+			POL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = Polish_Embrace
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	
+}

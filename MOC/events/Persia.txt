@@ -1,0 +1,20 @@
+country_event = {
+	id = 969696
+	title = "THE GREAT SHOWDOWN"
+	desc = "The Last war aigenst an old enemy! "
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = conquest }
+			defender_goal = { casus_belli = conquest }
+			call_ally = no
+		}
+	}     
+	
+	option = {
+		name = "WE WILL FIGHT TO OUR DEATH!"
+	}
+}

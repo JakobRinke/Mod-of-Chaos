@@ -1,0 +1,38 @@
+political_decisions = {
+	
+	embrace_Greece = {
+	
+		potential = {
+			OR = {
+				tag = ITA
+				tag = TUR
+			}
+			NOT = { has_country_flag = Greek_Embrace }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+		}
+		
+		effect = {
+			badboy = 10
+			add_accepted_culture = greek
+			GRE = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = Greek_Embrace
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	
+}

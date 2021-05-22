@@ -1,0 +1,83 @@
+political_decisions = {
+	
+	attack_the_dutch_FRA = {
+		potential = {
+			tag = FRA
+			NOT = { has_country_flag = Dutch_Embrace }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+			NET = {  is_greater_power = no }
+			BEL = {  is_greater_power = no }
+		}	
+		
+		effect = {
+			badboy = 15
+			add_accepted_culture = wallonian
+			BEL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			NET = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = Dutch_Embrace
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+	
+	
+	
+	
+	attack_the_dutch_ENG = {
+	
+		
+		
+		potential = {
+			tag = ENG
+			
+		
+			NOT = { has_country_flag = Dutch_Embrace }
+		}
+		
+		
+		allow = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+			NET = {  is_greater_power = no }
+			BEL = {  is_greater_power = no }
+		}
+		
+		effect = {
+			badboy = 15
+			add_accepted_culture = dutch
+			BEL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			NET = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = Dutch_Embrace
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+}
