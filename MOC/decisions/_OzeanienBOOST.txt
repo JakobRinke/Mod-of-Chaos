@@ -1,0 +1,74 @@
+political_decisions = {
+
+
+	ozeanien_get_immigration_attraction_country = {
+
+		potential = {
+			tag = IAA	
+			NOT = { has_country_flag = ozeanien_get_immigration_attraction}	
+		}
+		allow = {
+            war = no
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+			money = 200000
+		}
+		effect = {
+		money = -200000
+		prestige = 15
+		set_country_flag = ozeanien_get_immigration_attraction
+		 IAA = {
+				add_country_modifier = {
+					name = IAA_country_modifier
+					duration = 5475
+				}
+			}		
+		}
+	
+		ai_will_do = {					
+				factor = 1
+		}
+	
+	}
+
+	ozeanien_get_immigration_attraction = {
+
+		potential = {
+			tag = IAA	
+			NOT = { has_country_flag = ozeanien_get_immigration_attraction}	
+		}
+		allow = {
+            war = no
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+			prestige = 50
+		}
+		effect = {
+		set_country_flag = ozeanien_get_immigration_attraction
+		 IAA = {
+				JAV  = {
+					all_core = {add_province_modifier = 
+						{
+						name = gold_rush
+						duration = 5475
+						}
+					}
+				}
+				AST  = {
+					all_core = {add_province_modifier = 
+						{
+						name = gold_rush
+						duration = 5475
+						}
+					}
+				}
+				
+			}		
+		}
+	
+		ai_will_do = {					
+				factor = 1
+		}
+	
+	}
+}

@@ -1,0 +1,8 @@
+owner = ENG
+controller = ENG
+add_core = AST
+add_core = IAA
+colonial = 0
+trade_goods = wool
+life_rating = 32
+1861.1.1 = { railroad = 1 }

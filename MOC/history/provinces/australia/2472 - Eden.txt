@@ -1,0 +1,6 @@
+owner = ENG
+controller = ENG
+add_core = AST
+add_core = IAA
+trade_goods = grain
+life_rating = 33

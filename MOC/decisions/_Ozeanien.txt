@@ -1,0 +1,117 @@
+political_decisions = {
+
+	ozeanien_get_cores = {
+	
+		potential = {
+			OR = {
+				tag = AST	
+                tag = ATJ
+				tag = JAV
+				tag = PHL
+				tag = BAL
+			}
+			NOT = { exists = IAA }	
+			NOT = { has_country_flag = ozeanien_get_cores}	
+		}
+		allow = {
+            war = no
+			ai = no 
+		}
+		
+		effect = {
+
+			change_tag = IAA
+			set_country_flag = ozeanien_get_cores
+            prestige = 25
+			any_pop {literacy = +0.05}
+			inherit = JAV 
+
+			add_accepted_culture = australian
+			add_accepted_culture = javan
+			add_accepted_culture = yue
+			add_accepted_culture = malay
+			add_accepted_culture = aborigine
+			add_accepted_culture = polynesian
+			add_accepted_culture = maori
+			add_accepted_culture = melanesian
+			add_accepted_culture = micronesian
+			add_accepted_culture = asian_minor
+			add_accepted_culture = filipino
+			add_accepted_culture = moluccan
+
+			add_core = 1451
+			add_core = 1447
+            JAV  = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            BAL   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            PHL   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            DJA   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            TMR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            ATJ   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            INO   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            SAK    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            KLM     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            LAN     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            BRU     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            SLW      = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            KTI     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SLW	all_core = {
+					add_core = THIS
+				}
+			}
+			
+		}
+	}
+}
+

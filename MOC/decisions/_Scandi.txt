@@ -40,7 +40,9 @@ political_decisions = {
 				}
 			}
 			
-			
+			add_core = 370
+			add_core = 371
+			add_core = 550
 			add_core = 550
 			add_core = 529
 			add_core = 530
@@ -60,8 +62,15 @@ political_decisions = {
 			add_core = 696
 			add_core = 697
 			add_core = 698
-			
-			
+			add_core = 982
+			add_core = 983
+			add_core = 984
+			add_core = 994
+			add_core = 995
+			add_core = 996
+			add_core = 997
+			add_core = 2580
+
 			set_country_flag = claim_the_baltic
 		}
 		

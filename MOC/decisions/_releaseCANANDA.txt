@@ -1,0 +1,38 @@
+political_decisions = {
+
+	release_Canada_accept_french = {
+	
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = dont_do_it_honey}	
+		}
+		allow = {
+				has_country_flag = release_AST_get_Cores
+		}
+		
+		effect = {
+			badboy = 5
+			prestige = 25
+			set_country_flag = release_Canada_accept_french
+			set_country_flag = dont_do_it_honey
+
+			set_global_flag = french_counter_event
+			add_accepted_culture = french
+			remove_accepted_culture = anglo_canadian
+			release = CAN
+			release = RPL
+			release = QUE
+			release = COL
+			release = NEW
+			release = MTC 
+			release = MRU 
+			mobilization_impact = 0.1
+			mobilization_economy_impact = 0.1
+		}
+		ai_will_do = {					
+			factor = 0.49
+		}
+	}
+
+}
+

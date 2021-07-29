@@ -1047,9 +1047,19 @@ SUS = {
     color3= { 255 0 0  }
 }
 
+# Cum Land Neu
+
 CUM = {
     color1= { 255 255 255 }
     color2= { 220 220 220 }
     color3= { 180 180 180 }
 }
 
+
+# IAALand Neu
+
+IAA ={
+    color1= { 255 151 1 }
+    color2= { 255 151 3 }
+    color3= { 193 151 1 }
+}

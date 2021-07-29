@@ -1,0 +1,96 @@
+political_decisions = {
+
+	release_AST_get_Cores = {
+	
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = release_AST_get_Cores}	
+		}
+		allow = {
+
+		}
+		
+		effect = {
+			badboy = 20
+			prestige = -50
+			set_global_flag = release_AST_get_Cores
+			set_country_flag = release_AST_get_Cores
+			remove_accepted_culture = australian
+			ENG ={add_country_modifier = {
+					name = UK_1836_country_modifier
+					duration = 14600
+				}
+			}
+
+			release = AST
+			add_core = 415
+			add_core = 416
+			add_core = 417
+			add_core = 418
+
+			add_core = 434
+			add_core = 435
+			add_core = 437
+
+			add_core = 442
+			add_core = 443
+			add_core = 444
+			add_core = 458
+			add_core = 459
+			add_core = 460
+			BRT   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+		}
+		
+		
+
+		ai_will_do = {					
+			factor = 0.49
+		}
+	}
+	
+	
+}
+
+political_decisions = {
+
+	reclaim_cores_on_SCO = {
+	
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = reclaim_cores_on_SCO}	
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			has{has_global_flag = claim_ireland_global}
+			is_greater_power = yes
+			 
+		}
+		
+		effect = {
+			prestige = 20
+			money = 100000
+			badboy = -5
+			set_country_flag = reclaim_cores_on_SCO
+			ENG ={add_country_modifier = {
+					name = UK_reclaim_cores_on_SCO_country_modifier
+					duration = 20000
+				}
+			}
+			IRE   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	
+}
+

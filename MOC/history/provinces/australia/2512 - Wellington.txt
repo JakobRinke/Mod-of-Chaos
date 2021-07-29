@@ -1,0 +1,7 @@
+owner = ENG
+controller = ENG
+add_core = AST
+add_core = IAA
+add_core = NZL
+trade_goods = cattle
+life_rating = 30

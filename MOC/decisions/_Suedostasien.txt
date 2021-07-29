@@ -1,0 +1,76 @@
+political_decisions = {
+
+	ozeanien_claim_cores = {
+	
+		potential = {
+			tag = IAA
+			NOT = { has_country_flag = ozeanien_claim_cores}	
+		}
+		allow = {
+            war = no
+			ai = no 
+			prestige = 50
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			badboy = 18
+			prestige = 20
+			set_country_flag = ozeanien_claim_cores
+			any_pop {literacy = +0.05}
+
+			country_event = 14680
+
+			add_core = 1451
+			add_core = 1447
+            DAI  = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            JOH   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            BUR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            SIA   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            CAM   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            GXI   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            YNN   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            FJN    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+            GNG      = {all_core = {add_core = THIS}}
+			
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	
+}
+

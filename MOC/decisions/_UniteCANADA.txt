@@ -1,0 +1,27 @@
+political_decisions = {
+
+	canada_inerhit_PRL_COM_QUE_etc = {
+	
+		potential = {
+			tag = CAN	
+			NOT = { has_country_flag = canada_inerhit_PRL_COM_QUE_etc}
+		}
+		allow = {
+            war = no
+			has_global_flag = french_counter_event
+		}
+		
+		effect = {
+
+			set_country_flag = canada_inerhit_PRL_COM_QUE_etc
+            prestige = 30
+			inherit = RPL 
+			inherit = QUE 
+			inherit = COL 
+			inherit = NEW 
+			inherit = MTC 
+			inherit = MRU 
+		}
+	}
+}
+

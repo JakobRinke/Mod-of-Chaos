@@ -566,6 +566,7 @@ UTI        ="countries/Utility Tag.txt"
 # Jakobs neue Länder
 SUS        ="countries/SUS.txt"
 CUM        ="countries/CUM.txt"
+IAA        ="countries/IAA.txt"
 
 
 ##HoD Dominions

@@ -1,0 +1,8 @@
+owner = ENG
+controller = ENG
+add_core = AST
+trade_goods = cattle
+terrain = semidesert
+life_rating = 15
+add_core = IAA
+colonial = 0

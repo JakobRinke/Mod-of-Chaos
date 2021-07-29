@@ -1,0 +1,10 @@
+owner = ENG
+controller = ENG
+add_core = NZL
+add_core = IAA
+add_core = AST
+colonial = 2
+trade_goods = grain
+terrain = semidesert
+life_rating = 31
+colonial = 2

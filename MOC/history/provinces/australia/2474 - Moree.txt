@@ -1,0 +1,7 @@
+add_core = AST
+add_core = IAA
+colonial = 0
+owner = ENG
+controller = ENG
+trade_goods = grain
+life_rating = 20

@@ -2567,3 +2567,52 @@ emergency_tax_measures2 = {
 Coomer_Effect = {
 	global_immigrant_attract = -0.3
 }
+
+DM_country_modifier = {
+    mobilisation_size = 0.01
+    mobilization_impact = 0.25
+    local_ruling_party_support = 0.2
+    social_reform_desire = 0.05
+    naval_unit_start_experience = 5
+    suppression_points_modifier = 0.05
+    war_exhaustion = -0.05
+    immigrant_push = 1
+}
+
+UK_1836_country_modifier = {
+    local_ruling_party_support = 0.2
+    social_reform_desire = -0.05
+    suppression_points_modifier = -0.05
+    war_exhaustion = 0.05
+    pop_consciousness_modifier = 0.05
+    immigrant_push = 1
+}
+
+UK_reclaim_cores_on_SCO_country_modifier = {
+    mobilisation_size = 0.1
+    mobilization_economy_impact = -0.50
+
+    local_ruling_party_support = 0.5
+    social_reform_desire = 0.1
+    suppression_points_modifier = 0.1
+
+    war_exhaustion = -1
+    leadership_modifier = 1.1
+
+    core_pop_militancy_modifier = -0.1
+    pop_consciousness_modifier = -0.1
+
+    prestige = 0.25
+    research_points_modifier = 0.10
+    assimilation_rate = 0.1
+    population_growth = 0.1
+}
+
+
+IAA_country_modifier = {
+    life_rating = 0.6
+    immigrant_attract = 2
+    population_growth = 0.01
+    assimilation_rate = 0.05
+    prestige = 0.025
+}

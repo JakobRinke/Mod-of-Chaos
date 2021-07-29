@@ -1,0 +1,8 @@
+owner = ENG
+controller = ENG
+add_core = AST
+add_core = IAA
+trade_goods = timber
+life_rating = 50
+colonial = 0
+naval_base = 1
