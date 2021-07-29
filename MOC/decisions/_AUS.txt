@@ -3,14 +3,8 @@ political_decisions = {
 	claim_south_germany = {
 	
 		potential = {
-			OR = {
-				tag = AUS
-				tag = KUK
-			}
-			OR = {
+			tag = AUS
 			exists = GER
-			exists = NGF
- 			}
 			NOT = { has_country_flag = claim_south_germany }
 		}
 		
@@ -26,7 +20,22 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			badboy = 7
+			BAD = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			WUR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SGM = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
 			set_country_flag = claim_south_germany
 		}
 		
