@@ -3,8 +3,14 @@ political_decisions = {
 	claim_south_germany = {
 	
 		potential = {
-			tag = AUS
+			OR = {
+				tag = AUS
+				tag = KUK
+			}
+			OR = {
 			exists = GER
+			exists = NGF
+ 			}
 			NOT = { has_country_flag = claim_south_germany }
 		}
 		
