@@ -44,8 +44,8 @@ political_decisions = {
 			prestige = 50
 		}
 		effect = {
-			set_country_flag = ozeanien_get_immigration_attraction
-			 IAA = {
+		set_country_flag = ozeanien_get_immigration_attraction
+		 IAA = {
 				JAV  = {
 					all_core = {add_province_modifier = 
 						{
