@@ -17,10 +17,10 @@ political_decisions = {
 			set_country_flag = release_AST_get_Cores
 			remove_accepted_culture = australian
 			ENG ={add_country_modifier = {
-					name = UK_1836_country_modifier
-					duration = 14600
+						name = UK_1836_country_modifier
+						duration = 14600
+					}
 				}
-			}
 
 			release = AST
 			add_core = 415
@@ -44,9 +44,6 @@ political_decisions = {
 					}
 				}
 		}
-		
-		
-
 		ai_will_do = {					
 			factor = 0.49
 		}
@@ -65,7 +62,7 @@ political_decisions = {
 		}
 		allow = {
 			revolution_n_counterrevolution = 1
-			has{has_global_flag = claim_ireland_global}
+			has_global_flag = claim_ireland_global
 			is_greater_power = yes
 			 
 		}
@@ -77,20 +74,12 @@ political_decisions = {
 			set_country_flag = reclaim_cores_on_SCO
 			ENG ={add_country_modifier = {
 					name = UK_reclaim_cores_on_SCO_country_modifier
-					duration = 20000
-				}
+					duration = 6000}}
+			IRE   = {all_core = {add_core = THIS}}
 			}
-			IRE   = {
-					all_core = {
-						add_core = THIS
-					}
-				}
-		}
 		ai_will_do = {					
 			factor = 1
 		}
 	}
-	
-	
 }
 

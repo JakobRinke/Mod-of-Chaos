@@ -12,7 +12,6 @@ political_decisions = {
 		}
 		
 		effect = {
-
 			set_country_flag = canada_inerhit_PRL_COM_QUE_etc
             prestige = 30
 			inherit = RPL 
@@ -22,6 +21,86 @@ political_decisions = {
 			inherit = MTC 
 			inherit = MRU 
 		}
+		ai_will_do = {					
+			factor = 1
+		}
 	}
 }
+
+political_decisions = {
+
+	canada_make_EM_playable = {
+	
+		potential = {
+			tag = CAN	
+			NOT = { has_country_flag = canada_make_EM_playable}
+		}
+		allow = {
+            war = no
+			ai = no
+			has_country_flag = canada_inerhit_PRL_COM_QUE_etc
+		}
+		
+		effect = {
+			set_country_flag = canada_make_EM_playable
+			badboy = 20
+            prestige = 5
+			CAN = {
+			add_country_modifier = {name = CAN_country_modifier duration = 20000}}
+			CAL   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			COL   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			LSK    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			NEN    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			QUE    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			RPL    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			GRN    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MTC    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MRU    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			NEW    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_accepted_culture = anglo_french
+
+		}
+	}
+}
+
 
