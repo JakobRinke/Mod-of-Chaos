@@ -27,6 +27,7 @@ political_decisions = {
 				}
 			}
 			badboy = 7
+			
 			set_country_flag = claim_south_germany
 		}
 		
