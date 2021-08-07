@@ -1,0 +1,57 @@
+political_decisions = {
+	
+	
+	
+	
+	chi_long = {
+	
+		potential = {
+			tag = CHL			
+			NOT = { has_country_flag = chi_long }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			ECU = {
+				all_core = {add_core = THIS}
+			}
+			add_core = 2305
+			add_core = 2309
+			add_core = 2307
+			add_core = 2308
+			add_core = 2578
+			add_core = 2304
+			add_core = 2297
+			add_core = 2295
+			add_core = 2298
+			add_core = 2292
+			add_core = 2291
+			add_core = 2258
+			add_core = 2256
+			add_core = 2253
+			add_core = 2208
+			add_core = 2204
+			add_core = 1723
+			add_core = 2206
+			add_core = 2205
+			add_accepted_culture = north_andean
+			
+			set_country_flag = chi_long
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+
+	
+
+	
+}
