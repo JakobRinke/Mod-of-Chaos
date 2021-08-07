@@ -2618,14 +2618,13 @@ IAA_country_modifier = {
 }
 
 CAN_country_modifier = {
-    life_rating = 0.8
-    immigrant_attract = 4.5
-    population_growth = 0.033
-    assimilation_rate = 1.10
-    prestige = 0.020
+    life_rating = 0.9
+    immigrant_attract = 5.5
+    population_growth = 0.035
+    assimilation_rate = 1.20
+    prestige = 0.025
     pop_consciousness_modifier = 0.1
     local_ruling_party_support = 0.5
-    social_reform_desire = 0.05
+    social_reform_desire = 0.07
     leadership_modifier = 0.5
-
 }

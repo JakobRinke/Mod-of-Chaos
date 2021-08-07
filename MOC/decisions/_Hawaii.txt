@@ -7,6 +7,9 @@ political_decisions = {
 				tag = USA
 				tag = CUM
 				tag = SUS
+				tag = MEX
+				tag = CAN
+				tag = CSA
 				tag = JAP
 				tag = TKG
 			}

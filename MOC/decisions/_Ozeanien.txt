@@ -23,7 +23,7 @@ political_decisions = {
 			change_tag = IAA
 			set_country_flag = ozeanien_get_cores
             prestige = 25
-			any_pop {literacy = +0.05}
+			any_pop {literacy = +0.2}
 			inherit = JAV 
 
 			add_accepted_culture = australian

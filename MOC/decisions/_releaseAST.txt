@@ -11,7 +11,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 20
+			badboy = 15
 			prestige = -50
 			set_global_flag = release_AST_get_Cores
 			set_country_flag = release_AST_get_Cores
@@ -46,6 +46,79 @@ political_decisions = {
 		}
 		ai_will_do = {					
 			factor = 0.49
+		}
+	}
+	
+	
+}
+
+political_decisions = {
+
+	claimed_west_france = {
+	
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = claimed_west_france}	
+		}
+		allow = {
+			 prestige = 400
+			revolution_n_counterrevolution = 1
+			is_greater_power = yes
+			owns = 415
+			owns = 416
+			owns = 417
+			owns = 418
+
+			owns = 434
+			owns = 435
+			owns = 437
+
+			owns = 442
+			owns = 443
+			owns = 444
+			owns = 458
+			owns = 459
+			owns = 460
+		}
+		
+		effect = {
+			set_country_flag = claimed_west_france
+			add_accepted_culture = breton
+
+			add_core = 473
+			add_core = 457
+			add_core = 456
+			add_core = 455
+			add_core = 459
+			add_core = 460
+
+			any_state = {
+				any_pop = {
+					limit = {
+						has_pop_culture = british
+					}
+					consciousness = 1
+				}
+			}
+			any_state = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+					}
+					consciousness = 1
+				}
+			}
+			any_state = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+					}
+					militancy = 2
+				}
+			}
+		}
+		ai_will_do = {					
+			factor = 1
 		}
 	}
 	

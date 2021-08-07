@@ -73,4 +73,73 @@ political_decisions = {
 	
 	
 }
+political_decisions = {
+
+	ozeanien_get_DIA_accepted = {
+	
+		potential = {
+			tag = IAA
+			NOT = { has_country_flag = ozeanien_get_DIA_accepted}	
+		}
+		allow = {
+            war = no
+			ai = no 
+			prestige = 200
+			DAI  = {
+				all_core = {
+					IAA = {owns = THIS}
+				}
+			}
+            JOH   = {
+				all_core = {
+					IAA = {owns = THIS}
+				}
+			}
+            BUR   = {
+				all_core = {
+					IAA = {owns = THIS}
+				}
+			}
+            SIA   = {
+				all_core = {
+					IAA = {owns = THIS}
+				}
+			}
+            CAM   = {
+				all_core = {
+					IAA = {owns = THIS}
+				}
+			}
+            GXI   = {
+				all_core = {
+					IAA = {owns = THIS}
+				}
+			}
+            YNN   = {
+				all_core = {
+					IAA = {owns = THIS}
+				}
+			}
+            FJN    = {
+				all_core = {
+					IAA = {owns = THIS}
+				}
+			}
+            GNG      = {all_core = {IAA = {owns = THIS}}}
+			owns = 1451
+			owns = 1447
+		}
+		
+		effect = {
+			set_country_flag = ozeanien_get_DIA_accepted
+			add_accepted_culture = vietnamese			
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	
+}
+
 
