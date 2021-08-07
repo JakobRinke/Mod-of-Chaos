@@ -1,0 +1,87 @@
+
+
+political_decisions = {
+	
+	
+	
+	
+	spa_core_port = {
+	
+		potential = {
+			tag = SPA			
+			NOT = { has_country_flag = spa_core_port }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = 5
+			add_accepted_culture = portuguese
+			POR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			set_country_flag = spa_core_port
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	spa_annex_morocco = {
+		potential = {
+			tag = SPA			
+			NOT = { has_country_flag = spa_annex_morocco }
+			exists = MOR
+		}	
+		allow = {
+			MOR = {
+				in_sphere = SPA
+			}
+		}		
+		effect = {
+			prestige = 4
+			badboy = 3
+			inherit = MOR
+			set_country_flag = spa_annex_morocco
+		}		
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+	spa_core_mex = {
+		potential = {
+			tag = SPA			
+			NOT = { has_country_flag = spa_core_mex }
+		}	
+		allow = {
+			is_greater_power = 1
+			revolution_n_counterrevolution = 1
+		}		
+		effect = {
+			prestige = 60
+			badboy = 10
+			add_accepted_culture = mexican
+			MEX = {
+				all_core = {
+					add_core = SPA
+				}
+			}
+			set_country_flag = spa_core_mex
+		}		
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+}

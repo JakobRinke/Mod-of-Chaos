@@ -4,10 +4,11 @@ political_decisions = {
 	
 		potential = {
 			tag = ENG
-			NOT = { has_country_flag = dont_do_it_honey}	
+			NOT = { has_country_flag = dont_do_it_honey}
+			has_country_flag = release_AST_get_Cores			
 		}
 		allow = {
-				has_country_flag = release_AST_get_Cores
+			nationalism_n_imperialsm = 1
 		}
 		
 		effect = {

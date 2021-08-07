@@ -7,7 +7,7 @@ political_decisions = {
 			NOT = { has_country_flag = release_AST_get_Cores}	
 		}
 		allow = {
-
+			state_n_government = 1
 		}
 		
 		effect = {

@@ -1063,3 +1063,10 @@ IAA ={
     color2= { 255 151 3 }
     color3= { 193 151 1 }
 }
+
+# Dual Monarchy
+DUA ={
+    color1= { 255 50 255 }
+    color2= { 255 75 255 }
+    color3= { 255 50 255 }
+}

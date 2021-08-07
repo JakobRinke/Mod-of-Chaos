@@ -9,6 +9,7 @@ political_decisions = {
 				tag = SUS
 				tag = JAP
 				tag = TKG
+				tag = CAN
 			}
 			NOT = { has_country_flag = claim_Hawaii }
 		}

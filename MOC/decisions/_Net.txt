@@ -2,7 +2,11 @@ political_decisions = {
 	
 	attack_the_dutch_FRA = {
 		potential = {
-			tag = FRA
+			OR =  {
+			 tag = FRA
+			 tag = DUA
+			}
+			
 			NOT = { has_country_flag = Dutch_Embrace }
 		}
 		

@@ -61,6 +61,7 @@ political_decisions = {
 			add_accepted_culture = anglo_canadian
 			add_accepted_culture = french_canadian
 			add_accepted_culture = yankee
+			inherit = CSA
 			MEX = {
 				all_core = {
 					secede_province = CUM
