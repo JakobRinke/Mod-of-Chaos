@@ -52,6 +52,10 @@ political_decisions = {
 		
 		ai_will_do = {					
 			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
 		}
 	}
 	
@@ -116,6 +120,7 @@ political_decisions = {
 		
 		ai_will_do = {					
 			factor = 1
+			
 		}
 	}
 	
@@ -171,7 +176,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = claim_ireland
 			set_global_flag = claim_ireland_global
-			badboy = 18
+			badboy = 13
 			add_accepted_culture = irish
 			IRE   = {
 					all_core = {
@@ -182,6 +187,10 @@ political_decisions = {
 			}
 		ai_will_do = {					
 			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
 		}
 	}	
 }
@@ -213,6 +222,10 @@ political_decisions = {
 		}
 		ai_will_do = {					
 			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
 		}
 	}
 }
@@ -260,6 +273,10 @@ political_decisions = {
 		}
 		ai_will_do = {					
 			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
 		}
 	}
 }

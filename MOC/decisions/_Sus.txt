@@ -44,6 +44,10 @@ political_decisions
                 factor = 0
                 year = 1936
             }
+			modifier = {
+                factor = 0
+                badboy = 0.1
+            }
 		}
 	}
 	

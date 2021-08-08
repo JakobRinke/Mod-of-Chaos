@@ -97,8 +97,16 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			add_accepted_culture = anglo_french
-
+			add_accepted_culture = anglo_french	
+		}
+		
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.7
+			}
 		}
 	}
 }

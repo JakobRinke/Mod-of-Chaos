@@ -17,7 +17,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 10
+			badboy = 7
 			add_accepted_culture = central_american
 			add_core = 2186
 			add_core = 2187
@@ -41,6 +41,10 @@ political_decisions = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
 		}
 		
 		

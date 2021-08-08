@@ -27,11 +27,14 @@ political_decisions = {
 			release = NEW
 			release = MTC 
 			release = MRU 
-			mobilization_impact = 0.1
-			mobilization_economy_impact = 0.1
+			
 		}
 		ai_will_do = {					
 			factor = 0.49
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
 		}
 	}
 
