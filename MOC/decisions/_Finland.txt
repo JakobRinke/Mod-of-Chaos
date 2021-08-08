@@ -1,0 +1,161 @@
+political_decisions = {
+
+	finland_claim_cores = {
+	
+		potential = {
+			tag = FIN
+			NOT = { has_country_flag = finland_claim_cores}	
+		}
+		allow = {
+            war = no
+			ai = no 
+		}
+		
+		effect = {
+			plurality = 20
+			set_country_flag = finland_claim_cores
+            prestige = 25
+			money = 250000
+			inherit = UBD 
+			RUS 
+			add_accepted_culture = latvian
+			add_accepted_culture = estonian
+			add_accepted_culture = russian
+			add_accepted_culture = ugrian
+			
+			RUS = {release_vassal = FIN}
+			RUS = {release_vassal = UBD}
+			FIN  = {
+				add_country_modifier = {
+					name = Finland_country_modifier
+					duration = 20000
+				}
+			}
+			#Karelia
+			add_core = 982
+			add_core = 983
+			add_core = 984
+			add_core = 988
+			add_core = 988
+			add_core = 995
+			add_core = 2587
+
+			RUS = {
+				#Arkhangelsk
+				remove_core = 981
+				remove_core = 985
+				remove_core = 2588
+
+				#Tver
+				remove_core = 989
+				remove_core = 992
+				remove_core = 993
+				remove_core = 998
+				remove_core = 1001
+
+				#Galich 
+				remove_core = 987
+				remove_core = 990
+				remove_core = 991
+				remove_core = 1023
+				remove_core = 1024
+
+				#PERM
+				remove_core = 1026
+				remove_core = 1029
+				remove_core = 1031
+				remove_core = 2689
+				remove_core = 2700
+
+				#Nenetsia
+				remove_core = 985
+				remove_core = 986
+				remove_core = 2687
+				remove_core = 2688
+				remove_core = 2699
+			}
+			#Arkhangelsk
+			add_core = 981
+			add_core = 985
+			add_core = 2588
+
+			#Tver
+			add_core = 989
+			add_core = 992
+			add_core = 993
+			add_core = 998
+			add_core = 1001
+
+			#Galich 
+			add_core = 987
+			add_core = 990
+			add_core = 991
+			add_core = 1023
+			add_core = 1024
+
+			#PERM
+			add_core = 1026
+			add_core = 1029
+			add_core = 1031
+			add_core = 2689
+			add_core = 2700
+
+			#Nenetsia
+			add_core = 985
+			add_core = 986
+			add_core = 2687
+			add_core = 2688
+			add_core = 2699
+
+
+			RUS = {
+				UBD   = {all_core = {remove_core = THIS}}
+			}
+			RUS = {
+				KRL  = {all_core = {remove_core = THIS}}
+			}
+		}
+	}
+
+	claim_scandivia = {
+		potential = {
+			tag = FIN
+			NOT = { has_country_flag = claim_scandivia}	
+		}
+		allow = {
+			year = 1890
+            war = no
+			ai = no 
+			is_greater_power = yes
+			prestige = 50
+		}
+		
+		effect = {
+			set_country_flag = claim_scandivia
+			add_accepted_culture = norwegian
+			add_accepted_culture = icelandic
+			add_accepted_culture = danish
+			DEN   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SWE   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			NOR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ICE   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+		}
+	}
+}
+

@@ -52,11 +52,6 @@ political_decisions = {
             }
 		}
 	}
-	
-	
-}
-
-political_decisions = {
 
 	claimed_west_france = {
 	
@@ -127,10 +122,6 @@ political_decisions = {
 	}
 	
 	
-}
-
-political_decisions = {
-
 	reclaim_cores_on_SCO = {
 	
 		potential = {

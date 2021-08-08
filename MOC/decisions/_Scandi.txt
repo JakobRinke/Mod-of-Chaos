@@ -3,8 +3,11 @@ political_decisions = {
 	claim_the_baltic_terr = {
 	
 		potential = {
-
-			tag = SCA
+			OR{
+				tag = SCA
+				tag = FIN
+			}
+			
 			NOT = { has_country_flag = claim_the_baltic }
 		}
 		
@@ -17,6 +20,7 @@ political_decisions = {
 		effect = {
 			badboy = 18
 			add_accepted_culture = latvian
+			add_accepted_culture = polish
 			add_accepted_culture = lithuanian
 			add_accepted_culture = estonian
 			LAT = {
@@ -42,8 +46,6 @@ political_decisions = {
 			
 			add_core = 370
 			add_core = 371
-			add_core = 550
-			add_core = 550
 			add_core = 529
 			add_core = 530
 			add_core = 544
@@ -84,6 +86,58 @@ political_decisions = {
 		
 		
 	}
+
+	inherit_norway = {
 	
+		potential = {
+			OR{
+				tag = SWE
+				tag = DEN
+			}
+			
+			NOT = { has_country_flag = inherit_norway }
+		}
+		
+		
+		allow = {
+			prestige = 100
+			is_greater_power = yes
+		}
+		
+		effect = {
+			badboy = 5
+			prestige = 5
+			inherit = NOR
+			NOR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = inherit_norway
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	accept_north_german = {
+	
+		potential = {
+			tag = DEN			
+			NOT = { has_country_flag = accept_north_german }
+		}
+		
+		
+		allow = {
+			prestige = 50
+		}
+		
+		effect = {
+			add_accepted_culture = north_german
+			set_country_flag = accept_north_german
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 }

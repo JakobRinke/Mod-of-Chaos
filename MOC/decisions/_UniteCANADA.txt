@@ -25,9 +25,6 @@ political_decisions = {
 			factor = 1
 		}
 	}
-}
-
-political_decisions = {
 
 	canada_make_EM_playable = {
 
@@ -115,9 +112,7 @@ political_decisions = {
 			}
 		}
 	}
-}
 
-political_decisions = {
 
 	canada_make_increase_influence = {
 
@@ -177,6 +172,9 @@ political_decisions = {
 					consciousness = 0.5
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }
