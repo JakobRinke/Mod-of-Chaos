@@ -26,13 +26,17 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			badboy = 7
+			badboy = 6
 			
 			set_country_flag = claim_south_germany
 		}
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
 		}
 		
 		

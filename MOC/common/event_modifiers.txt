@@ -2576,41 +2576,37 @@ DM_country_modifier = {
     naval_unit_start_experience = 5
     suppression_points_modifier = 0.05
     war_exhaustion = -0.05
-    immigrant_push = 1
+    immigrant_push = 0.3
 }
 
 UK_1836_country_modifier = {
-    local_ruling_party_support = 0.2
+	mobilisation_size = 0.01
+    local_ruling_party_support = 0.1
     social_reform_desire = -0.05
     suppression_points_modifier = -0.05
     war_exhaustion = 0.05
     pop_consciousness_modifier = 0.05
-    immigrant_push = 1
+    immigrant_push = 0.3
 }
 
 UK_reclaim_cores_on_SCO_country_modifier = {
-    mobilisation_size = 0.1
-    mobilization_economy_impact = -0.50
+    mobilisation_size = 0.02
+    mobilization_economy_impact = -0.20
 
-    local_ruling_party_support = 0.5
+    local_ruling_party_support = 0.3
     social_reform_desire = 0.1
     suppression_points_modifier = 0.1
 
-    war_exhaustion = -1
+    war_exhaustion = -0.5
     leadership_modifier = 1.1
 
     core_pop_militancy_modifier = -0.1
     pop_consciousness_modifier = -0.1
-
-    prestige = 0.25
-    research_points_modifier = 0.010
-    assimilation_rate = 0.1
-    population_growth = 0.1
 }
 
 
 IAA_country_modifier = {
-    life_rating = 0.6
+    life_rating = 0.5
     immigrant_attract = 2
     population_growth = 0.01
     assimilation_rate = 0.85
@@ -2627,4 +2623,39 @@ CAN_country_modifier = {
     local_ruling_party_support = 0.5
     social_reform_desire = 0.07
     leadership_modifier = 0.5
+
+}
+
+rom_school_system_effect = {
+	education_efficiency_modifier = 3
+	research_points_modifier = 1
+	social_reform_desire = 1
+	political_reform_desire = 1
+}
+
+total_mobilisation = {
+	mobilisation_size = 0.45
+    mobilization_economy_impact = 0.50
+	land_unit_start_experience = 25
+    war_exhaustion = -2
+	org_regain = 0.3
+	land_organisation: 0.3
+	leadership_modifier = 0.5
+	population_growth = 0.0001
+}
+
+byz_assimilate_modifier = {
+    assimilation_rate = 100
+}
+
+greek_military_schools =  {
+	education_efficiency_modifier = 0.4
+	research_points_modifier = 0.1
+	social_reform_desire = 0.2
+	political_reform_desire = 0.3
+
+	mobilisation_size = 0.01
+    mobilization_economy_impact = -0.50
+    war_exhaustion = -1
+    leadership_modifier = 1.1
 }

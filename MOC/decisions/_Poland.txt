@@ -6,6 +6,9 @@ political_decisions = {
 			OR = {
 				tag = RUS
 				tag = GER
+				tag = AUS
+				tag = KUK
+				tag = DNB
 			}
 			NOT = { has_country_flag = Polish_Embrace }
 		}
@@ -17,7 +20,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 20
+			badboy = 12
 			add_accepted_culture = polish
 			POL = {
 				all_core = {
@@ -29,6 +32,10 @@ political_decisions = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
 		}
 		
 		

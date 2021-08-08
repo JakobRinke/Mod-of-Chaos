@@ -1,0 +1,125 @@
+political_decisions = {
+	
+	
+	
+	
+	rom_school_system = {
+	
+		potential = {
+			OR = {
+				tag = WAL
+				tag = MOL
+				tag = ROM
+			}
+			
+			
+			NOT = { has_country_flag = rom_school_system }
+		}
+		
+		
+		allow = {
+			
+		}
+		
+		effect = {
+			plurality = 50
+			add_country_modifier = {
+					name = rom_school_system_effect
+					duration = 10000
+			}
+			set_country_flag = rom_school_system
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	
+	
+	become_thicker_romania = {
+	
+		potential = {
+			tag = ROM
+			NOT = { has_country_flag = become_thicker_romania }
+		}
+		
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			badboy = 10
+			add_accepted_culture = bulgarian
+			add_accepted_culture = hungarian
+			add_accepted_culture = serb
+			add_accepted_culture = ukrainian
+			BUL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			HUN = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SER = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			set_country_flag = become_thicker_romania
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+		
+		
+	}
+	
+	
+	
+	encourage_total_mobilisation = {
+	
+		potential = {
+			tag = ROM
+			NOT = { has_country_flag = encourage_total_mobilisation }
+			has_country_flag = become_thicker_romania
+		}
+		
+		
+		allow = {
+			OR = {
+				war_policy = jingoism
+				war_policy = pro_military
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+					name = total_mobilisation
+					duration = 35000
+			}
+			change_national_value = order
+			conscription = service_by_requirement
+			set_country_flag = encourage_total_mobilisation
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+}

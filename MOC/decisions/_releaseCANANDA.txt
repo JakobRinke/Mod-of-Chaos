@@ -4,10 +4,11 @@ political_decisions = {
 	
 		potential = {
 			tag = ENG
-			NOT = { has_country_flag = dont_do_it_honey}	
+			NOT = { has_country_flag = dont_do_it_honey}
+			has_country_flag = release_AST_get_Cores			
 		}
 		allow = {
-				has_country_flag = release_AST_get_Cores
+			nationalism_n_imperialsm = 1
 		}
 		
 		effect = {
@@ -26,11 +27,14 @@ political_decisions = {
 			release = NEW
 			release = MTC 
 			release = MRU 
-			mobilization_impact = 0.1
-			mobilization_economy_impact = 0.1
+			
 		}
 		ai_will_do = {					
 			factor = 0.49
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
 		}
 	}
 
