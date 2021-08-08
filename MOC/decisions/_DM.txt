@@ -268,6 +268,7 @@ political_decisions = {
 				}
 				AND = {
 					tag = ENG
+					has_country_flag = claimed_west_france
 					has_country_flag = release_Canada_accept_french
 					has_country_flag = release_AST_get_Cores
 				}

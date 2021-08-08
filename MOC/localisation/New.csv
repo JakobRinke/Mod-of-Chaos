@@ -105,8 +105,10 @@ claim_north_england_title; Reunite the Dual Monarchy;;;;;;;;;;;;;
 claim_north_england_desc; This decision will allow you to claim cores on north england. Furthermore you gain British as an accepted culture as well as 25 Prestige.;;;;;;;;;;;;;
 DM_country_modifier_title; KEEP FRANCE STRONG;;;;;;;;;;;;;
 DM_country_modifier_desc; This modifier gives you following effects: mobilisation_size = 0.01 mobilization_impact = 0.25 local_ruling_party_support = 0.2 social_reform_desire = 0.05 naval_unit_start_experience = 15 suppression_points_modifier = 0.05 war_exhaustion = -0.05 immigrant_push = 1.;;;;;;;;;;;;;
-claimed_west_france_title; Claim Ireland;;;;;;;;;;;;;
-claimed_west_france_desc; This decision will allow you to claim cores on ireland as well. Furthermore you gain Irish as an accepted culture as well as 18 Infamy..;;;;;;;;;;;;;
+claim_ireland; Claim Ireland;;;;;;;;;;;;;
+claim_ireland; This decision will allow you to claim cores on ireland as well. Furthermore you gain Irish as an accepted culture as well as 18 Infamy..;;;;;;;;;;;;;
+claimed_west_france_title; Claim more parts of France;;;;;;;;;;;;;
+claimed_west_france_desc; BASED ;;;;;;;;;;;;;
 reclaim_cores_on_SCO_title; Reclaim cores on Ireland;;;;;;;;;;;;;
 reclaim_cores_on_SCO_desc; PRESS THIS BUTTON TO BECOME OP;;;;;;;;;;;;;
 UK_reclaim_cores_on_SCO_country_modifier_title: ENDSIEG TIME;;;;;;;;;;;;;
@@ -159,4 +161,4 @@ Finland_country_modifier_desc; This modifier is inspited by prussian_general_sta
 claim_scandivia_title; Expand our empire towards scandinavia;;;;;;;;;;;;;
 claim_scandivia_desc; This decision allows you to claim cores on Denmark, Sweden, Norway and Iceland. You also gain their cultures as accepted;;;;;;;;;;;;;
 finland_claim_cores_title; Hy�kk��j� Suomi;;;;;;;;;;;;;
-finland_claim_cores_desc; This decison allows u to claim big chungs of Russia as well as inherit the United Baltic Staates;;;;;;;;;;;;;
+finland_claim_cores_desc; This decison allows u to claim big chunks of Russia as well as inherit the United Baltic Staates;;;;;;;;;;;;;
