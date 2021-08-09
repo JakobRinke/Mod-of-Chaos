@@ -1,0 +1,95 @@
+political_decisions = {
+
+	claim_the_HRE = {
+			potential = {
+				OR = {
+					tag = BEL
+					tag = LUX
+				}
+				NOT = { has_country_flag = claim_the_HRE}	
+			}
+			allow = {
+				nationalism_n_imperialism = 1
+			}
+			
+			effect = {
+				set_country_flag = claim_the_HRE
+				badboy = 20
+				add_accepted_culture = north_german
+				add_accepted_culture = south_german
+				add_accepted_culture = wallonian
+				add_accepted_culture = flemish
+				add_accepted_culture = czech
+				
+				BEL = {
+					all_core = {add_core = THIS}
+				}		
+				BOH = {
+					all_core = {add_core = THIS}
+				}
+				AUS = {
+					all_core = {
+						limit = {
+								AND = {
+									NOT = {is_core=CRO}
+									NOT = {is_core=VEN}
+									NOT = {is_core=POL}
+								}
+						}
+						add_core = THIS
+					}
+				}
+				GER = {
+					all_core = {
+						limit = {
+								AND = {
+									NOT = {is_core=POL}
+								}
+						}
+						add_core = THIS
+					}
+					
+				}
+				LUX = {
+					all_core = {add_core = THIS}
+				}
+			}
+			
+			ai_will_do = {					
+				factor = 1
+				modifier = {
+					factor = 0
+					badboy = 0.1
+				}
+			}
+		}
+		
+		
+		become_the_HRE = {
+			potential = {
+				OR = {
+					tag = BEL
+					tag = LUX
+				}
+				NOT = { has_country_flag = become_the_HRE}	
+				has_country_flag = claim_the_HRE
+			}
+			allow = {
+				all_core = {
+					owned_by = THIS
+				}
+				owns = 619
+			}
+			
+			effect = {
+				prestige = 300
+				change_tag = HLR
+				set_country_flag = become_the_HRE
+				capital = 619
+			}
+			
+			ai_will_do = {					
+				factor = 0.0000001
+			}
+		}
+}

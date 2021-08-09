@@ -1,0 +1,108 @@
+political_decisions = {
+
+
+	reform_indian_schoolsystem = {
+		potential = {
+			OR = {
+				tag = BUR
+				tag = MUG
+			}
+			
+			NOT = {has_country_flag = reform_indian_schoolsystem}
+		}
+		allow = {
+			
+		}
+		
+		effect = {			
+			prestige = 10
+			add_country_modifier = {
+				name = indian_schoolsystem
+				duration = 10000
+			}
+			treasury = 250000
+			set_country_flag = reform_indian_schoolsystem
+		}
+		
+		ai_will_do = {					
+			factor = 0.00005
+
+		}
+	}
+	
+	
+	claim_india = {
+		potential = {
+			OR = {
+				tag = BUR
+				tag = MUG
+			}
+			
+			NOT = {has_country_flag = claim_india}
+		}
+		allow = {
+			civilized = yes
+		}
+		
+		effect = {			
+			prestige = 40
+			HND = {
+				all_core = {add_core = THIS}
+			}
+			set_country_flag = claim_india
+		}
+		
+		ai_will_do = {					
+			factor = 1
+
+		}
+	}
+	
+	form_india_f = {
+	
+		potential = {
+			OR = {
+				tag = BUR
+				tag = MUG
+			}
+			
+			NOT = {has_country_flag = form_india}
+		}
+		
+		allow = {
+			civilized = yes
+			HND = { all_core = { OR = { owned_by = THIS owner = { in_sphere = THIS} } } }
+		}
+		
+		effect = {			
+			prestige = 100
+			add_accepted_culture = marathi
+			add_accepted_culture = avadhi
+			add_accepted_culture = bihari
+			add_accepted_culture = tamil
+			add_accepted_culture = kanauji
+			add_accepted_culture = rajput
+			add_accepted_culture = bengali
+			add_accepted_culture = panjabi
+			add_accepted_culture = kashmiri
+			add_accepted_culture = manipuri
+			add_accepted_culture = assamese
+			add_accepted_culture = oriya
+			HND = {
+				all_core = {
+					add_core = UTI	
+				}
+			}
+			UTI = { civilized = yes }
+			release = UTI
+
+			inherit = UTI
+			UTI = {
+				civilized = no
+				all_core = { remove_core = UTI }
+			}
+			change_tag = HND
+			set_country_flag = form_india
+		}
+	}
+}

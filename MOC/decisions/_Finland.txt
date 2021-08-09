@@ -28,9 +28,12 @@ political_decisions = {
 			FIN  = {
 				add_country_modifier = {
 					name = Finland_country_modifier
-					duration = 20000
+					duration = 8000
 				}
+				
 			}
+			
+			
 			#Karelia
 			add_core = 982
 			add_core = 983

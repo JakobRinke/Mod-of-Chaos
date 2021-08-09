@@ -1,0 +1,73 @@
+political_decisions = {
+	
+	accept_danish_ger = {
+		potential = {
+			tag = GER
+			primary_culture = north_german
+			NOT = {has_country_flag = accept_danish_ger}
+		}
+		allow = {
+			revolution_n_counterrevolution = 1	
+		}
+		
+		effect = {			
+			prestige = 10
+			badboy = 5
+			DEN = {
+				all_core = {add_core = THIS}
+			}
+			add_accepted_culture = danish
+			set_country_flag = accept_danish_ger
+		}
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+			}
+		}
+	}
+	
+	accept_italian_ger = {
+		potential = {
+			tag = GER
+			primary_culture = south_german
+			NOT = {has_country_flag = accept_italian_ger}
+		}
+		allow = {
+			revolution_n_counterrevolution = 1	
+		}
+		
+		effect = {			
+			prestige = 30
+			badboy = 10
+			add_accepted_culture = north_italian
+			set_country_flag = accept_italian_ger
+			add_core = 612
+			add_core = 613
+			add_core = 614
+			add_core = 734
+			add_core = 735
+			add_core = 726
+			add_core = 727
+			add_core = 728
+			add_core = 2669
+			add_core = 729
+			add_core = 730
+			add_core = 731
+			add_core = 732
+			add_core = 733
+			add_core = 8
+			add_core = 618
+		}
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.5
+			}
+		}
+	}
+}

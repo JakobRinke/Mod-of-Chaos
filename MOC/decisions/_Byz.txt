@@ -51,11 +51,7 @@ political_decisions = {
 			prestige = 50
 			change_tag = BYZ
 			set_country_flag = create_byztantine_empire
-			change_capital = 860
-			860 = {
-				change_province_name = constantinople
-				change_region_name = constantinople
-			}
+			
 		}
 		
 		ai_will_do = {					
@@ -90,6 +86,18 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
+			TRI = {
+					all_core = { limit = {NOT = {owned_by = any_coutry}} add_core = THIS}
+			}
+			EGY = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_core = 1735
+			add_core = 1736
+			add_core = 1737
+			add_core = 1738
 			set_country_flag = byz_get_cores
 		}
 		
@@ -124,19 +132,18 @@ political_decisions = {
 		
 		effect = {			
 			prestige = 50
-			
 			add_country_modifier = {
 				name = byz_assimilate_modifier
-				duration = 365
+				duration = 3650
 			}
-			add_country_flag = exclusive_acquire_all_cores_CB
-			add_country_flag = byz_assimilate
+			set_country_flag = byz_assimilate
 		}
 		
 		ai_will_do = {					
 			factor = 1
 		}
 	}
+	
 	
 	
 	byz_cores_ita = {
@@ -159,6 +166,7 @@ political_decisions = {
 		effect = {			
 			prestige = 50
 			badboy = 10
+			add_accepted_culture = south_italian
 			add_core= 758
 			add_core= 756
 			add_core= 761
@@ -167,7 +175,7 @@ political_decisions = {
 			add_core= 764
 			add_core= 763
 			add_core= 762
-			add_country_flag = byz_cores_ita
+			set_country_flag = byz_cores_ita
 		}
 		
 		ai_will_do = {					

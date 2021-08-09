@@ -8,7 +8,10 @@ political_decisions = {
 	spa_core_port = {
 	
 		potential = {
-			tag = SPA			
+			OR = {
+				tag = SPA
+				tag = SPC
+			}				
 			NOT = { has_country_flag = spa_core_port }
 		}
 		
@@ -25,8 +28,18 @@ political_decisions = {
 				all_core = {
 					add_core = THIS
 				}
+				add_accepted_culture = spanish
+			}
+			all_core = {
+					add_core = POR
 			}
 			
+			war = {
+				target = POR
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = conquest }
+				call_ally = yes
+			}
 			set_country_flag = spa_core_port
 		}
 		
@@ -42,22 +55,28 @@ political_decisions = {
 	}
 	
 	spa_annex_morocco = {
-		potential = {
-			tag = SPA			
+		potential = {		
 			NOT = { has_country_flag = spa_annex_morocco }
 			exists = MOR
-		}	
+		}
+		
 		allow = {
 			MOR = {
-				in_sphere = SPA
+				OR = {
+					in_sphere = SPA
+					in_sphere = SPC
+				}
 			}
-		}		
+		}
+
+		
 		effect = {
 			prestige = 4
 			badboy = 3
 			inherit = MOR
 			set_country_flag = spa_annex_morocco
-		}		
+		}	
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -69,7 +88,10 @@ political_decisions = {
 	
 	spa_core_mex = {
 		potential = {
-			tag = SPA			
+			OR = {
+				tag = SPA
+				tag = SPC
+			}			
 			NOT = { has_country_flag = spa_core_mex }
 		}	
 		allow = {

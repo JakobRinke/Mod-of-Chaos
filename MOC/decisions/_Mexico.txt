@@ -1,0 +1,41 @@
+political_decisions = {
+
+
+	mex_central_american_ambition = {
+		
+		potential = {
+			OR = {
+				AND = {
+					tag = MEX
+					NOT = { exists = CUM }	
+				}
+				tag = CLM
+			}
+			NOT = {has_country_flag = mex_central_american_ambition}			
+		}
+		
+		allow = {
+			
+		}
+		
+		effect = {
+				
+			prestige = 10	
+			add_accepted_culture = central_americans
+			add_accepted_culture = north_andean
+			add_accepted_culture = mexican
+			UCA = { all_core = { add_core = THIS } }
+			COL = { all_core = { add_core = THIS } }
+			MEX = { all_core = { add_core = THIS } }
+			CUB = { all_core = { add_core = THIS } }
+			set_country_flag = mex_central_american_ambition
+		}
+		
+		ai_will_do = {					
+			factor = 0.005
+		}
+	}
+	
+
+
+}

@@ -1,0 +1,94 @@
+political_decisions = {
+
+
+	mongol_empire = {
+		
+		potential = {
+			tag = MGL
+			NOT = {has_country_flag = mongol_empire}			
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+				
+			prestige = 10	
+			add_accepted_culture = kazakh
+			add_accepted_culture = north_han
+			add_accepted_culture = manchu
+			QNG = { all_core = { add_core = THIS } }
+			CHI = { all_core = { add_core = THIS } }
+			ARM = { all_core = { add_core = THIS } }
+			KOR = { all_core = { add_core = THIS } }
+			KDS = { all_core = { add_core = THIS } }
+			KAZ = { all_core = { add_core = THIS } }
+			PER = { all_core = { add_core = THIS } }
+			PNJ = { all_core = { add_core = THIS } }
+			CIR = { all_core = { add_core = THIS } }
+			AKH = { all_core = { add_core = THIS } }
+			KMK = { all_core = { add_core = THIS } }
+			CHY = { all_core = { add_core = THIS } }
+			DON = { all_core = { add_core = THIS } }
+			DAG = { all_core = { add_core = THIS } }
+			TCA = { all_core = { add_core = THIS } }
+			TIB = { all_core = { add_core = THIS } }
+			AFG = { all_core = { add_core = THIS } }
+			KHI = {
+				all_core = {
+					add_core = THIS
+				}
+			}		
+			BUK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KOK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KAL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MAK = {
+				all_core = {
+					add_core = THIS
+				}
+			}	
+			
+			add_core = 1192
+			add_core = 1205
+			add_core = 1096
+			add_core = 1469
+			pluralism = 40
+			
+			
+			add_country_modifier = {
+				name = mongol_civ_boost
+				duration = 20000
+			}
+			
+			add_country_modifier = {
+				name = mongol_game_boost
+				duration = 40000
+			}
+			add_country_modifier = {
+				name = mongol_baby_boom
+				duration = 365
+			}
+			
+			set_country_flag = mongol_empire
+		}
+		
+		ai_will_do = {					
+			factor = 0.000005
+		}
+	}
+	
+
+
+}

@@ -1,0 +1,162 @@
+political_decisions = {
+
+	nigerian_battle_royale = {
+			potential = {
+				OR = {
+					tag = SOK
+					tag = WRI
+					tag = OYO
+					tag = ARO
+					tag = BEN
+				}
+				NOT = { has_country_flag = nigerian_battle_royale}	
+			}
+			allow = {
+				
+			}
+			
+			effect = {
+				prestige = 10
+				add_accepted_culture = yoruba
+				add_accepted_culture = hausa
+				add_accepted_culture = ibo
+				add_accepted_culture = fulbe
+				add_accepted_culture = kanuri
+				add_accepted_culture = itsekari
+				add_accepted_culture = edo
+				add_accepted_culture = east_kwa
+				add_accepted_culture = tiv
+				add_accepted_culture = ibibio
+				SOK = {
+					all_core = {add_core = THIS}
+				}
+				ARO = {
+					all_core = {add_core = THIS}
+				}
+				WRI = {
+					all_core = {add_core = THIS}
+				}
+				OYO = {
+					all_core = {add_core = THIS}
+				}
+				BEN = {
+					all_core = {add_core = THIS}
+				}
+				
+				
+				add_country_modifier = {
+					name = 	nigerian_schools
+					duration = 10000
+				}
+
+								
+				set_country_flag = nigerian_battle_royale
+			}
+			
+			ai_will_do = {					
+				factor = 1
+			}
+	}
+	
+	
+	form_nigeria = {
+		potential = {
+			OR = {
+				tag = SOK
+				tag = WAR
+				tag = OYO
+				tag = ARO
+				tag = BEN
+			}
+			NOT = { has_country_flag = form_nigeria}
+			has_country_flag = nigerian_battle_royale				
+		}
+		allow = {
+			all_core = {
+				owned_by = THIS
+			}	
+		}
+		
+		effect = {			
+			prestige = 50
+			plurality = 20
+			change_tag = NGR
+			set_country_flag = form_nigeria
+			DAH = {
+				all_core = {add_core = NGR}
+			}
+			ASH = {
+				all_core = {add_core = NGR}
+			}
+			LIB = {
+				all_core = {add_core = NGR}
+			}
+			JAL = {
+				all_core = {add_core = NGR}
+			}
+			TOO = {
+				all_core = {add_core = NGR}
+			}
+			GBU = {
+				all_core = {add_core = NGR}
+			}
+			TOU = {
+				all_core = {add_core = NGR}
+			}
+			TRZ = {
+				all_core = {add_core = NGR}
+			}
+			KNG = {
+				all_core = {add_core = NGR}
+			}
+			SLE = {
+				all_core = {add_core = NGR}
+			}
+			MAS = {
+				all_core = {add_core = NGR}
+			}
+			DAM = {
+				all_core = {add_core = NGR}
+			}
+			add_core = 1914
+			add_core = 1917
+			add_core = 1918
+			add_core = 1892
+			add_core = 1897
+			add_core = 1893
+			add_core = 1895
+			add_core = 1896
+			add_core = 1891
+			add_core = 1890
+			add_core = 1889
+			add_core = 1900
+		}
+		
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	
+	change_rgo_ngr = {
+		potential = {
+			tag = NGR
+			NOT = {has_country_flag = change_rgo_ngr}
+		}
+		allow = {
+			money = 200000	
+		}
+		
+		effect = {			
+			prestige = 30
+			country_event = 199038
+			set_country_flag = change_rgo_ngr
+		}
+		
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+}
+	
+	
