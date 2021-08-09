@@ -2564,7 +2564,8 @@ emergency_tax_measures2 = {
 
 ### NEW ###
 Coomer_Effect = {
-	global_immigrant_attract = -0.1
+	global_immigrant_attract = -0.2
+    icon = 3
 }
 
 DM_country_modifier = {
@@ -2576,6 +2577,7 @@ DM_country_modifier = {
     suppression_points_modifier = 0.05
     war_exhaustion = -0.05
     immigrant_push = 0.3
+    icon = 15
 }
 
 UK_1836_country_modifier = {
@@ -2586,6 +2588,7 @@ UK_1836_country_modifier = {
     war_exhaustion = 0.05
     pop_consciousness_modifier = 0.05
     immigrant_push = 0.3
+    icon = 16
 }
 
 UK_reclaim_cores_on_SCO_country_modifier = {
@@ -2601,6 +2604,7 @@ UK_reclaim_cores_on_SCO_country_modifier = {
 
     core_pop_militancy_modifier = -0.1
     pop_consciousness_modifier = -0.1
+    icon = 15
 }
 
 
@@ -2610,6 +2614,7 @@ IAA_country_modifier = {
     global_population_growth = 0.0001
     global_assimilation_rate = 0.85
     prestige = 0.025
+    icon = 3
 }
 
 CAN_country_modifier = {
@@ -2621,7 +2626,7 @@ CAN_country_modifier = {
     local_ruling_party_support = 0.5
     social_reform_desire = 0.07
     leadership_modifier = 0.5
-
+    icon = 3
 }
 
 rom_school_system_effect = {
@@ -2629,6 +2634,7 @@ rom_school_system_effect = {
 	research_points_modifier = 1
 	social_reform_desire = 1
 	political_reform_desire = 1
+    icon = 7
 }
 
 total_mobilisation = {
@@ -2657,6 +2663,7 @@ greek_military_schools =  {
     mobilization_economy_impact = -0.50
     war_exhaustion = -1
     leadership_modifier = 1.1
+
 	icon = 15
 }
 
@@ -2664,7 +2671,6 @@ Finland_country_modifier = {
     global_population_growth = 0.005
     assimilation_rate = 1.50
     prestige = 0.025
-
     local_ruling_party_support = 0.5
     social_reform_desire = 0.1
     global_immigrant_attract = 1
@@ -2676,9 +2682,9 @@ Finland_country_modifier = {
     land_unit_start_experience = 5
     supply_consumption = -0.1
     war_exhaustion = -0.25
-
     icon = 15
 }
+
 
 nigerian_schools =  {
 	global_population_growth = 0.0025
@@ -2712,4 +2718,26 @@ indian_schoolsystem = {
 	education_efficiency_modifier = 2
 	research_points_modifier = 2.2
 	icon = 17
+
+african_schools =  {
+    education_efficiency_modifier = 3
+    research_points_modifier = 1.4
+    supply_consumption = -0.1
+    prestige = 0.25
+    icon = 7
+}
+
+
+south_african_new_world ={
+    global_immigrant_attract = 4
+    global_assimilation_rate = 0.2
+    global_population_growth = 0.001
+    loan_interest = 0.5
+    icon = 7
+}
+
+provinz_growth_modifier = {
+    immigrant_attract = 4
+    assimilation_rate = 0.2
+    population_growth = 0.01
 }

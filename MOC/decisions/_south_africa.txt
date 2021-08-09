@@ -1,0 +1,206 @@
+political_decisions = {
+
+	become_independent = {
+		picture = form_south_africa
+		potential = {
+			tag = SAF
+			NOT = { has_country_flag = become_independent}	
+			1864 = { empty = yes }
+			1866 = { empty = yes }
+			1867 = { empty = yes }
+		}
+		allow = {
+            war = no
+			ai = no 
+		}
+		
+		effect = {
+
+			set_country_flag = become_independent
+			ENG = {release_vassal = SAF}
+			money = 200000
+			#Namaqualand
+			2083 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = oil RGO_size = 300000}
+			2084 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2085 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2086 = { add_core = SAF secede_province = THIS life_rating = 50 }
+
+			Northern Cape
+			2088 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2093 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2094 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = iron RGO_size = 1000000}
+			2095 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2558 = { add_core = SAF secede_province = THIS life_rating = 50 }
+
+			#Bechuanaland
+			2074 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = timber RGO_size = 4500000}
+			2075 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2076 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2077 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2574 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = timber RGO_size = 4500000}
+
+			add_accepted_culture = tswana
+			add_accepted_culture = sotho
+			add_accepted_culture = khoisan
+			add_accepted_culture = nguni
+			add_accepted_culture = xhoso
+			add_accepted_culture = zulu
+			add_accepted_culture = herero
+			add_accepted_culture = southern_bantu
+
+			government = democracy
+
+			SAF = {
+				add_country_modifier = {
+					name = south_african_new_world
+					duration = 12000 
+				}
+			}
+		}
+	}
+	claim_cores_SAF = {
+	
+		potential = {
+			tag = SAF
+			NOT = { has_country_flag = claim_cores_SAF}	
+		}
+		allow = {
+            war = no
+			ai = no 
+		}
+		
+		effect = {
+			set_country_flag = claim_cores_SAF
+			badboy = 15
+			nationalvalue = nv_productivity 
+			SAF = {
+				add_country_modifier = {
+					name = african_schools
+					duration = 10000 
+				}
+			}
+			GAZ     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			MAD     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			MAT     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			AGC     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SUA    = {
+				all_core = {
+					add_core = THIS
+				}
+			} 
+
+			XHO    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			ORA    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			BSH     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			ZUL     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			add_accepted_culture = tonga
+			add_accepted_culture = sotho
+			add_accepted_culture = khoisan
+			add_accepted_culture = nguni
+			add_accepted_culture = xhosa
+			add_accepted_culture = zulu
+			add_accepted_culture = herero
+			add_accepted_culture = southern_bantu
+			add_accepted_culture = malagasy
+		}
+	}
+
+	organize_SAF = {
+	
+		potential = {
+			tag = SAF
+			NOT = { has_country_flag = organize_SAF}	
+		}
+		allow = {
+            war = no
+			ai = no 
+			steam_turbine = 1
+			organic_chemistry = 1
+		}
+		
+		effect = {
+			set_country_flag = organize_SAF
+			2088 = {trade_goods = iron RGO_size = 1000000}
+			2090 = {trade_goods = iron RGO_size = 1000000}
+			2098 = {trade_goods = rubber RGO_size = 300000}
+			2100 = {trade_goods = iron RGO_size = 1000000}
+			2106 = {trade_goods = iron RGO_size = 1000000}
+			2110 = {trade_goods = oil RGO_size = 1000000}
+			
+			
+		}
+	}
+
+	unite_SAF = {
+	
+		potential = {
+			OR = {
+				tag = XHO 
+				tag = BSH  
+				tag = ORA 
+				tag = MAT
+			}
+			NOT = { has_country_flag = unite_SAF}	
+			NOT = { exists = SAF }	
+		}
+		allow = {
+            war = no
+			ai = no 
+			civilised = no
+		}
+		
+		effect = {
+			set_country_flag = unite_SAF
+			change_tag = SAF
+			SAF = {all_core = {secede_province = SAF}}	
+			prestige = 20 
+			plurality = 60
+			civilized = yes
+			define_general = {
+				name = "Sir Arthur Victoria"
+				personality = implacable
+				background = spoiled
+			}
+		}
+	}
+}
+

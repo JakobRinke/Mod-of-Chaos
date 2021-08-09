@@ -10,14 +10,13 @@ political_decisions = {
             war = no
 			ai = no 
 		}
-		
 		effect = {
 			plurality = 20
 			set_country_flag = finland_claim_cores
             prestige = 25
-			money = 250000
+			money = 300000
 			inherit = UBD 
-			RUS 
+
 			add_accepted_culture = latvian
 			add_accepted_culture = estonian
 			add_accepted_culture = russian
@@ -25,6 +24,7 @@ political_decisions = {
 			
 			RUS = {release_vassal = FIN}
 			RUS = {release_vassal = UBD}
+
 			FIN  = {
 				add_country_modifier = {
 					name = Finland_country_modifier
@@ -33,17 +33,22 @@ political_decisions = {
 				
 			}
 			
-			
-			#Karelia
-			add_core = 982
-			add_core = 983
-			add_core = 984
-			add_core = 988
-			add_core = 988
-			add_core = 995
-			add_core = 2587
+
+
+			UBD   = {all_core = {remove_core = RUS}}
+			KRL   = {all_core = {remove_core = RUS}}
+
 
 			RUS = {
+				#Karelia
+				remove_core = 982
+				remove_core = 983
+				remove_core = 984
+				remove_core = 988
+				remove_core = 988
+				remove_core = 995
+				remove_core = 2587
+			
 				#Arkhangelsk
 				remove_core = 981
 				remove_core = 985
@@ -77,6 +82,15 @@ political_decisions = {
 				remove_core = 2688
 				remove_core = 2699
 			}
+			#Karelia
+			add_core = 982
+			add_core = 983
+			add_core = 984
+			add_core = 988
+			add_core = 988
+			add_core = 995
+			add_core = 2587
+			
 			#Arkhangelsk
 			add_core = 981
 			add_core = 985
@@ -109,17 +123,41 @@ political_decisions = {
 			add_core = 2687
 			add_core = 2688
 			add_core = 2699
-
-
-			RUS = {
-				UBD   = {all_core = {remove_core = THIS}}
-			}
-			RUS = {
-				KRL  = {all_core = {remove_core = THIS}}
+			FIN = {
+				add_country_modifier = {
+					name = Finland_country_modifier
+					duration = 20000
+				}
 			}
 		}
 	}
+	clam_norrland_and_nordnorge  ={
+		potential = {
+			tag = FIN
+			NOT = { has_country_flag = clam_norrland_and_nordnorge}	
+		}
+		allow = {
+            war = no
+			ai = no 
+		} 
+		effect = {
+			set_country_flag = clam_norrland_and_nordnorge
+			SWE = {release_vassal = NOR}
 
+			#Nordnorge
+			add_core = 305
+			add_core = 306
+			add_core = 307
+			add_core = 308
+			
+			#Norrland
+			add_core = 317
+			add_core = 318
+			add_core = 319
+			add_core = 320
+			add_core = 321
+		}
+	}
 	claim_scandivia = {
 		potential = {
 			tag = FIN
@@ -153,12 +191,7 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			ICE   = {
-				all_core = {
-					add_core = THIS
-				}
-			}
+			ICE   = {all_core = {add_core = THIS}}
 		}
 	}
 }
-
