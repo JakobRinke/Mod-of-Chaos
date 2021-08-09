@@ -2566,6 +2566,7 @@ emergency_tax_measures2 = {
 ### NEW ###
 Coomer_Effect = {
 	global_immigrant_attract = -0.3
+    icon = 3
 }
 
 DM_country_modifier = {
@@ -2577,6 +2578,7 @@ DM_country_modifier = {
     suppression_points_modifier = 0.05
     war_exhaustion = -0.05
     immigrant_push = 0.3
+    icon = 15
 }
 
 UK_1836_country_modifier = {
@@ -2587,6 +2589,7 @@ UK_1836_country_modifier = {
     war_exhaustion = 0.05
     pop_consciousness_modifier = 0.05
     immigrant_push = 0.3
+    icon = 16
 }
 
 UK_reclaim_cores_on_SCO_country_modifier = {
@@ -2602,19 +2605,19 @@ UK_reclaim_cores_on_SCO_country_modifier = {
 
     core_pop_militancy_modifier = -0.1
     pop_consciousness_modifier = -0.1
+    icon = 15
 }
 
 
 IAA_country_modifier = {
-    life_rating = 0.5
     immigrant_attract = 2
     population_growth = 0.01
     assimilation_rate = 0.85
     prestige = 0.025
+    icon = 3
 }
 
 CAN_country_modifier = {
-    life_rating = 0.9
     immigrant_attract = 5.5
     population_growth = 0.035
     assimilation_rate = 1.20
@@ -2623,7 +2626,7 @@ CAN_country_modifier = {
     local_ruling_party_support = 0.5
     social_reform_desire = 0.07
     leadership_modifier = 0.5
-
+    icon = 3
 }
 
 rom_school_system_effect = {
@@ -2631,6 +2634,7 @@ rom_school_system_effect = {
 	research_points_modifier = 1
 	social_reform_desire = 1
 	political_reform_desire = 1
+    icon = 7
 }
 
 total_mobilisation = {
@@ -2642,10 +2646,12 @@ total_mobilisation = {
 	land_organisation: 0.3
 	leadership_modifier = 0.5
 	population_growth = 0.0001
+    icon = 15
 }
 
 byz_assimilate_modifier = {
     assimilation_rate = 100
+    icon = 1
 }
 
 greek_military_schools =  {
@@ -2658,20 +2664,16 @@ greek_military_schools =  {
     mobilization_economy_impact = -0.50
     war_exhaustion = -1
     leadership_modifier = 1.1
-}
-
+    icon = 15
 }
 
 Finland_country_modifier = {
-
     population_growth = 0.15
     assimilation_rate = 1.50
     prestige = 0.25
-
     local_ruling_party_support = 0.5
     social_reform_desire = 0.1
-
-    immigrant_attract = 2.5
+    immigrant_attract = 3.5
     leadership_modifier = 0.75
     mobilisation_size = 0.33
     org_regain = 0.33
@@ -2680,7 +2682,28 @@ Finland_country_modifier = {
     land_unit_start_experience = 5
     supply_consumption = -0.1
     war_exhaustion = -0.25
-
-
     icon = 15
+}
+
+african_schools =  {
+    education_efficiency_modifier = 3
+    research_points_modifier = 1.4
+    supply_consumption = -0.1
+    prestige = 0.25
+    icon = 7
+}
+
+
+south_african_new_world ={
+    global_immigrant_attract = 4
+    global_assimilation_rate = 0.2
+    global_population_growth = 0.001
+    loan_interest = 0.5
+    icon = 7
+}
+
+provinz_growth_modifier ={
+    immigrant_attract = 4
+    assimilation_rate = 0.2
+    population_growth = 0.01
 }

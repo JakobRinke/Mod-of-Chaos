@@ -8,7 +8,6 @@ political_decisions = {
 			has_country_flag = release_AST_get_Cores			
 		}
 		allow = {
-			nationalism_n_imperialsm = 1
 		}
 		
 		effect = {
@@ -37,6 +36,5 @@ political_decisions = {
             }
 		}
 	}
-
 }
 

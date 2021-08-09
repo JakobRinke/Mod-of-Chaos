@@ -71,4 +71,21 @@ political_decisions = {
 		}
 	
 	}
+
+	net_take_java_back ={
+		potential = {
+				tag = NET	
+				NOT = { has_country_flag = net_take_java_back}	
+			}
+			allow = {
+				war = no
+				ai = no
+				is_greater_power = yes
+				prestige = 75
+			}
+			effect = {
+				set_country_flag = net_take_java_back
+				inherit = JAV 	
+			}
+	}
 }
