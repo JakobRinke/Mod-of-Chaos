@@ -100,6 +100,11 @@ political_decisions = {
 					duration = 36500
 				}
 			}
+			
+			CAN = {all_core = {remove_core = CAN}}
+			MEX = {all_core = {remove_core = MEX}}
+			USA = {all_core = {remove_core = USA}}
+			
 			set_global_flag = cum_form
 		}
 		

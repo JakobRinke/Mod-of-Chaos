@@ -107,7 +107,7 @@ political_decisions = {
 
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.0002
 			modifier = {
 				factor = 0
 				badboy = 0.7
@@ -129,7 +129,7 @@ political_decisions = {
 		allow = {
             war = no
 			nationalism_n_imperialism = 1
-			OR{
+			OR = {
 				is_secondary_power = yes
 				is_greater_power = yes
 			}
@@ -176,7 +176,7 @@ political_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0.0001
 		}
 	}
 }

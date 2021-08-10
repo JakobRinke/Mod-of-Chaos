@@ -11,7 +11,6 @@ political_decisions = {
 		}
 		allow = {
             war = no
-			ai = no 
 		}
 		
 		effect = {
@@ -57,6 +56,11 @@ political_decisions = {
 				}
 			}
 		}
+		
+		ai_will_do = {
+			factor = 0.00012
+		}
+		
 	}
 	claim_cores_SAF = {
 		picture = treaty_signing
@@ -65,8 +69,7 @@ political_decisions = {
 			NOT = { has_country_flag = claim_cores_SAF}	
 		}
 		allow = {
-            war = no
-			ai = no 
+            war = no 
 		}
 		
 		effect = {
@@ -142,6 +145,10 @@ political_decisions = {
 			add_accepted_culture = southern_bantu
 			add_accepted_culture = malagasy
 		}
+		
+		ai_will_do = {
+			factor = 0.0004
+		}
 	}
 
 	organize_SAF = {
@@ -152,7 +159,6 @@ political_decisions = {
 		}
 		allow = {
             war = no
-			ai = no 
 			steam_turbine = 1
 			organic_chemistry = 1
 		}
@@ -167,6 +173,9 @@ political_decisions = {
 			2110 = {trade_goods = oil RGO_size = 1000000}
 			
 			
+		}
+		ai_will_do = {
+			factor = 0.0008
 		}
 	}
 
@@ -183,9 +192,7 @@ political_decisions = {
 			NOT = { exists = SAF }	
 		}
 		allow = {
-            war = no
-			ai = no 
-			civilised = no
+            war = no 
 		}
 		
 		effect = {
@@ -200,6 +207,10 @@ political_decisions = {
 				personality = implacable
 				background = spoiled
 			}
+		}
+		
+		ai_will_do = {
+			factor = 0.00025
 		}
 	}
 }

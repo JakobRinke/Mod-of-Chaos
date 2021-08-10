@@ -25,7 +25,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {					
-			factor = 0.00005
+			factor = 0.0001
 
 		}
 	}
@@ -88,8 +88,11 @@ political_decisions = {
 			add_accepted_culture = manipuri
 			add_accepted_culture = assamese
 			add_accepted_culture = oriya
+			
+			
 			HND = {
 				all_core = {
+					secede_province = THIS
 					add_core = UTI	
 				}
 			}
@@ -102,7 +105,14 @@ political_decisions = {
 				all_core = { remove_core = UTI }
 			}
 			change_tag = HND
+			BUR = {all_core = {remove_core = BUR}}
+			MUG = {all_core = {remove_core = MUG}}
 			set_country_flag = form_india
+		}
+		
+		ai_will_do = {					
+			factor = 1
+
 		}
 	}
 }

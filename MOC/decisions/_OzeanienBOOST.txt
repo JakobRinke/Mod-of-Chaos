@@ -90,5 +90,9 @@ political_decisions = {
 				set_country_flag = net_take_java_back
 				inherit = JAV 	
 			}
+			
+		ai_will_do = {					
+			factor = 0.0001
+		}
 	}
 }

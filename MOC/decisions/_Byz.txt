@@ -136,6 +136,7 @@ political_decisions = {
 				name = byz_assimilate_modifier
 				duration = 3650
 			}
+			TUR = {all_core = {remove_core = TUR}}
 			set_country_flag = byz_assimilate
 		}
 		

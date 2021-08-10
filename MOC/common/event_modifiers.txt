@@ -2669,7 +2669,6 @@ greek_military_schools =  {
 
 Finland_country_modifier = {
     global_population_growth = 0.005
-    assimilation_rate = 1.50
     prestige = 0.025
     local_ruling_party_support = 0.5
     social_reform_desire = 0.1
@@ -2718,6 +2717,7 @@ indian_schoolsystem = {
 	education_efficiency_modifier = 2
 	research_points_modifier = 2.2
 	icon = 17
+}
 
 african_schools =  {
     education_efficiency_modifier = 3

@@ -58,6 +58,10 @@ political_decisions = {
 		potential = {		
 			NOT = { has_country_flag = spa_annex_morocco }
 			exists = MOR
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
 		}
 		
 		allow = {
@@ -110,7 +114,7 @@ political_decisions = {
 			set_country_flag = spa_core_mex
 		}		
 		ai_will_do = {
-			factor = 1
+			factor = 0.00006
 			modifier = {
                 factor = 0
                 badboy = 0.4

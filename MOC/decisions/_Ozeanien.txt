@@ -17,7 +17,6 @@ political_decisions = {
 		}
 		allow = {
             war = no
-			ai = no 
 		}
 		
 		effect = {
@@ -108,8 +107,13 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			SLW	={all_core = {add_core = THIS}}}
+			SLW	={all_core = {add_core = THIS}}
 			
+			
+		}
+		
+		ai_will_do = {					
+			factor = 0.0005
 		}
 	}
 }

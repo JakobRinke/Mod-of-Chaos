@@ -13,6 +13,7 @@ political_decisions = {
 				}
 				NOT = { has_country_flag = claim_roman_empire}	
 			}
+			
 			allow = {
 				
 			}
@@ -120,7 +121,7 @@ political_decisions = {
 			}
 			
 			ai_will_do = {					
-				factor = 1
+				factor = 0.0001
 				modifier = {
 					factor = 0
 					badboy = 0.01
@@ -189,8 +190,7 @@ political_decisions = {
 						name = rise_of_rome
 						duration = 30000
 					}
-				}
-				
+				}				
 				
 			}
 			
