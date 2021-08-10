@@ -13,6 +13,7 @@ political_decisions = {
 				}
 				NOT = { has_country_flag = claim_roman_empire}	
 			}
+			
 			allow = {
 				
 			}
@@ -189,8 +190,7 @@ political_decisions = {
 						name = rise_of_rome
 						duration = 30000
 					}
-				}
-				
+				}				
 				
 			}
 			

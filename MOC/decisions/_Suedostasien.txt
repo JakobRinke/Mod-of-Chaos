@@ -7,8 +7,7 @@ political_decisions = {
 			NOT = { has_country_flag = ozeanien_claim_cores}	
 		}
 		allow = {
-            war = no
-			ai = no 
+            war = no 
 			prestige = 50
 			nationalism_n_imperialism = 1
 		}
@@ -86,8 +85,7 @@ political_decisions = {
 			NOT = { has_country_flag = ozeanien_get_DIA_accepted}	
 		}
 		allow = {
-            war = no
-			ai = no 
+            war = no 
 			prestige = 200
 			DAI  = {
 				all_core = {
@@ -138,8 +136,13 @@ political_decisions = {
 			set_country_flag = ozeanien_get_DIA_accepted
 			add_accepted_culture = vietnamese			
 		}
+		
 		ai_will_do = {					
 			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
 		}
 	}
 	

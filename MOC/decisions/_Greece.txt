@@ -28,7 +28,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.00015
 			modifier = {
                 factor = 0
                 badboy = 0.4

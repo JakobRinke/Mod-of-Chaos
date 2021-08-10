@@ -8,7 +8,6 @@ political_decisions = {
 		}
 		allow = {
             war = no
-			ai = no 
 		}
 		effect = {
 			plurality = 20
@@ -130,6 +129,10 @@ political_decisions = {
 				}
 			}
 		}
+		
+		ai_will_do = {					
+				factor = 0.000005	
+		}
 	}
 	clam_norrland_and_nordnorge  ={
 		potential = {
@@ -137,8 +140,7 @@ political_decisions = {
 			NOT = { has_country_flag = clam_norrland_and_nordnorge}	
 		}
 		allow = {
-            war = no
-			ai = no 
+            war = no 
 		} 
 		effect = {
 			set_country_flag = clam_norrland_and_nordnorge
@@ -156,6 +158,9 @@ political_decisions = {
 			add_core = 319
 			add_core = 320
 			add_core = 321
+		}
+		ai_will_do = {					
+				factor = 0.00003	
 		}
 	}
 	claim_scandivia = {
@@ -193,5 +198,10 @@ political_decisions = {
 			}
 			ICE   = {all_core = {add_core = THIS}}
 		}
+	
+		ai_will_do = {					
+				factor = 0.000001	
+		}
+		
 	}
 }

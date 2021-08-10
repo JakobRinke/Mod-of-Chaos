@@ -54,7 +54,7 @@ political_decisions = {
 			}
 			
 			ai_will_do = {					
-				factor = 1
+				factor = 0.00004
 			}
 	}
 	
@@ -81,6 +81,24 @@ political_decisions = {
 			prestige = 50
 			plurality = 20
 			change_tag = NGR
+			SOK = {
+					all_core = {remove_core = SOK}
+			}
+			ARO = {
+				all_core = {remove_core = ARO}
+			}
+			WRI = {
+				all_core = {remove_core = WRI}
+			}
+			OYO = {
+				all_core = {remove_core = OYO}
+			}
+			BEN = {
+				all_core = {remove_core = BEN}
+			}
+			
+			
+			
 			set_country_flag = form_nigeria
 			DAH = {
 				all_core = {add_core = NGR}

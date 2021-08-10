@@ -14,7 +14,6 @@ political_decisions = {
 		}
 		allow = {
             war = no
-			ai = no 
 		}
 		
 		effect = {
@@ -83,6 +82,10 @@ political_decisions = {
 			add_core = 1738
             TRI   = {all_core = {add_core = THIS}}
 		}
+		
+		ai_will_do = {					
+				factor = 0.000007	
+		}
 	}
 
 	treaty_of_gonder = {
@@ -92,7 +95,6 @@ political_decisions = {
 		}
 		allow = {
             war = no
-			ai = no 
 		}
 		
 		effect = {
@@ -107,6 +109,10 @@ political_decisions = {
 				personality = implacable
 				background = spoiled
 			}
+		}
+		
+		ai_will_do = {	
+			factor = 0.00001	
 		}
 	}
 
@@ -137,6 +143,11 @@ political_decisions = {
 			}
 			SUD = {all_core = {secede_province = ETH}}	
 		}
+		
+		ai_will_do = {	
+			factor = 0.00001	
+		}
+		
 	}
 
 	treaty_of_cairo = {
@@ -154,6 +165,9 @@ political_decisions = {
 			prestige = 10
 			inherit = EGY
 			TUR = {prestige = -10}
+		}
+		ai_will_do = {	
+			factor = 0.000008	
 		}
 	}
 
