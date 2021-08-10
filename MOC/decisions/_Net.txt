@@ -18,15 +18,38 @@ political_decisions = {
 		}	
 		
 		effect = {
-			badboy = 15
+			badboy = 7
 			add_accepted_culture = wallonian
 			BEL = {
 				all_core = {
+					limit = {
+						NOT = {
+							OR = {
+								is_core = GER 
+								is_core = AUS 
+								is_core = SWI
+							}
+						}
+					}
 					add_core = THIS
 				}
 			}
 			NET = {
 				all_core = {
+					add_core = THIS
+				}
+			}
+			LUX = {
+				all_core = {
+					limit = {
+						NOT = {
+							OR = {
+								is_core = GER 
+								is_core = AUS 
+								is_core = SWI
+							}
+						}
+					}
 					add_core = THIS
 				}
 			}
@@ -66,15 +89,38 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 15
+			badboy = 7
 			add_accepted_culture = dutch
 			BEL = {
 				all_core = {
+					limit = {
+						NOT = {
+							OR = {
+								is_core = GER 
+								is_core = AUS 
+								is_core = SWI
+							}
+						}
+					}
 					add_core = THIS
 				}
 			}
 			NET = {
 				all_core = {
+					add_core = THIS
+				}
+			}
+			LUX = {
+				all_core = {
+					limit = {
+						NOT = {
+							OR = {
+								is_core = GER 
+								is_core = AUS 
+								is_core = SWI
+							}
+						}
+					}
 					add_core = THIS
 				}
 			}

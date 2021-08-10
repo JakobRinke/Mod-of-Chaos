@@ -1058,15 +1058,29 @@ CUM = {
 
 # IAALand Neu
 
-IAA ={
+IAA = {
     color1= { 255 151 1 }
     color2= { 255 151 3 }
     color3= { 193 151 1 }
 }
 
 # Dual Monarchy
-DUA ={
+DUA = {
     color1= { 255 50 255 }
     color2= { 255 75 255 }
     color3= { 255 50 255 }
+}
+
+# HRE
+HLR = {
+    color1= { 255 250 181 }
+    color2= { 255 200 181 }
+    color3= { 255 250 150 }
+}
+
+# ROM
+SQR = {
+    color1= { 163 162 162 }
+    color2= { 126 0 0 }
+    color3= { 240 50 50 }
 }

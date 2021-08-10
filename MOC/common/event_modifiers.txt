@@ -2562,7 +2562,6 @@ emergency_tax_measures2 = {
     icon = 10
 }
 
-
 ### NEW ###
 Coomer_Effect = {
 	global_immigrant_attract = -0.2
@@ -2668,16 +2667,15 @@ greek_military_schools =  {
 	icon = 15
 }
 
-
 Finland_country_modifier = {
     global_population_growth = 0.005
     prestige = 0.025
     local_ruling_party_support = 0.5
     social_reform_desire = 0.1
-    immigrant_attract = 3.5
+    global_immigrant_attract = 1
     leadership_modifier = 0.75
-    mobilisation_size = 0.33
-    org_regain = 0.33
+    mobilisation_size = 0.033
+    org_regain = 0.033
     land_organisation = 0.1
     mobilisation_economy_impact = -0.75
     land_unit_start_experience = 5

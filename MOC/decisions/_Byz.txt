@@ -2,15 +2,16 @@ political_decisions = {
 
 
 	claim_byztantine_empire = {
+		picture = unite_with_greece_hpm_pic
 		potential = {
 			tag = GRE
-			NOT = { has_country_flag = claim_byztantine_empire}	
+			NOT = { has_country_flag = claim_byztantine_empire}
 		}
 		allow = {
-			
+
 		}
-		
-		effect = {			
+
+		effect = {
 			prestige = 20
 			badboy = 4
 			add_core = 828
@@ -23,17 +24,18 @@ political_decisions = {
 				duration = 3650
 			}
 		}
-		
-		ai_will_do = {					
+
+		ai_will_do = {
 			factor = 1
 		}
 	}
 
 	reform_byztantine_empire = {
+
 		potential = {
 			tag = GRE
 			NOT = { has_country_flag = create_byztantine_empire}
-			has_country_flag = claim_byztantine_empire			
+			has_country_flag = claim_byztantine_empire
 		}
 		allow = {
 			GRE = {
@@ -42,27 +44,31 @@ political_decisions = {
 						owned_by = GRE
 						owned_by = ION
 					}
-					
+
 				}
 			}
 		}
-		
-		effect = {			
+
+		effect = {
 			prestige = 50
 			change_tag = BYZ
 			set_country_flag = create_byztantine_empire
-			
+			change_capital = 860
+			860 = {
+				change_province_name = constantinople
+				change_region_name = constantinople
+			}
 		}
-		
-		ai_will_do = {					
+
+		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	
+
+
 	byz_get_cores = {
 		potential = {
-			tag = BYZ	
+			tag = BYZ
 			NOT = { has_country_flag = byz_get_cores}
 		}
 		allow = {
@@ -75,10 +81,10 @@ political_decisions = {
 				}
 			}
 			nationalism_n_imperialism = 1
-			
+
 		}
-		
-		effect = {			
+
+		effect = {
 			prestige = 50
 			badboy = 10
 			TUR = {
@@ -86,22 +92,10 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			TRI = {
-					all_core = { limit = {NOT = {owned_by = any_coutry}} add_core = THIS}
-			}
-			EGY = {
-				all_core = {
-					add_core = THIS
-				}
-			}
-			add_core = 1735
-			add_core = 1736
-			add_core = 1737
-			add_core = 1738
 			set_country_flag = byz_get_cores
 		}
-		
-		ai_will_do = {					
+
+		ai_will_do = {
 			factor = 1
 			modifier = {
                 factor = 0
@@ -109,13 +103,13 @@ political_decisions = {
             }
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	byz_assimilate = {
 		potential = {
-			tag = BYZ	
+			tag = BYZ
 			NOT = { has_country_flag = byz_assimilate}
 			has_country_flag = byz_get_cores
 		}
@@ -129,27 +123,27 @@ political_decisions = {
 				}
 			}
 		}
-		
-		effect = {			
+
+		effect = {
 			prestige = 50
+
 			add_country_modifier = {
 				name = byz_assimilate_modifier
-				duration = 3650
+				duration = 365
 			}
 			TUR = {all_core = {remove_core = TUR}}
 			set_country_flag = byz_assimilate
 		}
-		
-		ai_will_do = {					
+
+		ai_will_do = {
 			factor = 1
 		}
 	}
-	
-	
-	
+
+
 	byz_cores_ita = {
 		potential = {
-			tag = BYZ	
+			tag = BYZ
 			NOT = { has_country_flag = byz_cores_ita}
 			has_country_flag = byz_get_cores
 		}
@@ -163,11 +157,10 @@ political_decisions = {
 				}
 			}
 		}
-		
-		effect = {			
+
+		effect = {
 			prestige = 50
 			badboy = 10
-			add_accepted_culture = south_italian
 			add_core= 758
 			add_core= 756
 			add_core= 761
@@ -176,10 +169,10 @@ political_decisions = {
 			add_core= 764
 			add_core= 763
 			add_core= 762
-			set_country_flag = byz_cores_ita
+			add_country_flag = byz_cores_ita
 		}
-		
-		ai_will_do = {					
+
+		ai_will_do = {
 			factor = 1
 			modifier = {
                 factor = 0
@@ -188,5 +181,3 @@ political_decisions = {
 		}
 	}
 }
-
-

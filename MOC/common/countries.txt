@@ -563,11 +563,14 @@ EIC        ="countries/East India Company.txt"
 UTI        ="countries/Utility Tag.txt"
 ##
 
+
 # Jakobs neue Länder
 SUS        ="countries/SUS.txt"
 CUM        ="countries/CUM.txt"
 IAA        ="countries/IAA.txt"
 DUA		   ="countries/DUA.txt"
+HLR		   ="countries/HLR.txt"
+SQR		   ="countries/SQR.txt"
 
 
 
