@@ -1,15 +1,18 @@
+#picture = 1
+
 political_decisions = {
 	
 	claim_south_germany = {
-	
+		picture = sign_the_geneva_convention_BASED
 		potential = {
 			OR = {
 				tag = AUS
 				tag = KUK
 			}
-
+			OR = {
 			exists = GER
-
+			exists = NGF
+ 			}
 			NOT = { has_country_flag = claim_south_germany }
 		}
 		
@@ -25,17 +28,8 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-
 			badboy = 6
-			add_core = 595
-			add_core = 596
-			add_core = 597
-			add_core = 598
-			add_core = 599
-			add_core = 600
-			add_core = 601
-			add_core = 602
-			add_core = 592
+			
 			set_country_flag = claim_south_germany
 		}
 		
