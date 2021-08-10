@@ -10,7 +10,7 @@ political_decisions = {
 				tag = HAR 
 				tag = TIG 
 			}
-			NOT = { has_country_flag = unite_Ethiopia}	
+			NOT = { exists = ETH}		
 		}
 		allow = {
             war = no
@@ -19,7 +19,6 @@ political_decisions = {
 		effect = {
 
 			change_tag = ETH
-			set_country_flag = unite_Ethiopia
 			GON = { all_core = { remove_core = GON } }
 			SHW = { all_core = { remove_core = SHW } }
 			TIG = { all_core = { remove_core = TIG } }
@@ -84,7 +83,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {					
-				factor = 0.000007	
+				factor = 0.00007	
 		}
 	}
 
