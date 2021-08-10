@@ -1,7 +1,7 @@
 political_decisions = {
 
 	release_Canada_accept_french = {
-	
+		picture = canada_inerhit_PRL_COM_QUE_etc
 		potential = {
 			tag = ENG
 			NOT = { has_country_flag = dont_do_it_honey}

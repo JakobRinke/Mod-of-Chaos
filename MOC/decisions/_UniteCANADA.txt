@@ -1,7 +1,9 @@
+#pictures 1
+
 political_decisions = {
-
+	
 	canada_inerhit_PRL_COM_QUE_etc = {
-
+		picture = canada_inerhit_PRL_COM_QUE_etc
 		potential = {
 			tag = CAN
 			NOT = { has_country_flag = canada_inerhit_PRL_COM_QUE_etc}
@@ -27,7 +29,7 @@ political_decisions = {
 	}
 
 	canada_make_EM_playable = {
-
+		picture = manifest_destiny_from_vanilla_game
 		potential = {
 			tag = CAN
 			NOT = { has_country_flag = canada_make_EM_playable}
@@ -44,8 +46,7 @@ political_decisions = {
             prestige = 5
 			add_accepted_culture = yankee
 			CAN = {
-			add_country_modifier = {name = CAN_country_modifier duration = 10000}}
-			
+			add_country_modifier = {name = CAN_country_modifier duration = 20000}}
 			CAL   = {
 				all_core = {
 					add_core = THIS
@@ -116,7 +117,7 @@ political_decisions = {
 
 
 	canada_make_increase_influence = {
-
+		picture = sign_the_geneva_convention_BASED
 		potential = {
 			OR{
 				tag = CAN

@@ -25,19 +25,8 @@ political_decisions = {
 			RUS = {release_vassal = FIN}
 			RUS = {release_vassal = UBD}
 
-			FIN  = {
-				add_country_modifier = {
-					name = Finland_country_modifier
-					duration = 8000
-				}
-				
-			}
-			
-
-
 			UBD   = {all_core = {remove_core = RUS}}
 			KRL   = {all_core = {remove_core = RUS}}
-
 
 			RUS = {
 				#Karelia

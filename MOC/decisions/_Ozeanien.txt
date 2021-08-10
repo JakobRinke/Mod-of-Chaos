@@ -1,7 +1,9 @@
+#pictures 1
+
 political_decisions = {
 
 	ozeanien_get_cores = {
-	
+		picture = oceania_pic
 		potential = {
 			OR = {
 				tag = AST	

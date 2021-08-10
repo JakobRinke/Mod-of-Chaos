@@ -1,8 +1,10 @@
+#pictures 1
+
 political_decisions = {
 
 
 	ozeanien_get_immigration_attraction_country = {
-
+		picture = manifest_destiny_from_vanilla_game
 		potential = {
 			tag = IAA	
 			NOT = { has_country_flag = ozeanien_get_immigration_attraction}	
@@ -32,7 +34,7 @@ political_decisions = {
 	}
 
 	ozeanien_get_immigration_attraction = {
-
+		picture = new_world_IAA
 		potential = {
 			tag = IAA	
 			NOT = { has_country_flag = ozeanien_get_immigration_attraction}	
@@ -73,6 +75,7 @@ political_decisions = {
 	}
 
 	net_take_java_back ={
+		picture = sign_the_geneva_convention_BASED
 		potential = {
 				tag = NET	
 				NOT = { has_country_flag = net_take_java_back}	

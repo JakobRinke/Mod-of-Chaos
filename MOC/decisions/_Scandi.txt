@@ -1,7 +1,9 @@
+#pictures 1
+
 political_decisions = {
 	
 	claim_the_baltic_terr = {
-	
+		picture = claim_baltics
 		potential = {
 			OR{
 				tag = SCA
@@ -88,7 +90,7 @@ political_decisions = {
 	}
 
 	inherit_norway = {
-	
+		picture = inherit_norway
 		potential = {
 			OR{
 				tag = SWE

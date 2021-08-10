@@ -59,7 +59,7 @@ political_decisions = {
 		}
 	}
 	claim_cores_SAF = {
-	
+		picture = treaty_signing
 		potential = {
 			tag = SAF
 			NOT = { has_country_flag = claim_cores_SAF}	
@@ -145,7 +145,7 @@ political_decisions = {
 	}
 
 	organize_SAF = {
-	
+		picture = map_south_africa
 		potential = {
 			tag = SAF
 			NOT = { has_country_flag = organize_SAF}	
@@ -171,7 +171,7 @@ political_decisions = {
 	}
 
 	unite_SAF = {
-	
+		picture = SAF_unite
 		potential = {
 			OR = {
 				tag = XHO 

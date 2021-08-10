@@ -1,7 +1,9 @@
+#pictures 1
+
 political_decisions = {
 
 	release_AST_get_Cores = {
-	
+		picture = release_ast
 		potential = {
 			tag = ENG
 			NOT = { has_country_flag = release_AST_get_Cores}	
@@ -53,7 +55,7 @@ political_decisions = {
 	}
 
 	claimed_west_france = {
-	
+		picture = claim_more_of_france
 		potential = {
 			tag = ENG
 			NOT = { has_country_flag = claimed_west_france}	
@@ -122,7 +124,7 @@ political_decisions = {
 	
 	
 	reclaim_cores_on_SCO = {
-	
+		picture =  claim_sco
 		potential = {
 			tag = ENG
 			NOT = { has_country_flag = reclaim_cores_on_SCO}	

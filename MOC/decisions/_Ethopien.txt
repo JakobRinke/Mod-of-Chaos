@@ -1,7 +1,7 @@
 political_decisions = {
 
 	unite_Ethiopia = {
-	
+		 picture = unite_Ethiopia
 		potential = {
 			OR = {
 				tag = GON 	
@@ -86,6 +86,7 @@ political_decisions = {
 	}
 
 	treaty_of_gonder = {
+		picture = treaty_signing
 		potential = {
 			tag = ETH
 			NOT = { has_country_flag = treaty_of_gonder}	
@@ -111,6 +112,7 @@ political_decisions = {
 	}
 
 	treaty_of_istanbul = {
+	picture = treaty_of_turkmanchay
 		potential = {
 			tag = ETH
 			NOT = { has_country_flag = treaty_of_istanbul}	
@@ -140,6 +142,7 @@ political_decisions = {
 	}
 
 	treaty_of_cairo = {
+		picture = turkish_coffee_house
 		potential = {
 			tag = ETH
 			NOT = { has_country_flag = treaty_of_cairo}	
@@ -158,6 +161,7 @@ political_decisions = {
 	}
 
 	militancy_nerf = {
+		picture = militancy_nerf 
 		potential = {
 			civilized = no 	
 		}
@@ -173,7 +177,7 @@ political_decisions = {
 	}
 
 	expand_our_empire_eth = {
-	
+		picture = national_value
 		potential = {
 			OR = {
 				tag = ETH

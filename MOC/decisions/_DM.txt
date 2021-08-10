@@ -1,7 +1,9 @@
+#pictures 1
+
 political_decisions = {
 
 	claim_south_england = {
-	
+		picture = claim_north_england
 		potential = {
 			tag = FRA
 			NOT = { has_country_flag = claim_south_england}	
@@ -29,6 +31,7 @@ political_decisions = {
 			add_core = 297
 			add_core = 298
 			add_core = 299
+			add_core = 419
 
 			add_core = 294
 			add_core = 300
@@ -59,8 +62,9 @@ political_decisions = {
 		}
 	}
 	
+
 	claim_north_england = {
-	
+		picture = claim_south_england
 		potential = {
 			tag = FRA
 			NOT = { has_country_flag = claim_north_england}	
@@ -109,14 +113,7 @@ political_decisions = {
 			add_core = 283
 			add_core = 285
 			add_core = 304
-			any_state = {
-				any_pop = {
-					limit = {
-						has_pop_culture = british
-					}
-					consciousness = 1
-				}
-			}
+			any_state = {any_pop = {limit = {has_pop_culture = british}consciousness = 1}}
 		}
 		
 		ai_will_do = {					
@@ -126,7 +123,7 @@ political_decisions = {
 	}
 
 	claim_ireland = {
-	
+		picture = claim_ireland
 		potential = {
 			tag = FRA
 			NOT = { has_country_flag = claim_ireland}	
@@ -209,6 +206,7 @@ political_decisions = {
 	}	
 
 	claim_cores_on_SCO ={
+		picture = claim_sco
 		potential = {
 			OR = {
 				tag = SCA
@@ -257,8 +255,7 @@ political_decisions = {
 political_decisions = {
 
 	form_dm ={
-
-
+		picture = form_dm
 		potential = {
 			OR = {
 				AND = {
