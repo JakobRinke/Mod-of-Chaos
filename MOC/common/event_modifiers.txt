@@ -2718,6 +2718,7 @@ indian_schoolsystem = {
 	education_efficiency_modifier = 2
 	research_points_modifier = 2.2
 	icon = 17
+}
 
 african_schools =  {
     education_efficiency_modifier = 3
