@@ -1,0 +1,49 @@
+political_decisions = {
+	
+	release_ukraine_for_persia = {
+	
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = release_ukraine_for_persia }
+		}
+		
+		
+		allow = {
+			mass_politics = 1
+			PER = {
+				vassal_of = THIS
+			}
+		}
+		
+		effect = {
+			inherit = PER
+			add_accepted_culture = persian
+			PER = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			remove_accepted_culture = ukrainian
+			release = UKR
+			UKR = {
+				all_core = {
+					remove_core = THIS
+				}
+			}
+			create_vassal = UKR
+			set_country_flag = release_ukraine_for_persia
+		}
+		
+		ai_will_do = {
+			factor = 0.0001
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}

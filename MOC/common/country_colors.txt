@@ -524,7 +524,7 @@ SIC = {
     color3= { 131 101 85  }
 }
 
-# Siebenbürgen
+# Siebenbï¿½rgen
 SIE = {
     color1= { 75 111 205  }
     color2= { 124 140 162  }
@@ -1083,4 +1083,11 @@ SQR = {
     color1= { 163 162 162 }
     color2= { 126 0 0 }
     color3= { 240 50 50 }
+}
+
+# Aragon
+AGN = {
+    color1= { 250 200 10 }
+    color2= { 250 182 47 }
+    color3= { 250 230 10 }
 }

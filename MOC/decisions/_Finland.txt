@@ -120,7 +120,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {					
-				factor = 0.000065	
+				factor = 0.000035	
 		}
 	}
 	clam_norrland_and_nordnorge  ={
