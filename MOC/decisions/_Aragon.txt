@@ -1,0 +1,109 @@
+political_decisions = {
+
+
+	claim_aragon_empire = {
+		potential = {
+		
+			OR = {tag=SIC tag=CAT}
+			NOT = { has_country_flag = claim_aragon_empire}	
+		}
+		allow = {
+			
+		}
+		
+		effect = {			
+			prestige = 20
+			badboy = 6
+			SIC = {all_core = {add_core = THIS}}
+			CAT = {all_core = {add_core = THIS}}
+			add_core = 763
+			add_core = 765
+			add_core = 766
+			add_core = 495
+			add_core = 496
+			add_core = 497
+			add_core = 503
+			add_core = 504
+			add_core = 505
+			set_country_flag = claim_aragon_empire
+		}
+		
+		ai_will_do = {					
+			factor = 0.0002
+		}
+	}
+
+	reform_aragon_empire = {
+		potential = {
+		
+			OR = {tag=SIC tag=CAT}
+			NOT = { has_country_flag = reform_aragon_empire}
+			has_country_flag = claim_aragon_empire
+		}
+		allow = {
+			SIC = {all_core = {owned_by = THIS}}
+			CAT = {all_core = {owned_by = THIS}}
+			
+			owns = 495
+			owns = 496
+			owns = 497
+			owns = 503
+			owns = 504 
+			owns = 505
+			owns = 765
+			owns = 766
+			owns = 763
+		}
+		
+		effect = {			
+			prestige = 30
+			primary_culture = catalan
+			add_accepted_culture = south_italian	
+			change_tag = AGN
+			set_country_flag = reform_aragon_empire
+		}
+		
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	unify_italy_AGN = {
+		potential = {
+			tag = AGN
+			NOT = {has_country_flag = unify_italy_AGN}
+		}
+		allow = {
+			
+			ITA = {
+				all_core = {
+					OR = {owned_by = THIS owner= { OR = {in_sphere = THIS}}}
+				}
+			}
+		}
+		
+		effect = {			
+			prestige = 60
+			add_accepted_culture = north_italian		
+			ITA = {
+				all_core = {
+					secede_province = THIS
+				}
+			}
+			add_core = 729
+			add_core = 730
+			add_core = 731
+			add_core = 732
+			add_core = 733
+			add_core = 734
+			add_core = 735
+			add_core = 737
+			add_core = 8
+			set_country_flag = unify_italy_AGN
+		}
+		
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+}

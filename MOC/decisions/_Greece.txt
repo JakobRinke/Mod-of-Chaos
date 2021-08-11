@@ -5,6 +5,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ITA
+				tag = AGN
 				tag = TUR
 			}
 			NOT = { has_country_flag = Greek_Embrace }
@@ -17,7 +18,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 10
+			badboy = 7
 			add_accepted_culture = greek
 			GRE = {
 				all_core = {

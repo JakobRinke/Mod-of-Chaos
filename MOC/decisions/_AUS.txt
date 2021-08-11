@@ -23,11 +23,6 @@ political_decisions = {
 		}
 		
 		effect = {
-			BAV = {
-				all_core = {
-					add_core = THIS
-				}
-			}
 			badboy = 6
 			add_core = 595
 			add_core = 596
