@@ -1,7 +1,7 @@
 country_event = {
 	id = 969696
 	title = "THE GREAT SHOWDOWN"
-	desc = "The Last war aigenst an old enemy! "
+	desc = "The Last war aiganst an old enemy!" 
 	
 	is_triggered_only = yes
 	

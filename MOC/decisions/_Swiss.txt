@@ -5,7 +5,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ITA
-				AND = {tag=AGN has_country_flag=unify_italy_AGN}
+				AND = { tag = AGN has_country_flag = unify_italy_AGN }
 				tag = GER
 				tag = FRA
 				tag = AUS

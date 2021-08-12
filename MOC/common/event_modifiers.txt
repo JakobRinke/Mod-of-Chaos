@@ -2692,7 +2692,7 @@ nigerian_schools =  {
 	education_efficiency_modifier = 3
 	research_points_modifier = 1.4
 	supply_consumption = -0.1
-	prestige = 0.1
+	prestige = 0.07
 	icon = 17
 }
 
@@ -2702,7 +2702,7 @@ rise_of_rome = {
 
 mongol_civ_boost = {
 	global_population_growth = 0.005
-	education_efficiency_modifier = 3
+	education_efficiency_modifier = 5
 	research_points_modifier = 2.5
 	icon = 17
 }
@@ -2725,7 +2725,7 @@ african_schools =  {
     education_efficiency_modifier = 3
     research_points_modifier = 1.4
     supply_consumption = -0.1
-    prestige = 0.25
+    prestige = 0.05
     icon = 7
 }
 
@@ -2742,4 +2742,25 @@ provinz_growth_modifier = {
     immigrant_attract = 4
     assimilation_rate = 0.2
     population_growth = 0.01
+}
+
+kongo_school_system_modifier = {
+	education_efficiency_modifier = 10
+    research_points_modifier = 4
+	global_population_growth = 0.0003 
+    prestige = 0.1
+    icon = 7
+}
+
+arabia_boost_modifier = {
+	education_efficiency_modifier = 4
+    research_points_modifier = 4
+	global_population_growth = 0.15 
+    prestige = 0.05
+    icon = 7
+}
+
+arabian_resources = {
+	farm_rgo_size = 10
+	mine_rgo_size = 10
 }

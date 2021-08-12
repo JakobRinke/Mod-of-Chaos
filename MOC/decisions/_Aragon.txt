@@ -4,7 +4,7 @@ political_decisions = {
 	claim_aragon_empire = {
 		potential = {
 		
-			OR = {tag=SIC tag=CAT}
+			OR = { tag = SIC tag = CAT }
 			NOT = { has_country_flag = claim_aragon_empire}	
 		}
 		allow = {
@@ -35,15 +35,14 @@ political_decisions = {
 
 	reform_aragon_empire = {
 		potential = {
-		
-			OR = {tag=SIC tag=CAT}
+			OR = { tag = SIC tag = CAT }
 			NOT = { has_country_flag = reform_aragon_empire}
 			has_country_flag = claim_aragon_empire
 		}
-		allow = {
+		
+		allow = {	
 			SIC = {all_core = {owned_by = THIS}}
 			CAT = {all_core = {owned_by = THIS}}
-			
 			owns = 495
 			owns = 496
 			owns = 497
