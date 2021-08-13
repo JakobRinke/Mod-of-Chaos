@@ -19,6 +19,9 @@ political_decisions = {
 		effect = {
 			badboy = 6
 			all_core = {
+					limit = {
+						is_colonial = no
+					}
 				any_pop = {
 					limit = {
 						is_accepted_culture = no
