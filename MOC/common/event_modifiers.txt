@@ -2763,4 +2763,11 @@ arabia_boost_modifier = {
 arabian_resources = {
 	farm_rgo_size = 10
 	mine_rgo_size = 10
+	icon = 7
+}
+
+fascist_care = {
+	population_growth = 0.0025
+	immigrant_push = 0.3
+	local_ruling_party_support = - 0.2
 }

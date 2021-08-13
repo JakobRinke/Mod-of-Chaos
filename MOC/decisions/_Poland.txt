@@ -11,6 +11,7 @@ political_decisions = {
 				tag = DNB
 			}
 			NOT = { has_country_flag = Polish_Embrace }
+			NOT = { has_country_flag = become_south_HRE }
 		}
 		
 		

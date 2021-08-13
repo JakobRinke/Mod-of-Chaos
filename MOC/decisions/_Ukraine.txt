@@ -1,0 +1,42 @@
+political_decisions = {
+
+	ukraine_cores = {
+	
+		potential = {
+			tag = UKR
+			NOT = { has_country_flag = ukraine_cores }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialsim = 1
+		}
+		
+		
+		effect = {
+			prestige = 14
+			add_accepted_culture = romanian
+			add_accepted_culture = hungarian
+			ROM = {
+				all_core = {
+					limit = { NOT = { OR = { is_core = BUL is_core = SER } } }
+					add_core = THIS
+				}
+			}
+			HUN = {
+				all_core = {
+					limit = { NOT = { OR = { is_core = BUL is_core = SER } } }
+					add_core = THIS
+				}
+			}
+			add_core = 676
+			add_core = 677
+			
+			set_country_flag = ukraine_cores
+		}
+		
+		ai_will_do = {
+			factor = 0.00001
+		}	
+	}
+}
