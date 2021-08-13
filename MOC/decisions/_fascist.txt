@@ -21,6 +21,7 @@ political_decisions = {
 			all_core = {
 					limit = {
 						is_colonial = no
+						owned_by = THIS
 					}
 				any_pop = {
 					limit = {
