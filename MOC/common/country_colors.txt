@@ -524,7 +524,7 @@ SIC = {
     color3= { 131 101 85  }
 }
 
-# Siebenbürgen
+# Siebenbï¿½rgen
 SIE = {
     color1= { 75 111 205  }
     color2= { 124 140 162  }
@@ -1058,14 +1058,14 @@ CUM = {
 
 # IAALand Neu
 
-IAA ={
+IAA = {
     color1= { 255 151 1 }
     color2= { 255 151 3 }
     color3= { 193 151 1 }
 }
 
 # Dual Monarchy
-DUA ={
+DUA = {
     color1= { 255 50 255 }
     color2= { 255 75 255 }
     color3= { 255 50 255 }

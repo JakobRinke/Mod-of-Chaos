@@ -1,8 +1,11 @@
+#picture 1
+
+
 political_decisions = {
 
 
 	mex_central_american_ambition = {
-		
+		picture = mexico_claims_COROES_on_central_africa
 		potential = {
 			OR = {
 				AND = {

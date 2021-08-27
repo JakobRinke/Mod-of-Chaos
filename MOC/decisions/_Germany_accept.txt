@@ -1,13 +1,92 @@
+#pictures 1
+
 political_decisions = {
-	
-	accept_danish_ger = {
+
+	Han_rise_in_power = {
+		picture = great_HANOOOOVER
 		potential = {
-			tag = GER
-			primary_culture = north_german
+			OR{
+				tag = HAN
+				has_country_flag = accept_danish_uno
+			}
+			
+			has_country_flag = accept_danish_ger
+			NOT = {has_country_flag = Han_rise_in_power}
+		}
+		allow = {
+			ai = no 
+		}
+		
+		effect = {			
+			prestige = 15
+			money 200000
+
+			ENG = {release_vassal = HAN}
+			OLD  = {
+				all_core = {add_core = THIS}
+			}
+			BRE   = {
+				all_core = {add_core = THIS}
+			}
+			LIP = {
+				all_core = {add_core = THIS}
+			}
+			SWH = {
+				all_core = {add_core = THIS}
+			}
+			LUB = {
+				all_core = {add_core = THIS}
+			}
+			HAM = {
+				all_core = {add_core = THIS}
+			}
+			MEC = {
+				all_core = {add_core = THIS}
+			}
+			WES  = {
+				all_core = {add_core = THIS}
+			}
+			RHI   = {
+				all_core = {add_core = THIS}
+			}
+			PRU   = {
+				all_core = {add_core = THIS}
+			}
+			536 = {secede_province = HAN}
+			547 = {secede_province = HAN}
+			548 = {secede_province = HAN}
+			553 = {secede_province = HAN}
+			557 = {secede_province = HAN}
+			578 = {secede_province = HAN}
+			579 = {secede_province = HAN}
+			580 = {secede_province = HAN}
+			581 = {secede_province = HAN}
+			582 = {secede_province = HAN}
+			583 = {secede_province = HAN}
+			584 = {secede_province = HAN}
+			2561 = {secede_province = HAN}
+			inherit = OLD
+			inherit = BRE
+			inherit = LIP
+			inherit = LUB 
+			inherit = SWH  
+			inherit = MEC
+			inherit = HAM
+
+			set_country_flag = Han_rise_in_power
+			}
+	}
+	accept_danish_before_ger = {
+		picture = claim_danish
+		potential = {
+			OR{
+				tag = HAN
+			}
+			
+			
 			NOT = {has_country_flag = accept_danish_ger}
 		}
 		allow = {
-			revolution_n_counterrevolution = 1	
 		}
 		
 		effect = {			
@@ -18,7 +97,65 @@ political_decisions = {
 			}
 			add_accepted_culture = danish
 			set_country_flag = accept_danish_ger
+			set_country_flag = accept_danish_uno
+			}
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+			}
 		}
+	}
+
+	accept_danish_ngf = {
+		picture = claim_danish
+		potential = {
+			tag = NGF
+			has_country_flag = accept_danish_uno
+			NOT = {has_country_flag = accept_danish_ngf}
+		}
+		allow = {
+			prestige = 100
+		}
+		
+		effect = {			
+			DEN = {
+				all_core = {add_core = THIS}
+			}
+			add_accepted_culture = danish
+			set_country_flag = accept_danish_ngf
+			}
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+			}
+		}
+	}
+	accept_danish_GER = {
+		picture = claim_danish
+		potential = {
+			tag = GER
+			has_country_flag = accept_danish_uno
+			NOT = {has_country_flag = accept_danish_GER}
+		}
+		
+
+		allow = {
+			prestige = 150
+		}
+		
+		effect = {			
+			DEN = {
+				all_core = {add_core = THIS}
+			}
+			add_accepted_culture = danish
+			set_country_flag = accept_danish_GER
+			}
 		
 		ai_will_do = {					
 			factor = 1
@@ -30,6 +167,7 @@ political_decisions = {
 	}
 	
 	accept_italian_ger = {
+		picture = sign_the_geneva_convention_BASED
 		potential = {
 			tag = GER
 			primary_culture = south_german

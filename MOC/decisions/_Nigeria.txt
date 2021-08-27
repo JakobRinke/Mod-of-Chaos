@@ -1,6 +1,8 @@
-political_decisions = {
+picture = 1
 
+political_decisions = {
 	nigerian_battle_royale = {
+			picture = nigeria_battle_royal
 			potential = {
 				OR = {
 					tag = SOK
@@ -60,6 +62,7 @@ political_decisions = {
 	
 	
 	form_nigeria = {
+		picture = form__nigeria
 		potential = {
 			OR = {
 				tag = SOK

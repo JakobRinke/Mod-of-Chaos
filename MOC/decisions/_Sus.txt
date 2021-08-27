@@ -1,8 +1,11 @@
+#picture 1
+
 political_decisions
 {
 
 
 	SUS_Form = {
+		picture = sus_PICTURE
 		potential = {
 			OR = {
 				tag = CHL	

@@ -1,7 +1,9 @@
+#picture  1
+
 political_decisions = {
 
 	CUM_Form = {
-	
+		picture = form_cum_BASED
 		potential = {
 			OR = {
 				AND = {

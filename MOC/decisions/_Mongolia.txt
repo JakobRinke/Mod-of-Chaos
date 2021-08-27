@@ -1,8 +1,8 @@
+#picture 1
+
 political_decisions = {
-
-
 	mongol_empire = {
-		
+		picture = mongol_empire_BASED
 		potential = {
 			tag = MGL
 			NOT = {has_country_flag = mongol_empire}			

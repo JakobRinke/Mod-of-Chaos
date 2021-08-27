@@ -1,7 +1,9 @@
+#picture 1
+
 political_decisions = {
 	
 	claim_Hawaii11 = {
-	
+		picture = claim_hawaii
 		potential = {
 			OR = {
 				tag = USA

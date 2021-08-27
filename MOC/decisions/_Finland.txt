@@ -1,7 +1,9 @@
+#picture 1
+
 political_decisions = {
 
 	finland_claim_cores = {
-	
+		picture = greater_finnnnnnnland
 		potential = {
 			tag = FIN
 			NOT = { has_country_flag = finland_claim_cores}	
@@ -124,6 +126,7 @@ political_decisions = {
 		}
 	}
 	clam_norrland_and_nordnorge  ={
+		picture = claim_norrland_nordroge
 		potential = {
 			tag = FIN
 			NOT = { has_country_flag = clam_norrland_and_nordnorge}	
@@ -153,6 +156,7 @@ political_decisions = {
 		}
 	}
 	claim_scandivia = {
+		picture = claim_baltics
 		potential = {
 			tag = FIN
 			NOT = { has_country_flag = claim_scandivia}	
