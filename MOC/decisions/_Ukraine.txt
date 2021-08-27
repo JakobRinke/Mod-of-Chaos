@@ -39,4 +39,46 @@ political_decisions = {
 			factor = 0.00001
 		}	
 	}
+	
+	
+	
+	turn_aigenst_master = {
+	
+		potential = {
+			tag = UKR
+			NOT = { has_country_flag = turn_aigenst_master }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialsim = 1
+		}
+		
+		
+		effect = {
+			prestige = 14
+			add_accepted_culture = russian
+			RUS = {
+				all_core = {
+					add_core = THIS
+				}
+			}		
+			
+			war = {
+				target = RUS
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = conquest }
+				call_ally = yes
+			}
+			
+			
+			set_country_flag = turn_aigenst_master
+		}
+		
+		ai_will_do = {
+			factor = 0.00001
+		}	
+	}
+	
+	
 }

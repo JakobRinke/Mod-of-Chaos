@@ -40,6 +40,13 @@ political_decisions = {
 			NET = {
 				all_core = {
 					add_core = THIS
+					limit = {
+						NOT = {
+							OR = {
+								is_core = ENG 
+							}
+						}
+					}
 				}
 			}
 			LUX = {
@@ -108,6 +115,13 @@ political_decisions = {
 			}
 			NET = {
 				all_core = {
+						limit = {
+							NOT = {
+								OR = {
+									is_core = ENG 
+								}
+							}
+						}
 					add_core = THIS
 				}
 			}
@@ -138,5 +152,66 @@ political_decisions = {
 		
 		
 	}
+	
+	
+	net_claim_england = {
+		potential = {
+			tag = NET
+			NOT = { has_country_flag = net_claim_england }
+		}
+		
+		
+		allow = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+		}
+		
+		
+		effect = {
+			badboy = 20
+			add_accepted_culture = british
+			add_core = 296
+			add_core = 297
+			add_core = 298
+			add_core = 299
+			add_core = 419
+			add_core = 294
+			add_core = 300
+			add_core = 301
+			add_core = 302
+			add_core = 303
+			add_core = 293
+			add_core = 292
+			add_core = 291
+			add_core = 295
+			add_core = 284
+			add_core = 286
+			add_core = 287
+			add_core = 288
+			add_core = 289
+			add_core = 290
+			add_core = 277
+			add_core = 278
+			add_core = 279
+			add_core = 280
+			add_core = 281
+			add_core = 282
+			add_core = 283
+			add_core = 285
+			add_core = 304
+			
+			set_country_flag = net_claim_england
+		}
+		
+		
+		ai_will_do = {
+			factor = 0.0004
+			modifier = {
+                factor = 0
+                badboy = 0.1
+            }
+		}
+	}
+	
 	
 }
