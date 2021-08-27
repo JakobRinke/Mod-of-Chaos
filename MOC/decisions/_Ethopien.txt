@@ -1,7 +1,9 @@
+#picture 1
+
 political_decisions = {
 
 	unite_Ethiopia = {
-		 picture = unite_Ethiopia
+		picture = unite_Ethiopia
 		potential = {
 			OR = {
 				tag = GON 	
@@ -117,7 +119,7 @@ political_decisions = {
 	}
 
 	treaty_of_istanbul = {
-	picture = treaty_of_turkmanchay
+		picture = treaty_of_turkmanchay
 		potential = {
 			tag = ETH
 			NOT = { has_country_flag = treaty_of_istanbul}	

@@ -1,7 +1,9 @@
+#pictures 1
+
 political_decisions = {
 	
 	claim_central_america = {
-	
+		picture = claim_central_america
 		potential = {
 			OR = {
 				tag = SUS

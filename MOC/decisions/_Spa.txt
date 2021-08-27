@@ -1,12 +1,8 @@
-
+#picture 1 
 
 political_decisions = {
-
-
-
-
 	spa_core_port = {
-
+		picture = cores_on_por
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = spa_core_port }
@@ -42,6 +38,7 @@ political_decisions = {
 	}
 
 	spa_annex_morocco = {
+		picture = spa_inherit_marocco
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = spa_annex_morocco }
@@ -73,6 +70,7 @@ political_decisions = {
 	}
 
 	spa_core_mex = {
+		picture = mexico_claims_COROES_on_central_africa
 		potential = {
 			tag = SPA
 			NOT = { has_country_flag = spa_core_mex }

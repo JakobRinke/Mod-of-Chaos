@@ -1,7 +1,9 @@
+#picture 1
+
 political_decisions = {
 	
 	make_peace_with_polish = {
-	
+		picture = poland_claim_flag
 		potential = {
 			OR = {
 				tag = RUS

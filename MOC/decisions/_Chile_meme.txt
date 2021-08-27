@@ -1,10 +1,13 @@
+#picture 1
+
+
 political_decisions = {
 	
 	
 	
 	
 	chi_long = {
-	
+		picture = chile_meme_based
 		potential = {
 			tag = CHL			
 			NOT = { has_country_flag = chi_long }

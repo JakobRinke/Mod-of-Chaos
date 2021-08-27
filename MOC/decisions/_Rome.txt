@@ -1,7 +1,9 @@
+#picture 1
+
+
 political_decisions = {
-
-
 	claim_roman_empire = {
+			picture = become_rome
 			potential = {
 				OR = {
 					tag = PAP
@@ -134,6 +136,7 @@ political_decisions = {
 	
 	
 	form_roman_empire = {
+			picture = form_rome
 			potential = {
 				OR = {
 					tag = PAP

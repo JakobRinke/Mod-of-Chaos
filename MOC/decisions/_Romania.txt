@@ -1,10 +1,9 @@
+#picture 1
+
 political_decisions = {
-	
-	
-	
-	
+
 	rom_school_system = {
-	
+		picture = rom_schoool_system
 		potential = {
 			OR = {
 				tag = WAL
@@ -40,7 +39,7 @@ political_decisions = {
 	
 	
 	become_thicker_romania = {
-	
+		picture = thicker_rom
 		potential = {
 			tag = ROM
 			NOT = { has_country_flag = become_thicker_romania }
@@ -90,7 +89,7 @@ political_decisions = {
 	
 	
 	encourage_total_mobilisation = {
-	
+		picture = rom_total_war_time
 		potential = {
 			tag = ROM
 			NOT = { has_country_flag = encourage_total_mobilisation }

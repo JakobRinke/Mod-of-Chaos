@@ -1,3 +1,5 @@
+#pictures 1
+
 political_decisions = {
 
 
@@ -31,7 +33,7 @@ political_decisions = {
 	}
 
 	reform_byztantine_empire = {
-
+		picture = byz_reform
 		potential = {
 			tag = GRE
 			NOT = { has_country_flag = create_byztantine_empire}
@@ -67,6 +69,7 @@ political_decisions = {
 
 
 	byz_get_cores = {
+		picture = claim_cores_byz
 		potential = {
 			tag = BYZ
 			NOT = { has_country_flag = byz_get_cores}

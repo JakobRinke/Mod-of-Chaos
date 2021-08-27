@@ -1,3 +1,5 @@
+#picture 1
+
 political_decisions = {
 
 	release_Canada_accept_french = {

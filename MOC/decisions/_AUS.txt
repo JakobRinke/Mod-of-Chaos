@@ -1,7 +1,10 @@
+#picture 1
+
+
 political_decisions = {
 
 	claim_south_germany = {
-
+		picture = sign_the_geneva_convention_BASED
 		potential = {
 			OR = {
 				tag = AUS

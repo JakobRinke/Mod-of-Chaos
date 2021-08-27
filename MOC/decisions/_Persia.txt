@@ -1,13 +1,13 @@
+#picture 1
+
 political_decisions = {
 	
 	greater_Persia = {
-	
+		picture = greater_persisa
 		potential = {
 			tag = PER
 			NOT = { has_country_flag = greater_Persia }
 		}
-		
-		
 		allow = {
 			
 		}
@@ -59,7 +59,7 @@ political_decisions = {
 	
 	
 	great_Showdown = {
-	
+		picture = persia_ottoman_war
 		potential = {
 			tag = PER
 			NOT = { has_country_flag = great_Showdown }

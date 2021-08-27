@@ -1,7 +1,10 @@
+#picture 1
+
+
 political_decisions = {
 
 	ozeanien_claim_cores = {
-	
+		oceania_GET_cores_basdasd
 		potential = {
 			tag = IAA
 			NOT = { has_country_flag = ozeanien_claim_cores}	
@@ -79,7 +82,7 @@ political_decisions = {
 political_decisions = {
 
 	ozeanien_get_DIA_accepted = {
-	
+		picture = OZE_ACCEPT_DANSIH
 		potential = {
 			tag = IAA
 			NOT = { has_country_flag = ozeanien_get_DIA_accepted}	

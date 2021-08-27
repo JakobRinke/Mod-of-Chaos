@@ -1,5 +1,7 @@
-political_decisions = {
+#pciture 1
 
+political_decisions = {
+	picture = indian_schools
 
 	reform_indian_schoolsystem = {
 		potential = {
@@ -32,6 +34,7 @@ political_decisions = {
 	
 	
 	claim_india = {
+		picture = claim_INDIA
 		potential = {
 			OR = {
 				tag = BUR
@@ -59,7 +62,7 @@ political_decisions = {
 	}
 	
 	form_india_f = {
-	
+		picture = form_indddIA
 		potential = {
 			OR = {
 				tag = BUR
@@ -98,7 +101,6 @@ political_decisions = {
 			}
 			UTI = { civilized = yes }
 			release = UTI
-
 			inherit = UTI
 			UTI = {
 				civilized = no

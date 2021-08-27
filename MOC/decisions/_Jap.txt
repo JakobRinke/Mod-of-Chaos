@@ -1,7 +1,10 @@
+#picture 1
+
 political_decisions = {
 
 
 	jap_accept_the_korean = {
+		picture = accept_korean_as_jap
 			potential = {
 				OR = {
 					tag = JAP
@@ -29,6 +32,7 @@ political_decisions = {
 		}
 		
 		expand_claims_jap = {
+			picture = japan_claims_cores
 			potential = {
 				OR = {
 					tag = JAP
