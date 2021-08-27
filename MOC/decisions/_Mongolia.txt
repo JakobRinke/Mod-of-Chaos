@@ -12,7 +12,7 @@ political_decisions = {
 		}
 		
 		effect = {
-				
+			money = 5000000
 			prestige = 10	
 			add_accepted_culture = kazakh
 			add_accepted_culture = north_han
@@ -69,7 +69,7 @@ political_decisions = {
 			
 			add_country_modifier = {
 				name = mongol_civ_boost
-				duration = 20000
+				duration = 12000
 			}
 			
 			add_country_modifier = {

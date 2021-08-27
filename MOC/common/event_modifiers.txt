@@ -2644,7 +2644,7 @@ total_mobilisation = {
 	land_unit_start_experience = 25
     war_exhaustion = -2
 	org_regain = 0.3
-	land_organisation: 0.3
+	land_organisation = 0.3
 	leadership_modifier = 0.5
 	global_population_growth = 0.0001
 }
@@ -2702,7 +2702,7 @@ rise_of_rome = {
 
 mongol_civ_boost = {
 	global_population_growth = 0.005
-	education_efficiency_modifier = 5
+	education_efficiency_modifier = 4
 	research_points_modifier = 2.5
 	icon = 17
 }
@@ -2712,7 +2712,7 @@ mongol_baby_boom = {
 }
 
 mongol_game_boost = {
-	global_assimilation_rate = 10
+	global_assimilation_rate = 50
 }
 
 indian_schoolsystem = {
