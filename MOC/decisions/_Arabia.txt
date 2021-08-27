@@ -1,0 +1,92 @@
+political_decisions = {
+
+	arabia_boost = {
+	
+		potential = {
+			OR = {
+				tag = NEJ
+				tag = HDJ
+				tag = ARA
+			}
+			NOT = { has_country_flag = arabia_boost }
+		}
+		
+		
+		allow = {
+
+		}
+		
+		
+		effect = {
+			plurality = 40
+			treasury = 2500000
+			add_country_modifier = {
+				name = arabia_boost_modifier
+				duration = 8000
+			}
+			
+			
+			
+			
+			set_country_flag = arabia_boost
+		}
+		
+		ai_will_do = {
+			factor = 0.00001
+		}	
+	}
+	
+	arabia_rgos = {
+		picture = map_arabia
+		potential = {
+			
+			tag = ARA
+			
+			NOT = { has_country_flag = arabia_rgos }
+		}
+		
+		
+		allow = {
+			civilized = yes
+		}
+		
+		
+		effect = {
+			1160 = {trade_goods = iron RGO_size = 600000000}
+			1159 = {trade_goods = coal RGO_size = 600000000}
+			1161 = {trade_goods = coal RGO_size = 600000000 }
+			2586 = {trade_goods = grain RGO_size = 1000000000 }
+			2106 = {trade_goods = iron RGO_size = 600000000 }
+			1163 = {trade_goods = coal RGO_size = 600000000 }
+			1164 = {trade_goods = coal RGO_size = 600000000}
+			1157 = {trade_goods = oil RGO_size = 1000000000 }
+			1158 = {trade_goods = oil RGO_size = 200000000 }
+			1155 = {trade_goods = oil RGO_size = 200000000}
+			1151 = {trade_goods = iron RGO_size = 1000000000}
+			1152 = {trade_goods = grain RGO_size = 1000000000 }
+			1153 = {trade_goods = coal RGO_size = 1000000000 }
+			1154 = {trade_goods = grain RGO_size = 1000000000}
+			
+			all_core = {
+				add_province_modifier = {
+					name = arabian_resources
+					duration = 50000
+					
+				}
+			}
+			all_owned = {
+				limit = {
+					NOT = {life_rating = 20}
+				}
+				life_rating = 25
+			}
+			
+			
+			set_country_flag = arabia_rgos
+		}
+		
+		ai_will_do = {
+			factor = 0.00001
+		}	
+	}
+}

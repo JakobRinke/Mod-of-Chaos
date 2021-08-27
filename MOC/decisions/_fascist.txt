@@ -1,0 +1,53 @@
+political_decisions = {
+	
+	fascist_genozid = {
+		picture = sign_the_geneva_convention_BASED
+		potential = {
+			government = fascist_dictatorship 
+			NOT = {
+				has_country_flag = fascist_genozid
+			}
+		}
+			
+		allow = {
+			#mass_politics = 1
+			#NOT = {
+			#	has_country_modifier  = law_changed_by_force
+			#}
+		}
+		
+		effect = {
+			badboy = 6
+			all_core = {
+					limit = {
+						is_colonial = no
+						owned_by = THIS
+					}
+				any_pop = {
+					limit = {
+						is_accepted_culture = no
+					}
+					reduce_pop = 0
+				}
+				add_province_modifier = {
+					name = fascist_care
+					duration = 15000
+				}
+			}
+			add_country_modifier = {
+				name = law_changed_by_force
+				duration = 730
+			}
+			set_country_flag = fascist_genozid
+		}
+		
+		ai_will_do = {
+			factor = 0.00018
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+		
+		
+	}

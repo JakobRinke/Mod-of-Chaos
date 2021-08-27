@@ -1,0 +1,177 @@
+political_decisions = {
+
+	kongo_school_system = {
+	
+		potential = {
+			tag = KON
+			NOT = { has_country_flag = kongo_school_system }
+		}
+		
+		
+		allow = {
+
+		}
+		
+		
+		effect = {
+			plurality = 40
+			add_accepted_culture = ovimbundu
+			inherit = LOA
+			add_core = 2003
+			add_core = 2624
+			add_core = 1978
+			add_core = 1977
+			all_core = {
+				owner = {
+					treasury = 500000
+				}				
+				secede_province = THIS
+				
+			}
+			treasury = -2000000
+			add_country_modifier = {
+				name = kongo_school_system_modifier
+				duration = 13000
+			}
+			
+			
+			
+			remove_country_modifier = lacks_writing_system
+			
+			
+			set_country_flag = kongo_school_system
+		}
+		
+		ai_will_do = {
+			factor = 0.00005
+		}	
+	}
+	
+	
+	kongo_annex_congo = {
+	
+		potential = {
+			tag = KON
+			NOT = { has_country_flag = kongo_annex_congo }
+		}
+		
+		
+		allow = {
+			civilized = yes
+		}
+		
+		effect = {
+			
+			add_accepted_culture = mongo
+			add_accepted_culture = kingwana
+			add_accepted_culture = lunda
+			add_accepted_culture = kuba
+			add_accepted_culture = lendu
+			add_accepted_culture = luba
+			add_accepted_culture = azande
+			add_accepted_culture = chokwe
+			add_accepted_culture = forest_bantu
+			add_accepted_culture = south_forest_bantu
+			add_accepted_culture = ruanda
+			add_accepted_culture = ubangian
+			add_core = 1958
+			add_core = 1959	
+			add_core = 1962
+			add_core = 2002
+			add_core = 2009
+			add_core = 1966
+			add_core = 1965
+			add_core = 1967
+			add_core = 1968
+			add_core = 1969
+			add_core = 1970
+			add_core = 1971
+			add_core = 1980
+			add_core = 1984
+			add_core = 1986
+			add_core = 1993
+			add_core = 1992
+			add_core = 1994
+			add_core = 1995
+			add_core = 1972
+			add_core = 1973
+			add_core = 1974
+			add_core = 1975
+			add_core = 1976
+			add_core = 1976
+			add_core = 1976
+			add_core = 1986
+			add_core = 1987
+			add_core = 1988
+			add_core = 1996
+			add_core = 1997
+			add_core = 1998
+			all_core = {
+				secede_province = THIS
+			}
+			
+			UTI = {
+				add_core = 1958
+				add_core = 1959	
+				add_core = 1962
+				add_core = 2002
+				add_core = 2009
+				add_core = 1966
+				add_core = 1965
+				add_core = 1967
+				add_core = 1968
+				add_core = 1969
+				add_core = 1970
+				add_core = 1971
+				add_core = 1980
+				add_core = 1984
+				add_core = 1986
+				add_core = 1993
+				add_core = 1992
+				add_core = 1994
+				add_core = 1995
+				add_core = 1972
+				add_core = 1973
+				add_core = 1974
+				add_core = 1975
+				add_core = 1976
+				add_core = 1976
+				add_core = 1976
+				add_core = 1986
+				add_core = 1987
+				add_core = 1988
+				add_core = 1996
+				add_core = 1997
+				add_core = 1998
+			}
+			
+			
+			UTI = { civilized = yes }
+			release = UTI
+			UTI = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			inherit = UTI
+			UTI = {
+				civilized = no
+				all_core = { remove_core = UTI }
+			}
+			
+			
+			
+			set_country_flag = kongo_annex_congo
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+	
+	
+	
+}
