@@ -1,4 +1,5 @@
 #picture 1
+#assimilation modfier 
 
 
 political_decisions = {

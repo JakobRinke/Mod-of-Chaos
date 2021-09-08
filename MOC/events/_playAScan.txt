@@ -1,0 +1,28 @@
+#picture 0
+
+country_event = {
+	id = 13370001
+	title = "Change Country?"
+	desc = "Canada is an independent nation. Shall we play as Canada???"
+	
+	is_triggered_only = yes
+	fire_only_once = yes  
+	trigger = {
+		has_country_flag = dont_do_it_honey 
+		CAN = {
+            exists = yes
+        }
+        NOT = { has_global_flag = dont_do_it_honey_based }
+	}
+
+	option = {
+		name = "Play as Canada"
+		change_tag_no_core_switch  = CAN
+		set_global_flag = dont_do_it_honey_based 
+		 
+	}
+	option = {
+		name = "Play as United Kingdom" 
+		set_global_flag = dont_do_it_honey_based 
+	}
+}

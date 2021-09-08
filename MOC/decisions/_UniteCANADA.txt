@@ -102,7 +102,6 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			add_accepted_culture = anglo_french
 		}
 
 
@@ -138,6 +137,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = canada_make_increase_influence
 			baboy = 15
+
 			CUB = {
 				all_core = {
 					add_core = THIS
@@ -151,6 +151,7 @@ political_decisions = {
 			SPC    = {release = CUB}
 			SPA    = {release = CUB}
 			ENG    = {release = HAI}
+			ENG    = {release = JAM}
 			JAM = {
 				all_core = {
 					add_core = THIS

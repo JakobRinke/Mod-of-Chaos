@@ -28,6 +28,10 @@ political_decisions = {
 			release = NEW
 			release = MTC 
 			release = MRU 
+
+			ENG = {
+				country_event = 13370001
+			}
 			
 		}
 		ai_will_do = {					

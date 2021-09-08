@@ -1,0 +1,163 @@
+#picture 0
+
+country_event = {
+	id = 13370004
+	title = "Release Kazakhstan?"
+	desc = "Kazakhs are a minority in our country"
+	
+	is_triggered_only = yes
+	fire_only_once = yes  
+	trigger = {
+		has_global_flag = russia_owns_our_lands 
+        NOT = { has_global_flag = Release_Kazakhstan_event_flag}
+	}
+
+	option = {
+		name = "Release Kazakhstan"
+		release = KAZ
+		badboy =  -5
+		prestige = -10
+		KAZ     = {
+			all_core = {
+				remove_core = this
+			}
+		}
+		KAZ     = {
+			all_core = {
+				limit = {
+					is_primary_culture = yes
+				}
+				consciousness = -1
+			}
+		}
+		set_global_flag = Release_Kazakhstan_event_flag 
+		set_global_flag = released_kaz_based 
+	}
+	option = {
+		name = "What a foolish idea!" 
+		badboy = 2
+		KAZ     = {
+			all_core = {
+				flashpoint_tension = 25
+			}
+		}
+		KAZ     = {
+			all_core = {
+				limit = {
+					is_primary_culture = no
+				}
+				consciousness = 0.66
+				militancy = 0.75
+			}
+		}
+		set_global_flag = Release_Kazakhstan_event_flag 
+	}
+}
+
+country_event = {
+	id = 13370005
+	title = "Release Turkmenistan?"
+	desc = "Turkmens are a minority in our country"
+	
+	is_triggered_only = yes
+	fire_only_once = yes  
+	trigger = {
+		has_global_flag = russia_owns_our_lands_TKM 
+        NOT = { has_global_flag = Release_TKM_event_flag}
+	}
+
+	option = {
+		name = "Release Turkmenistan"
+		release = TKM
+		badboy =  -4
+		prestige = -10
+		TKM     = {
+			all_core = {
+				remove_core = this
+			}
+		}
+		TKM     = {
+			all_core = {
+				limit = {
+					is_primary_culture = yes
+				}
+				consciousness = -1
+			}
+		}
+		set_global_flag = Release_TKM_event_flag 
+		set_global_flag = released_TKM_based 
+	}
+	option = {
+		name = "What a foolish idea!" 
+		badboy = 2
+		TKM     = {
+			all_core = {
+				flashpoint_tension = 25
+			}
+		}
+		TKM     = {
+			all_core = {
+				limit = {
+					is_primary_culture = no
+				}
+				consciousness = 0.66
+				militancy = 0.75
+			}
+		}
+		set_global_flag = Release_TKM_event_flag 
+	}
+}
+
+country_event = {
+	id = 13370006
+	title = "Release Uzbekistan?"
+	desc = "Uzbeks are a minority in our country"
+	
+	is_triggered_only = yes
+	fire_only_once = yes  
+	trigger = {
+		has_global_flag = russia_owns_our_lands_TKM 
+        NOT = { has_global_flag = Release_Uzbekistan_event_flag}
+	}
+
+	option = {
+		name = "Release Turkmenistan"
+		release = UZB
+		badboy =  -4
+		prestige = -10
+		UZB     = {
+			all_core = {
+				remove_core = this
+			}
+		}
+		UZB     = {
+			all_core = {
+				limit = {
+					is_primary_culture = yes
+				}
+				consciousness = -1
+			}
+		}
+		set_global_flag = Release_Uzbekistan_event_flag 
+		set_global_flag = released_Release_Uzbekistan_event_flag_based 
+	}
+	option = {
+		name = "What a foolish idea!" 
+		badboy = 2
+		UZB     = {
+			all_core = {
+				flashpoint_tension = 25
+			}
+		}
+		UZB     = {
+			all_core = {
+				limit = {
+					is_primary_culture = no
+				}
+				consciousness = 0.66
+				militancy = 0.75
+			}
+		}
+		set_global_flag = Release_Uzbekistan_event_flag 
+	}
+}

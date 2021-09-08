@@ -1,13 +1,12 @@
 #picture 1
 
 political_decisions = {
-
+	
 	reject_neutrality = {
 		picture = reject_neutarekejmgksajg_swiss
 		potential = {
 			OR = {
 				tag = ITA
-				AND = { tag = AGN has_country_flag = unify_italy_AGN }
 				tag = GER
 				tag = FRA
 				tag = AUS
@@ -16,13 +15,13 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = Swiss_Embrace }
 		}
-
-
+		
+		
 		allow = {
 			nationalism_n_imperialism = 1
 			is_greater_power = yes
 		}
-
+		
 		effect = {
 			badboy = 4
 			add_accepted_culture = swiss
@@ -35,10 +34,10 @@ political_decisions = {
 			add_core = 609
 			add_core = 607
 			add_core = 608
-
+			
 			set_country_flag = Swiss_Embrace
 		}
-
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -46,13 +45,13 @@ political_decisions = {
                 badboy = 0.8
             }
 		}
-
-
+		
+		
 	}
-
-
-
-
+	
+	
+	
+	
 	annex_swiss = {
 		picture = annex_swiss
 		potential = {
@@ -68,25 +67,25 @@ political_decisions = {
 			has_country_flag = Swiss_Embrace
 			exists = SWI
 		}
-
-
+		
+		
 		allow = {
 			SWI = {
 				in_sphere = THIS
 			}
 		}
-
+		
 		effect = {
 			inherit = SWI
 			set_country_flag = annex_swiss
 		}
-
+		
 		ai_will_do = {
 			factor = 1
-
+			
 		}
-
-
+		
+		
 	}
-
+	
 }

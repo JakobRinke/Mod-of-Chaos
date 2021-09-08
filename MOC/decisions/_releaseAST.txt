@@ -39,11 +39,15 @@ political_decisions = {
 			add_core = 458
 			add_core = 459
 			add_core = 460
+			
 			BRT   = {
-					all_core = {
-						add_core = THIS
-					}
+				all_core = {
+					add_core = THIS
 				}
+			}
+				ENG = {
+				country_event = 13370002
+			}
 		}
 		ai_will_do = {					
 			factor = 0.00004

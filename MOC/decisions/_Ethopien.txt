@@ -1,3 +1,9 @@
+#event to gain more uncolonized shit 
+#organize eth => iron, coal
+#add cores TRU 
+#remove cores from all nation after annexiation ex: egy
+
+
 #picture 1
 
 political_decisions = {
@@ -46,23 +52,27 @@ political_decisions = {
 			add_accepted_culture = luo
 			add_accepted_culture = maasai
 			add_accepted_culture = nuer
+			add_accepted_culture = tuareg
 			add_accepted_culture = oromo
 			add_accepted_culture = ruanda
 			add_accepted_culture = somali
 			add_accepted_culture = sukuma
 			add_accepted_culture = swahili
 			add_accepted_culture = tigray
+			add_accepted_culture = toubou
+			add_accepted_culture = berber
 			add_accepted_culture = unyamwezi
 			add_accepted_culture = kilombero
 			add_accepted_culture = lacustrine_bantu
 			add_accepted_culture = cushitic
 			add_accepted_culture = nilotic
 			add_accepted_culture = bedouin
+			add_accepted_culture = turkish 
 			add_accepted_culture = sudanese
 			add_accepted_culture = beja
 			add_accepted_culture = nuba
 
-            WRL   = {
+			WRL   = {
 				all_core = {
 					add_core = THIS
 				}
@@ -85,7 +95,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {					
-				factor = 0.00001	
+				factor = 0.00007	
 		}
 	}
 
@@ -160,6 +170,11 @@ political_decisions = {
 			NOT = { has_country_flag = treaty_of_cairo}	
 		}
 		allow = {
+			EGY = {
+				OR ={
+					is_secondary_power  = no
+					is_greater_power  = no
+				}
             war = no
 			ai = no 
 			civilized = yes
@@ -188,6 +203,94 @@ political_decisions = {
 		
 		effect = {
 			any_pop = {militancy = -6}
+		}
+	}
+
+	treaty_of_ankober = {
+		picture = sign_the_geneva_convention_BASED
+		potential = {
+			OR = {
+				tag = ETH
+			}
+			NOT = { has_country_flag = treaty_of_ankober}	
+		}
+		allow = {
+            owns = 1745
+			owns = 2048
+
+			owns = 1852
+			owns = 1854
+			owns = 1855
+			owns = 1859
+			owns = 1861
+
+			prestige = 20
+		}
+		
+		effect = {
+			set_country_flag = treaty_of_ankober
+
+			#SUDD
+			1843 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1844 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1845 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1846 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1847 = { add_core = ETH secede_province = THIS life_rating = 70 }
+
+			#Hararghe
+			1864 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1866 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1867 = { add_core = ETH secede_province = THIS life_rating = 70 }
+
+			#Lindi
+			2039 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2040 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2041 = { add_core = ETH secede_province = THIS life_rating = 70 }
+		
+			
+			#Kenya
+			2024 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2027 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2032 = { add_core = ETH secede_province = THIS life_rating = 70 }
+		
+			#Zanzibar
+			2045 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2047 = { add_core = ETH secede_province = THIS life_rating = 70 }
+
+			#Rift Valley
+			2028 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2025 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2026 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2031 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			
+			#Kordofan
+			1839 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1841 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1842 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1739 = { add_core = ETH secede_province = THIS life_rating = 70 }
+
+			#Dongola
+			2564 = { add_core = ETH secede_province = THIS life_rating = 70 }
+
+			#Western Desert
+			1758 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			
+			#Tripoli
+			1742 = { add_core = ETH secede_province = THIS life_rating = 70 }
+
+			#Cyrenaica
+			1738 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2585 = { add_core = ETH secede_province = THIS life_rating = 70 }
+
+
+			#Organize_stuff
+
+			1852 = {trade_goods = iron RGO_size = 1000000}
+			1854 = {trade_goods = coal RGO_size = 1000000}
+			1855 = {trade_goods = coal RGO_size = 1000000}
+
+			1859 = {trade_goods = iron RGO_size = 1000000}
+			1861 = {trade_goods = iron RGO_size = 1000000}
 		}
 	}
 
@@ -254,6 +357,8 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
+			add_core = 1167
+			add_core = 1168
 			KWT      = {
 				all_core = {
 					add_core = THIS
@@ -281,6 +386,7 @@ political_decisions = {
 			}
 
             KTH    = {all_core = {add_core = THIS}}
+		
 		}
 	}
 }

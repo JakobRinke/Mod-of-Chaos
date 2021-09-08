@@ -1091,3 +1091,11 @@ AGN = {
     color2= { 250 182 47 }
     color3= { 250 230 10 }
 }
+
+# Timurid Empire
+TRD = {
+    color1= { 42  34  82 }
+    color2= { 42  54  102 }
+    color3= { 43  55  75 }
+}
+

@@ -1,5 +1,6 @@
 #picture 1
 
+
 political_decisions = {
 	
 	greater_Persia = {
@@ -17,9 +18,29 @@ political_decisions = {
 			add_accepted_culture = pashtun
 			add_accepted_culture = tajik
 			add_accepted_culture = uzbek
-			add_accepted_culture = kyrgyz
+			add_accepted_culture = kirgiz #called different in base game
 			add_accepted_culture = baluchi
+			add_accepted_culture = hazara
+			add_accepted_culture = turkmen
+			add_accepted_culture = kilombero
+
+			define_general = {
+				name = "Cyrus the Great" 
+				personality = implacable
+				background = spoiled
+			}
+			remove_core = 1190
 			AFG = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			PNJ = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			OMA = {
 				all_core = {
 					add_core = THIS
 				}
@@ -57,6 +78,62 @@ political_decisions = {
 		}	
 	}
 	
+	treaty_of_teheran_per = {
+		picture = treaty_of_therererererer_persian_trd
+		potential = {
+			tag = PER
+			NOT = { has_country_flag = treaty_of_teheran }
+		}
+		
+		
+		allow = {
+			
+			prestige = 100
+			war = no
+			TRD = {
+				in_sphere = PER 
+			}
+		}
+		
+		effect = {
+			set_country_flag = treaty_of_teheran		
+			inherit = TRD
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		
+	}
+	treaty_of_teheran_trd = {
+		picture = treaty_of_therererererer_persian_trd
+		potential = {
+			tag = TRD
+			NOT = { has_country_flag = treaty_of_teheran }
+		}
+		
+		
+		allow = {
+			
+			prestige = 100
+			war = no
+			PER = {
+				in_sphere = TRD 
+			}
+		}
+		
+		effect = {
+			set_country_flag = treaty_of_teheran		
+			inherit = PER
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		
+	}
 	
 	great_Showdown = {
 		picture = persia_ottoman_war
@@ -76,9 +153,10 @@ political_decisions = {
 			
 			TUR = {
 				country_event = 969696
+				add_accepted_culture = persian 
 			}
-			
-			
+			add_accepted_culture = turkish 
+			add_core = 1190
 			set_country_flag = great_Showdown				
 		}
 		
