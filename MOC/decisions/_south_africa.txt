@@ -7,9 +7,6 @@ political_decisions = {
 		potential = {
 			tag = SAF
 			NOT = { has_country_flag = become_independent}	
-			1864 = { empty = yes }
-			1866 = { empty = yes }
-			1867 = { empty = yes }
 		}
 		allow = {
             war = no
@@ -20,8 +17,9 @@ political_decisions = {
 			set_country_flag = become_independent
 			ENG = {release_vassal = SAF}
 			money = 200000
+			researchpoints = 2000
 			#Namaqualand
-			2083 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = oil RGO_size = 300000}
+			2083 = { add_core = SAF secede_province = THIS life_rating = 50 }
 			2084 = { add_core = SAF secede_province = THIS life_rating = 50 }
 			2085 = { add_core = SAF secede_province = THIS life_rating = 50 }
 			2086 = { add_core = SAF secede_province = THIS life_rating = 50 }
@@ -40,17 +38,28 @@ political_decisions = {
 			2077 = { add_core = SAF secede_province = THIS life_rating = 50 }
 			2574 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = timber RGO_size = 4500000}
 
+			primary_cutlure = nguni
+
 			add_accepted_culture = tswana
 			add_accepted_culture = sotho
 			add_accepted_culture = khoisan
-			add_accepted_culture = nguni
-			add_accepted_culture = xhoso
+			add_accepted_culture = xhosa
 			add_accepted_culture = zulu
 			add_accepted_culture = herero
 			add_accepted_culture = southern_bantu
-
+			add_accepted_culture = tonga
+			add_accepted_culture = malagasy
+			add_accepted_culture = boer
+			add_accepted_culture = shona
+			clr_country_flag = lacking_writing_system
 			government = democracy
-
+			ruling_party_ideology = reactionary
+			upper_house = {
+				ideology = reactionary
+				value = 1
+			}
+			capital = 2087
+			
 			SAF = {
 				add_country_modifier = {
 					name = south_african_new_world
@@ -60,7 +69,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0.00001
+			factor = 0.00012
 		}
 		
 	}
@@ -84,6 +93,13 @@ political_decisions = {
 					duration = 10000 
 				}
 			}
+			SAF = {
+				add_country_modifier = {
+					name = south_african_new_world
+					duration = 60000 
+				}
+			}
+
 			GAZ     = {
 				all_core = {
 					add_core = THIS
@@ -137,15 +153,7 @@ political_decisions = {
 				}
 			}
 
-			add_accepted_culture = tonga
-			add_accepted_culture = sotho
-			add_accepted_culture = khoisan
-			add_accepted_culture = nguni
-			add_accepted_culture = xhosa
-			add_accepted_culture = zulu
-			add_accepted_culture = herero
-			add_accepted_culture = southern_bantu
-			add_accepted_culture = malagasy
+			
 		}
 		
 		ai_will_do = {
@@ -158,6 +166,12 @@ political_decisions = {
 		potential = {
 			tag = SAF
 			NOT = { has_country_flag = organize_SAF}	
+			owns = 2088
+			owns = 2090
+			owns = 2098
+			owns = 2100
+			owns = 2106
+			owns = 2110
 		}
 		allow = {
             war = no
@@ -171,8 +185,13 @@ political_decisions = {
 			2090 = {trade_goods = iron RGO_size = 1000000}
 			2098 = {trade_goods = rubber RGO_size = 300000}
 			2100 = {trade_goods = iron RGO_size = 1000000}
+			2101 = {trade_goods = iron RGO_size = 1000000}
 			2106 = {trade_goods = iron RGO_size = 1000000}
 			2110 = {trade_goods = oil RGO_size = 1000000}
+
+			2110 = {trade_goods = coal RGO_size = 1000000}
+			2110 = {trade_goods = coal RGO_size = 1000000}
+			2110 = {trade_goods = coal RGO_size = 1000000}
 			
 			
 		}
@@ -180,12 +199,44 @@ political_decisions = {
 			factor = 0.0008
 		}
 	}
-
+	organize_madadadada = {
+		picture = organize_madadaadddddddd
+		potential = {
+			tag = SAF
+			NOT = { has_country_flag = organize_madadadada}	
+			owns = 2122
+			owns = 2117
+			owns = 2118
+			owns = 2115
+			owns = 2119
+			owns = 2120
+			owns = 2121
+		}
+		
+		allow = {
+            war = no
+			
+		}
+		
+		effect = {
+			set_country_flag = organize_madadadada
+			2122 = {trade_goods = iron RGO_size = 1000000 life_rating = 60}
+			2117 = {trade_goods = iron RGO_size = 1000000 life_rating = 60}
+			2118 = {trade_goods = coal RGO_size = 1000000 life_rating = 60}
+			2115 = {trade_goods = coal RGO_size = 1500000 life_rating = 60}
+			2119 = {trade_goods = coal RGO_size = 1000000 life_rating = 60}
+			2120 = {trade_goods = iron RGO_size = 1000000 life_rating = 60}
+			2121 = {trade_goods = rubber RGO_size = 1000000 life_rating = 60}
+			
+		}
+		ai_will_do = {
+			factor = 0.0008
+		}
+	}
 	unite_SAF = {
 		picture = SAF_unite
 		potential = {
 			OR = {
-				tag = XHO 
 				tag = BSH  
 				tag = ORA 
 				tag = MAT
@@ -198,21 +249,107 @@ political_decisions = {
 		}
 		
 		effect = {
-			set_country_flag = unite_SAF
+			inherit = XHO
 			change_tag = SAF
 			SAF = {all_core = {secede_province = SAF}}	
 			prestige = 20 
 			plurality = 60
 			civilized = yes
+
 			define_general = {
 				name = "Sir Arthur Victoria"
 				personality = implacable
 				background = spoiled
 			}
+
+			#Culture techs
+			activate_technology = classicism_n_early_romanticism 
+			activate_technology = late_enlightenment_philosophy 
+			activate_technology = malthusian_thought 
+			activate_technology = enlightenment_thought 
+			activate_technology = introspectionism 
+
+			#Industry techs
+			activate_technology = piston_steam_engine   
+			activate_technology = mechanical_production 
+			activate_technology = hot_blast   
+			activate_technology = basic_chemistry 
+
+			#Army techs
+			activate_technology = post_napoleonic_thought 
+			activate_technology = flintlock_rifles 
+			activate_technology = bronze_muzzle_loaded_artillery 
+			activate_technology = military_staff_system 
+			activate_technology = army_command_principle  
+
+			#Navy techs
+			activate_technology = post_nelsonian_thought  
+			activate_technology = clipper_design  
+			activate_technology = naval_design_bureaus  
+
+			#Commerce techs
+			activate_technology = private_banks   
+			activate_technology = no_standard   
+			activate_technology = early_classical_theory_and_critique   
+			activate_technology = freedom_of_trade  
+			activate_technology = guild_based_production   
+
+
+			political_reform = first_past_the_post
+			political_reform = all_trade_unions			
+			political_reform = free_press			
+			political_reform = state_equal_weight
+			political_reform = universal_weighted_voting
+			political_reform = yes_meeting
+			political_reform = gerrymandering
+
+			social_reform = trinket_wage
+			social_reform = trinket_health_care
+			social_reform = low_schools
+			set_country_flag = unite_SAF
+			
+			
 		}
 		
 		ai_will_do = {
-			factor = 0.00006
+			factor = 0.00025
+		}
+	}
+
+	scramble_time_south_africa = {
+		picture = saf_expand_scramble
+		potential = {
+			tag = SAF
+			NOT = { has_country_flag = scramble_time_south_africa}	
+		}
+		allow = {
+			is_greater_power = yes
+			year = 1880
+			revolution_n_counterrevolution = 1
+			ai = no
+		}
+		
+		effect = {
+			#Hereroland
+			2078 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = rubber RGO_size = 300000}
+			2079 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2080 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = rubber RGO_size = 300000}
+			2081 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2082 = { add_core = SAF secede_province = THIS life_rating = 50 }
+
+			#Rozwi
+			2069 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = coal RGO_size = 300000}
+			2071 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = rubber RGO_size = 300000}
+			2072 = { add_core = SAF secede_province = THIS life_rating = 50 }
+			2073 = { add_core = SAF secede_province = THIS life_rating = 50 }
+
+			#Mashonaland
+			2635  = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = coal RGO_size = 310000}
+			2068 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = rubber RGO_size = 350000}
+			2070 = { add_core = SAF secede_province = THIS life_rating = 50 trade_goods = rubber RGO_size = 400000}
+
+			set_country_flag = scramble_time_south_africa
+
 		}
 	}
 }

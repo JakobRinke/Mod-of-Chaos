@@ -1,10 +1,11 @@
 #picture 1
+#assimilation modfier 
 
 
 political_decisions = {
 
 	ozeanien_claim_cores = {
-		oceania_GET_cores_basdasd
+		picture = oceania_GET_cores_basdasd
 		potential = {
 			tag = IAA
 			NOT = { has_country_flag = ozeanien_claim_cores}	

@@ -4,6 +4,8 @@
 
 #10000(2,4,6,8,11) = Receiving country notified giving country will give aid. Ascending, logarithmic, 1000-10 million
 
+#picture 0
+
 country_event = {
 
 	

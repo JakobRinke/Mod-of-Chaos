@@ -1,0 +1,28 @@
+#picture 0
+
+country_event = {
+	id = 13370002
+	title = "Change Country?"
+	desc = "Australia is an independent nation. Shall we play as Australia???"
+	
+	is_triggered_only = yes
+	fire_only_once = yes  
+	trigger = {
+		has_country_flag = release_AST_get_Cores
+		AST = {
+            exists = yes
+        }
+        NOT = { has_global_flag = release_AST_get_Cores_A }
+	}
+
+	option = {
+		name = "Play as Australia"
+		change_tag_no_core_switch  = AST
+		set_global_flag = release_AST_get_Cores_A 
+		 
+	}
+	option = {
+		name = "Play as United Kingdom" 
+		set_global_flag = release_AST_get_Cores_A 
+	}
+}

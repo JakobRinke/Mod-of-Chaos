@@ -2609,7 +2609,6 @@ UK_reclaim_cores_on_SCO_country_modifier = {
 
 
 IAA_country_modifier = {
-    life_rating = 0.5
     global_immigrant_attract = 0.5
     global_population_growth = 0.0001
     global_assimilation_rate = 0.85
@@ -2690,12 +2689,13 @@ nigerian_schools =  {
 	education_efficiency_modifier = 3
 	research_points_modifier = 1.4
 	supply_consumption = -0.1
-	prestige = 0.07
+	prestige = 0.1
 	icon = 17
 }
 
 rise_of_rome = {
 	global_assimilation_rate = 15
+    icon = 3
 }
 
 mongol_civ_boost = {
@@ -2706,7 +2706,8 @@ mongol_civ_boost = {
 }
 
 mongol_baby_boom = {
-	global_population_growth = 2.5
+	global_population_growth = 1
+    icon = 3
 }
 
 mongol_game_boost = {
@@ -2723,16 +2724,14 @@ african_schools =  {
     education_efficiency_modifier = 3
     research_points_modifier = 1.4
     supply_consumption = -0.1
-    prestige = 0.05
+    prestige = 0.25
     icon = 7
 }
 
 
 south_african_new_world ={
-    global_immigrant_attract = 4
-    global_assimilation_rate = 0.2
-    global_population_growth = 0.001
-    loan_interest = 0.5
+    global_immigrant_attract = 4.5
+    global_assimilation_rate = 0.1
     icon = 7
 }
 
@@ -2740,32 +2739,23 @@ provinz_growth_modifier = {
     immigrant_attract = 4
     assimilation_rate = 0.2
     population_growth = 0.01
+    icon = 3
 }
 
-kongo_school_system_modifier = {
-	education_efficiency_modifier = 10
-    research_points_modifier = 4
-	global_population_growth = 0.0003
-    prestige = 0.1
-    icon = 7
-}
 
-arabia_boost_modifier = {
-	education_efficiency_modifier = 4
-    research_points_modifier = 4
-	global_population_growth = 0.15
-    prestige = 0.05
-    icon = 7
-}
-
-arabian_resources = {
-	farm_rgo_size = 10
-	mine_rgo_size = 10
-	icon = 7
-}
-
-fascist_care = {
-	population_growth = 0.0025
-	immigrant_push = 0.3
-	local_ruling_party_support = - 0.2
+arm_country_modifier = {
+    global_population_growth = 0.0065
+    prestige = 0.03
+    local_ruling_party_support = 0.5
+    social_reform_desire = 0.1
+    leadership_modifier = 0.75
+    mobilisation_size = 0.025
+    org_regain = 0.033
+    land_organisation = 0.1
+    mobilisation_economy_impact = -0.75
+    land_unit_start_experience = 3
+    supply_consumption = -0.1
+    war_exhaustion = -0.1
+    icon = 15
+    education_efficiency_modifier = 0.5
 }

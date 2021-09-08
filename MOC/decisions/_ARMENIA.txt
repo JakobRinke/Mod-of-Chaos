@@ -1,0 +1,235 @@
+#pictures 1
+
+political_decisions = {
+
+	claim_cores_arm = {
+		picture = greater_armenia
+		potential = {
+			tag = ARM
+			NOT = { has_country_flag = claim_cores_arm}	
+		}
+		allow = {
+            war = no
+			ai = no
+		}
+		
+		effect = {
+			
+			set_country_flag = claim_cores_arm
+			relation = {
+				who = RUS
+				value = 200
+			}
+			create_alliance = RUS
+			prestige = 25
+			add_core = 1107
+			add_core = 1108
+			add_core = 1109
+			add_core = 1110
+			add_core = 1112
+			add_core = 1123
+			add_core = 2414
+			add_core = 892
+			add_core = 889
+			add_core = 899
+			add_core = 893
+			inherit = BTL 
+			inherit = BHT 
+			inherit = MKN 
+			inherit = BDN 
+			inherit = TCA
+			1096 = {secede_province = THIS}
+			887 = {secede_province = THIS}
+			886 = {secede_province = THIS}
+			885 = {secede_province = THIS}
+
+			893 = {secede_province = THIS}
+			889 = {secede_province = THIS}
+			899 = {secede_province = THIS}
+			add_accepted_culture = turkish
+			add_accepted_culture = kurdish
+			add_accepted_culture = azerbaijani
+			add_accepted_culture = georgian
+			add_accepted_culture = persian
+			add_accepted_culture = mashriqi
+			define_general = {
+				name = "Artaxias the first" 
+				personality = implacable
+				background = spoiled
+			}
+			LBN   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CLC   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SYR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ARM = {
+				add_country_modifier = {
+					name = arm_country_modifier
+					duration = 15000
+				}
+			}
+			
+			
+		}
+		
+	}
+
+	non__historic_claim_cores_arm = {
+		picture = armenmien_unhistoric_based
+		potential = {
+			tag = ARM
+			NOT = { has_country_flag = non__historic_claim_cores_arm}	
+		}
+		allow = { 
+			owns = 1107
+			owns = 1108
+			owns = 1109
+			owns = 1110
+			owns = 1112
+			owns = 2414
+			owns = 1123
+			owns = 892
+			owns = 889
+			owns = 899
+			owns = 893
+			owns = 894
+			owns = 913
+			owns = 902
+            war = no
+			ai = no
+		}
+		
+		effect = {
+			
+			capital = 893
+			set_country_flag = non__historic_claim_cores_arm
+			
+            prestige = 25
+			add_core = 1107
+			add_core = 1108
+			add_core = 1109
+			add_core = 1110
+			add_core = 1112
+			add_core = 1123
+			add_core = 2414
+			add_core = 892
+			add_core = 889
+			add_core = 899
+			add_core = 893
+			
+			#Ankara
+			add_core = 868
+			add_core = 876
+			add_core = 877
+			add_core = 878
+
+			#Kastamonu
+			add_core = 883
+			add_core = 880
+			add_core = 881
+
+			#Hudavendigar
+			add_core = 861
+			add_core = 862
+			add_core = 863
+			add_core = 864
+			add_core = 865
+			add_core = 867
+
+			#Aydin
+			add_core = 869
+			add_core = 870
+			add_core = 871
+			add_core = 872
+
+			#Aydin
+			add_core = 875
+			add_core = 874
+			add_core = 873
+			add_core = 866
+
+			#Adana -> part
+			add_core = 895
+			CYP   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			PLS   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			PER   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			GRE   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SYR    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KDS    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CIR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			TCA   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			IRQ    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			DON   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CRI   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CHY  = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KMK  = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_core = 1103
+			add_core = 1053
+			add_core = 1052
+		}
+		
+	}
+}
+

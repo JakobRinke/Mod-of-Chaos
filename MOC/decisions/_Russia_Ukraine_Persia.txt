@@ -1,7 +1,7 @@
 political_decisions = {
 	
 	release_ukraine_for_persia = {
-	
+		picture = russia_persien_ukraine_pciteruwert
 		potential = {
 			tag = RUS
 			NOT = { has_country_flag = release_ukraine_for_persia }
@@ -32,6 +32,9 @@ political_decisions = {
 			}
 			create_vassal = UKR
 			set_country_flag = release_ukraine_for_persia
+			RUS = {
+				country_event = 13370003
+			}
 		}
 		
 		ai_will_do = {

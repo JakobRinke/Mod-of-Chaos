@@ -14,8 +14,8 @@ political_decisions = {
 		effect = {
 			money = 5000000
 			prestige = 10	
-			add_accepted_culture = kazakh
-			add_accepted_culture = north_han
+			add_accepted_culture = kazak
+			add_accepted_culture = beifaren #north_han
 			add_accepted_culture = manchu
 			QNG = { all_core = { add_core = THIS } }
 			CHI = { all_core = { add_core = THIS } }
@@ -85,7 +85,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {					
-			factor = 0.00001
+			factor = 0.000015
 		}
 	}
 	

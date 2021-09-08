@@ -1,0 +1,369 @@
+#picture 0
+
+political_decisions = {
+
+	unite_TRD = {
+		picture = unite_TRD_timor_emporere
+		potential = {
+			OR = {
+				tag = XIN	
+                tag = KOK 
+				tag = BUK
+				tag = PNJ 
+				tag = BDK 
+				tag = CRL 
+			}
+			NOT = { exists = TRD }	
+			NOT = { has_country_flag = unite_TRD}	
+		}
+		allow = {
+            war = no
+			ai = no
+		}
+		
+		effect = {
+
+			change_tag = TRD
+			set_country_flag = unite_TRD
+            prestige = 5
+			
+			badboy = 12
+			add_accepted_culture = pashtun
+			add_accepted_culture = tajik
+			add_accepted_culture = uzbek
+			add_accepted_culture = kirgiz #called different in base game
+			add_accepted_culture = baluchi
+			add_accepted_culture = hazara
+			add_accepted_culture = turkmen
+			add_accepted_culture = kilombero
+			add_accepted_culture = persian
+			add_accepted_culture = uighur
+			add_accepted_culture = kazak
+			add_accepted_culture = tatar
+
+			inherit = CRL 
+			inherit = BDK 
+			inherit = BUK 
+			inherit = KOK 
+			inherit = PNJ
+			define_general = {
+				name = "Chagatai Khan" 
+				personality = implacable
+				background = spoiled
+			}
+			PER = {
+				inherit = AFG 
+				inherit = KHI 
+				inherit = KAL  
+				inherit = MAK   
+			}
+			PER     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KOK     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BDK     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CRL     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KHI     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BUK     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			AFG     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			PNJ     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			HND     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			PER = {
+				add_core = 1192
+			}
+			add_core = 1192
+			TKM = {
+				add_core = 1192
+			}
+			UZB = {
+				add_core = 1192
+			}
+			remove_core = 1131
+			remove_core = 1132
+			remove_core = 1133
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	unite_TRD_AI = {
+		picture = unite_TRD_timor_emporere
+		potential = {
+			ai = yes
+			OR = {
+				tag = XIN	
+                tag = KOK 
+				tag = BUK
+				tag = PNJ 
+				tag = BDK 
+				tag = CRL 
+			}
+			NOT = { exists = TRD }	
+			NOT = { has_country_flag = unite_TRD_AI}	
+		}
+		allow = {
+            war = no
+			year = 1837
+		}
+		
+		effect = {
+
+			change_tag = TRD
+			set_country_flag = unite_TRD_AI
+            prestige = 5
+			
+			badboy = 12
+			add_accepted_culture = pashtun
+			add_accepted_culture = tajik
+			add_accepted_culture = uzbek
+			add_accepted_culture = kirgiz #called different in base game
+			add_accepted_culture = baluchi
+			add_accepted_culture = hazara
+			add_accepted_culture = turkmen
+			add_accepted_culture = kilombero
+			add_accepted_culture = persian
+			add_accepted_culture = uighur
+			add_accepted_culture = kazak
+			add_accepted_culture = tatar
+
+			inherit = CRL 
+			inherit = BDK 
+			inherit = BUK 
+			inherit = KOK 
+			inherit = PNJ
+			define_general = {
+				name = "Chagatai Khan" 
+				personality = implacable
+				background = spoiled
+			}
+			PER = {
+				inherit = AFG 
+				inherit = KHI 
+				inherit = KAL  
+				inherit = MAK   
+			}
+			PER     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KOK     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BDK     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CRL     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KHI     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BUK     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			AFG     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			PNJ     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			HND     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			PER = {
+				add_core = 1192
+			}
+			add_core = 1192
+			TKM = {
+				add_core = 1192
+			}
+			UZB = {
+				add_core = 1192
+			}
+		}
+		ai_will_do = {					
+			factor = 0.115
+		}
+	}
+	claim_russia_as_trd = {
+		picture = timorid_empire_LAsdfkadf_asd
+		potential = {
+			tag = TRD
+			NOT = { has_country_flag = claim_russia_as_trd}	
+		}
+		allow = {
+			prestige = 300
+			is_greater_power = yes
+            war = no
+			owns = 1236
+		}
+		
+		effect = {
+			capital = 1236
+			set_country_flag = claim_russia_as_trd
+			badboy = 20
+			prestige =  -25
+			KAZ     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			TAR     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			TKM     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			UZB     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			remove_core = 1031
+			add_core = 1034
+			add_core = 1043
+			add_core = 1044
+			add_core = 1060w
+		}
+		
+		ai_will_do = {					
+			factor = 0.0009
+		}
+	}
+	claim_uncolonized_LANDS_to_become_strong_af = {
+		picture = claim_country_of_russia_baserd_asda
+		potential = {
+			tag = TRD
+			NOT = { has_country_flag = claim_uncolonized_LANDS_to_become_strong_af}	
+		}
+		allow = {
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			war = no
+			prestige = 125
+		}
+		
+		effect = {
+			set_country_flag = claim_uncolonized_LANDS_to_become_strong_af
+			KAZ     = {
+				all_core = {
+					limit = {
+						empty = yes
+					}
+						add_core = TRD secede_province = THIS life_rating = 85 
+				}
+			}
+			KAZ     = {
+				all_core = {
+					limit = {
+						empty = no
+					}
+						set_global_flag = russia_owns_our_lands_kaz
+						RUS = {
+							country_event = 13370004
+						}
+				}
+			}
+			TKM     = {
+				all_core = {
+					limit = {
+						empty = yes
+					}
+						add_core = TRD secede_province = THIS life_rating = 85 
+				}
+			}
+			TKM     = {
+				all_core = {
+					limit = {
+						empty = no
+					}
+						set_global_flag = russia_owns_our_lands_TKM
+						RUS = {
+							country_event = 13370005
+						}
+				}
+			}
+			UZB      = {
+				all_core = {
+					limit = {
+						empty = yes
+					}
+						add_core = TRD secede_province = THIS life_rating = 85 
+				}
+			}
+			UZB     = {
+				all_core = {
+					limit = {
+						empty = no
+					}
+						set_global_flag = russia_owns_our_lands_UZB
+						RUS = {
+							country_event = 13370006
+						}
+				}
+			}
+		}
+		
+		ai_will_do = {					
+			factor = 0.5
+		}
+	}
+}
+

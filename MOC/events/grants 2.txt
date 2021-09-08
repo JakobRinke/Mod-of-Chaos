@@ -4,6 +4,8 @@
 #100010 aid decline notification. May remove later. Not sure if relevevant
 #10000(3,5,7,9,12) = Giving country chooses amount within each order of magnitude, can still opt out. Ascending, logarithmic, (0-9)000-(0-9)0million
 
+#picture 0
+
 country_event = {
 
 	is_triggered_only = yes
