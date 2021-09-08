@@ -2730,7 +2730,7 @@ african_schools =  {
 
 
 south_african_new_world ={
-    global_immigrant_attract = 3.5
+    global_immigrant_attract = 3
     global_assimilation_rate = 0.1
     icon = 7
 }
