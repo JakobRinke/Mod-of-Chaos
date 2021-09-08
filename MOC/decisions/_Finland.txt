@@ -122,7 +122,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {					
-				factor = 0.000035	
+				factor = 0.0	
 		}
 	}
 	clam_norrland_and_nordnorge  ={
@@ -152,7 +152,7 @@ political_decisions = {
 			add_core = 321
 		}
 		ai_will_do = {					
-				factor = 0.00003	
+				factor = 0.00000	
 		}
 	}
 	claim_scandivia = {
@@ -193,7 +193,7 @@ political_decisions = {
 		}
 	
 		ai_will_do = {					
-				factor = 0.000001	
+				factor = 0.0
 		}
 		
 	}

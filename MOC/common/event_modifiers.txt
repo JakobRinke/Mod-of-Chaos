@@ -2638,7 +2638,7 @@ rom_school_system_effect = {
 }
 
 total_mobilisation = {
-	mobilisation_size = 0.45
+	mobilisation_size = 0.6
     mobilization_economy_impact = 0.50
 	land_unit_start_experience = 25
     war_exhaustion = -2
@@ -2686,7 +2686,7 @@ Finland_country_modifier = {
 
 
 nigerian_schools =  {
-	global_population_growth = 0.0025
+	global_population_growth = 0.005
 	education_efficiency_modifier = 3
 	research_points_modifier = 1.4
 	supply_consumption = -0.1

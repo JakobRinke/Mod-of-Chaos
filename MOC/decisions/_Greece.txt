@@ -19,7 +19,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 7
+			badboy = 10
 			add_accepted_culture = greek
 			GRE = {
 				all_core = {
