@@ -14,6 +14,7 @@ political_decisions = {
 			exists = GER
 
 			NOT = { has_country_flag = claim_south_germany }
+			NOT = { has_country_flag = become_south_HRE }
 		}
 
 
@@ -53,5 +54,108 @@ political_decisions = {
 
 	}
 
+
+
+	become_south_HRE = {
+		picture = sign_the_geneva_convention_BASED
+		potential = {
+
+			tag = KUK
+
+
+			NOT = { has_country_flag = become_south_HRE }
+		}
+
+
+		allow = {
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+
+			NOT = { exists = GER }
+			NOT = { exists = ITA }
+
+		}
+
+		effect = {
+			change_tag = AUS
+			CRO = {
+				all_core = {
+					add_core = HUN
+				}
+			}
+			release_vassal = BKV
+			release_vassal = GLM
+			release_vassal = HUN
+			KUK = {
+				all_core = { remove_core = KUK }
+			}
+			remove_accepted_culture = hungarian
+			BKV = {
+				all_core = { remove_core = THIS }
+			}
+			GLM = {
+				all_core = { remove_core = THIS }
+			}
+			HUN = {
+				all_core = { remove_core = THIS }
+				772 = {
+					secede_province = HUN
+				}
+			}
+
+			add_accepted_culture = north_italian
+			SAR = {
+				all_core = { add_core = THIS }
+			}
+			SVY = {
+				all_core = { add_core = THIS }
+			}
+			BAV = {
+				all_core = { add_core = THIS }
+			}
+			BAD = {
+				all_core = { add_core = THIS }
+			}
+			WUR = {
+				all_core = { add_core = THIS }
+			}
+			add_core = 594
+			add_core = 409
+			add_core = 410
+			add_core = 412
+			MOD = {
+				all_core = { add_core = THIS }
+			}
+			PAR = {
+				all_core = { add_core = THIS }
+			}
+			LUC = {
+				all_core = { add_core = THIS }
+			}
+			RMG = {
+				all_core = { add_core = THIS }
+			}
+			TUS = {
+				all_core = { add_core = THIS }
+			}
+			LOM = {
+				all_core = { add_core = THIS }
+			}
+			VEN = {
+				all_core = { add_core = THIS }
+			}
+			set_country_flag = become_south_HRE
+		}
+
+		ai_will_do = {
+			factor = 0.00018
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+
+
+	}
 
 }
