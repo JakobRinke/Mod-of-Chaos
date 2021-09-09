@@ -96,7 +96,7 @@ political_decisions = {
 			SAF = {
 				add_country_modifier = {
 					name = south_african_new_world
-					duration = 60000 
+					duration = 200000 
 				}
 			}
 
