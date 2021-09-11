@@ -87,6 +87,7 @@ political_decisions = {
 			NOT = {has_country_flag = accept_danish_ger}
 		}
 		allow = {
+			ai = no 
 		}
 		
 		effect = {			
