@@ -2741,7 +2741,19 @@ provinz_growth_modifier = {
     population_growth = 0.01
     icon = 3
 }
+arabia_boost_modifier = {
+	education_efficiency_modifier = 4
+    research_points_modifier = 4
+	global_population_growth = 0.15
+    prestige = 0.05
+    icon = 7
+}
 
+arabian_resources = {
+	farm_rgo_size = 10
+	mine_rgo_size = 10
+	icon = 7
+}
 
 arm_country_modifier = {
     global_population_growth = 0.0065
