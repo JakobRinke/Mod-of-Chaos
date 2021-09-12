@@ -85,7 +85,7 @@ political_decisions = {
 			NOT = { has_country_flag = spa_core_mex }
 		}
 		allow = {
-			is_greater_power = 1
+			is_greater_power = yes
 			revolution_n_counterrevolution = 1
 		}
 		effect = {
