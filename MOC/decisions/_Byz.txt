@@ -56,10 +56,6 @@ political_decisions = {
 			change_tag = BYZ
 			set_country_flag = create_byztantine_empire
 			change_capital = 860
-			860 = {
-				change_province_name = constantinople
-				change_region_name = constantinople
-			}
 		}
 
 		ai_will_do = {
