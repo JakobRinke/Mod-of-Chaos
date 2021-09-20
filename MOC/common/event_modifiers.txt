@@ -2730,8 +2730,8 @@ african_schools =  {
 
 
 south_african_new_world ={
-    global_immigrant_attract = 3
-    global_assimilation_rate = 0.1
+    global_immigrant_attract = 4
+    global_assimilation_rate = 0.15
     icon = 7
 }
 
@@ -2741,18 +2741,33 @@ provinz_growth_modifier = {
     population_growth = 0.01
     icon = 3
 }
+
+
+kongo_school_system_modifier = {
+	education_efficiency_modifier = 10
+    research_points_modifier = 4
+	global_population_growth = 0.0003
+    prestige = 0.01
+    icon = 7
+}
+
 arabia_boost_modifier = {
 	education_efficiency_modifier = 4
     research_points_modifier = 4
-	global_population_growth = 0.15
-    prestige = 0.05
+    prestige = 0.005
     icon = 7
 }
 
 arabian_resources = {
-	farm_rgo_size = 10
-	mine_rgo_size = 10
+	farm_rgo_size = 0.5
+	mine_rgo_size = 0.5
 	icon = 7
+}
+
+fascist_care = {
+	population_growth = 0.0025
+	immigrant_push = 0.1
+	local_ruling_party_support = - 0.2
 }
 
 arm_country_modifier = {

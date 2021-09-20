@@ -75,7 +75,7 @@ political_decisions = {
 			ARM = {
 				add_country_modifier = {
 					name = arm_country_modifier
-					duration = 15000
+					duration = 9000
 				}
 			}
 			
