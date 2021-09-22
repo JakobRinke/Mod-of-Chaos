@@ -1,3 +1,5 @@
+#picture 0
+
 political_decisions = {
 
 	kongo_school_system = {

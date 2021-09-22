@@ -141,5 +141,136 @@ political_decisions = {
 			factor = 1
 		}
 	}
+
+	form_scandi_if_bugged = {
+		#copy-pasted out of HPM source code
+		news = yes
+        news_desc_long = "form_scandinavia_NEWS_LONG"
+        news_desc_medium = "form_scandinavia_NEWS_MEDIUM"
+        news_desc_short = "form_scandinavia_NEWS_SHORT"
+        potential = {
+            NOT = { exists = SCA }
+            capital_scope = { continent = europe }
+        }
+
+        allow = {
+            prestige = 300
+            is_greater_power = yes
+            war = no
+                all_core = {
+                    OR = {
+                        owned_by = THIS
+                        owner = {
+                            in_sphere = THIS
+                            war = no
+                            OR = {
+                                is_vassal = no
+                                vassal_of = THIS
+                                AND = {
+                                    is_vassal = yes
+                                    overlord = {
+                                        is_culture_group = scandinavian
+                                        OR = {
+                                            in_sphere = THIS
+                                            vassal_of = THIS
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+        }
+
+        effect = {
+			add_accepted_culture = swedish 
+			add_accepted_culture = norwegen
+			add_accepted_culture = danish
+            prestige = 20
+            all_core = {
+                add_core = SCA
+                remove_core = THIS
+            }
+            change_tag = SCA
+            remove_country_modifier = kalmar_union
+            remove_country_modifier = leader_of_kalmar
+            remove_country_modifier = customs_union
+            random_owned = {
+                limit = { owner = { accepted_culture = finnish } }
+                owner = {
+                    remove_accepted_culture = finnish
+                    any_owned = {
+                        limit = { pop_majority_culture = finnish }
+                        remove_core = THIS
+                        add_province_modifier = { name = nationalist_agitation duration = 1825 }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = {
+                    owner = {
+                        SWE = { NOT = { has_country_flag = Conceded_Finland } }
+                    }
+                }
+                owner = {
+                    FIN = {
+                        remove_accepted_culture = swedish
+                        all_core = {
+                            limit = { NOT = { province_id = 348 } }
+                            remove_core = SCA
+                            remove_core = SWE
+                        }
+                    }
+                }
+            }
+
+            random_owned = {
+                limit = {
+                    owner = { accepted_culture = icelandic }
+                }
+                owner = {
+                    remove_accepted_culture = icelandic
+                    any_owned = {
+                        limit = { pop_majority_culture = icelandic }
+                        remove_core = THIS
+                        add_province_modifier = { name = nationalist_agitation duration = 1825 }
+                    }
+                }
+            }
+
+            any_country = {
+                limit = {
+                    exists = yes
+                    is_greater_power = no
+                    has_country_modifier = kalmar_union
+                    OR = {
+                        is_vassal = no
+                        vassal_of = THIS
+                        AND = {
+                            is_vassal = yes
+                            NOT = {
+                                primary_culture = finnish
+                                primary_culture = icelandic
+                            }
+                            OR = {
+                                is_culture_group = scandinavian
+                                tag = SCH
+                                tag = SWH
+                            }
+                            overlord = { is_culture_group = scandinavian }
+                        }
+                    }
+                }
+                country_event = 11101
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+		}
+	}
 	
 }

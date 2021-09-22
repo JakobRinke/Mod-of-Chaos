@@ -47,6 +47,7 @@ political_decisions = {
 			add_accepted_culture = yankee
 			CAN = {
 			add_country_modifier = {name = CAN_country_modifier duration = 20000}}
+			add_country_modifier = {name = CAN_country_modifier_pop_growth duration = 900}}
 			CAL   = {
 				all_core = {
 					add_core = THIS

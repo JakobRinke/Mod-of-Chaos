@@ -7,7 +7,7 @@ political_decisions = {
 		picture = manifest_destiny_from_vanilla_game
 		potential = {
 			tag = IAA	
-			NOT = { has_country_flag = ozeanien_get_immigration_attraction}	
+			NOT = { has_country_flag = ozeanien_get_immigration_attraction_country}	
 		}
 		allow = {
             war = no
@@ -18,7 +18,7 @@ political_decisions = {
 		effect = {
 		money = -200000
 		prestige = 15
-		set_country_flag = ozeanien_get_immigration_attraction
+		set_country_flag = ozeanien_get_immigration_attraction_country
 		 IAA = {
 				add_country_modifier = {
 					name = IAA_country_modifier
@@ -26,11 +26,9 @@ political_decisions = {
 				}
 			}		
 		}
-	
 		ai_will_do = {					
 				factor = 1
 		}
-	
 	}
 
 	ozeanien_get_immigration_attraction = {
@@ -47,31 +45,21 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = ozeanien_get_immigration_attraction
-			 IAA = {
-				JAV  = {
-					all_core = {add_province_modifier = 
-						{
-						name = gold_rush
-						duration = 5475
-						}
-					}
+			
+			any_owned  = {
+				limit = {
+					is_coastel = yes
 				}
-				AST  = {
-					all_core = {add_province_modifier = 
-						{
-						name = gold_rush
-						duration = 5475
-						}
-					}
+				add_province_modifier = {
+					name = gold_rush
+					duration = 5475
 				}
-				
-			}		
+			}
+			prestige = 10
 		}
-	
 		ai_will_do = {					
 				factor = 1
 		}
-	
 	}
 
 	net_take_java_back ={
@@ -93,6 +81,49 @@ political_decisions = {
 			
 		ai_will_do = {					
 			factor = 0.0001
+		}
+	}
+
+	organize_IAA = {
+		picture = release_ast
+		potential = {
+				tag = IAA	
+				NOT = { has_country_flag = organize_IAA}	
+			}
+			allow = {
+				owns = 2497
+				owns = 2505
+				owns = 2483
+				owns = 1417
+				owns = 1419
+				owns = 2479
+				owns = 2516
+				owns = 2512
+				owns = 2571
+				owns = 2508
+				owns = 2479
+				owns = 2474
+				war = no
+				steam_turbine = 1
+				organic_chemistry = 1
+			}
+			effect = {
+				set_country_flag = organize_IAA
+				2497 = {trade_goods = coal RGO_size = 1000000}
+				2505 = {trade_goods = coal RGO_size = 1000000}
+				2483 = {trade_goods = iron RGO_size = 1000000}
+				1417 = {trade_goods = coal RGO_size = 1000000}
+				1419 = {trade_goods = iron RGO_size = 1000000}
+				2479 = {trade_goods = iron RGO_size = 1000000}
+				2516 = {trade_goods = iron RGO_size = 1000000}
+				2512 = {trade_goods = iron RGO_size = 1000000}
+				2571 = {trade_goods = coal RGO_size = 1000000}
+				2508 = {trade_goods = coal RGO_size = 1000000}
+				2479 = {trade_goods = coal RGO_size = 1000000}
+				2474 = {trade_goods = coal RGO_size = 1000000}
+			}
+		ai_will_do = {					
+			factor = 0.001
 		}
 	}
 }

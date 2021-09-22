@@ -2731,7 +2731,7 @@ african_schools =  {
 
 
 south_african_new_world ={
-    global_immigrant_attract = 4
+    global_immigrant_attract = 4.33
     global_assimilation_rate = 0.15
     icon = 7
 }
@@ -2786,4 +2786,9 @@ arm_country_modifier = {
     war_exhaustion = -0.1
     icon = 15
     education_efficiency_modifier = 0.5
+}
+
+
+CAN_country_modifier_pop_growth = {
+    global_population_growth = 0.5
 }
