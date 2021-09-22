@@ -151,6 +151,11 @@ political_decisions = {
         potential = {
             NOT = { exists = SCA }
             capital_scope = { continent = europe }
+			OR = {
+				tag = SWE
+				tag = DEN
+				tag = NOR
+			}
         }
 
         allow = {
