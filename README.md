@@ -62,4 +62,8 @@ The following Nations have at least one decision or event added for them:
 <li> Nigeria  </li>
 <li> Persia  </li>
 <li> Armenia  </li>
+<li> Timurid Empire  </li>
+<li> Denmark  </li>
+<li> Sweden  </li>
+  
 </ul>
