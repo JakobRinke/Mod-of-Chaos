@@ -58,7 +58,7 @@ The following Nations have at least one decision or event added for them:
 <li> Mongolia  </li>
 <li> Arabia  </li>
 <li> South Africa  </li>
-<li> Ethopia  </li>
+<li> Ethiopia  </li>
 <li> Nigeria  </li>
 <li> Persia  </li>
 <li> Armenia  </li>
