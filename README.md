@@ -67,3 +67,14 @@ The following Nations have at least one decision or event added for them:
 <li> Sweden  </li>
   
 </ul>
+
+<h2> 
+  More Informations
+</h2>
+<p>
+  This is a short Overview of every single nation with changes<br>
+  <a href="https://docs.google.com/document/d/1USLwUEz5cxaegq30uF96I9xCq2yDIwHv6KSwYHlE5xg/edit">https://docs.google.com/document/d/1USLwUEz5cxaegq30uF96I9xCq2yDIwHv6KSwYHlE5xg/edit</a>
+</p>
+
+
+
