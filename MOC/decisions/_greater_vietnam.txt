@@ -1,0 +1,154 @@
+#picture 0 
+
+political_decisions = {
+
+	claim_south_han_1836 = {
+		potential = {
+			tag = DAI
+			NOT = {has_country_flag = claim_south_han}
+		}
+		allow = {
+			war = no 
+		}
+		effect = {
+			add_accepted_culture = nanfaren
+			add_accepted_culture = malay
+			add_accepted_culture = thai
+			add_accepted_culture = lao
+			add_accepted_culture = burmese
+
+			DAI  = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			LUA   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			JOH   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BUR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SIA   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CAM   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			GXI   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			YNN   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			FJN    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			GNG = { all_core = { add_core = THIS } }
+
+
+
+			set_country_flag = claim_south_han
+		}
+
+		ai_will_do = {
+			factor = 0.0018
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+		claim_south_han_1840 = {
+			potential = {
+				tag = DAI
+				NOT = {has_country_flag = claim_south_han}
+			}
+			allow = {
+				war = no 
+			}
+			effect = {
+				add_accepted_culture = nanfaren
+				add_accepted_culture = malay
+				add_accepted_culture = thai
+				add_accepted_culture = lao
+				add_accepted_culture = burmese
+
+				DAI  = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				LUA   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				JOH   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				BUR   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				SIA   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				CAM   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				GXI   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				YNN   = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				FJN    = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				GNG = { all_core = { add_core = THIS } }
+
+
+
+				set_country_flag = claim_south_han
+			}
+
+			ai_will_do = {
+				factor = 0.0018
+				modifier = {
+					factor = 0
+					badboy = 0.65
+				}
+			}
+
+	}

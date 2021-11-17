@@ -1,0 +1,110 @@
+#pictures 0
+
+political_decisions = {
+	Expand_our_empire = {
+		potential = {
+			tag = SER
+			NOT = { has_country_flag = Expand_our_empire}	
+		}
+		allow = {
+            war = no
+		}
+		
+		effect = {
+			prestige = 25
+			badboy = 10
+			add_accepted_culture = hungarian
+			add_accepted_culture = romanian
+			add_accepted_culture = bosniak
+			add_accepted_culture = bulgarian
+			add_accepted_culture = croat
+			add_accepted_culture = slovene
+			add_accepted_culture = greek
+			add_accepted_culture = turkish
+			add_accepted_culture = south_german
+			set_country_flag = Expand_our_empire
+			ALB   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SLO   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			GRE   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CRO   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MON   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			DLM   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BUL   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ROM   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.0001
+		}
+		
+	}
+	get_strong_serbia_based = {
+		potential = {
+			tag = SER
+			NOT = { has_country_flag = get_strong_serbia_based}	
+		}
+		allow = {
+            war = no
+			army_professionalism = 1
+		}
+		
+		effect = {
+			define_general = {
+				name = "Miloš Obilic"
+				personality = implacable 
+				background = cursed_luck 
+			}
+			activate_technology = strategic_mobility 
+			activate_technology = military_staff_system 
+			activate_technology = military_plans
+
+			activate_technology = hot_blast   
+			activate_technology = basic_chemistry 
+
+			activate_technology = clipper_design  
+			activate_technology = naval_design_bureaus  
+			activate_technology = alphabetic_flag_signaling
+
+			activate_technology = malthusian_thought
+			activate_technology = positivism
+
+			set_country_flag = get_strong_serbia_based
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+}
+

@@ -1,0 +1,165 @@
+#picture 1
+
+political_decisions = {
+
+	become_a_polish_nation = {
+		picture = prussia_becomes_not_germany_lpc
+		potential = {
+			tag = PRU
+			NOT = {has_country_flag = become_a_polish_nation}
+		}
+		allow = {
+			is_greater_power = yes
+		}
+		effect = {
+			badboy = 5 
+			prestige = 15
+			primary_culture = polish
+			add_accepted_culture = north_german
+			remove_accepted_culture  = south_german 
+			add_accepted_culture = czech
+			add_accepted_culture = slovak
+			add_accepted_culture = western_slavic
+			add_accepted_culture = lithuanian
+			add_accepted_culture = estonian
+			add_accepted_culture = ashkenazi
+			remove_core = 594
+			release_vassal = SGM 
+			POL     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CZH     = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			LIT      = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			LAT      = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			EST       = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BOH        = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			OLD  = {
+				all_core = {add_core = THIS}
+			}
+			BRE   = {
+				all_core = {add_core = THIS}
+			}
+			LIP = {
+				all_core = {add_core = THIS}
+			}
+			SWH = {
+				all_core = {add_core = THIS}
+			}
+			LUB = {
+				all_core = {add_core = THIS}
+			}
+			HAM = {
+				all_core = {add_core = THIS}
+			}
+			MEC = {
+				all_core = {add_core = THIS}
+			}
+			WES  = {
+				all_core = {add_core = THIS}
+			}
+			WEI   = {
+				all_core = {add_core = THIS}
+			}
+			RHI   = {
+				all_core = {add_core = THIS}
+			}
+			HAN   = {
+				all_core = {add_core = THIS}
+			}
+			SAX   = {
+				all_core = {add_core = THIS}
+			}
+			ANH    = {
+				all_core = {add_core = THIS}
+			}
+			COB     = {
+				all_core = {add_core = THIS}
+			}
+			HES      = {
+				all_core = {add_core = THIS}
+			}
+			HES      = {
+				all_core = {add_core = THIS}
+			}
+			HEK      = {
+				all_core = {add_core = THIS}
+			}
+			NAS      = {
+				all_core = {add_core = THIS}
+			}
+			FRM       = {
+				all_core = {add_core = THIS}
+			}
+			add_core = 536
+			add_core = 563
+			set_country_flag = become_a_polish_nation
+		}
+
+		ai_will_do = {
+			factor = 0.0018
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+
+
+	}
+	koenigsberg_great_city = {
+		picture = koenigsber_pop_growth
+		potential = {
+			tag = PRU
+			has_country_flag = become_a_polish_nation
+			NOT = {has_country_flag = koenigsberg_great_city}
+			owns = 695
+		}
+		allow = {
+			is_greater_power = yes
+			prestige = 150
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 25
+			set_country_flag = koenigsberg_great_city
+			capital = 695
+			695 = {
+				add_province_modifier= {
+					name = Koenigsberg_modifier
+					duration = 2750
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.00018
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+
+
+	}
+}

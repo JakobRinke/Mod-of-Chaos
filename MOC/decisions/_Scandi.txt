@@ -199,6 +199,13 @@ political_decisions = {
                 add_core = SCA
                 remove_core = THIS
             }
+			SWE ={
+				all_core = {
+					add_core = SCA
+					remove_core = THIS
+				}
+			}
+			
             change_tag = SCA
             remove_country_modifier = kalmar_union
             remove_country_modifier = leader_of_kalmar
@@ -270,7 +277,8 @@ political_decisions = {
                         }
                     }
                 }
-                country_event = 11101
+                country_
+				= 11101
             }
         }
 
