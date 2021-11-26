@@ -1,11 +1,9 @@
 #picture 0
 
 political_decisions = {
-	picture = gtfo
 	get_RhineLand_france = {
-
 		potential = {
-			tag = Fra
+			tag = FRA
 			NOT = {
 				has_country_flag = _getRhineLand_france
 			}
@@ -59,6 +57,7 @@ political_decisions = {
 
 			set_country_flag = _getRhineLand_france
 		}
+	}
 }
 
 
