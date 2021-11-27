@@ -2766,8 +2766,8 @@ arabian_resources = {
 }
 
 fascist_care = {
-	population_growth = 0.000025
-	immigrant_push = 0.1
+	population_growth = 0.00000025
+	immigrant_push = 0.15
 	local_ruling_party_support = -0.2
 }
 
