@@ -226,7 +226,7 @@ political_decisions = {
 		effect = {
 
 			set_country_flag = claim_cores_on_SCO
-			badboy = 150
+			badboy = 15
 			add_accepted_culture = british
 			SCO  = {all_core = {add_core = THIS}}
 

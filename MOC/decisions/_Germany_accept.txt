@@ -18,7 +18,7 @@ political_decisions = {
 		}
 		
 		effect = {			
-			prestige = 15
+			prestige = 25
 			money 200000
 
 			ENG = {release_vassal = HAN}
@@ -72,6 +72,14 @@ political_decisions = {
 			inherit = SWH  
 			inherit = MEC
 			inherit = HAM
+			inherit = HEK 
+			inherit = HES  
+			inherit = NAS   
+			inherit = FRM    
+			inherit = ANH     
+			activate_technology = army_professionalism
+			activate_technology = strategic_mobility
+			money = 500000
 
 			set_country_flag = Han_rise_in_power
 			}
@@ -137,17 +145,18 @@ political_decisions = {
 			}
 		}
 	}
-	accept_danish_GER = {
+	accept_danish_GERM = {
 		picture = claim_danish
 		potential = {
 			tag = GER
-			has_country_flag = accept_danish_uno
-			NOT = {has_country_flag = accept_danish_GER}
+			has_country_flag = accept_danish_ngf
+			NOT = {has_country_flag = accept_danish_GERM}
 		}
 		
 
 		allow = {
 			prestige = 150
+			
 		}
 		
 		effect = {			
@@ -155,7 +164,7 @@ political_decisions = {
 				all_core = {add_core = THIS}
 			}
 			add_accepted_culture = danish
-			set_country_flag = accept_danish_GER
+			set_country_flag = accept_danish_GERM
 			}
 		
 		ai_will_do = {					

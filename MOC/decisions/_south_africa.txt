@@ -63,7 +63,7 @@ political_decisions = {
 			SAF = {
 				add_country_modifier = {
 					name = south_african_new_world
-					duration = 12000 
+					duration = 36500 
 				}
 			}
 		}
@@ -96,7 +96,7 @@ political_decisions = {
 			SAF = {
 				add_country_modifier = {
 					name = south_african_new_world
-					duration = 200000 
+					duration = 36500 
 				}
 			}
 
@@ -350,6 +350,18 @@ political_decisions = {
 
 			set_country_flag = scramble_time_south_africa
 
+			add_accepted_culture = kavango
+			add_accepted_culture = sena
+			add_accepted_culture = ovimbundu
+			add_accepted_culture = chewa
+			add_accepted_culture = nyasa
+			add_accepted_culture = lomwe
+			add_accepted_culture = lunda
+			add_accepted_culture = luba
+			add_accepted_culture = chewa
+			add_accepted_culture = lacustrine_bantu
+			add_accepted_culture = south_forest_bantu
+			add_accepted_culture = yao
 		}
 	}
 }
