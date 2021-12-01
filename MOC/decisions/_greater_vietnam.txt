@@ -67,10 +67,14 @@ political_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0.0018
+			factor = 0.001
 			modifier = {
 				factor = 0
-				badboy = 0.65
+				badboy = 0.4
+			}
+			modifier = {
+				factor = 0
+				year = 1837
 			}
 		}
 	}
@@ -141,8 +145,12 @@ political_decisions = {
 			}
 
 			ai_will_do = {
-				factor = 0.00025
+			factor = 0.0007
+			modifier = {
+				factor = 0
+				year = 1846
 			}
+		}
 	}
 	claim_south_han_1870 = {
 

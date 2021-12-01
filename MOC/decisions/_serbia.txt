@@ -65,8 +65,17 @@ political_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0.0001
+			factor = 0.0009
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+			modifier = {
+				factor = 0
+				year = 1837
+			}
 		}
+
 		
 	}
 	get_strong_serbia_based = {
