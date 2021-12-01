@@ -54,7 +54,7 @@ political_decisions = {
 				MCK = {
 					all_core = {
 						add_core = THIS	
-					}s
+					}
 				}
 				PHL = {
 					all_core = {
