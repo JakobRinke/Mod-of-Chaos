@@ -24,11 +24,24 @@ political_decisions = {
 		effect = {
 			badboy = 12
 			add_accepted_culture = polish
-			POL = {
+			CPL  = {
 				all_core = {
 					add_core = THIS
 				}
 			}
+			add_core = 684
+			add_core = 685
+			add_core = 694
+			add_core = 701
+			add_core = 702
+			add_core = 703
+			add_core = 704
+			add_core = 705
+			add_core = 714
+			add_core = 951
+			add_core = 952
+			add_core = 953
+			add_core = 719
 			set_country_flag = Polish_Embrace
 		}
 		

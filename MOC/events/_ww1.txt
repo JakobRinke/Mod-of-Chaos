@@ -1,0 +1,71 @@
+country_event = {
+	id = 13370010
+	title = "Assassination of Archduke Franz Ferdinand"
+	desc  = "The Archdule Franz Ferdinand was assassinated by Bosnian Serv Student Gavrilo Princip. He got shot at close range while being driven through Sarajevo."
+
+	is_triggered_only = yes
+	fire_only_once = yes  
+	option = {
+		name = "Give Serbia a ultimatum."
+		any_country = {
+			SER = {
+				country_event = 13370011
+				badboy = 2
+				prestige = 10
+			}
+		}
+	}
+	option = {
+		name = "Exterminate the Serbians and Bosnians."
+		any_country = {
+			any_greater_power = {
+				country_event = 13370012
+			}
+		}
+	}
+
+	option = {
+		name = "Back down."
+		prestige = -50
+		badboy = -1
+	}
+	
+}
+
+country_event = {
+	id = 13370011
+	title = "The Ultimatum"
+	desc  = "After the assassination from Franz Ferdinand. We have got an ultimatum. We can either accept it or they will declare war onto us "
+	is_triggered_only = yes
+	fire_only_once = yes  
+	option = {
+		name = "Accept the Ultimatum."
+		any_country = {
+			prestige = -200
+			badboy = 15
+		}
+	}
+	option = {
+		name = "Decline the Ultimatum"
+		RUS = {
+			country_event = 13370013
+		}
+		FRA = {
+			country_event = 13370013
+		}
+		DUA = {
+			country_event = 13370013
+		}
+		ENG = {
+			country_event = 13370013
+		}
+		immediate = {
+			war = {
+				target = FROM
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = conquest }
+				call_ally = yes
+			}
+		}  
+	}	
+}

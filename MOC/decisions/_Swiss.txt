@@ -12,6 +12,10 @@ political_decisions = {
 				tag = AUS
 				tag = KUK
 				tag = DNB
+				tag = BRG
+				tag = PRV
+				tag = PRS
+				tag = DUA
 			}
 			NOT = { has_country_flag = Swiss_Embrace }
 		}
@@ -62,6 +66,9 @@ political_decisions = {
 				tag = AUS
 				tag = KUK
 				tag = DNB
+				tag = BRG
+				tag = PRV
+				tag = PRS
 			}
 			NOT = { has_country_flag = annex_swiss }
 			has_country_flag = Swiss_Embrace

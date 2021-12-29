@@ -29,9 +29,16 @@ political_decisions = {
 			set_country_flag = claim_aragon_empire
 		}
 		
-		ai_will_do = {					
-			factor = 0.0002
-		}
+		ai_will_do = {
+			factor = 0.00061
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+			modifier = {
+				factor = 0
+				year = 1837
+			}
 	}
 
 	reform_aragon_empire = {

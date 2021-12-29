@@ -85,7 +85,7 @@ political_decisions = {
 					secede_province = CUM
 				}
 			}
-			CANADA = {
+			CAN = {
 				all_core = {
 					secede_province = CUM
 					add_core = CUM

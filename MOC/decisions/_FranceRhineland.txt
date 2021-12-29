@@ -3,18 +3,26 @@
 political_decisions = {
 	get_RhineLand_france = {
 		potential = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = AQU
+			}
+			NOT = { has_country_flag = claim_more_of_spain_aqu}	
 			NOT = {
 				has_country_flag = _getRhineLand_france
 			}
+			OR = {
+				AQU = {has_country_flag = claim_more_of_fra_aqu}
+				FRA = {is_greater_power = yes}
+			}
+			
 			NOT = { has_country_flag = claim_south_england}	
 		}
 			
 		allow = {
 			year = 1870
 			is_greater_power = yes
-			exists = GER
-		}
+			}
 		
 		effect = {
 			badboy = 8
@@ -35,7 +43,6 @@ political_decisions = {
 			add_core = 397
 
 			#Belgium
-
 			add_core = 387
 			add_core = 388
 			add_core = 389
@@ -56,6 +63,7 @@ political_decisions = {
 			add_core = 381
 
 			set_country_flag = _getRhineLand_france
+			set_country_flag = claim_south_england
 		}
 	}
 
@@ -513,16 +521,15 @@ political_decisions = {
 				}
 			}
 		
-			allow = {
-				war = no
-				prestige = 700
-			}
+		allow = {
+			war = no
+			prestige = 700
+		}
 		
-			effect = {
-			badboy = 1
-				GER     = {all_core = {assimalte = yes}}}
-		
-				ai_will_do = { factor = 1 }
+		effect = {
+			badboy = 5
+			all_core = {assimalte = yes}
 			}
-
+			ai_will_do = { factor = 1 }
+		}
 }
