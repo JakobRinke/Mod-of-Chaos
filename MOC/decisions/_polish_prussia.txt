@@ -120,14 +120,15 @@ political_decisions = {
 			set_global_flag = become_a_polish_nation
 		}
 		ai_will_do = {
-			factor = 0.000000000000000000475
+			factor = 0.0007
 			modifier = {
 				factor = 0
 				badboy = 0.4
 			}
 			modifier = {
-				factor = 0
 				year = 1841
+				NOT = { month =3}
+				factor = 0
 			}
 		}
 	}
