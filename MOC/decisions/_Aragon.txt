@@ -4,15 +4,15 @@ political_decisions = {
 	claim_aragon_empire = {
 		picture = claim_cores_aragonss
 		potential = {
-		
+
 			OR = {tag=SIC tag=CAT}
-			NOT = { has_country_flag = claim_aragon_empire}	
+			NOT = { has_country_flag = claim_aragon_empire}
 		}
 		allow = {
-			
+
 		}
-		
-		effect = {			
+
+		effect = {
 			prestige = 20
 			badboy = 6
 			SIC = {all_core = {add_core = THIS}}
@@ -28,7 +28,7 @@ political_decisions = {
 			add_core = 505
 			set_country_flag = claim_aragon_empire
 		}
-		
+
 		ai_will_do = {
 			factor = 0.00061
 			modifier = {
@@ -39,18 +39,19 @@ political_decisions = {
 				factor = 0
 				year = 1837
 			}
+		}
 	}
 
 	reform_aragon_empire = {
 		potential = {
-		
+
 			OR = {tag=SIC tag=CAT}
 			NOT = { has_country_flag = reform_aragon_empire}
 			has_country_flag = claim_aragon_empire
 		}
 		allow = {
 			SIC = {all_core = {owned_by = THIS}}
-			
+
 			owns = 497
 			owns = 495
 			owns = 496
@@ -68,17 +69,17 @@ political_decisions = {
 			owns = 496
 			owns = 497
 			owns = 503
-			owns = 504 
+			owns = 504
 			owns = 505
 			owns = 765
 			owns = 766
 			owns = 763
 		}
-		
-		effect = {			
+
+		effect = {
 			prestige = 30
 			primary_culture = catalan
-			add_accepted_culture = south_italian	
+			add_accepted_culture = south_italian
 			change_tag = AGN
 			add_core = 461
 			add_core = 462
@@ -91,29 +92,29 @@ political_decisions = {
 
 			set_country_flag = reform_aragon_empire
 		}
-		
-		ai_will_do = {					
+
+		ai_will_do = {
 			factor = 1
 		}
 	}
-	
+
 	unify_italy_AGN = {
 		potential = {
 			tag = AGN
 			NOT = {has_country_flag = unify_italy_AGN}
 		}
 		allow = {
-			
+
 			ITA = {
 				all_core = {
 					OR = {owned_by = THIS owner= { OR = {in_sphere = THIS}}}
 				}
 			}
 		}
-		
-		effect = {			
+
+		effect = {
 			prestige = 60
-			add_accepted_culture = north_italian		
+			add_accepted_culture = north_italian
 			ITA = {
 				all_core = {
 					secede_province = THIS
@@ -130,8 +131,8 @@ political_decisions = {
 			add_core = 8
 			set_country_flag = unify_italy_AGN
 		}
-		
-		ai_will_do = {					
+
+		ai_will_do = {
 			factor = 1
 		}
 	}

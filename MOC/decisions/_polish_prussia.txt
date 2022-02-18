@@ -13,11 +13,11 @@ political_decisions = {
 			year = 1840
 		}
 		effect = {
-			badboy = 5 
+			badboy = 5
 			prestige = 15
 			primary_culture = polish
 			add_accepted_culture = north_german
-			remove_accepted_culture  = south_german 
+			remove_accepted_culture  = south_german
 			add_accepted_culture = czech
 			add_accepted_culture = slovak
 			add_accepted_culture = western_slavic
@@ -26,7 +26,7 @@ political_decisions = {
 			add_accepted_culture = estonian
 			add_accepted_culture = ashkenazi
 			remove_core = 594
-			release_vassal = SGM 
+			release_vassal = SGM
 			POL     = {
 				all_core = {
 					add_core = THIS
@@ -161,10 +161,7 @@ political_decisions = {
 
 		ai_will_do = {
 			factor = 0.00018
-			modifier = {
-				factor = 0
-				badboy = 0.65
-			}
+
 		}
 	}
 	accept_more_cultures = {
@@ -187,7 +184,7 @@ political_decisions = {
 			add_accepted_culture = north_german
 			add_accepted_culture = south_german
 			add_accepted_culture = czech
-			
+
 
 			#Deutschland cores
 			add_core = 2560
@@ -296,7 +293,7 @@ political_decisions = {
 			add_core = 696
 			add_core = 1743
 
-			
+
 			define_general = {
 				name = "Felix von Barth"
 				personality = expert_raider
@@ -368,7 +365,7 @@ political_decisions = {
 		effect = {
 			prestige = 25
 			set_country_flag = become_PLR
-			set_country_flag = post_colonial_country 
+			set_country_flag = post_colonial_country
 			change_tag = PLR
 			primary_culture = north_german
 			add_accepted_culture = polish
@@ -423,7 +420,7 @@ political_decisions = {
                 }
                 country_event = 11106
             }
-			
+
 		}
 		ai_will_do = {
 			factor = 1
@@ -458,6 +455,6 @@ political_decisions = {
                 badboy = 0.4
             }
 		}
-	
+
 	}
 }

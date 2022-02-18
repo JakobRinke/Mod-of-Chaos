@@ -1,7 +1,7 @@
 #picture 1
 
 political_decisions = {
-	
+
 	attack_the_dutch_FRA = {
 		picture = attack_the_dutch_Asdasd
 		potential = {
@@ -9,17 +9,17 @@ political_decisions = {
 			 tag = FRA
 			 tag = DUA
 			}
-			
+
 			NOT = { has_country_flag = Dutch_Embrace }
 		}
-		
+
 		allow = {
 			is_greater_power = yes
 			revolution_n_counterrevolution = 1
 			NET = {  is_greater_power = no }
 			BEL = {  is_greater_power = no }
-		}	
-		
+		}
+
 		effect = {
 			badboy = 7
 			add_accepted_culture = wallonian
@@ -28,8 +28,8 @@ political_decisions = {
 					limit = {
 						NOT = {
 							OR = {
-								is_core = GER 
-								is_core = AUS 
+								is_core = GER
+								is_core = AUS
 								is_core = SWI
 							}
 						}
@@ -47,8 +47,8 @@ political_decisions = {
 					limit = {
 						NOT = {
 							OR = {
-								is_core = GER 
-								is_core = AUS 
+								is_core = GER
+								is_core = AUS
 								is_core = SWI
 							}
 						}
@@ -58,37 +58,37 @@ political_decisions = {
 			}
 			set_country_flag = Dutch_Embrace
 		}
-		
+
 		ai_will_do = {
 			factor = 0.0004
 			modifier = {
                 factor = 0
                 badboy = 0.3
             }
-		}	
+		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	attack_the_dutch_ENG = {
 		picture = attack_the_dutch_Asdasd
 		potential = {
 			tag = ENG
-			
-		
+
+
 			NOT = { has_country_flag = Dutch_Embrace }
 		}
-		
-		
+
+
 		allow = {
 			is_greater_power = yes
 			revolution_n_counterrevolution = 1
 			NET = {  is_greater_power = no }
 			BEL = {  is_greater_power = no }
 		}
-		
+
 		effect = {
 			badboy = 7
 			add_accepted_culture = dutch
@@ -97,8 +97,8 @@ political_decisions = {
 					limit = {
 						NOT = {
 							OR = {
-								is_core = GER 
-								is_core = AUS 
+								is_core = GER
+								is_core = AUS
 								is_core = SWI
 							}
 						}
@@ -116,8 +116,8 @@ political_decisions = {
 					limit = {
 						NOT = {
 							OR = {
-								is_core = GER 
-								is_core = AUS 
+								is_core = GER
+								is_core = AUS
 								is_core = SWI
 							}
 						}
@@ -127,7 +127,7 @@ political_decisions = {
 			}
 			set_country_flag = Dutch_Embrace
 		}
-		
+
 		ai_will_do = {
 			factor = 0.0004
 			modifier = {
@@ -135,11 +135,12 @@ political_decisions = {
                 badboy = 0.3
             }
 		}
-		
-		
+
+
 	}
 
-	
+
+
 	net_claim_england = {
 		potential = {
 			tag = NET
@@ -235,7 +236,7 @@ political_decisions = {
 			add_core = 369
 			add_core = 533
 
-			#Schleswig 
+			#Schleswig
 			add_core = 370
 			add_core = 371
 
@@ -252,7 +253,7 @@ political_decisions = {
 			add_core = 367
 			add_core = 366
 
-			#Mecklenburg 
+			#Mecklenburg
 			add_core = 544
 			add_core = 545
 			add_core = 547
