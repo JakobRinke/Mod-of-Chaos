@@ -1,4 +1,4 @@
-#picture 0 
+#picture 0
 
 political_decisions = {
 
@@ -8,7 +8,7 @@ political_decisions = {
 			NOT = {has_country_flag = claim_south_han}
 		}
 		allow = {
-			war = no 
+			war = no
 		}
 		effect = {
 			add_accepted_culture = malay
@@ -62,7 +62,7 @@ political_decisions = {
 				}
 			}
 			GNG = { all_core = { add_core = THIS } }
-			nationalvalue = nv_productivity 
+			nationalvalue = nv_productivity
 			set_country_flag = claim_south_han
 		}
 
@@ -83,45 +83,46 @@ political_decisions = {
 
 			potential = {
 				tag = DAI
-				NOT = {has_country_flag = claim_south_han_1840}
+				NOT = {has_country_flag = claim_south_han_1845}
+				has_country_flag = claim_south_han
 			}
 			allow = {
-				war = no 
+				war = no
 				year = 1845
 			}
 			effect = {
 
 				#Culture techs
-				activate_technology = late_enlightenment_philosophy 
-				activate_technology = malthusian_thought 
-				activate_technology = enlightenment_thought 
+				activate_technology = late_enlightenment_philosophy
+				activate_technology = malthusian_thought
+				activate_technology = enlightenment_thought
 
 				#Industry techs
-				activate_technology = piston_steam_engine   
-				activate_technology = mechanical_production 
-				activate_technology = basic_chemistry 
+				activate_technology = piston_steam_engine
+				activate_technology = mechanical_production
+				activate_technology = basic_chemistry
 
 				#Army techs
-				activate_technology = post_napoleonic_thought 
-				activate_technology = flintlock_rifles 
-				activate_technology = bronze_muzzle_loaded_artillery 
-				activate_technology = military_staff_system 
-				activate_technology = army_command_principle  
+				activate_technology = post_napoleonic_thought
+				activate_technology = flintlock_rifles
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = military_staff_system
+				activate_technology = army_command_principle
 
 				#Navy techs
-				activate_technology = post_nelsonian_thought  
+				activate_technology = post_nelsonian_thought
 
 				#Commerce techs
-				activate_technology = private_banks   
-				activate_technology = no_standard   
-				activate_technology = early_classical_theory_and_critique   
-				activate_technology = guild_based_production   
+				activate_technology = private_banks
+				activate_technology = no_standard
+				activate_technology = early_classical_theory_and_critique
+				activate_technology = guild_based_production
 
 				#Guizhou
 				add_core = 1505
 				add_core = 1506
 				add_core = 1507
-				
+
 				#Westsichuan
 				add_core = 1578
 				add_core = 1580
@@ -141,7 +142,7 @@ political_decisions = {
 				add_core = 1548
 				add_accepted_culture = nanfaren
 				research_points = 25000
-				set_country_flag = claim_south_han_1840
+				set_country_flag = claim_south_han_1845
 			}
 
 			ai_will_do = {
@@ -157,9 +158,10 @@ political_decisions = {
 			potential = {
 				tag = DAI
 				NOT = {has_country_flag = claim_south_han_1870}
+				has_country_flag = claim_south_han_1845
 			}
 			allow = {
-			AND = {
+				AND = {
 					owns = 1550
 					owns = 1547
 					owns = 1548
@@ -176,7 +178,7 @@ political_decisions = {
 					owns = 1585
 					owns = 1586
 				}
-				war = no 
+				war = no
 				prestige = 250
 				year = 1870
 			}
@@ -231,9 +233,10 @@ political_decisions = {
 			potential = {
 				tag = DAI
 				NOT = {has_country_flag = claim_south_han_1890}
+				has_country_flag = claim_south_han_1870
 			}
 			allow = {
-				war = no 
+				war = no
 				prestige = 400
 				year = 1890
 				is_greater_power = yes
@@ -252,7 +255,7 @@ political_decisions = {
 				add_core = 1473
 				add_core = 1475
 
-				#West Hubei 
+				#West Hubei
 				add_core = 1519
 				add_core = 1520
 				add_core = 1521

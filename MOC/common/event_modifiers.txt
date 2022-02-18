@@ -2796,4 +2796,99 @@ CAN_country_modifier_pop_growth = {
 Koenigsberg_modifier = {
 	immigrant_attract = 1
 	population_growth = 0.0145
+	local_factory_output = 0.0225
+	icon = 13
+}
+
+breslau_modifier = {
+	immigrant_attract = 0.3
+	mine_rgo_size = 0.1
+	farm_rgo_eff = 0.1
+	local_factory_output = 0.0115
+	local_factory_throughput = 0.075
+	icon = 13
+}
+
+vienna_modifier = {
+	immigrant_attract = 0.25
+	farm_rgo_size = 0.1
+	farm_rgo_eff = 0.1
+	local_rgo_output = 0.05
+	local_factory_input = 0.05
+	local_factory_output = 0.0225
+	local_factory_throughput = 0.15
+	assimilation_rate = 0.2
+	icon = 13
+}
+
+prague_modifier = {
+	immigrant_attract = 0.075
+	local_rgo_output = 0.025
+	local_factory_input = 0.025
+	local_factory_output = 0.0125
+	assimilation_rate = 0.05
+	local_factory_throughput = 0.05
+	icon = 13
+}
+
+
+ljubljana_modifier = {
+	immigrant_attract = 0.0275
+	local_rgo_output = 0.02
+	local_factory_input = 0.02
+	local_factory_output = 0.015
+	assimilation_rate = 0.015
+	local_factory_throughput = 0.05
+	icon = 13
+}
+
+Sarajevo_modifier = {
+	mine_rgo_size = 0.15
+	mine_rgo_eff = 0.15
+	local_rgo_output = 0.02
+	local_factory_output = 0.015
+	immigrant_attract = 0.1
+	icon = 13
+}
+
+hamburg_modifier = {
+	immigrant_attract = 0.25
+	local_factory_input = 0.02
+	local_factory_output = 0.05
+	assimilation_rate = 0.05
+	local_rgo_output = 0.02
+	local_ship_build = -0.2
+	icon = 13
+}
+
+cologne_modifier = {
+	immigrant_attract = 0.1
+	local_factory_input = 0.04
+	local_factory_output = 0.02
+	assimilation_rate = 0.05
+	local_factory_throughput = 0.05
+	mine_rgo_eff = 0.25
+	local_rgo_output = 0.02
+	icon = 13
+}
+
+munich_modifier = {
+	immigrant_attract = 0.2
+	local_factory_input = 0.02
+	local_factory_output = 0.05
+	local_factory_throughput = 0.075
+	mine_rgo_eff = 0.3
+	local_rgo_output = 0.02
+	icon = 13
+}
+
+Parisii_modifier = {
+	factory_output = 0.11
+	factory_throughput = 0.1
+	factory_owner_cost = -0.05
+	import_cost = -0.15
+	loan_interest = -0.25
+	max_loan_modifier = 0.33
+
+	tax_efficiency = 0.055
 }

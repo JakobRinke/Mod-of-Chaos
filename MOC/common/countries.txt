@@ -573,6 +573,12 @@ HLR 	   ="countries/HLR.txt"
 SQR 	   ="countries/SQR.txt"
 AGN 	   ="countries/AGN.txt"
 TRD 	   ="countries/TRD.txt"
+PLR 	   ="countries/PLR.txt"
+AQU 	   ="countries/AQU.txt"
+BRG 	   ="countries/BRG.txt"
+PRV 	   ="countries/PRV.txt"
+PRS 	   ="countries/PRS.txt"
+
 
 
 ##HoD Dominions

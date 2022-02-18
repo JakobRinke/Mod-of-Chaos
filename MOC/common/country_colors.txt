@@ -1099,3 +1099,36 @@ TRD = {
     color3= { 43  55  75 }
 }
 
+#Polish Prussia 
+
+PLR = {
+    color1= { 147 130 110 }
+    color2= { 137 120 100 }
+    color3= { 147 130 110 }
+}
+
+
+# Aquitaine
+
+AQU = {
+    color1= { 117  32  186 }
+    color2= { 107  22  176 }
+    color3= { 90  10  146}
+}
+
+# Burgundy
+
+BRG = {
+    color1= { 128 0 32 }
+    color2= { 120 0 28 }
+    color3= { 118 0 22}
+}
+
+
+# Provence
+
+PRV = {
+    color1= { 69 139 116 }
+    color2= { 65 129 106 }
+    color3= { 59 119 100}
+}

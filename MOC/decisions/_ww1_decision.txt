@@ -1,0 +1,39 @@
+political_decisions = {
+
+	serbia_trigger_assassination = {
+		potential = {
+			tag = SER
+			NOT = {has_country_flag = serbia_trigger_assasination}
+			OR = {
+				exists  = AUS
+				exists  = KUK
+			}
+			
+		}
+		allow = {
+			year = 1914
+			NOT = {
+				OR = {
+					in_sphere  = AUS
+					in_sphere  = KUK
+			}
+			}
+
+		}
+		effect = {
+			set_country_flag = serbia_trigger_assassination
+			badboy = 5
+			AUS  = {all_core = {add_core = THIS}}
+			KUK  = {all_core = {add_core = THIS}}
+			AUS = {
+				country_event 
+			}
+		}
+		ai_will_do = {					
+			factor = 0.1
+		}
+	}
+	
+	}
+
+}

@@ -1,18 +1,18 @@
 political_decisions = {
 
 	ukraine_cores = {
-	
+
 		potential = {
 			tag = UKR
 			NOT = { has_country_flag = ukraine_cores }
 		}
-		
-		
+
+
 		allow = {
 			nationalism_n_imperialsim = 1
 		}
-		
-		
+
+
 		effect = {
 			prestige = 14
 			add_accepted_culture = romanian
@@ -31,31 +31,31 @@ political_decisions = {
 			}
 			add_core = 676
 			add_core = 677
-			
+
 			set_country_flag = ukraine_cores
 		}
-		
+
 		ai_will_do = {
 			factor = 0.00005
-		}	
+		}
 	}
-	
-	
-	
-	
+
+
+
+
 	turn_aigenst_master = {
-	
+
 		potential = {
 			tag = UKR
 			NOT = { has_country_flag = turn_aigenst_master }
 		}
-		
-		
+
+
 		allow = {
 			nationalism_n_imperialsim = 1
 		}
-		
-		
+
+
 		effect = {
 			prestige = 14
 			add_accepted_culture = russian
@@ -63,21 +63,63 @@ political_decisions = {
 				all_core = {
 					add_core = THIS
 				}
-			}		
-			
+			}
+
 			war = {
 				target = RUS
 				attacker_goal = { casus_belli = conquest }
 				defender_goal = { casus_belli = conquest }
 				call_ally = yes
 			}
-			
-			
+
+
 			set_country_flag = turn_aigenst_master
 		}
-		
+
 		ai_will_do = {
 			factor = 0.0001
-		}	
+		}
+	}
+
+
+
+
+	turn_against_master = {
+
+		potential = {
+			tag = UKR
+			NOT = { has_country_flag = turn_against_master }
+		}
+
+
+		allow = {
+			nationalism_n_imperialsim = 1
+		}
+
+
+		effect = {
+			prestige = 14
+			add_accepted_culture = russian
+			RUS = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			war = {
+				target = RUS
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = conquest }
+				call_ally = yes
+			}
+
+
+			set_country_flag = turn_against_master
+		}
+
+		ai_will_do = {
+			factor = 0.0001
+		}
+
 	}
 }

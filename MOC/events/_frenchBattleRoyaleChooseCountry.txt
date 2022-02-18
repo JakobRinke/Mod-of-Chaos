@@ -1,0 +1,164 @@
+#picture 0
+
+country_event = {
+	id = 13371000
+	title = "Choose a country"
+	desc = "The former french empire spilt up into a few minor french states. Now it is your job to either reunite France or form an other great empire."
+	
+	is_triggered_only = yes
+	fire_only_once = yes  
+	trigger = {
+		has_country_flag = ChooseNationFrenchBattleRoyal
+		NOT = { 
+			OR = {
+				has_global_flag = choseBRG
+				has_global_flag = choseAQU
+				has_global_flag = chosePRV
+				has_global_flag = chosePRS
+				has_global_flag = choseBRT
+			}
+		}
+	}
+
+	option = {
+		name = "Play as Burgundy"
+		
+		release = AQU
+		release = PRV
+		release = PRS
+		release = BRT
+		set_global_flag = choseBRG 
+
+		change_tag_no_core_switch  = BRG
+	}
+	option = {
+		name = "Play as Aquitaine"
+		
+		set_global_flag = choseAQU
+		release = BRG
+		release = PRV
+		release = PRS
+		release = BRT
+		release = AQU
+
+		change_tag_no_core_switch  = AQU
+	}
+	option = {
+		name = "Play as Provonce"
+		
+		set_global_flag = chosePRV 
+		release = BRG
+		release = AQU
+		release = PRS
+		release = BRT
+		release = PRV
+
+		change_tag_no_core_switch  = PRV
+	}
+	option = {
+		name = "Play as Parisii"
+		
+		set_global_flag = chosePRS 
+		release = BRG
+		release = AQU
+		release = PRV
+		release = BRT
+		release = PRS
+
+		change_tag = PRS
+	}
+	option = {
+		name = "Play as Brittany"
+		
+		set_global_flag = choseBRT 
+		release = BRG
+		release = AQU
+		release = PRV
+		release = PRS
+		release = BRT
+
+		change_tag_no_core_switch  = BRT
+	}
+}
+
+country_event = {
+	id = 13371000
+	title = "Choose a country"
+	desc = "The former french empire spilt up into a few minor french states. Now it is your job to either reunite France or form an other great empire."
+	
+	is_triggered_only = yes
+	fire_only_once = yes  
+	trigger = {
+		has_country_flag = ChooseNationFrenchBattleRoyal
+		NOT = { 
+			OR = {
+				has_global_flag = choseBRG
+				has_global_flag = choseAQU
+				has_global_flag = chosePRV
+				has_global_flag = chosePRS
+				has_global_flag = choseBRT
+			}
+		}
+	}
+
+	option = {
+		name = "Play as Burgundy"
+		
+		release = AQU
+		release = PRV
+		release = PRS
+		release = BRT
+		release = BRG
+		set_global_flag = choseBRG 
+
+		change_tag_no_core_switch  = BRG
+	}
+	option = {
+		name = "Play as Aquitaine"
+		
+		set_global_flag = choseAQU
+		release = BRG
+		release = PRV
+		release = PRS
+		release = BRT
+		release = AQU
+
+		change_tag_no_core_switch  = AQU
+	}
+	option = {
+		name = "Play as Provonce"
+		
+		set_global_flag = chosePRV 
+		release = BRG
+		release = AQU
+		release = PRS
+		release = BRT
+		release = PRV
+
+		change_tag_no_core_switch  = PRV
+	}
+	option = {
+		name = "Play as Parisii"
+		
+		set_global_flag = chosePRS 
+		release = BRG
+		release = AQU
+		release = PRV
+		release = BRT
+		release = PRS
+
+		change_tag_no_core_switch = PRS
+	}
+	option = {
+		name = "Play as Brittany"
+		
+		set_global_flag = choseBRT 
+		release = BRG
+		release = AQU
+		release = PRV
+		release = PRS
+		release = BRT
+
+		change_tag_no_core_switch  = BRT
+	}
+}

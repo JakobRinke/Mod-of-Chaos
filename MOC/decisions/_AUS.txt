@@ -9,6 +9,7 @@ political_decisions = {
 			OR = {
 				tag = AUS
 				tag = KUK
+				tag = DNB
 			}
 
 			exists = GER
@@ -59,10 +60,7 @@ political_decisions = {
 	become_south_HRE = {
 		picture = sign_the_geneva_convention_BASED
 		potential = {
-
 			tag = KUK
-
-
 			NOT = { has_country_flag = become_south_HRE }
 		}
 
@@ -154,8 +152,389 @@ political_decisions = {
 				badboy = 0.65
 			}
 		}
-
-
 	}
 
+	form_danubian_moc  = {
+		picture = sign_the_geneva_convention_BASED
+		potential = {
+			OR = {
+				tag = KUK
+				tag = AUS
+				tag = HUN
+			}
+			
+			NOT = { has_country_flag = form_danubian_moc }
+		}
+
+
+		allow = {
+			revolution_n_counterrevolution = 1
+			is_greater_power = yes
+
+			NOT = { exists = GER }
+			NOT = { exists = ITA }
+
+		}
+
+		effect = {
+			change_tag = DNB
+			CRO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			HUN = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			AUS = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SLO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BOH = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SYL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			primary_culture = south_german
+			add_accepted_culture = hungarian
+			add_accepted_culture = slovak
+			add_accepted_culture = slovene
+			add_accepted_culture = czech
+			add_accepted_culture = romanian
+			add_accepted_culture = croat
+			
+			set_country_flag = form_danubian_moc
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
+
+	accepted_ukr_as_dnb  = {
+		picture = sign_the_geneva_convention_BASED
+		potential = {
+			OR = {
+				tag = DNB
+				tag = KUK
+				tag = AUS
+				tag = HUN
+			
+			}
+			
+			NOT = { has_country_flag = accepted_ukr_as_dnb }
+		}
+
+
+		allow = {
+			is_greater_power = yes
+			prestige = 150
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			add_accepted_culture = ukrainian
+			add_accepted_culture = bosniak
+
+			badboy = 10
+
+			#Bosnia
+			add_core = 783
+			add_core = 784
+			add_core = 785
+			add_core = 786
+			add_core = 787
+			add_core = 788
+			add_core = 789
+
+			set_country_flag = accepted_ukr_as_dnb
+		}
+
+		ai_will_do = {
+			factor = 0.18
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
+
+
+	gain_partsOFserbia_as_dnb  = {
+		picture = sign_the_geneva_convention_BASED
+		potential = {
+			OR = {
+				tag = DNB
+				tag = HUN
+				tag = AUS
+				tag = KUK
+			}
+			
+			NOT = { has_country_flag = gain_partsOFserbia_as_dnb }
+		}
+
+
+		allow = {
+			prestige = 150
+			nationalism_n_imperialism = 1
+			romanticism = 1
+			is_greater_power = yes
+		}
+
+		effect = {
+			badboy = 12
+
+			add_accepted_culture = serbian
+
+			#Montenegro
+			add_core = 800
+			add_core = 2569
+			add_core = 2577
+			add_core = 2582
+			add_core = 2583
+
+			#Sebia
+			add_core = 794
+			add_core = 795
+			add_core = 796
+			add_core = 797
+
+			#Southern Serbia
+			add_core = 798
+			add_core = 799
+			add_core = 802
+			add_core = 803
+			add_core = 804
+
+			set_country_flag = gain_partsOFserbia_as_dnb
+		}
+
+		ai_will_do = {
+			factor = 0.18
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
+
+
+	greater_vienna_moc  = {
+		#Wenn die Welt einmal untergehen sollte, ziehe ich nach Wien, denn dort passiert alles 50 Jahre später.
+		potential = {
+			owns = 619
+			nationalism_n_imperialism = 1
+			NOT = { has_country_flag = greater_vienna_moc }
+		}
+		allow = {
+			prestige = 150
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			money = 250000
+		}
+
+		effect = {
+			619 = {
+				add_province_modifier= {
+					name = vienna_modifier
+					duration = 36500
+				}
+			}
+			prestige = 5
+			money = -250000
+			set_country_flag = greater_vienna_moc
+		}
+
+		ai_will_do = {
+			factor = 0.18
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
+
+	prague_modifier_aa  = {
+		potential = {
+			owns = 625
+			NOT = { has_country_flag = prague_modifier_aa }
+		}
+		allow = {
+			prestige = 110
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			money = 250000
+		}
+
+		effect = {
+			625 = {
+				add_province_modifier= {
+					name = prague_modifier
+					duration = 36500
+				}
+			}
+			625 = {change_province_name = "Praha"}
+			prestige = 5
+			money = -250000
+			set_country_flag = prague_modifier_aa
+		}
+
+		ai_will_do = {
+			factor = 0.2
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
+
+	Ljubljana_modifier_aa  = {
+		potential = {
+			owns = 768
+			NOT = { has_country_flag = Ljubljana_modifier_aa }
+		}
+		allow = {
+			prestige = 125
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			money = 100000
+		}
+
+		effect = {
+			768 = {change_province_name = "Laibach"}
+			768 = {
+				add_province_modifier= {
+					name = ljubljana_modifier
+					duration = 36500
+				}
+			}
+			prestige = 5
+			money = -100000
+			set_country_flag = Ljubljana_modifier_aa
+		}
+
+		ai_will_do = {
+			factor = 0.2
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
+
+	sarajevo_modifier_aa  = {
+		potential = {
+			owns = 783
+			NOT = { has_country_flag = sarajevo_modifier_aa }
+		}
+		allow = {
+			prestige = 300
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+
+		effect = {
+			783 = { trade_goods = coal RGO_size = 225000}
+			783 = { change_province_name = "Jerusalem of Europe"}
+			783 = {
+				add_province_modifier= {
+					name = Sarajevo_modifier
+					duration = 36500
+				}
+			}
+			783 = {
+				add_province_modifier= {
+					name = provinz_growth_modifier
+					duration = 2500
+				}
+			}
+			set_country_flag = sarajevo_modifier_aa
+		}
+
+		ai_will_do = {
+			factor = 0.2
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
+
+	reform_rgo_aus  = {
+		potential = {
+			NOT = { has_country_flag = reform_rgo_aus }
+			OR = {
+				owns = 659
+				owns = 660
+				owns = 667
+				owns = 775
+				owns = 2538
+			}
+			
+		}
+		allow = {
+			year = 1870
+			prestige = 350
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			owns = 659
+			owns = 660
+			owns = 667
+			owns = 775
+			owns = 2538
+			money = 500000
+		}
+
+		effect = {
+			money = -500000
+			775 = { trade_goods = coal RGO_size = 225000 add_core = this}
+			
+			2538 = { trade_goods = coal RGO_size = 125000 add_core = this}
+
+			659 = { trade_goods = iron RGO_size = 255000 add_core = this}
+
+			660 = { trade_goods = iron RGO_size = 255000 add_core = this}
+
+			667 = { trade_goods = oil RGO_size = 325000 add_core = this}
+
+			set_country_flag = reform_rgo_aus
+		}
+
+		ai_will_do = {
+			factor = 0.2
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
 }
+
+

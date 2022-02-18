@@ -4,12 +4,12 @@ political_decisions = {
 	Expand_our_empire = {
 		potential = {
 			tag = SER
-			NOT = { has_country_flag = Expand_our_empire}	
+			NOT = { has_country_flag = Expand_our_empire}
 		}
 		allow = {
             war = no
 		}
-		
+
 		effect = {
 			prestige = 25
 			badboy = 10
@@ -65,7 +65,7 @@ political_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0.0009
+			factor = 0.001
 			modifier = {
 				factor = 0
 				badboy = 0.4
@@ -76,33 +76,33 @@ political_decisions = {
 			}
 		}
 
-		
+
 	}
 	get_strong_serbia_based = {
 		potential = {
 			tag = SER
-			NOT = { has_country_flag = get_strong_serbia_based}	
+			NOT = { has_country_flag = get_strong_serbia_based}
 		}
 		allow = {
             war = no
 			army_professionalism = 1
 		}
-		
+
 		effect = {
 			define_general = {
-				name = "Miloš Obilic"
-				personality = implacable 
-				background = cursed_luck 
+				name = "Miloï¿½ Obilic"
+				personality = implacable
+				background = cursed_luck
 			}
-			activate_technology = strategic_mobility 
-			activate_technology = military_staff_system 
+			activate_technology = strategic_mobility
+			activate_technology = military_staff_system
 			activate_technology = military_plans
 
-			activate_technology = hot_blast   
-			activate_technology = basic_chemistry 
+			activate_technology = hot_blast
+			activate_technology = basic_chemistry
 
-			activate_technology = clipper_design  
-			activate_technology = naval_design_bureaus  
+			activate_technology = clipper_design
+			activate_technology = naval_design_bureaus
 			activate_technology = alphabetic_flag_signaling
 
 			activate_technology = malthusian_thought
@@ -113,7 +113,6 @@ political_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 	}
 }
-

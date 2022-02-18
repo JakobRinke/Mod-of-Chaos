@@ -191,7 +191,7 @@ political_decisions = {
         }
 
         effect = {
-			add_accepted_culture = swedish 
+			primary_culture = swedish 
 			add_accepted_culture = norwegen
 			add_accepted_culture = danish
             prestige = 20
@@ -277,8 +277,7 @@ political_decisions = {
                         }
                     }
                 }
-                country_
-				= 11101
+                country_event = 11101
             }
         }
 

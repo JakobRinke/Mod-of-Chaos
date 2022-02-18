@@ -14,6 +14,7 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = claim_south_england
+			set_country_flag = _getRhineLand_france
 			badboy = 10
 			FRA = {
 				add_country_modifier = {
