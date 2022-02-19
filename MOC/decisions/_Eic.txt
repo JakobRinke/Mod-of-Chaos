@@ -1,0 +1,86 @@
+
+political_decisions = {
+
+	create_eich = {
+		potential = {
+			tag = COB
+		}
+		allow = {}
+		
+		effect = {
+			prestige = 40
+			change_tag = EIH
+			COB = {
+				all_core = {
+					remove_core = COB
+				}
+			}
+			add_country_modifier = {
+					name = mongol_baby_boom
+					duration = 850
+			}
+			
+			562 = {
+				add_province_modifier = {
+					name = Eich_Home
+					duration = 36500
+				}
+				add_province_modifier = {
+					name = baby_boom
+					duration = 6000
+				}
+				
+				change_province_name = "Eichsfeld"
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0.007
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+			modifier = {
+				factor = 0
+				year = 1837	
+			}
+		}
+	}
+	
+	demand_higher_administration = {
+		potential = {
+			tag = EIH
+			
+		}
+		allow = {
+			any_sphere_member  = {
+				in_sphere = EIH
+				NOT = {has_country_modifier = Eic_Puppet_Administration}
+				NOT = { vassal_of = EIH }
+				civilzed = yes
+			}
+		}
+		
+		effect = {
+			any_country = {
+				limit = {
+					in_sphere = EIH
+					civilzed = yes
+					NOT = { has_country_modifier = Eic_Puppet_Administration}
+					NOT = { vassal_of = EIH }
+				}
+				add_country_modifier = {
+					name = Eic_Puppet_Administration
+					duration = 3650
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	
+
+}

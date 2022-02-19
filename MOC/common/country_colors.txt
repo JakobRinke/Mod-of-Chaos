@@ -1132,3 +1132,11 @@ PRV = {
     color2= { 65 129 106 }
     color3= { 59 119 100}
 }
+
+
+#Eichsfeld
+EIH = {
+	color1= { 0 139 0 }
+    color2= { 0 129 0 }
+    color3= { 0 119 0}
+}

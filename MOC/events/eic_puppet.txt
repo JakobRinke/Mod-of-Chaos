@@ -1,0 +1,98 @@
+country_event = {
+	id = 69420
+	title = "The Eichsfeld Demands"
+	desc = "Our Sphere Leader Demands higher Administrative Rights over our Country! It is on us to decide, if we give it to them or to fight for our autonomy"
+	picture = "deliberation"
+
+        #the four lines below are only needed if they are yes
+	 
+	is_triggered_only = no    
+	major = no
+	fire_only_once = no
+	allow_multiple_instances = yes #Allows to fire several at once?
+
+	trigger = { 
+		has_country_modifer = Eic_Puppet_Administration
+		in_sphere = EIH
+		NOT = { vassal_of = EIH }
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = {
+		ai_chance = { factor = 0.9 } 
+		name = "There is no way, we could win a war against them"
+		remove_country_modifier =  Eic_Puppet_Administration
+		EIH = {
+			country_event = 69422
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 0.9 } 
+		name = "We will never give up our rights"
+		money = 500000
+		EIH = {
+			country_event = 69421
+		}
+	}
+	
+}
+
+
+
+country_event = {
+	id = 69425
+	title = "The Full Integration"
+	desc = "Our Leader demands the full administrative rights of our country. This is our last chance to break free"
+	picture = "deliberation"
+	 
+	is_triggered_only = no    
+	major = no
+	fire_only_once = no
+	allow_multiple_instances = yes #Allows to fire several at once?
+
+	trigger = { 
+		vassal_of = EIH
+		in_sphere = EIH
+		NOT = {has_country_modifer = Eic_Puppet_Administration}
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		ai_chance = { factor = 0.8 } 
+		name = "We accept the terms of the Eichfeld"
+		any_owned = {
+			secede_province = EIH
+			add_province_modifier = {
+				name = Eic_Integrated
+				duration = 36500
+			}
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 0.6 } 
+		name = "Thats it. We want to break free!"
+		EIH = {
+			release_vassal = THIS
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = conquest }
+				call_ally = yes
+			}
+			badboy = -22
+		}
+		add_country_modifier = {
+			name = Last_Stand
+			duration = 1500
+		}
+		money = 500000
+	}
+	
+}
