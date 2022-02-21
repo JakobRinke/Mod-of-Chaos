@@ -362,3 +362,7 @@ demand_higher_administration_title; Demand higher adminsistrative rights;;;;;;;;
 demand_higher_administration_desc; Demand that our spherelings become our puppets;;;;;;;;;;;;;
 Eic_Puppet_Administration; Eichsfelds Demands;;;;;;;;;;;;;
 Eic_Puppet_Administration_desc; Prepare for trouble;;;;;;;;;;;;;
+create_eu_title;Proclaim the EU;;;;;;;;;;;;;
+create_eu_desc;Be carefull with this decission, you may end up at war with the entirety of europe;;;;;;;;;;;;;
+solidify_eu_title;Solidify the EU;;;;;;;;;;;;;
+solidify_eu_desc;Make this state actually functioning ;;;;;;;;;;;;;
