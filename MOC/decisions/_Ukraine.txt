@@ -63,6 +63,17 @@ political_decisions = {
 				all_core = {
 					add_core = THIS
 				}
+				add_casus_belli = {
+					target = UKR
+					type = conquest
+					months = 6
+				}
+			}
+
+			add_casus_belli = {
+				target = RUS
+				type = conquest
+				months = 6
 			}
 
 			war = {

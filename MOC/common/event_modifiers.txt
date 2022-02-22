@@ -2646,6 +2646,7 @@ total_mobilisation = {
 	land_organisation = 0.3
 	leadership_modifier = 0.5
 	global_population_growth = 0.0001
+	land_attrition = -0.9
 }
 
 byz_assimilate_modifier = {
@@ -2927,4 +2928,9 @@ Last_Stand = {
 	naval_unit_start_experience = 1
 	naval_organisation = 1
 	org_regain = 1
+}
+
+colonial_might = {
+	badboy = -0.15
+	prestige = 0.05
 }

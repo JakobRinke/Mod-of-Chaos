@@ -21,19 +21,30 @@ political_decisions = {
 				all_core = {
 					add_core = THIS
 				}
+				add_accepted_culture = spanish
+				add_casus_belli = {
+					target = SPA
+					type = conquest
+					months = 6
+				}
 			}
 			all_core = {
 					add_core = POR
 			}
+
+			add_casus_belli = {
+				target = POR
+				type = conquest
+				months = 6
+			}
+
 			war = {
 				target = POR
 				attacker_goal = { casus_belli = conquest }
 				defender_goal = { casus_belli = conquest }
 				call_ally = yes
 			}
-			POR = {
-				add_accepted_culture = spanish
-			}
+
 			set_country_flag = spa_core_port
 		}
 
