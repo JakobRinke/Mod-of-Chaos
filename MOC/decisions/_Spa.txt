@@ -31,7 +31,9 @@ political_decisions = {
 				defender_goal = { casus_belli = conquest }
 				call_ally = yes
 			}
-
+			POR = {
+				add_accepted_culture = spanish
+			}
 			set_country_flag = spa_core_port
 		}
 
