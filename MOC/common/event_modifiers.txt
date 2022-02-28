@@ -2903,7 +2903,6 @@ Eich_Home = {
 	local_rgo_output = 0.05
 	mine_RGO_size = 0.5
 	farm_RGO_size = 0.5
-	life_rating = 0.3
 }
 
 

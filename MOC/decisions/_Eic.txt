@@ -17,7 +17,7 @@ political_decisions = {
 			}
 			add_country_modifier = {
 					name = mongol_baby_boom
-					duration = 850
+					duration = 400
 			}
 			
 			562 = {
@@ -27,7 +27,7 @@ political_decisions = {
 				}
 				add_province_modifier = {
 					name = baby_boom
-					duration = 6000
+					duration = 4000
 				}
 				
 				change_province_name = "Eichsfeld"
@@ -35,7 +35,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0.007
+			factor = 0.0001
 			modifier = {
 				factor = 0
 				badboy = 0.4
