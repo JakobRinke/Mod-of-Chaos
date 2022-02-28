@@ -578,7 +578,8 @@ AQU 	   ="countries/AQU.txt"
 BRG 	   ="countries/BRG.txt"
 PRV 	   ="countries/PRV.txt"
 PRS 	   ="countries/PRS.txt"
-
+EIH	 	   ="countries/EIH.txt"	 
+EUR        ="countries/EUR.txt"
 
 
 ##HoD Dominions

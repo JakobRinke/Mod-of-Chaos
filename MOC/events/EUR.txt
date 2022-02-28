@@ -1,0 +1,45 @@
+country_event = {
+	id = 66688
+	title = "The European Union"
+	desc = "Our foreign minister reports the creation of the European Union. We, as a soughverein European state have to decide, rather we want to join it or not"
+	
+	is_triggered_only = yes
+	   
+	
+	option = {
+		name = "We will join the European Union"
+		
+		ai_chance = {
+				factor = 0.3
+		} 
+		annex_to = EUR
+		
+	}
+	
+	option = {
+		ai_chance = { factor = 0.7 } 
+		name = "We will fight for our rights and against this stupid idea!"
+		leave_alliance = EUR
+		EUR = {
+			release_vassal = THIS
+			relation = {
+				who = THIS
+				value = -400
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+			badboy = -23
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = cut_down_to_size }
+				call_ally = no
+			}
+		}
+		
+		
+	}
+	
+}

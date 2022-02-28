@@ -1,0 +1,154 @@
+political_decisions = {
+
+	create_eu = {
+		picture = eu
+		potential = {
+			nationalism_n_imperialism = 1
+			rank = 3
+			capital_scope = {
+				continent = europe
+			}
+			NOT = { EUR = { exists = yes } }
+		}
+		
+		allow = {
+			prestige = 1000
+			industrial_score = 3000
+			military_score = 1000
+		}
+		
+		effect = {
+			prestige = 200
+			badboy = 20
+			all_core = {
+				add_core = EUR
+				remove_core = THIS
+			}
+			change_tag = EUR
+			
+			inherit = SWI
+			
+			any_country = {
+				limit = {
+					capital_scope = { continent = europe }
+					NOT = { tag = THIS }
+					exists = yes
+				}
+				country_event = 66688
+				all_core = {
+					add_core = EUR
+				}
+			}
+
+			
+		}
+		
+		
+		
+		
+		ai_will_do = {
+			factor = 0.00003
+			modifier = {
+				factor = 0
+				badboy = 0.2
+			}
+		}
+		
+		
+		
+	}
+	
+	
+	solidify_eu = {
+		picture = eu
+		potential = {
+			tag = EUR
+			war = no
+			NOT = { has_country_flag = eu_solid }
+		}
+		
+		allow = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					NOT = {
+						owner = {
+							capital_scope = { continent = europe }
+						}
+					}
+				}
+				
+			}
+		}
+		
+		effect = {
+			all_core = {
+				remove_core = SWE
+				remove_core = NOR
+				remove_core = GER
+				remove_core = FIN
+				remove_core = RUS
+				remove_core = SER
+				remove_core = FRA
+				remove_core = POR
+				remove_core = SPA
+				remove_core = SPC
+				remove_core = NET
+				remove_core = BEL
+				remove_core = LUX
+				remove_core = ENG
+				remove_core = SWI
+				remove_core = AUS
+				remove_core = HUN
+				remove_core = ROM
+				remove_core = CRO
+				remove_core = SLO
+				remove_core = CZH
+				remove_core = KUK
+				remove_core = DNB
+				remove_core = BUL
+				remove_core = ITA
+				remove_core = GRE
+				remove_core = DEN
+			}
+			add_accepted_culture = swedish
+			add_accepted_culture = norwegian
+			add_accepted_culture = danish
+			add_accepted_culture = british
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			add_accepted_culture = russian
+			add_accepted_culture = hungarian
+			add_accepted_culture = french
+			add_accepted_culture = portuguese
+			add_accepted_culture = spanish
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			add_accepted_culture = serbian
+			add_accepted_culture = bosnian
+			add_accepted_culture = swiss
+			add_accepted_culture = ukrainian
+			add_accepted_culture = polish
+			add_accepted_culture = finnish
+			add_accepted_culture = greek
+			add_accepted_culture = dutch
+			add_accepted_culture = wallonian
+			add_accepted_culture = flemish
+			set_country_flag = eu_solid
+		}
+		
+		
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+		
+	}
+	
+	
+	
+
+}
