@@ -15,7 +15,8 @@ country_event = {
 		}
 		
 		
-		any_neighbor_country = { 
+		any_neighbor_country = {
+			limit = { capital_scope = { continent = south_america } }		
 			war = {
 				target = THIS
 				war = {
