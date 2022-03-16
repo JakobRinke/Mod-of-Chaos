@@ -2933,3 +2933,8 @@ colonial_might = {
 	badboy = -0.15
 	prestige = 0.05
 }
+
+artiljerija = {
+	land_organisation = -0.7
+	land_unit_start_experience = -1
+}

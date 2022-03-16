@@ -2,7 +2,46 @@
 
 political_decisions
 {
+	SouthAmericanBattleRoyale = {
+		picture = sus_PICTURE
+		potential = {
+			OR = {
+				tag = CHL	
+				tag = BRZ
+				tag = ARC
+				tag = ARG
+				tag = BOL
+				tag = CLM
+				tag = ECU
+				tag = PEU
+				tag = PRG
+				tag = URU
+				tag = VNZ
+			}
+			NOT = { exists = SUS } 
+			NOT = { has_global_flag = SUS_FORMED }
+				
+		}
+		
+		allow = {
+			civilized = yes	
+		}
+		
+		effect = {		
+			set_global_flag = SUS_FORMED
+			any_country = {
+				limit = { capital_scope = { continent = south_america } }
+				country_event = 420420
 
+			}
+			country_event = 420420
+			
+		}
+		ai_will_do = {					
+			factor = 0.00005
+		}
+	}
+	
 
 	SUS_Form = {
 		picture = sus_PICTURE
@@ -20,18 +59,20 @@ political_decisions
 				tag = URU
 				tag = VNZ
 			}
-			NOT = {
-				has_global_flag = SUS_FORMED
-			}		
+			NOT = { exists = SUS } 
+			has_global_flag = SUS_FORMED
+				
 		}
 		
 		allow = {
-			civilized = yes	
+			civilized = yes
+			all_core = {
+				owned_by = THIS
+			}
+			war = no
 		}
 		
-		effect = {
-			badboy = 25			
-			prestige = -50								
+		effect = {		
 			change_tag = SUS
 			set_global_flag = SUS_FORMED
 			add_accepted_culture = brazilian
