@@ -47,6 +47,7 @@ political_decisions = {
 
 		potential = {
 			tag = UKR
+			exists = RUS
 			NOT = { has_country_flag = turn_against_master }
 		}
 

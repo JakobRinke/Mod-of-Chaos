@@ -1,0 +1,61 @@
+#picture 0
+
+country_event = {
+	id = 13372000
+	title = "Choose a country"
+	desc = "Russian Battle Royale -> Choose your player for demob remob!!!"
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Play as Muscovy"
+		release = UKR
+		release = POL
+		release = SIB
+		release = NOV
+		release = MUS
+		change_tag_no_core_switch  = MUS
+	}
+	
+	option = {
+		name = "Play as Novgorod"
+		release = UKR
+		release = POL
+		release = SIB
+		release = MUS
+		release = NOV
+		change_tag_no_core_switch  = NOV
+	}
+	
+	option = {
+		name = "Play as Siberia"
+		release = UKR
+		release = POL
+		release = MUS
+		release = NOV
+		release = SIB
+		change_tag_no_core_switch  = SIB
+	}
+	
+	option = {
+		name = "Play as Ukraine"
+		release = MUS
+		release = POL
+		release = SIB
+		release = NOV
+		release = UKR
+		change_tag_no_core_switch  = UKR
+	}
+	
+	option = {
+		name = "Play as Poland"
+		release = UKR
+		release = MUS
+		release = SIB
+		release = NOV
+		release = POL
+		change_tag_no_core_switch  = POL
+	}
+	
+}

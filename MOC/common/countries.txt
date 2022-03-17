@@ -580,7 +580,8 @@ PRV 	   ="countries/PRV.txt"
 PRS 	   ="countries/PRS.txt"
 EIH	 	   ="countries/EIH.txt"	 
 EUR        ="countries/EUR.txt"
-
+MUS		   ="countries/Muscovy.txt"
+NOV		   ="countries/Novgorod.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

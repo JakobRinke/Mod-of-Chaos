@@ -2935,6 +2935,6 @@ colonial_might = {
 }
 
 artiljerija = {
-	land_organisation = -0.7
+	org_regain = -0.15
 	land_unit_start_experience = -1
 }
