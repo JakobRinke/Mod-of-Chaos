@@ -85,6 +85,9 @@ political_decisions = {
 				KRL = {
 					all_core = { add_core = NOV }
 				}	
+				BYE = {
+					all_core = { add_core = UKR }
+				}
 				RUS = {
 					all_core = {
 						limit = { has_pop_culture = ugrian NOT = { OR = { is_core=SIB is_core = BYE } } }
@@ -99,9 +102,6 @@ political_decisions = {
 				add_accepted_culture = byelorussian
 				add_core = 677
 				add_core = 676
-				BYE = {
-					all_core = { add_core = UKR }
-				}
 			}
 			
 			MUS = {
