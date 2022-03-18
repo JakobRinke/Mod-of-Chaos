@@ -95,6 +95,15 @@ political_decisions = {
 				
 			}
 			
+			UKR = {
+				add_accepted_culture = byelorussian
+				add_core = 677
+				add_core = 676
+				BYE = {
+					all_core = { add_core = UKR }
+				}
+			}
+			
 			MUS = {
 				capital = 1008
 				primary_culture = russian
@@ -113,14 +122,7 @@ political_decisions = {
 				}
 			}
 			
-			UKR = {
-				add_accepted_culture = byelorussian
-				add_core = 677
-				add_core = 676
-				BYE = {
-					all_core = { add_core = NOV }
-				}
-			}
+			
 			
 			SWE = {
 				add_core = 348
