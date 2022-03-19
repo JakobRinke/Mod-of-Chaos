@@ -306,14 +306,13 @@ political_decisions = {
 				all_core = { add_core = THIS }
 			}
 			MGL = {
-				all_core = { add_core = THIS }
+				any_owned = { add_core = THIS }
 			}
 			
 			QNG = {
 				inherit = MCK
 				release = MCK
-				inherit = MGL
-				release = MGL
+				release_vassal = MGL
 			}
 			add_accepted_culture = manchu
 			add_accepted_culture = mongol
