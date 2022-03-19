@@ -176,7 +176,7 @@ political_decisions = {
 		potential = {
 			tag = NOV
 			NOT = { has_country_flag = mus_annex_rus }
-			exists = {UBD}
+			exists = UBD
 		}
 		allow = {
 			
