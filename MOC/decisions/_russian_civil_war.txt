@@ -124,10 +124,9 @@ political_decisions = {
 			
 			
 			
-			SWE = {
-				add_core = 348
+			338 = {
+				secede_province = SWE
 			}
-			
 			
 			
 			
