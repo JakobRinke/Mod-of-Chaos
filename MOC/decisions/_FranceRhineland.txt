@@ -304,12 +304,12 @@ political_decisions = {
 					limit = { province_id = 575 }
 					575 = {
 						change_province_name = "Cologne"
-						state_scope = { change_region_name = "Rhénanie"  }
+						state_scope = { change_region_name = "RhÃ©nanie"  }
 					}
-					396 = { change_province_name = "Eupen-Malmédy" assimilate = yes}
+					396 = { change_province_name = "Eupen-MalmÃ©dy" assimilate = yes}
 					576 = { change_province_name = "Aix-la-Chapelle" assimilate = yes}
-					572 = { change_province_name = "Trèves" assimilate = yes}
-					577 = { change_province_name = "Clèves" assimilate = yes}
+					572 = { change_province_name = "TrÃ¨ves" assimilate = yes}
+					577 = { change_province_name = "ClÃ¨ves" assimilate = yes}
 					owner = { set_global_flag = france_rename_rhine }
 				}
 
@@ -344,7 +344,7 @@ political_decisions = {
 				}
 				random_owned = {
 					limit = { province_id = 395 }
-					395 = { change_province_name = "Liège" assimilate = yes}
+					395 = { change_province_name = "LiÃ¨ge" assimilate = yes}
 					owner = {
 						set_global_flag = france_rename_liege
 						clr_global_flag = dutch_rename_liege
@@ -452,7 +452,7 @@ political_decisions = {
 				random_owned = {
 					limit = { province_id = 575 }
 					575 = {
-						change_province_name = "Köln"
+						change_province_name = "KÃ¶ln"
 						assimilate = yes
 						state_scope = { change_region_name = "Rheinland" }
 					}
@@ -495,7 +495,7 @@ political_decisions = {
 				}
 				random_owned = {
 					limit = { province_id = 395 }
-					395 = { change_province_name = "Lüttich" assimilate = yes }
+					395 = { change_province_name = "LÃ¼ttich" assimilate = yes }
 					owner = {
 						set_global_flag = german_rename_liege
 						clr_global_flag = dutch_rename_liege

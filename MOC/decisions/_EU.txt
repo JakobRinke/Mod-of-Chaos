@@ -10,13 +10,13 @@ political_decisions = {
 			}
 			NOT = { EUR = { exists = yes } }
 		}
-		
+
 		allow = {
 			prestige = 1000
 			industrial_score = 3000
 			military_score = 1000
 		}
-		
+
 		effect = {
 			prestige = 200
 			badboy = 20
@@ -25,9 +25,9 @@ political_decisions = {
 				remove_core = THIS
 			}
 			change_tag = EUR
-			
+
 			inherit = SWI
-			
+
 			any_country = {
 				limit = {
 					capital_scope = { continent = europe }
@@ -40,12 +40,12 @@ political_decisions = {
 				}
 			}
 
-			
+
 		}
-		
-		
-		
-		
+
+
+
+
 		ai_will_do = {
 			factor = 0.00003
 			modifier = {
@@ -53,19 +53,19 @@ political_decisions = {
 				badboy = 0.2
 			}
 		}
-		
-		
-		
+
+
+
 	}
-	
-	
+
+
 	solidify_eu = {
 		picture = eu
 		potential = {
 			tag = EUR
 			war = no
 		}
-		
+
 		allow = {
 			all_core = {
 				OR = {
@@ -76,10 +76,10 @@ political_decisions = {
 						}
 					}
 				}
-				
+
 			}
 		}
-		
+
 		effect = {
 			all_core = {
 				remove_core = SWE
@@ -134,19 +134,19 @@ political_decisions = {
 			add_accepted_culture = wallonian
 			add_accepted_culture = flemish
 		}
-		
-		
-		
-		
+
+
+
+
 		ai_will_do = {
 			factor = 1
 		}
-		
-		
-		
+
+
+
 	}
-	
-	
-	
+
+
+
 
 }
