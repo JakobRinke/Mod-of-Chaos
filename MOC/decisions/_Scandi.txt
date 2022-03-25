@@ -191,7 +191,7 @@ political_decisions = {
         }
 
         effect = {
-			add_accepted_culture = swedish 
+			primary_culture = swedish 
 			add_accepted_culture = norwegen
 			add_accepted_culture = danish
             prestige = 20
@@ -199,6 +199,13 @@ political_decisions = {
                 add_core = SCA
                 remove_core = THIS
             }
+			SWE ={
+				all_core = {
+					add_core = SCA
+					remove_core = THIS
+				}
+			}
+			
             change_tag = SCA
             remove_country_modifier = kalmar_union
             remove_country_modifier = leader_of_kalmar

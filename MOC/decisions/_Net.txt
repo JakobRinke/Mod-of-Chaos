@@ -1,7 +1,7 @@
 #picture 1
 
 political_decisions = {
-	
+
 	attack_the_dutch_FRA = {
 		picture = attack_the_dutch_Asdasd
 		potential = {
@@ -9,17 +9,17 @@ political_decisions = {
 			 tag = FRA
 			 tag = DUA
 			}
-			
+
 			NOT = { has_country_flag = Dutch_Embrace }
 		}
-		
+
 		allow = {
 			is_greater_power = yes
 			revolution_n_counterrevolution = 1
 			NET = {  is_greater_power = no }
 			BEL = {  is_greater_power = no }
-		}	
-		
+		}
+
 		effect = {
 			badboy = 7
 			add_accepted_culture = wallonian
@@ -28,8 +28,8 @@ political_decisions = {
 					limit = {
 						NOT = {
 							OR = {
-								is_core = GER 
-								is_core = AUS 
+								is_core = GER
+								is_core = AUS
 								is_core = SWI
 							}
 						}
@@ -47,8 +47,8 @@ political_decisions = {
 					limit = {
 						NOT = {
 							OR = {
-								is_core = GER 
-								is_core = AUS 
+								is_core = GER
+								is_core = AUS
 								is_core = SWI
 							}
 						}
@@ -58,37 +58,37 @@ political_decisions = {
 			}
 			set_country_flag = Dutch_Embrace
 		}
-		
+
 		ai_will_do = {
 			factor = 0.0004
 			modifier = {
                 factor = 0
                 badboy = 0.3
             }
-		}	
+		}
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	attack_the_dutch_ENG = {
 		picture = attack_the_dutch_Asdasd
 		potential = {
 			tag = ENG
-			
-		
+
+
 			NOT = { has_country_flag = Dutch_Embrace }
 		}
-		
-		
+
+
 		allow = {
 			is_greater_power = yes
 			revolution_n_counterrevolution = 1
 			NET = {  is_greater_power = no }
 			BEL = {  is_greater_power = no }
 		}
-		
+
 		effect = {
 			badboy = 7
 			add_accepted_culture = dutch
@@ -97,8 +97,8 @@ political_decisions = {
 					limit = {
 						NOT = {
 							OR = {
-								is_core = GER 
-								is_core = AUS 
+								is_core = GER
+								is_core = AUS
 								is_core = SWI
 							}
 						}
@@ -116,8 +116,8 @@ political_decisions = {
 					limit = {
 						NOT = {
 							OR = {
-								is_core = GER 
-								is_core = AUS 
+								is_core = GER
+								is_core = AUS
 								is_core = SWI
 							}
 						}
@@ -127,7 +127,7 @@ political_decisions = {
 			}
 			set_country_flag = Dutch_Embrace
 		}
-		
+
 		ai_will_do = {
 			factor = 0.0004
 			modifier = {
@@ -135,10 +135,12 @@ political_decisions = {
                 badboy = 0.3
             }
 		}
-		
-		
+
+
 	}
-	
+
+
+
 	net_claim_england = {
 		potential = {
 			tag = NET
@@ -197,8 +199,182 @@ political_decisions = {
             }
 		}
 	}
+	net_german_coast = {
+		potential = {
+			tag = NET
+			NOT = { has_country_flag = net_german_coast }
+		}
 
 
+		allow = {
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+		}
 
-	
+
+		effect = {
+			badboy = 15
+			add_accepted_culture = north_german
+
+			#East Friesland
+			add_core = 1743
+			add_core = 543
+			add_core = 542
+			add_core = 541
+			add_core = 540
+			add_core = 539
+
+			#Lower Elbe
+			add_core = 535
+			add_core = 532
+			add_core = 531
+			add_core = 528
+
+			#Holtstein
+			add_core = 529
+			add_core = 530
+			add_core = 369
+			add_core = 533
+
+			#Schleswig
+			add_core = 370
+			add_core = 371
+
+			#Westfalen
+			add_core = 580
+			add_core = 581
+			add_core = 582
+			add_core = 584
+			add_core = 538
+
+			#Jylland
+			add_core = 368
+			add_core = 2557
+			add_core = 367
+			add_core = 366
+
+			#Mecklenburg
+			add_core = 544
+			add_core = 545
+			add_core = 547
+			add_core = 548
+
+			set_country_flag = net_german_coast
+		}
+
+
+		ai_will_do = {
+			factor = 0.014
+			modifier = {
+                factor = 0
+                badboy = 0.1
+            }
+		}
+	}
+
+
+	hamburg_city_trade = {
+		potential = {
+			owns = 528
+			NOT = { has_country_flag = hamburg_city_trade }
+		}
+		allow = {
+			prestige = 250
+			money = 200000
+			invention = machine_tools
+			drilling_and_blasting = 1
+			iron_steamers = 1
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+
+
+		effect = {
+			money = -200000
+			528 = {
+				add_province_modifier= {
+					name = hamburg_modifier
+					duration = 36500
+				}
+			}
+			set_country_flag = hamburg_city_trade
+		}
+
+
+		ai_will_do = {
+			factor = 0.014
+		}
+	}
+
+	cologne_city_boost = {
+		potential = {
+			owns = 575
+			NOT = { has_country_flag = cologne_city_boost }
+		}
+
+
+		allow = {
+			prestige = 200
+			money = 200000
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+
+
+		effect = {
+			money = -200000
+			575 = {
+				add_province_modifier= {
+					name = cologne_modifier
+					duration = 36500
+				}
+			}
+			set_country_flag = cologne_city_boost
+		}
+
+
+		ai_will_do = {
+			factor = 0.014
+		}
+	}
+
+	munich_city_boost = {
+		potential = {
+			owns = 599
+			NOT = { has_country_flag = munich_city_boost }
+		}
+
+
+		allow = {
+			prestige = 300
+			money = 275000
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+
+
+		effect = {
+			money = -275000
+			599 = {
+				add_province_modifier= {
+					name = munich_modifier
+					duration = 36500
+				}
+			}
+			set_country_flag = munich_city_boost
+		}
+
+
+		ai_will_do = {
+			factor = 0.014
+			modifier = {
+		}
+	}
+
 }

@@ -1,0 +1,538 @@
+#picture 0
+
+political_decisions = {
+	get_RhineLand_france = {
+		potential = {
+			OR = {
+				tag = FRA
+				tag = AQU
+			}
+			NOT = { has_country_flag = claim_more_of_spain_aqu}
+			NOT = {
+				has_country_flag = _getRhineLand_france
+			}
+			OR = {
+				AQU = {has_country_flag = claim_more_of_fra_aqu}
+				FRA = {is_greater_power = yes}
+			}
+
+			NOT = { has_country_flag = claim_south_england}
+		}
+
+		allow = {
+			year = 1870
+			is_greater_power = yes
+			}
+
+		effect = {
+			badboy = 8
+
+			#rhineland
+			add_core = 396
+			add_core = 570
+			add_core = 571
+			add_core = 572
+			add_core = 573
+			add_core = 574
+			add_core = 575
+			add_core = 576
+			add_core = 577
+
+
+			#Luxenburg
+			add_core = 397
+
+			#Belgium
+			add_core = 387
+			add_core = 388
+			add_core = 389
+			add_core = 390
+			add_core = 391
+			add_core = 392
+			add_core = 393
+			add_core = 394
+			add_core = 395
+			add_core = 398
+
+
+			#Zeeland
+
+			add_core = 378
+			add_core = 379
+			add_core = 380
+			add_core = 381
+
+			set_country_flag = _getRhineLand_france
+			set_country_flag = claim_south_england
+		}
+	}
+
+
+	france_rename_rhine_from_HFM = {
+			picture = gtfo
+			potential = {
+				OR = {
+					primary_culture = french
+				}
+				OR = {
+					AND = { owns = 387 NOT = { has_global_flag = france_rename_brussels } }
+					AND = { owns = 575 NOT = { has_global_flag = france_rename_rhine } }
+					AND = { owns = 574 NOT = { has_global_flag = france_rename_prussian_pfalz } }
+					AND = { owns = 570 NOT = { has_global_flag = france_rename_hesse_pfalz } }
+					AND = { owns = 397 NOT = { has_global_flag = france_rename_luxemburg } }
+					AND = { owns = 392 NOT = { has_global_flag = france_rename_namur } }
+					AND = { owns = 393 NOT = { has_global_flag = france_rename_tournai } }
+					AND = { owns = 394 NOT = { has_global_flag = france_rename_charleroi } }
+					AND = { owns = 395 NOT = { has_global_flag = france_rename_liege } }
+					AND = { owns = 398 NOT = { has_global_flag = france_rename_arlon } }
+				}
+				FRA     = {
+					all_core = {
+						owns = this
+					}
+				}
+				owns = 409
+				owns = 410
+				owns = 412
+			}
+
+			allow = {
+				war = no
+			}
+
+			effect = {
+				badboy = 2
+
+				#ello
+
+				random_owned = {
+					limit = { province_id = 409 }
+					409 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 410 }
+					410 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 412 }
+					412 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+
+				#RHINELAND
+
+				random_owned = {
+					limit = { province_id = 396 }
+					396 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 570 }
+					570 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 571 }
+					571 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 572 }
+					572 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 573 }
+					573 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 574 }
+					574 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 575 }
+					575 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 576 }
+					576 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 577 }
+					577 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+
+
+				#BEL
+
+				random_owned = {
+					limit = { province_id = 387 }
+					387 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 388 }
+					388 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 389 }
+					389 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 390}
+					390 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 391 }
+					391 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 392 }
+					392 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 393 }
+					393 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 394 }
+					394 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 395 }
+					395 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 398 }
+					398 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+
+
+				#zeeeeland
+
+
+				random_owned = {
+					limit = { province_id = 378 }
+					378 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 379 }
+					379 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 380 }
+					380 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 381 }
+					381 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+
+				random_owned = {
+					limit = { province_id = 575 }
+					575 = {
+						change_province_name = "Cologne"
+						state_scope = { change_region_name = "Rhénanie"  }
+					}
+					396 = { change_province_name = "Eupen-Malmédy" assimilate = yes}
+					576 = { change_province_name = "Aix-la-Chapelle" assimilate = yes}
+					572 = { change_province_name = "Trèves" assimilate = yes}
+					577 = { change_province_name = "Clèves" assimilate = yes}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+
+				random_owned = {
+					limit = { province_id = 574 assimilate = yes}
+					574 = {
+						change_province_name = "Coblence"
+						state_scope = { change_region_name = "Sarre et Mont Tonnerre"  }
+					}
+					573 = { change_province_name = "Sarrebruck" assimilate = yes}
+					owner = { set_global_flag = france_rename_prussian_pfalz }
+				}
+
+				random_owned = {
+					limit = { province_id = 570 }
+					570 = { change_province_name = "Mayence" assimilate = yes}
+					owner = { set_global_flag = france_rename_hesse_pfalz }
+				}
+				random_owned = {
+					limit = { province_id = 397 }
+					397 = { change_province_name = "Luxembourg" assimilate = yes}
+					owner = { set_global_flag = france_rename_luxemburg }
+				}
+				random_owned = {
+					limit = { province_id = 398 }
+					398 = { change_province_name = "Arlon" assimilate = yes}
+					owner = {
+						set_global_flag = france_rename_arlon
+						clr_global_flag = dutch_rename_arlon
+						clr_global_flag = german_rename_arlon
+					}
+				}
+				random_owned = {
+					limit = { province_id = 395 }
+					395 = { change_province_name = "Liège" assimilate = yes}
+					owner = {
+						set_global_flag = france_rename_liege
+						clr_global_flag = dutch_rename_liege
+						clr_global_flag = german_rename_liege
+					}
+				}
+				random_owned = {
+					limit = {
+						province_id = 387
+						owner = { NOT = { accepted_culture = flemish } }
+					}
+					387 = {
+						change_province_name = "Bruxelles"
+						assimilate = yes
+					}
+					owner = {
+						set_global_flag = france_rename_brussels
+						clr_global_flag = dutch_rename_brussels
+					}
+				}
+				random_owned = {
+					limit = { province_id = 392 }
+					392 = {
+						change_province_name = "Namur"
+						assimilate = yes
+					}
+					owner = {
+						set_global_flag = france_rename_namur
+						clr_global_flag = dutch_rename_namur
+					}
+				}
+				random_owned = {
+					limit = { province_id = 393 }
+					393 = { change_province_name = "Tournai" assimilate = yes}
+					owner = {
+						set_global_flag = france_rename_tournai
+						clr_global_flag = dutch_rename_tournai
+					}
+				}
+				random_owned = {
+					limit = { province_id = 394 }
+					394 = {  change_province_name = "Charleroi" assimilate = yes}
+					owner = {
+						set_global_flag = france_rename_charleroi
+						clr_global_flag = dutch_rename_charleroi
+					}
+				}
+			}
+			ai_will_do = { factor = 1 }
+		}
+
+
+	german_rename_rhine = {
+			picture = gtfo
+			potential = {
+				is_culture_group = germanic
+				OR = {
+					AND = { owns = 575 has_global_flag = france_rename_rhine }
+					AND = { owns = 574 has_global_flag = france_rename_prussian_pfalz }
+					AND = { owns = 570 has_global_flag = france_rename_hesse_pfalz }
+					AND = { owns = 397 has_global_flag = france_rename_luxemburg }
+					AND = { owns = 398 NOT = { has_global_flag = german_rename_arlon } }
+					AND = { owns = 395 NOT = { has_global_flag = german_rename_liege } }
+					AND = { owns = 381 NOT = { has_global_flag = german_rename_limburg } }
+				}
+			}
+
+			allow = {
+				war = no
+			}
+
+			effect = {
+				#ello
+
+				random_owned = {
+					limit = { province_id = 409 }
+					409 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 410 }
+					410 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+				random_owned = {
+					limit = { province_id = 412 }
+					412 = {
+						assimilate = yes
+					}
+					owner = { set_global_flag = france_rename_rhine }
+				}
+
+				random_owned = {
+					limit = { province_id = 381 }
+					381 = { change_province_name = "Limburg" assimilate = yes}
+					owner = {
+						set_global_flag = german_rename_limburg
+						clr_global_flag = dutch_rename_limburg
+					}
+				}
+				random_owned = {
+					limit = { province_id = 575 }
+					575 = {
+						change_province_name = "Köln"
+						assimilate = yes
+						state_scope = { change_region_name = "Rheinland" }
+					}
+					396 = { change_province_name = "Eupen-Malmedy" assimilate = yes}
+					576 = { change_province_name = "Aachen" assimilate = yes}
+					572 = { change_province_name = "Trier" assimilate = yes}
+					577 = { change_province_name = "Kleve" assimilate = yes}
+					owner = { clr_global_flag = france_rename_rhine }
+				}
+
+				random_owned = {
+					limit = { province_id = 574 }
+					574 = {
+						change_province_name = "Koblenz"
+						assimilate = yes
+						state_scope = { change_region_name = "Pfalz" }
+					}
+					573 = { change_province_name = "SaarbrÃ¼cken" assimilate = yes}
+					owner = { clr_global_flag = france_rename_prussian_pfalz }
+				}
+
+				random_owned = {
+					limit = { province_id = 570 }
+					570 = { change_province_name = "Mainz" }
+					owner = { clr_global_flag = france_rename_hesse_pfalz }
+				}
+				random_owned = {
+					limit = { province_id = 397 }
+					397 = { change_province_name = "Luxemburg" assimilate = yes}
+					owner = { clr_global_flag = france_rename_luxemburg }
+				}
+				random_owned = {
+					limit = { province_id = 398 }
+					398 = { change_province_name = "Arel" assimilate = yes }
+					owner = {
+						set_global_flag = german_rename_arlon
+						clr_global_flag = dutch_rename_arlon
+						clr_global_flag = france_rename_arlon
+					}
+				}
+				random_owned = {
+					limit = { province_id = 395 }
+					395 = { change_province_name = "Lüttich" assimilate = yes }
+					owner = {
+						set_global_flag = german_rename_liege
+						clr_global_flag = dutch_rename_liege
+						clr_global_flag = france_rename_liege
+					}
+				}
+			}
+
+			ai_will_do = { factor = 1 }
+	}
+
+	assimilate_all_cores_ger = {
+		potential = {
+				is_culture_group = germanic
+				has_global_flag = france_rename_rhine
+				has_global_flag = france_rename_prussian_pfalz
+				has_global_flag = france_rename_luxemburg
+				}
+				GER     = {
+					all_core = {
+						owns = this
+					}
+				}
+
+
+		allow = {
+			war = no
+			prestige = 1200
+			industrial_score = 4500
+			military_score = 1000
+		}
+
+		effect = {
+			badboy = 5
+			all_core = {
+				{assimalte = yes}
+			}
+			ai_will_do = { factor = 1 }
+		}
+}

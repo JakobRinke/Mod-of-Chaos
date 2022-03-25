@@ -1,0 +1,108 @@
+political_decisions = {
+	
+	colonial_might = {
+
+		potential = {
+			OR = { tag = POR tag = NET tag = DEN tag = FIN tag = SWE tag = JAP tag = SPA tag = SPC tag = TKG tag = MEX tag = BEL tag = GRE tag = TUR tag = ROM }
+			NOT = { has_country_flag = colonial_might }
+			civilized = yes
+		}
+
+		allow = {
+			prestige = 50
+			state_n_government = 1
+			
+		}
+
+		effect = {
+			prestige = 20
+			badboy = 4
+			add_country_modifier = {
+					name = colonial_might
+					duration = 7300
+			}
+			THIS = {
+				limit = { NOT = { OR = { tag = JAP tag = SPC tag = SPA tag = TUR tag = ROM } } }
+				add_country_modifier = {
+					name = colonial_might
+					duration = 14600
+				}
+			}
+			set_country_flag = colonial_might
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+
+
+
+	}
+	
+	
+	
+	reclaim_brazil = {
+
+		potential = {
+			tag = POR
+			is_greater_power = yes
+			BRZ = { exists = yes }
+			NOT = { has_country_flag = reclaim_brazil }
+		}
+
+		allow = {
+			prestige = 100
+			revolution_n_counterrevolution = 1
+		}
+
+		effect = {
+			prestige = 20
+			add_accepted_culture = brazilian
+			badboy = 10
+			add_casus_belli = {
+				target = BRZ
+				type = conquest
+				months = 6
+			}
+			
+			all_core = { add_core = BRZ }
+
+			BRZ = {
+				all_core = { add_core = THIS }
+				add_casus_belli = {
+					target = THIS
+					type = conquest
+					months = 6
+				}
+				add_accepted_culture = portuguese
+			}
+			
+			war = {
+				target = BRZ
+				attacker_goal = { casus_belli = conquest }
+				defender_goal = { casus_belli = conquest }
+				call_ally = yes
+			}
+			set_country_flag = reclaim_brazil
+
+		}
+
+		ai_will_do = {
+			factor = 0.002
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+
+
+
+	}
+	
+	
+
+} 

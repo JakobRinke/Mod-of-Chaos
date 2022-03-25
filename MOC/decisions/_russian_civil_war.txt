@@ -1,0 +1,329 @@
+#picture  1
+
+political_decisions = {
+
+	russia_battle_royal_moc = {
+		potential = {
+			tag = RUS
+			NOT = {has_country_flag = russian_battle_royal_moc_moc}
+			NOT = {has_global_flag = russian_battle_royal_moc_Glo}
+		}
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			captial = 1051
+			set_country_flag = ChooseNationRussianBattleRoyal
+			SIB = {
+				civilized = yes
+				primary_culture = russian
+				add_accepted_culture = ukrainian
+				add_accepted_culture = polish
+				add_accepted_culture = ugrian
+				add_accepted_culture = polish
+				add_accepted_culture = byelorussian
+				
+				
+				URA = {
+					all_core = { add_core = SIB }
+				}
+				YAK = {
+					all_core = { add_core = SIB }
+				}
+				BRY = {
+					all_core = { add_core = SIB }
+				}
+				LSK = {
+					all_core = { add_core = SIB }
+				}
+				KAM = {
+					all_core = { add_core = SIB }
+				}
+				KAZ = {
+					all_core = { add_core = SIB }
+				}
+				capital = 1058
+			}
+			
+			NOV = {
+				capital = 994
+				civilized = yes
+				primary_culture = russian
+				add_accepted_culture = ukrainian
+				add_accepted_culture = polish
+				add_accepted_culture = ugrian
+				add_accepted_culture = polish
+				add_accepted_culture = byelorussian
+				add_accepted_culture = lithuanian
+				add_accepted_culture = estonian
+				add_accepted_culture = latvian
+				add_core = 1027
+				add_core = 1024
+				add_core = 1023
+				add_core = 1020
+				add_core = 1022
+				add_core = 1001
+				add_core = 991
+				add_core = 998
+				add_core = 1006
+				add_core = 1007
+				add_core = 1003
+				add_core = 1005
+				add_core = 994
+				add_core = 996
+				add_core = 992	
+				LIT = {
+					all_core = { add_core = NOV }
+				}
+				LAT = {
+					all_core = { add_core = NOV }
+				}
+				EST = {
+					all_core = { add_core = NOV }
+				}
+				KRL = {
+					all_core = { add_core = NOV }
+				}	
+				BYE = {
+					all_core = { add_core = UKR }
+				}
+				RUS = {
+					all_core = {
+						limit = { has_pop_culture = ugrian NOT = { OR = { is_core=SIB is_core = BYE } } }
+						add_core = NOV	
+					}
+				}
+				
+				
+			}
+			
+			UKR = {
+				add_accepted_culture = byelorussian
+				add_core = 677
+				add_core = 676
+			}
+			
+			MUS = {
+				capital = 1008
+				primary_culture = russian
+				add_accepted_culture = ukrainian
+				add_accepted_culture = polish
+				add_accepted_culture = ugrian
+				add_accepted_culture = polish
+				add_accepted_culture = byelorussian
+				
+				civilized = yes
+				RUS = {
+					all_core = {
+						limit = { NOT = { OR = { is_core=SIB is_core=NOV is_core=POL is_core=UKR is_core=ROM} } }
+						add_core = MUS
+					}
+				}
+			}
+			
+			
+			
+			SWE = {
+				add_core = 348
+			}
+			
+			
+			
+			
+			set_country_flag = russian_battle_royal_moc
+			set_global_flag = russian_battle_royal_moc_Glo
+			
+			country_event = 13372000
+			
+			
+		}
+		
+		ai_will_do = {					
+			factor = 0.001
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+			modifier = {
+				factor = 0
+				year = 1837
+			}
+		}
+		
+	}
+	
+	
+	mus_annex_rus = {
+		potential = {
+			tag = MUS
+			NOT = { has_country_flag = mus_annex_rus }
+			exists = {RUS}
+		}
+		allow = {
+			
+		}
+		effect = {
+			inherit = RUS
+			set_country_flag = mus_annex_rus
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nov_annex_rus = {
+		potential = {
+			tag = NOV
+			NOT = { has_country_flag = mus_annex_rus }
+			exists = {UBD}
+		}
+		allow = {
+			
+		}
+		effect = {
+			inherit = UBD
+			set_country_flag = mus_annex_rus
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	claim_russia = {
+		potential = {
+			OR = {
+				tag = MUS
+				tag = NOV
+				tag = SIB
+			}
+			NOT = { exists = RUS }
+			NOT = { has_country_flag = claim_russia }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			RUS = {
+				all_core = { add_core = THIS }
+			}
+			set_country_flag = claim_russia
+		}	
+	}
+	
+	Boost_School = {
+		potential = {
+			OR = {
+				tag = MUS
+				tag = NOV
+				tag = SIB
+				tag = RUS
+			}
+			has_global_flag = russian_battle_royal_moc_Glo
+			NOT = { has_country_flag = Boost_School }
+		}
+		allow = {
+			biologism = 1
+		}
+		effect = {
+			prestige = 30
+			activate_technology = social_science
+			activate_technology = social_alienation
+			add_accepted_culture = polish
+			add_accepted_culture = ukrainian
+			set_country_flag = Boost_School
+		}
+		
+	}
+	
+	Claim_Scandinavia = {
+		potential = {
+			tag = NOV
+			NOT = { has_country_flag = Claim_Scandinavia }
+		}
+		allow = {
+			state_n_government= 1
+		}
+		effect = {
+			prestige = 30
+			badboy = 5
+			SWE = {
+				all_core = { add_core = THIS }
+			}
+			NOR = {
+				all_core = { add_core = THIS }
+			}
+			DEN = {
+				all_core = { add_core = THIS }
+			}
+			FIN = {
+				all_core = { add_core = THIS }
+			}
+			add_accepted_culture = swedish
+			add_accepted_culture = danish
+			add_accepted_culture = finnish
+			add_accepted_culture = norwegian
+			add_accepted_culture = sami
+			set_country_flag = Claim_Scandinavia
+		}
+		
+	}
+	
+	Claim_Asia = {
+		potential = {
+			tag = SIB
+			NOT = { has_country_flag = Claim_Scandinavia }
+		}
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 30
+			badboy = 10
+			add_core = 1086
+			add_core = 1087
+			add_core = 1088
+			add_core = 1089
+			add_core = 1643
+			add_core = 1644
+			add_core = 1642
+			add_core = 1671
+			add_core = 1672
+			add_core = 1670
+			add_core = 1668
+			add_core = 1673
+			add_core = 1669
+			add_core = 1669
+			add_core = 1645
+			add_core = 1674
+			add_core = 12
+			
+			
+			
+			
+			
+			MCK = {
+				all_core = { add_core = THIS }
+			}
+			MGL = {
+				all_core = { add_core = THIS }
+			}
+			
+			QNG = {
+				inherit = MCK
+				release = MCK
+				inherit = MGL
+				release = MGL
+			}
+			add_accepted_culture = manchu
+			add_accepted_culture = mongol
+			add_accepted_culture = japanese
+			set_country_flag = Claim_Scandinavia
+		}
+		
+	}
+	
+	
+}
+

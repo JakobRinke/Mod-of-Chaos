@@ -53,7 +53,7 @@ political_decisions = {
 			add_accepted_culture = persian
 			add_accepted_culture = mashriqi
 			define_general = {
-				name = "Artaxias the first" 
+				name = "Artaxias the First" 
 				personality = implacable
 				background = spoiled
 			}
@@ -76,12 +76,9 @@ political_decisions = {
 				add_country_modifier = {
 					name = arm_country_modifier
 					duration = 9000
-				}
+					}
 			}
-			
-			
 		}
-		
 	}
 
 	non__historic_claim_cores_arm = {

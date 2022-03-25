@@ -72,7 +72,7 @@ political_decisions = {
 				war = no
 				ai = no
 				is_greater_power = yes
-				prestige = 75
+				prestige = 35
 			}
 			effect = {
 				set_country_flag = net_take_java_back
