@@ -124,11 +124,14 @@ political_decisions = {
 			
 			
 			
+
 			SWE = {
 				add_core = 348
+      }
+      
+			338 = {
+				secede_province = SWE
 			}
-			
-			
 			
 			
 			set_country_flag = russian_battle_royal_moc
@@ -158,7 +161,9 @@ political_decisions = {
 		potential = {
 			tag = MUS
 			NOT = { has_country_flag = mus_annex_rus }
-			exists = {RUS}
+
+			exists = RUS
+
 		}
 		allow = {
 			
@@ -176,7 +181,7 @@ political_decisions = {
 		potential = {
 			tag = NOV
 			NOT = { has_country_flag = mus_annex_rus }
-			exists = {UBD}
+			exists = UBD
 		}
 		allow = {
 			
@@ -307,14 +312,13 @@ political_decisions = {
 				all_core = { add_core = THIS }
 			}
 			MGL = {
-				all_core = { add_core = THIS }
+				any_owned = { add_core = THIS }
 			}
 			
 			QNG = {
 				inherit = MCK
 				release = MCK
-				inherit = MGL
-				release = MGL
+				release_vassal = MGL
 			}
 			add_accepted_culture = manchu
 			add_accepted_culture = mongol
