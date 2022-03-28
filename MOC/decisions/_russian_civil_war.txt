@@ -124,10 +124,14 @@ political_decisions = {
 			
 			
 			
+
+			SWE = {
+				add_core = 348
+      }
+      
 			338 = {
 				secede_province = SWE
 			}
-			
 			
 			
 			set_country_flag = russian_battle_royal_moc
@@ -157,7 +161,9 @@ political_decisions = {
 		potential = {
 			tag = MUS
 			NOT = { has_country_flag = mus_annex_rus }
+
 			exists = RUS
+
 		}
 		allow = {
 			
