@@ -214,7 +214,8 @@ political_decisions = {
 
 		effect = {
 			badboy = 15
-
+			add_accepted_culture = north_german
+ 
 			#East Friesland
 			add_core = 1743
 			add_core = 543
