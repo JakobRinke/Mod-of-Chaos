@@ -17,8 +17,9 @@ political_decisions = {
 	       
 	      effect = {
 	          prestige = 20
-                  badboy = 6.5
+                  badboy = 7
 		  add_accepted_culture = wallonian
+		  add_accepted_culture = picard
 		  set_country_flag = wall
               }
 	      
