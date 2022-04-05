@@ -412,3 +412,6 @@ south_african_expedition_title; The South African Expedition ;;;;;;;;;;;;;
 south_african_expedition_sco_desc; Others are building Empires, we should try doing that too ;;;;;;;;;;;;;
 claim_can_title; Claim Canada ;;;;;;;;;;;;;
 claim_can_desc; Based Colonial moment??? ;;;;;;;;;;;;;
+treaty_port_iron_title; Change Treaty Port to Iron;;;;;;;;;;;;;
+treaty_port_oil_title; Change Treaty Port to Oil;;;;;;;;;;;;;
+treaty_port_sulphur_title; Change Treaty Port to Sulphur;;;;;;;;;;;;;
