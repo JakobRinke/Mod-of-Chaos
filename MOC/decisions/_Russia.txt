@@ -1,0 +1,52 @@
+#picture 0
+
+political_decisions = {
+	add_romanian_culture = {
+		potential = {
+			OR = {
+				tag = RUS
+				tag = TUR
+			}
+			
+			NOT = {has_country_flag = add_romanian_culture}
+		}
+
+		allow = {
+			is_greater_power = yes
+			mass_politics = 1
+		}
+
+		effect = {
+			set_country_flag = add_romanian_culture
+			badboy = 5
+			add_accepted_culture = romanian
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	
+	}
+
+
+	 change_russian_tech_school = {
+		potential = {
+			NOT = { tech_school = russian_tech_school }
+			NOT = { has_country_modifier = interment_camps }
+			tag = RUS
+			civilized = yes
+		}
+
+		allow = {
+			ai = no
+		}
+
+		effect = {
+			tech_school = russian_tech_school
+			activate_technology = freedom_of_trade
+		}
+	}
+}

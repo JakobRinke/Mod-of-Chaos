@@ -25,7 +25,7 @@ political_decisions = {
 			}
 		
 		effect = {
-			badboy = 8
+			badboy = 10
 
 			#rhineland
 			add_core = 396
@@ -64,6 +64,13 @@ political_decisions = {
 
 			set_country_flag = _getRhineLand_france
 			set_country_flag = claim_south_england
+		}
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
 		}
 	}
 
@@ -397,7 +404,13 @@ political_decisions = {
 					}
 				}
 			}
-			ai_will_do = { factor = 1 }
+			ai_will_do = {					
+				factor = 1
+				modifier = {
+					factor = 0
+					badboy = 0.4
+				}
+			}
 		}
 
 
@@ -522,7 +535,13 @@ political_decisions = {
 				}
 			}
 		
-			ai_will_do = { factor = 1 }
+			ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
 	}
 
 	assimilate_all_cores_ger = {
@@ -545,8 +564,15 @@ political_decisions = {
 		
 		effect = {
 			badboy = 5
-			all_core = {{assimalte = yes}
+			all_core = {{assimalte = yes}}
+
+
+			ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
 			}
-			ai_will_do = { factor = 1 }
+		}
 		}
 }
