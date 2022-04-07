@@ -963,7 +963,7 @@ interwar_infantry = {
             supply_consumption = 0.20
         }
         guard = {
-            attack = 4.5
+            attack = 3
             defence = 2
             supply_consumption = 0.20
         }
@@ -994,8 +994,8 @@ interwar_cavalry = {
     }
     effect = {
         cuirassier = {
-            attack = 3
-            defence = 3
+            attack = 2
+            defence = 2
             reconnaissance = 2
             supply_consumption = 0.20
         }
