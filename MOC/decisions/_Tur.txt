@@ -9,7 +9,6 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 50
 			positivism = 1
 			year = 1850
 		}
@@ -36,8 +35,6 @@ political_decisions = {
 		}
 		
 		allow = {
-			is_greater_power = yes
-			prestige = 75
 			empiricism = 1
 			EGY = { vassal_of = THIS }
 		}
@@ -61,8 +58,6 @@ political_decisions = {
 		}
 		
 		allow = {
-			is_greater_power = yes
-			prestige = 80
 			SER = {
 				OR = {
 					vassal_of = THIS
@@ -104,8 +99,6 @@ political_decisions = {
 		}
 		
 		allow = {
-			is_greater_power = yes
-			prestige = 100
 			ROM = {
 				OR = {
 					vassal_of = THIS
@@ -139,8 +132,6 @@ political_decisions = {
 		}
 		
 		allow = {
-			is_greater_power = yes
-			prestige = 70
 			BUL = {
 				OR = {
 					vassal_of = THIS
@@ -174,8 +165,6 @@ political_decisions = {
 		}
 		
 		allow = {
-			is_greater_power = yes
-			prestige = 40
 			ALB = {
 				OR = {
 					vassal_of = THIS
@@ -210,8 +199,6 @@ political_decisions = {
 		}
 		
 		allow = {
-			is_greater_power = yes
-			prestige = 100
 			GRE = {
 				all_core = {
 					OR = {
