@@ -46,8 +46,9 @@ political_decisions = {
             prestige = 5
 			add_accepted_culture = yankee
 			CAN = {
-			add_country_modifier = {name = CAN_country_modifier duration = 20000}}
-			add_country_modifier = {name = CAN_country_modifier_pop_growth duration = 900}}
+				add_country_modifier = {name = CAN_country_modifier duration = 20000}
+				add_country_modifier = {name = CAN_country_modifier_pop_growth duration = 900}
+			}
 			CAL   = {
 				all_core = {
 					add_core = THIS
@@ -139,11 +140,6 @@ political_decisions = {
 			set_country_flag = canada_make_increase_influence
 			baboy = 15
 
-			CUB = {
-				all_core = {
-					add_core = THIS
-				}
-			}
 			CUB = {
 				all_core = {
 					add_core = THIS
