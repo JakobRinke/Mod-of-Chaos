@@ -1,0 +1,123 @@
+#picture 0
+
+political_decisions = {
+	
+	form_mamluk_empire = {
+		potential = {
+			OR = {
+				tag = CIR
+				tag = GRE
+			}
+			NOT = { has_country_flag = form_mamluk_empire }
+		}
+		
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			badboy = 10
+			primary_culture = circassian
+			add_accepted_culture = greek
+			add_accepted_culture = mashriqi
+			add_accepted_culture = misri
+			add_accepted_culture = bedouin
+			add_accepted_culture = sudanese
+			add_accepted_culture = turkish
+			add_accepted_culture = armenian
+			GRE = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			EGY = {
+				civilize = yes
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			CIR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			ARM = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			TCA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			inherit = TCA
+			inherit = GRE
+			inherit = EGY
+			inherit = CIR
+			inherit = ABK
+			
+			change_tag = MAM
+			MAM = {
+				capital = 1745
+				religion = orthodox
+				government = absolute_monarchy
+				political_reform = yes_slavery	
+			}
+
+			RUS = {
+				remove_core = 1049
+			}
+			set_country_flag = form_mamluk_empire
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	connectent_our_lands_mam = {
+		potential = {
+			tag = MAM
+			NOT = { has_country_flag = connectent_our_lands_mam }
+		}
+		
+		
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		
+		effect = {
+			badboy = 10
+			prestige = 10
+
+			TUR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			add_accepted_culture = kurdish
+			add_accepted_culture = azerbaijani
+
+			set_country_flag = connectent_our_lands_mam
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	
+}

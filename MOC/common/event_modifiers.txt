@@ -2938,3 +2938,13 @@ artiljerija = {
 	org_regain = -0.15
 	land_unit_start_experience = -1
 }
+
+
+MAM_no_slavery = {
+	prestige = 0.03
+    local_ruling_party_support = 0.5
+    social_reform_desire = 0.15
+    leadership_modifier = 0.15
+	supply_consumption = -0.1
+    war_exhaustion = -0.1
+}

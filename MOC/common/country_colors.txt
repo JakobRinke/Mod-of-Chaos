@@ -1095,7 +1095,7 @@ AGN = {
 # Timurid Empire
 TRD = {
     color1= { 42  34  82 }
-    color2= { 42  54  102 }
+    color2= { 42  54 102 }
     color3= { 43  55  75 }
 }
 
@@ -1113,7 +1113,7 @@ PLR = {
 AQU = {
     color1= { 117  32  186 }
     color2= { 107  22  176 }
-    color3= { 90  10  146}
+    color3= {  90  10  146 }
 }
 
 # Burgundy
@@ -1121,7 +1121,7 @@ AQU = {
 BRG = {
     color1= { 128 0 32 }
     color2= { 120 0 28 }
-    color3= { 118 0 22}
+    color3= { 118 0 22 }
 }
 
 
@@ -1130,7 +1130,7 @@ BRG = {
 PRV = {
     color1= { 69 139 116 }
     color2= { 65 129 106 }
-    color3= { 59 119 100}
+    color3= { 59 119 100 }
 }
 
 
@@ -1143,7 +1143,15 @@ EIH = {
 
 #European UNION
 EUR = {
-	color1= { 0  0 139}
-    color2= { 0  0 129}
-    color3= { 0  0 119}
+	color1= { 0  0 139 }
+    color2= { 0  0 129 }
+    color3= { 0  0 119 }
+}
+
+#Mamluk
+
+MAM = {
+	color1= { 212 208 17 }
+    color2= { 190 190 10 }
+    color3= { 170 170 20 }
 }

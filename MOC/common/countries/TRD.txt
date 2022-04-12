@@ -2,7 +2,7 @@ color = { 42  34  82 }
 graphical_culture = MiddleEasternGC
 
 party = {
-    name = "PER_conservative" #Shahist Faction
+    name = "TRD_conservative" #Shahist Faction
     start_date = 1800.1.1
     end_date = 2000.1.1
 
@@ -25,7 +25,7 @@ party = {
 
     social_policy = no_position_set
     economic_policy = laissez_faire
-    trade_policy = protectionism
+    trade_policy = free_trade
     religious_policy = pluralism
     citizenship_policy = full_citizenship
     war_policy = pacifism
