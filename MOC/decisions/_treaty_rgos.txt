@@ -15,7 +15,7 @@ political_decisions = {
 							trade_goods = precious_metal
 						}
 					}
-					NOT = {	province_id = 1499 }
+					NOT = {	OR = { province_id = 1499 province_id = 1608 } }
 				}
 				
 			}
@@ -26,8 +26,7 @@ political_decisions = {
 			regenerative_furnaces = 1
 		}
 		
-		effect = {
-			treasury = -500000
+		effect = {	
 			any_owned = {
 				limit = {
 					AND = {
@@ -41,7 +40,7 @@ political_decisions = {
 								trade_goods = precious_metal
 							}
 						}
-						NOT = {	province_id = 1499 }
+						NOT = {	OR = { province_id = 1499 province_id = 1608 } }
 					}				
 				}
 				trade_goods = iron RGO_size = 6000000000		
@@ -67,7 +66,7 @@ political_decisions = {
 							trade_goods = precious_metal
 						}
 					}
-					NOT = {	province_id = 1499 }
+					NOT = {	OR = { province_id = 1499 province_id = 1608 } }
 				}
 				
 			}
@@ -78,8 +77,7 @@ political_decisions = {
 			organic_chemistry = 1
 		}
 		
-		effect = {
-			treasury = -500000	
+		effect = {	
 			any_owned = {
 				limit = {
 					AND = {
@@ -93,7 +91,7 @@ political_decisions = {
 								trade_goods = precious_metal
 							}
 						}
-						NOT = {	province_id = 1499 }
+						NOT = {	OR = { province_id = 1499 province_id = 1608 } }
 					}				
 				}
 				trade_goods = oil RGO_size = 6000000000		
@@ -102,7 +100,6 @@ political_decisions = {
 	}
 	
 	treaty_port_sulphur = {
-		treasury = -500000	
 		potential = {
 			ai = no
 			any_owned_province = {
@@ -117,7 +114,7 @@ political_decisions = {
 							trade_goods = precious_metal
 						}
 					}
-					NOT = {	province_id = 1499 }
+					NOT = {	OR = { province_id = 1499 province_id = 1608 } }
 				}
 				
 			}
@@ -142,7 +139,7 @@ political_decisions = {
 								trade_goods = precious_metal
 							}
 						}
-						NOT = {	province_id = 1499 }
+						NOT = {	OR = { province_id = 1499 province_id = 1608 } }
 					}			
 				}
 				trade_goods = sulphur RGO_size = 6000000000		
