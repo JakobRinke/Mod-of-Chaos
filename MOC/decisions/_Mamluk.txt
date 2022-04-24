@@ -479,6 +479,11 @@ political_decisions = {
 				political_reform = yes_slavery	
 			}
 
+			add_accepted_culture = circassian
+			add_accepted_culture = sudanese
+			add_accepted_culture = turkish
+			add_accepted_culture = armenian
+
 			set_country_flag = egy_bcm_mam_empire_moc
 		}
 		
