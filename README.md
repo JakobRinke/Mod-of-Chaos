@@ -32,10 +32,17 @@ The following Nations have at least one decision or event added for them:
 <li> USA  </li>
 <li> Austria / Austria-Hungary  </li>
 <li> Germany  </li>
+<li> Hannover  </li>
+<li> Bayern  </li>
+<li> Prussia  </li>
+<li> Poland  </li>
+<li> Polish–Lithuanian Commonwealth  </li>
 <li> Italy  </li>
 <li> Catalonia  </li>
 <li> Two Sicilies  </li>
+<li> Aragon  </li>
 <li> Ottoman Empire  </li>
+<li> Circassia  </li>
 <li> Spain  </li>
 <li> Portugal  </li>
 <li> Greece  </li>
@@ -60,6 +67,8 @@ The following Nations have at least one decision or event added for them:
 <li> South Africa  </li>
 <li> Ethiopia  </li>
 <li> Nigeria  </li>
+<li> Kongo  </li>
+<li> Chile  </li>  
 <li> Persia  </li>
 <li> Armenia  </li>
 <li> Timurid Empire  </li>
