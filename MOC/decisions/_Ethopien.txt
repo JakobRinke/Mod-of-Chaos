@@ -1,7 +1,6 @@
 #event to gain more uncolonized shit 
-#organize eth => iron, coal
-#add cores TRU 
-#remove cores from all nation after annexiation ex: egy
+#organize eth => iron, coal - check???
+#remove cores from all nation after annexiation ex: egy => 2 op ?????
 
 
 #picture 1
@@ -13,7 +12,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = GON 	
-                tag = KAF 
+				tag = KAF 
 				tag = SHW 
 				tag = HAR 
 				tag = TIG 
@@ -21,7 +20,7 @@ political_decisions = {
 			NOT = { exists = ETH}		
 		}
 		allow = {
-            war = no
+			war = no
 		}
 		
 		effect = {
@@ -91,7 +90,7 @@ political_decisions = {
 			add_core = 1736
 			add_core = 1737
 			add_core = 1738
-            TRI   = {all_core = {add_core = THIS}}
+			TRI   = {all_core = {add_core = THIS}}
 		}
 		
 		ai_will_do = {					
@@ -106,7 +105,7 @@ political_decisions = {
 			NOT = { has_country_flag = treaty_of_gonder}	
 		}
 		allow = {
-            war = no
+			war = no
 		}
 		
 		effect = {
@@ -135,7 +134,7 @@ political_decisions = {
 			NOT = { has_country_flag = treaty_of_istanbul}	
 		}
 		allow = {
-            war = no
+			war = no
 			ai = no 
 			foreign_training = yes_foreign_training
 			is_vassal = EGY
@@ -175,7 +174,7 @@ political_decisions = {
 					is_secondary_power  = no
 					is_greater_power  = no
 				}
-            war = no
+			war = no
 			ai = no 
 			civilized = yes
 		}
@@ -197,7 +196,7 @@ political_decisions = {
 		}
 		allow = {
 			average_militancy  = 6
-            war = no
+			war = no
 			ai = no 
 		}
 		
@@ -215,7 +214,7 @@ political_decisions = {
 			NOT = { has_country_flag = treaty_of_ankober}	
 		}
 		allow = {
-            owns = 1745
+			owns = 1745
 			owns = 2048
 
 			owns = 1852
@@ -231,68 +230,125 @@ political_decisions = {
 			set_country_flag = treaty_of_ankober
 
 			#SUDD
-			1843 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1844 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1845 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1846 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1847 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1843 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1844 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1845 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1846 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1847 = { add_core = ETH secede_province = THIS life_rating = 50 }
 
 			#Hararghe
-			1864 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1866 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1867 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1864 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1866 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1867 = { add_core = ETH secede_province = THIS life_rating = 50 }
 
 			#Lindi
-			2039 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2040 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2041 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2039 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			2040 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			2041 = { add_core = ETH secede_province = THIS life_rating = 50 }
 		
 			
 			#Kenya
-			2024 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2027 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2032 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2024 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			2027 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			2032 = { add_core = ETH secede_province = THIS life_rating = 50 }
 		
 			#Zanzibar
-			2045 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2047 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2045 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			2047 = { add_core = ETH secede_province = THIS life_rating = 50 }
 
 			#Rift Valley
-			2028 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2025 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2026 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2031 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2028 = { add_core = ETH secede_province = THIS life_rating = 50 trade_goods = coal RGO_size = 1000000}
+			2025 = { add_core = ETH secede_province = THIS life_rating = 50 trade_goods = coal RGO_size = 1000000}
+			2026 = { add_core = ETH secede_province = THIS life_rating = 50 trade_goods = coal RGO_size = 1000000}
+			2031 = { add_core = ETH secede_province = THIS life_rating = 50 trade_goods = coal RGO_size = 1000000}
 			
 			#Kordofan
-			1839 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1841 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1842 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			1739 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1839 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1841 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1842 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			1739 = { add_core = ETH secede_province = THIS life_rating = 50 }
 
 			#Dongola
-			2564 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			2564 = { add_core = ETH secede_province = THIS life_rating = 50 }
 
 			#Western Desert
-			1758 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1758 = { add_core = ETH secede_province = THIS life_rating = 50 }
 			
 			#Tripoli
-			1742 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1742 = { add_core = ETH secede_province = THIS life_rating = 50 }
 
 			#Cyrenaica
-			1738 = { add_core = ETH secede_province = THIS life_rating = 70 }
-			2585 = { add_core = ETH secede_province = THIS life_rating = 70 }
+			1738 = { add_core = ETH secede_province = THIS life_rating = 50 }
+			2585 = { add_core = ETH secede_province = THIS life_rating = 50 }
 
 
 			#Organize_stuff
 
-			1852 = {trade_goods = iron RGO_size = 1000000}
-			1854 = {trade_goods = coal RGO_size = 1000000}
-			1855 = {trade_goods = coal RGO_size = 1000000}
+			1852 = {trade_goods = iron RGO_size = 1000000 life_rating = 50 }
+			1854 = {trade_goods = coal RGO_size = 1000000 life_rating = 50 }
+			1855 = {trade_goods = coal RGO_size = 1000000 life_rating = 50 }
 
-			1859 = {trade_goods = iron RGO_size = 1000000}
-			1861 = {trade_goods = iron RGO_size = 1000000}
+			1859 = {trade_goods = iron RGO_size = 1000000 life_rating = 50 }
+			1861 = {trade_goods = iron RGO_size = 1000000 life_rating = 50 }
+
+
 		}
 	}
+
+	organize_cairo_moc = {
+		potential = {
+
+			owns = 1745
+			owns = 1746
+			owns = 1747
+			owns = 1748
+			owns = 1749
+			owns = 1750
+			owns = 1751
+
+
+			civilized = yes
+
+			NOT = { has_country_flag = organize_cairo_moc}	
+		}
+		allow = {
+
+			steam_turbine = 1
+			organic_chemistry = 1
+
+
+			owns = 1745
+			owns = 1746
+			owns = 1747
+			owns = 1748
+			owns = 1749
+			owns = 1750
+			owns = 1751
+
+			money = 250000
+		}
+		
+		effect = {
+			prestige = 5
+			set_country_flag = organize_cairo_moc
+
+			money = -250000
+
+			#Organize_stuff
+
+			1745 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
+			1746 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
+			1747 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
+
+			1748 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
+			1749 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
+			1750 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
+			1751 = {trade_goods = coal RGO_size = 1000000 life_rating = 10 }
+
+
+		}
+	}
+
 
 	expand_our_empire_eth = {
 		picture = national_value
@@ -303,7 +359,7 @@ political_decisions = {
 			NOT = { has_country_flag = expand_our_empire_eth}	
 		}
 		allow = {
-            prestige = 55
+			prestige = 55
 			ai = no 
 			nationalism_n_imperialism = 1
 		}
@@ -317,7 +373,12 @@ political_decisions = {
 			add_accepted_culture = berber
 			add_accepted_culture = maures
 
-            OMA    = {
+			OMA    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ABZ    = {
 				all_core = {
 					add_core = THIS
 				}
@@ -385,7 +446,7 @@ political_decisions = {
 				}
 			}
 
-            KTH    = {all_core = {add_core = THIS}}
+			KTH    = {all_core = {add_core = THIS}}
 		
 		}
 	}

@@ -1205,6 +1205,12 @@ political_decisions = {
 				all_core = { add_core = THIS }
 			}
 
+			add_core = 496
+			add_core = 499
+			add_core = 500
+
+			
+
 			 set_country_flag = reclaim_cores_to_unite_FRA_moc
 
 			
@@ -1225,7 +1231,7 @@ political_decisions = {
 			NOT = {has_country_flag = form_france_again_moc}
 		}
 		allow = {
-			nationalism_n_imperialism = 1
+			state_n_government = 1
 			PRS = {
 				all_core = { 
 					owned_by = THIS
@@ -1241,6 +1247,87 @@ political_decisions = {
 				name = Parisii_modifier
 				duration = 36525
 			 }
+
+			add_country_modifier = {
+				name = PARIS_MOC_modifier
+				duration = 1800
+			 }
+
+			2570 = { life_rating = 15 }
+			399 = { life_rating = 20 }
+			400 = { life_rating = 15 }
+			401 = { life_rating = 20 }
+			402 = { life_rating = 15 }
+			403 = { life_rating = 15 }
+			404 = { life_rating = 20 }
+			405 = { life_rating = 20 }
+			406 = { life_rating = 15 }
+			407 = { life_rating = 20 }
+			408 = { life_rating = 15 }
+			409 = { life_rating = 25 }
+			410 = { life_rating = 25 }
+			411 = { life_rating = 15 }
+			412 = { life_rating = 27 }
+			413 = { life_rating = 16 }
+			414 = { life_rating = 20 }
+			415 = { life_rating = 15 }
+			416 = { life_rating = 15 }
+			417 = { life_rating = 15 }
+			418 = { life_rating = 15 }
+			420 = { life_rating = 20 }
+			421 = { life_rating = 20 }
+			422 = { life_rating = 20 }
+			423 = { life_rating = 15 }
+			424 = { life_rating = 15 }
+			425 = { life_rating = 20 }
+			426 = { life_rating = 20 }
+			427 = { life_rating = 20 }
+			428 = { life_rating = 15 }
+			429 = { life_rating = 15 }
+			430 = { life_rating = 15 }
+			431 = { life_rating = 15 }
+			432 = { life_rating = 20 }
+			433 = { life_rating = 15 }
+			434 = { life_rating = 15 }
+			435 = { life_rating = 15 }
+			436 = { life_rating = 15 }
+			437 = { life_rating = 15 }
+			438 = { life_rating = 15 }
+			439 = { life_rating = 15 }
+			440 = { life_rating = 15 }
+			441 = { life_rating = 15 }
+			442 = { life_rating = 15 }
+			443 = { life_rating = 15 }
+			444 = { life_rating = 15 }
+			445 = { life_rating = 15 }
+			446 = { life_rating = 15 }
+			447 = { life_rating = 15 }
+			448 = { life_rating = 20 }
+			449 = { life_rating = 15 }
+			450 = { life_rating = 20 }
+			451 = { life_rating = 20 }
+			452 = { life_rating = 20 }
+			453 = { life_rating = 15 }
+			454 = { life_rating = 15 }
+			455 = { life_rating = 15 }
+			456 = { life_rating = 15 }
+			457 = { life_rating = 15 }
+			458 = { life_rating = 15 }
+			459 = { life_rating = 15 }
+			460 = { life_rating = 15 }
+			461 = { life_rating = 15 }
+			462 = { life_rating = 15 }
+			463 = { life_rating = 15 }
+			464 = { life_rating = 15 }
+			465 = { life_rating = 15 }
+			466 = { life_rating = 15 }
+			467 = { life_rating = 15 }
+			468 = { life_rating = 15 }
+			469 = { life_rating = 15 }
+			470 = { life_rating = 15 }
+			471 = { life_rating = 15 }
+			472 = { life_rating = 15 }
+			473 = { life_rating = 10 }
 
 			set_country_flag = form_france_again_moc
 			set_global_flag = frenhc_battle_royal_moc_Glo

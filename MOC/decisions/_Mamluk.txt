@@ -1,5 +1,7 @@
 #picture 0
 
+
+#Greece path
 political_decisions = {
 	
 	form_mamluk_empire = {
@@ -119,5 +121,373 @@ political_decisions = {
 		
 	}
 	
+
+	#Egypt path
+	gain_reasearchpoints_mil_ref = {
+		potential = {
+			tag = EGY
+			NOT = { has_country_flag = gain_reasearchpoints }
+			civilize = no
+		}
+		
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			prestige = 2
+
+			research_points = 25000
+			activate_technology = army_command_principle
+			define_general = {
+				name = "Al Tutanchamun"
+				personality = implacable
+				background = spoiled
+			}
+
+			activate_technology = post_nelsonian_thought  
+			activate_technology = clipper_design  
+			activate_technology = naval_design_bureaus  
+
+			set_country_flag = gain_reasearchpoints
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+
+	gain_reasearchpoints_adm_ref = {
+		potential = {
+			NOT = { has_country_flag = gain_reasearchpoints_adm_ref }
+			civilized = no
+		}
+		
+		
+		allow = {
+			literacy = 0.025
+		}
+		
+		effect = {
+			prestige = 5
+
+			research_points = 25000
+			activate_technology = malthusian_thought
+			activate_technology = enlightenment_thought
+			activate_technology = introspectionism
+
+			nationalvalue = nv_productivity 
+
+			set_country_flag = gain_reasearchpoints_adm_ref
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+
+	egy_claims_arab_wrld = {
+		potential = {
+			NOT = { has_country_flag = egy_claims_arab_wrld }
+
+			OR ={
+				tag = EGY
+				tag = MAM
+			}
+			
+		}
+		
+		
+		allow = {
+			civilized = yes
+		}
+		
+		effect = {
+			prestige = 10
+
+			badboy = 5
+
+			MHR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			NEJ = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			ABU = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			HAL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			HDJ = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			IRQ  = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			SYR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			BHR   = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			CLC    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			#Senussi
+			add_core = 1735
+			add_core = 1736
+			add_core = 1737
+			add_core = 1738
+
+			#Oman without africa
+			add_core = 2664
+			add_core = 1166
+			add_core = 1169
+			add_core = 1170
+			add_core = 1171
+			add_core = 1172
+			add_core = 1174
+			
+			
+			TRI    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			set_country_flag = egy_claims_arab_wrld
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	claim_esp_as_arab = {
+		potential = {
+			NOT = { has_country_flag = claim_esp_as_arab }
+
+			OR ={
+				tag = MAM
+				tag = EGY
+			}
+			
+		}
+		
+		
+		allow = {
+			civilized = yes
+			is_greater_power = yes 
+			prestige = 200
+
+			revolution_n_counterrevolution = 1
+		}
+		
+		effect = {
+			prestige = 25
+
+			badboy = 15
+
+			#Granada
+			add_core = 513
+			add_core = 514
+			add_core = 515
+			add_core = 516
+
+			#Andalucia
+			add_core = 512
+			add_core = 509
+			add_core = 510
+			add_core = 511
+
+			#Gibraltar
+			add_core = 517
+
+			#Valencia
+			add_core = 503
+			add_core = 505
+			add_core = 506
+			add_core = 507
+			add_core = 508
+			
+			set_country_flag = claim_esp_as_arab
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	claim_more_arab_land_to_rule_em = {
+		potential = {
+			NOT = { has_country_flag = claim_more_arab_land_to_rule_em }
+
+			OR ={
+				tag = EGY
+				tag = MAM
+			}
+			
+		}
+		
+		
+		allow = {
+			civilized = yes
+			is_greater_power = yes 
+		}
+		
+		effect = {
+			prestige = 50
+
+			badboy = 10
+
+			TUN  = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			add_accepted_culture = berber
+			add_accepted_culture = maghrebi
+			
+			#Algiers
+			add_core = 1700
+			add_core = 1701
+			add_core = 1709
+
+			#Oran
+			add_core = 1703
+			add_core = 1704
+			add_core = 1705
+			add_core = 1706
+			add_core = 1707
+
+			#North Central Sahara
+			add_core = 1711
+			add_core = 1712
+			add_core = 1713
+			add_core = 1715
+
+			## Morocco ##
+
+			#Agadir
+			add_core = 1694
+			add_core = 1695
+			add_core = 1696
+			add_core = 1697
+			add_core = 1698
+			add_core = 1699
+
+			#Marrakesh
+			add_core = 1690
+			add_core = 1691
+			add_core = 1692
+			add_core = 1693
+			add_core = 2563
+
+			#Fez
+			add_core = 1680
+			add_core = 1681
+			add_core = 1682
+			add_core = 1685
+
+			#Al Rif
+			add_core = 1686
+			add_core = 1687
+			add_core = 1688
+			add_core = 1689
+			add_core = 2590
+
+			#Taza
+			add_core = 1697
+			add_core = 1683
+			add_core = 1684
+			
+			set_country_flag = claim_more_arab_land_to_rule_em
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	egy_bcm_mam_empire_moc = {
+		potential = {
+			NOT = { has_country_flag = egy_bcm_mam_empire_moc }
+			tag = EGY
+		}
+		
+		
+		allow = {
+			civilized = yes
+			owns = 1745
+			owns = 834
+			owns = 847
+			owns = 848
+			prestige = 50
+		}
+		
+		effect = {
+			prestige = 25
+
+			badboy = 10
+
+			change_tag = MAM
+
+			MAM = {
+				capital = 1745
+				religion = orthodox
+				government = absolute_monarchy
+				political_reform = yes_slavery	
+			}
+
+			set_country_flag = egy_bcm_mam_empire_moc
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
 	
 }
+

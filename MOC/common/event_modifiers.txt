@@ -2886,11 +2886,18 @@ munich_modifier = {
 Parisii_modifier = {
 	factory_output = 0.11
 	factory_throughput = 0.1
-	factory_owner_cost = -0.05
+	factory_owner_cost = -0.15
 	import_cost = -0.15
 	loan_interest = -0.25
 	max_loan_modifier = 0.33
 	tax_efficiency = 0.055
+}
+
+PARIS_MOC_modifier = {
+	immigrant_attract = 0.2
+	population_growth = 0.0145
+	local_factory_output = 0.0225
+	icon = 13
 }
 
 Eich_Home = {
