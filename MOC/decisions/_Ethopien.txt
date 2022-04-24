@@ -301,10 +301,15 @@ political_decisions = {
 			owns = 1745
 			owns = 1746
 			owns = 1747
-			owns = 1748
-			owns = 1749
+			owns = 1762
 			owns = 1750
 			owns = 1751
+
+			owns = 1806
+			owns = 1833
+			owns = 1834
+			owns = 1835
+			owns = 1836
 
 
 			civilized = yes
@@ -317,13 +322,6 @@ political_decisions = {
 			organic_chemistry = 1
 
 
-			owns = 1745
-			owns = 1746
-			owns = 1747
-			owns = 1748
-			owns = 1749
-			owns = 1750
-			owns = 1751
 
 			money = 250000
 		}
@@ -339,9 +337,16 @@ political_decisions = {
 			1745 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
 			1746 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
 			1747 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
+			1806 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
+			1833 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
+			1834 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
+			1835 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
+			1836 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
 
-			1748 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
-			1749 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
+			1762 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
+
+			1836 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
+			1837 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
 			1750 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
 			1751 = {trade_goods = coal RGO_size = 1000000 life_rating = 10 }
 

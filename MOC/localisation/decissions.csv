@@ -454,7 +454,7 @@ gain_reasearchpoints_mil_ref_desc; Everything changed we need to catch up with t
 egy_bcm_mam_empire_moc_title; Form Mamluk;;;;;;;;;;;;;
 egy_bcm_mam_empire_moc_desc; The time has come to gain a new leader to enslave our population.;;;;;;;;;;;;;
 egy_claims_arab_wrld_title; We should unit the Arab World;;;;;;;;;;;;;
-egy_claims_arab_wrld_title; Gain cores on a lot of arabic regoins.;;;;;;;;;;;;;
+egy_claims_arab_wrld_desc; Gain cores on a lot of arabic regoins.;;;;;;;;;;;;;
 claim_more_arab_land_to_rule_em_title; There are more lands to conquer;;;;;;;;;;;;;
 claim_more_arab_land_to_rule_em_desc; They are our brothers we should unite our empire. The time has come.;;;;;;;;;;;;;
 claim_esp_as_arab_title; Claim South Spain;;;;;;;;;;;;;
