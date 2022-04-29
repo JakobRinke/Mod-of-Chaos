@@ -404,6 +404,12 @@ political_decisions = {
 			add_core = 1713
 			add_core = 1715
 
+			#Constaine
+			add_core = 1710
+			add_core = 1708
+			add_core = 1702
+
+
 			## Morocco ##
 
 			#Agadir

@@ -298,7 +298,7 @@ political_decisions = {
 	organize_cairo_moc = {
 		potential = {
 
-			owns = 1745
+			owns = 1749
 			owns = 1746
 			owns = 1747
 			owns = 1762
@@ -334,9 +334,8 @@ political_decisions = {
 
 			#Organize_stuff
 
-			1745 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
+			1749 = {trade_goods = iron RGO_size = 1000000 life_rating = 10 }
 			1746 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
-			1747 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
 			1806 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
 			1833 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
 			1834 = {trade_goods = coal RGO_size = 2000000 life_rating = 10 }
