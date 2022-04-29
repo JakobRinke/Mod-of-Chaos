@@ -42,6 +42,7 @@ The following Nations have at least one decision or event added for them:
 <li> Two Sicilies  </li>
 <li> Aragon  </li>
 <li> Ottoman Empire  </li>
+<li> Egypt  </li>
 <li> Circassia  </li>
 <li> Spain  </li>
 <li> Portugal  </li>
