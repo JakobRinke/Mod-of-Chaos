@@ -462,3 +462,9 @@ claim_esp_as_arab_desc; A long time ago our anchestors used to rule this area. W
 global_infamy; MOC INFAMY BOOST;;;;;;;;;;;;;
 global_infamy_title; MOC INFAMY BOOST;;;;;;;;;;;;;
 global_infamy_desc; Free Infamy for everyone;;;;;;;;;;;;;
+obtain_texas_as_culture_title; Obtain the texans;;;;;;;;;;;;;
+obtain_texas_as_culture_desc; Gain texans as an accepted culture. As well as core their lands.;;;;;;;;;;;;;
+gain_more_cultures_title; More people should be integrated into our empire;;;;;;;;;;;;;
+gain_more_cultures_desc; Press this to become STRONG af - lets go!;;;;;;;;;;;;;
+assimilate_all_cores_MOC_title; Fix the Culture gore;;;;;;;;;;;;;
+assimilate_all_cores_MOC_desc; Assimilate all of your cores to your primary culture.;;;;;;;;;;;;;

@@ -1,4 +1,4 @@
-#picture 0 untested
+#picture 0 
 
 political_decisions = {
 	assimilate_all_cores_MOC = {
