@@ -15,14 +15,14 @@ political_decisions = {
 		}
 
 		effect = {
-			prestige = 20
+			prestige = 10
 			badboy = 4
 			add_country_modifier = {
 					name = colonial_might
 					duration = 7300
 			}
 			THIS = {
-				limit = { NOT = { OR = { tag = JAP tag = SPC tag = SPA} } }
+				limit = { NOT = { OR = { tag = JAP tag = TKG tag = SPC tag = SPA} } }
 				add_country_modifier = {
 					name = colonial_might
 					duration = 14600
