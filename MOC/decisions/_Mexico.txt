@@ -23,7 +23,7 @@ political_decisions = {
 		
 		effect = {
 				
-			prestige = 10	
+			prestige = 15	
 			add_accepted_culture = central_americans
 			add_accepted_culture = north_andean
 			add_accepted_culture = mexican
@@ -31,6 +31,27 @@ political_decisions = {
 			COL = { all_core = { add_core = THIS } }
 			MEX = { all_core = { add_core = THIS } }
 			CUB = { all_core = { add_core = THIS } }
+			
+			#UCA cores 
+			add_core = 2186
+			add_core = 2187
+			add_core = 2188
+			add_core = 2189
+			add_core = 2190
+			add_core = 2191
+			add_core = 2192
+			add_core = 2193
+			add_core = 2194
+			add_core = 2195
+			add_core = 2196
+			add_core = 2197
+			
+			#Panama
+			add_core = 2204
+			add_core = 2205
+			add_core = 2206
+			add_core = 2208
+			
 			set_country_flag = mex_central_american_ambition
 		}
 		
