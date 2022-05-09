@@ -24,7 +24,7 @@ political_decisions = {
 		effect = {
 				
 			prestige = 15	
-			add_accepted_culture = central_americans
+			add_accepted_culture = central_american
 			add_accepted_culture = north_andean
 			add_accepted_culture = mexican
 			UCA = { all_core = { add_core = THIS } }
