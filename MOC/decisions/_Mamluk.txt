@@ -187,7 +187,7 @@ political_decisions = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = PER
+				NOT={ tag = PER }
 				factor = 0.0001
 			}
 		}
