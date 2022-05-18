@@ -329,12 +329,17 @@ political_decisions = {
 		}
 	}
 
-
-	greater_vienna_moc  = {
-		#Wenn die Welt einmal untergehen sollte, ziehe ich nach Wien, denn dort passiert alles 50 Jahre später.
+	greater_capital_moc  = {
 		potential = {
 			nationalism_n_imperialism = 1
-			NOT = { has_country_flag = greater_vienna_moc }
+			NOT = { has_country_flag = greater_capital_moc }
+			NOT = {
+				AND = {
+				NOT = { has_country_flag = greater_vienna_moc }
+				capital = 619
+			}
+			}
+			
 		}
 		allow = {
 			prestige = 150
@@ -348,6 +353,44 @@ political_decisions = {
 		effect = {
 			capital_scope = {
 				add_province_modifier= {
+					name = capital_modifier_moc
+					duration = 36500
+				}
+			}
+			prestige = 5
+			money = -250000
+			set_country_flag = greater_vienna_moc
+		}
+
+		ai_will_do = {
+			factor = 0.18
+			modifier = {
+				factor = 0
+				badboy = 0.65
+			}
+		}
+	}
+
+	greater_vienna_moc  = {
+		#Wenn die Welt einmal untergehen sollte, ziehe ich nach Wien, denn dort passiert alles 50 Jahre später.
+		potential = {
+			
+			NOT = { has_country_flag = greater_vienna_moc }
+			owns = 619 
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			prestige = 150
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			money = 250000
+		}
+
+		effect = {
+			619 = {
+				add_province_modifier = {
 					name = vienna_modifier
 					duration = 36500
 				}

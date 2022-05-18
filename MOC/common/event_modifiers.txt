@@ -2823,6 +2823,20 @@ vienna_modifier = {
 	icon = 13
 }
 
+capital_modifier_moc = {
+	immigrant_attract = 0.25
+	farm_rgo_size = 0.15
+	farm_rgo_eff = 0.15
+	mine_rgo_size = 0.15
+	mine_rgo_eff = 0.15
+	local_rgo_output = 0.05
+	local_factory_input = 0.05
+	local_factory_output = 0.0225
+	local_factory_throughput = 0.15
+	assimilation_rate = 0.2
+	icon = 13
+}
+
 prague_modifier = {
 	immigrant_attract = 0.075
 	local_rgo_output = 0.025
