@@ -1,0 +1,6 @@
+owner = KSI
+controller = KSI
+add_core = KSI
+add_core = KUB
+trade_goods = fruit
+life_rating = 10

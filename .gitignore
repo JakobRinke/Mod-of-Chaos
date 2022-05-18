@@ -3,6 +3,10 @@ MOC/.vs/MOC/v16/.suo
 MOC/.vs/ProjectSettings.json
 MOC/.vs/slnx.sqlite
 *.json
+*.vsidx
+MOC/.vs/MOC/FileContentIndex/read.lock
+MOC/.vs/MOC/v17/.suo
+
 MOC/.vs/MOC/FileContentIndex/read.lock
 MOC/.vs/MOC/FileContentIndex/b64d5140-13f5-4957-8efb-5f77d9380ade.vsidx
 MOC/.vs/MOC/FileContentIndex/98dca230-20b1-4c09-8148-d28d4ec4e840.vsidx

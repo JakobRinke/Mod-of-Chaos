@@ -94,6 +94,7 @@ encourage_total_mobilisation_title;Encourage total Mobilisation ;;;;;;;;;;;;;
 encourage_total_mobilisation_desc; If you can, send EVERYONE!!! ;;;;;;;;;;;;;
 rom_school_system_effect;Reformed Schoolsystem;;;;;;;;;;;;;
 total_mobilisation;Total Mobilisation;;;;;;;;;;;;;
+total_mobilisation_desc; Mobilize every single men in our country to the defeat the hostile aggression;;;;;;;;;;;;;
 spa_core_port_title; Claim Portugal;;;;;;;;;;;;;
 spa_core_port_desc; No reason, boarders I guess;;;;;;;;;;;;;
 spa_core_mex_title; Claim Mexico;;;;;;;;;;;;;
@@ -198,8 +199,8 @@ conquerSPA_as_ARA_title; Madrid is ours. We need to end the spanish rule on the 
 conquerSPA_as_ARA_desc; Gain even more cores on Spain.;;;;;;;;;;;;;
 release_ukraine_for_persia_title;Release the Ukraine to annex Persia;;;;;;;;;;;;;
 release_ukraine_for_persia_desc;A Soul for a Soul;;;;;;;;;;;;;
-kongo_school_system_title;Organize our country;;;;;;;;;;;;;
-kongo_school_system_desc;In order to survive, we need to modernize our country;;;;;;;;;;;;;
+kongo_school_system_title; Expand into the jungle.;;;;;;;;;;;;;
+kongo_school_system_desc; The jungle is where live in and where we come from. Lets tell everybody that is ours.;;;;;;;;;;;;;
 kongo_annex_congo_title;Colonize Congo;;;;;;;;;;;;;
 kongo_annex_congo_desc;We need more land to become an Empire;;;;;;;;;;;;;
 kongo_school_system_modifier;Modernizing Country;;;;;;;;;;;;;

@@ -2,6 +2,79 @@
 
 political_decisions = {
 
+	encourage_total_mobilisation_afr = {
+		picture = rom_total_war_time
+		potential = {
+			OR = {
+				tag = LOA
+				tag = KON
+				tag = KSI
+			}
+			
+			NOT = { has_country_flag = encourage_total_mobilisation_afr }
+		}
+		
+		
+		allow = {
+			OR = {
+				war_policy = jingoism
+				war_policy = pro_military
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+					name = total_mobilisation
+					duration = 35000
+			}
+
+			change_national_value = order
+			set_country_flag = encourage_total_mobilisation_afr
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	gen_for_civwar_kongo = {
+		potential = {
+			OR = {
+				tag = LOA
+				tag = KON
+				tag = KSI
+			}
+			
+			NOT = { has_country_flag = gen_for_civwar_kongo }
+		}
+		
+		
+		allow = {
+
+		}
+		
+		effect = {
+
+			define_general = {
+				name = "Moltke von Igor"
+				personality = implacable
+				background = cursed_luck
+			}
+
+			set_country_flag = gen_for_civwar_kongo
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+
+
+
 	kongo_school_system = {
 	
 		potential = {
@@ -16,9 +89,8 @@ political_decisions = {
 		
 		
 		effect = {
-			plurality = 40
+			plurality = 10
 			add_accepted_culture = ovimbundu
-			inherit = LOA
 			add_core = 2003
 			add_core = 2624
 			add_core = 1978
@@ -33,7 +105,7 @@ political_decisions = {
 			treasury = -2000000
 			add_country_modifier = {
 				name = kongo_school_system_modifier
-				duration = 13000
+				duration = 10000
 			}
 			
 			
@@ -42,6 +114,67 @@ political_decisions = {
 			
 			
 			set_country_flag = kongo_school_system
+		}
+		
+		ai_will_do = {
+			factor = 0.00005
+		}	
+	}
+
+
+	loango_school_system = {
+	
+		potential = {
+			tag = LOA
+			NOT = { has_country_flag = loango_school_system }
+		}
+		
+		allow = {
+
+		}
+		
+		
+		effect = {
+			plurality = 10
+			add_accepted_culture = forest_bantu
+			add_accepted_culture = fang
+			add_core = 1982
+			add_core = 1983
+			add_core = 1985
+			add_core = 2000
+			
+
+			#gabon
+			1972 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1974 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1975 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1976 = {secede_province = THIS life_rating = 10 add_core = THIS}
+
+			#Cameroon
+			1956 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1957 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1958 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1959 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1962 = {secede_province = THIS life_rating = 10 add_core = THIS}
+
+
+
+			1973 = {secede_province = THIS life_rating = 10}
+
+
+			1980 = {secede_province = THIS life_rating = 10}
+
+			add_country_modifier = {
+				name = kongo_school_system_modifier
+				duration = 10000
+			}
+			
+			
+			
+			remove_country_modifier = lacks_writing_system
+			
+			
+			set_country_flag = loango_school_system
 		}
 		
 		ai_will_do = {
@@ -107,11 +240,7 @@ political_decisions = {
 			add_core = 1988
 			add_core = 1996
 			add_core = 1997
-			add_core = 1998
-			all_core = {
-				secede_province = THIS
-			}
-			
+			add_core = 1998			
 			UTI = {
 				add_core = 1958
 				add_core = 1959	
@@ -146,22 +275,6 @@ political_decisions = {
 				add_core = 1997
 				add_core = 1998
 			}
-			
-			
-			UTI = { civilized = yes }
-			release = UTI
-			UTI = {
-				all_core = {
-					add_core = THIS
-				}
-			}
-			
-			inherit = UTI
-			UTI = {
-				civilized = no
-				all_core = { remove_core = UTI }
-			}
-			
 			
 			
 			set_country_flag = kongo_annex_congo

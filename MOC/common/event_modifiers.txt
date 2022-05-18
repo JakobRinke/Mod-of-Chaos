@@ -2746,10 +2746,9 @@ provinz_growth_modifier = {
 
 
 kongo_school_system_modifier = {
-	education_efficiency_modifier = 10
-	research_points_modifier = 4
-	global_population_growth = 0.0003
-	prestige = 0.01
+	education_efficiency_modifier = 5
+	research_points_modifier = 0.25
+	global_population_growth = 0.0001
 	icon = 7
 }
 
