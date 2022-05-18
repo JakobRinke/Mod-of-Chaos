@@ -10,7 +10,7 @@ political_decisions = {
 		
 		allow = {
 			positivism = 1
-			year = 1850
+			year = 1845
 		}
 		effect = {
 			plurality = 10
@@ -39,7 +39,7 @@ political_decisions = {
 			EGY = { vassal_of = THIS }
 		}
 		effect = {
-			badboy = 3
+			badboy = 2
 			inherit = EGY
 		}
 		
@@ -109,7 +109,7 @@ political_decisions = {
 			revolution_n_counterrevolution = 1
 		}
 		effect = {
-			badboy = 8		
+			badboy = 6		
 			inherit = ROM	
 			any_owned = {
 				remove_core = ROM
@@ -141,7 +141,7 @@ political_decisions = {
 			state_n_government = 1
 		}
 		effect = {
-			badboy = 7		
+			badboy = 5		
 			inherit = BUL
 			add_accepted_culture = bulgarian
 			any_owned = {
@@ -174,7 +174,7 @@ political_decisions = {
 			biologism = 1
 		}
 		effect = {
-			badboy = 4		
+			badboy = 3		
 			inherit = ALB
 			add_accepted_culture = albanian			
 			any_owned = {
@@ -211,7 +211,7 @@ political_decisions = {
 			impressionism  = 1
 		}
 		effect = {
-			badboy = 3		
+			badboy = 1	
 			any_owned = {
 				remove_core = MCD
 			}
