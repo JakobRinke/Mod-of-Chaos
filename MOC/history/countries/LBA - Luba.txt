@@ -1,12 +1,11 @@
-capital = 2001
-primary_culture = mongo
-culture = luba
-religion = catholic
+capital = 1988
+primary_culture = luba
+religion = animist
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.01
-non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0
 
 # Political reforms
 slavery = yes_slavery
@@ -28,16 +27,16 @@ pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = two_year_draft
+conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
 
-set_country_flag = catholic_country
+set_country_flag = animist_country
 
-ruling_party = KSI_conservative
+ruling_party = LBA_conservative
 upper_house = {
     fascist = 0
     liberal = 15
@@ -48,14 +47,13 @@ upper_house = {
     communist = 0
 }
 
-set_country_flag = delay_unciv_annexation
-
-# Technologies
-
-# Inventions
+set_country_flag = lacking_writing_system
 
 # Starting Consciousness
-consciousness = 0.125
+consciousness = 0
 nonstate_consciousness = 0
 
-oob = "KSI_oob.txt"
+oob = "LBA_oob.txt"
+1861.1.1 = {
+    oob = "/1861/LBA_oob.txt"
+}

@@ -1,5 +1,3 @@
-owner = KSI
-controller = KSI
 add_core = KSI
 add_core = MNG
 trade_goods = fruit
