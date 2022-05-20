@@ -48,7 +48,10 @@ political_decisions = {
 	reclaim_brazil = {
 
 		potential = {
-			tag = POR
+			OR = {
+				tag = POR
+				tag = PAC
+			}
 			is_greater_power = yes
 			BRZ = { exists = yes }
 			NOT = { has_country_flag = reclaim_brazil }
@@ -83,6 +86,140 @@ political_decisions = {
 
 		ai_will_do = {
 			factor = 0.002
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+
+
+
+	}
+
+	releasePCA = {
+
+		potential = {
+			tag = POR
+			
+			NOT = { has_country_flag = releasePCA }
+		}
+
+		allow = {
+		}
+
+		effect = {
+			prestige = 25
+			
+
+			PAC ={
+				add_core = 1999
+				add_core = 2003
+				add_core = 2004
+			}
+
+			release_vassal = PAC
+
+			country_event = 1337000001
+
+			set_country_flag = releasePCA
+
+		}
+
+		ai_will_do = {
+			factor = 0.004
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+
+
+
+	}
+	
+	enhance_our_lands = {
+
+		potential = {
+			tag = PAC
+			NOT = { has_country_flag = enhance_our_lands }
+		}
+
+		allow = {
+		}
+
+		effect = {
+			prestige = 5
+			
+			2002 = {secede_province = THIS life_rating = 20 add_core = THIS}
+			2004 = {secede_province = THIS life_rating = 20 add_core = THIS}
+			2005 = {secede_province = THIS life_rating = 20 add_core = THIS}
+			2006 = {secede_province = THIS life_rating = 20 add_core = THIS}
+			2009 = {secede_province = THIS life_rating = 20 add_core = THIS}
+			
+
+			add_country_modifier = {
+				name = PAC_new_world
+				duration = 36500 
+			}
+
+			set_country_flag = enhance_our_lands
+
+		}
+
+		ai_will_do = {
+			factor = 0.004
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+
+
+
+	}
+	
+	
+	new_lisbon = {
+
+		potential = {
+			in_culture_group  = iberian
+			civilized = yes
+			owns  = 1999
+			NOT = { has_country_flag = new_lisbon }
+		}
+
+		allow = {
+			owns  = 1999
+		}
+
+		effect = {
+			prestige = 5
+			
+			nationalvalue = liberty
+
+			plurality = 5
+
+			1999 = {naval_base = 2}
+			1999 = {infrastructure = 1}
+			1999 = {change_province_name = "New Lisbon"}
+			1999 = {assimilate = yes}
+			1999 = {life_rating = 30}
+
+			build_factory_in_capital_state = cement_factory
+			1999 = {
+				add_province_modifier = {
+					name = provinz_growth_modifier
+					duration = 7300
+				}
+			}
+			
+
+			set_country_flag = new_lisbon
+
+		}
+
+		ai_will_do = {
+			factor = 0.004
 			modifier = {
                 factor = 0
                 badboy = 0.4

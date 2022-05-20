@@ -584,6 +584,7 @@ MUS		   ="countries/Muscovy.txt"
 NOV		   ="countries/Novgorod.txt"
 MAM		   ="countries/Mamluk.txt"
 KSI		   ="countries/KSI.txt"
+PAC		   ="countries/PAC.txt"
 
 
 ##HoD Dominions

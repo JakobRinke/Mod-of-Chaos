@@ -1162,4 +1162,11 @@ KSI = {
 	color1= { 153 20 151 }
     color2= { 123 10 121 }
     color3= { 113  5 101 }
+
+#Portuguese Africa Company
+
+PAC = {
+	color1= { 64 230 135 }
+    color2= { 44 230 115 }
+    color3= { 34 220 105 }
 }
