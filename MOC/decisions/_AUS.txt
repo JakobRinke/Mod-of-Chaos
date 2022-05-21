@@ -337,7 +337,7 @@ political_decisions = {
 				AND = {
 				NOT = { has_country_flag = greater_vienna_moc }
 				capital = 619
-			}
+				}
 			}
 			
 		}
@@ -359,7 +359,7 @@ political_decisions = {
 			}
 			prestige = 5
 			money = -250000
-			set_country_flag = greater_vienna_moc
+			set_country_flag = greater_capital_moc
 		}
 
 		ai_will_do = {

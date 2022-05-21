@@ -2741,6 +2741,7 @@ PAC_new_world ={
 	global_immigrant_attract = 4.335
 	global_assimilation_rate = 0.155
 	icon = 7
+	prestige = 0.05
 }
 
 provinz_growth_modifier = {
