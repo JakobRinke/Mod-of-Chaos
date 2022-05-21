@@ -3,7 +3,7 @@ political_decisions = {
 	colonial_might = {
 
 		potential = {
-			OR = { tag = POR tag = DEN tag = FIN tag = SWE tag = JAP tag = SPA tag = SPC tag = TKG tag = MEX tag = BEL tag = GRE }
+			OR = { tag = POR tag = DEN tag = FIN tag = SWE  tag = MEX tag = BEL tag = GRE }
 			NOT = { has_country_flag = colonial_might }
 			civilized = yes
 		}
@@ -22,7 +22,7 @@ political_decisions = {
 					duration = 7300
 			}
 			THIS = {
-				limit = { NOT = { OR = { tag = JAP tag = TKG tag = SPC tag = SPA} } }
+				limit = { NOT = { OR = { tag = MEX tag = BEL} } }
 				add_country_modifier = {
 					name = colonial_might
 					duration = 14600
