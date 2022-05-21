@@ -163,6 +163,7 @@ political_decisions = {
 	gain_reasearchpoints_adm_ref = {
 		potential = {
 			NOT = { has_country_flag = gain_reasearchpoints_adm_ref }
+			NOT = { OR = { tag = JAP tag = TKG }}
 			civilized = no
 		}
 		
