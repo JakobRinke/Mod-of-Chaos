@@ -42,7 +42,8 @@ political_decisions = {
 	
 	gen_for_civwar_kongo = {
 		potential = {
-			NOT = { has_country_flag = gen_for_civwar_kongo }
+			NOT = { has_global_flag = gen_for_civwar_kongo }
+			NOT = { year = 1837 }
 		}
 		
 		
@@ -51,14 +52,15 @@ political_decisions = {
 		}
 		
 		effect = {
-
-			define_general = {
-				name = "Moltke von Igor"
-				personality = implacable
-				background = cursed_luck
+			any_country = {	
+				define_general = {
+					name = "Moltke von Igor"
+					personality = implacable
+					background = cursed_luck
+				}
 			}
 
-			set_country_flag = gen_for_civwar_kongo
+			set_global_flag = gen_for_civwar_kongo
 		}
 		
 		ai_will_do = {
