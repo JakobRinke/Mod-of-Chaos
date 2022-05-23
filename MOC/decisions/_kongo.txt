@@ -42,14 +42,6 @@ political_decisions = {
 	
 	gen_for_civwar_kongo = {
 		potential = {
-			OR = {
-				tag = LOA
-				tag = KON
-				tag = KSI
-				tag = LBA
-				tag = PAC
-			}
-			
 			NOT = { has_country_flag = gen_for_civwar_kongo }
 		}
 		
