@@ -9,7 +9,7 @@ political_decisions = {
 			NOT = { has_country_flag = claim_south_england}	
 		}
 		allow = {
-			has_global_flag = french_counter_event
+			OR = { has_global_flag = french_counter_event has_global_flag = release_AST_get_Cores }
 		}
 		
 		effect = {
