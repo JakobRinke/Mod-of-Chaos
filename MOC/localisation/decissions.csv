@@ -381,7 +381,7 @@ BRG_gain_germans_accepted_desc; We should integrate our German brothers. Let's u
 HRE_Claim_MORE_title; Restore the greatness of the former HRE;;;;;;;;;;;;;
 HRE_Claim_MORE_desc; GAIN even more cores.;;;;;;;;;;;;;
 HRE_Claim_Alps_title: The alps belong to our empire. Lets conquer them;;;;;;;;;;;;;
-HRE_Claim_Alps_desc: The alps have been a former part of the Holy Roman Empire, since our plan is to restore their greatness we should conquer these territories.;;;;;;;;;;;;; 
+HRE_Claim_Alps_desc: The alps have been a former part of the Holy Roman Empire, since our plan is to restore their greatness we should conquer these territories.;;;;;;;;;;;;;
 add_czech_culture_title; Gain Czech as an accepted culture;;;;;;;;;;;;;
 add_czech_culture_desc; You will gain Czech as an accepted culture.;;;;;;;;;;;;;
 add_romanian_culture_title; Gain Romanian as an accepted culture;;;;;;;;;;;;;
@@ -502,3 +502,5 @@ claim_iberia_title; Conquer our roots;;;;;;;;;;;;;
 claim_iberia_desc; Annex the portuguese Homeland. To reunite the portuguese empire we need to go back Home;;;;;;;;;;;;;
 sphere_por_to_annex_title; Annex Portugal;;;;;;;;;;;;;
 sphere_por_to_annex_desc; We have sphered Portugal. Lets annex Portugal!;;;;;;;;;;;;;
+liberty_enlightening_the_world_mex_title; Gift the Mexicans the Statue of Equality;;;;;;;;;;;;;
+liberty_enlightening_the_world_mex_desc; The time has come to underline our friendship with a gift.;;;;;;;;;;;;;

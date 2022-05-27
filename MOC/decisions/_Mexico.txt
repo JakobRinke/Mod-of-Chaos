@@ -172,5 +172,149 @@ political_decisions = {
 		}
 	}
 
+	assimilate_usa_ter = {
+		potential = {
+			OR = {
+				tag = MEX
+				tag = CO
+			}
+			NOT = {has_country_flag = obtain_texas_as_culture}			
+		}
+		
+		allow = {
+			owns = 139
+			owns = 192
+		}
+		
+		effect = {
+				
+			badboy = 3
+			prestige = 10	
+
+			139 = {add_core = this assimilate = yes}
+			140 = {add_core = this assimilate = yes}
+			141 = {add_core = this assimilate = yes}
+			142 = {add_core = this assimilate = yes}
+
+			192 = {add_core = this assimilate = yes}
+			193 = {add_core = this assimilate = yes}
+			194 = {add_core = this assimilate = yes}
+			
+			#Alabama
+			add_core = 195
+			add_core = 196
+			add_core = 197
+
+
+			#Florida
+			add_core = 198
+			add_core = 199
+			add_core = 200
+
+			add_accepted_culture = dixie
+
+			set_country_flag = obtain_texas_as_culture
+		}
+		
+		ai_will_do = {					
+			factor = 0.01
+		}
+	}
+	
+	assimilate_usa_ter = {
+		potential = {
+			OR = {
+				tag = MEX
+				tag = CO
+			}
+			NOT = {has_country_flag = obtain_texas_as_culture}			
+		}
+		
+		allow = {
+			owns = 139
+			owns = 192
+		}
+		
+		effect = {
+				
+			badboy = 3
+			prestige = 10	
+
+			139 = {add_core = this assimilate = yes}
+			140 = {add_core = this assimilate = yes}
+			141 = {add_core = this assimilate = yes}
+			142 = {add_core = this assimilate = yes}
+
+			192 = {add_core = this assimilate = yes}
+			193 = {add_core = this assimilate = yes}
+			194 = {add_core = this assimilate = yes}
+			
+			#Alabama
+			add_core = 195
+			add_core = 196
+			add_core = 197
+
+
+			#Florida
+			add_core = 198
+			add_core = 199
+			add_core = 200
+
+			add_accepted_culture = dixie
+
+			set_country_flag = obtain_texas_as_culture
+		}
+		
+		ai_will_do = {					
+			factor = 0.01
+		}
+	}
+
+	liberty_enlightening_the_world_mex = {
+		potential = {
+			NOT = {
+				has_global_flag = statue_of_liberty_has_been_built_mexmoc
+				has_country_flag = statue_of_liberty_has_been_built_mexmoc
+			}
+			OR ={
+				tag = SPA
+				tag = SPC
+			}
+			
+			OR ={
+				exists = SPA
+				exists = SPC
+			}
+
+			exists = MEX
+			year = 1850
+		}
+
+		allow = {
+			MEX = { slavery = no_slavery }
+		}
+
+		effect = {
+			set_global_flag = statue_of_liberty_has_been_built_mexmoc
+			set_country_flag = statue_of_liberty_has_been_built_mexmoc
+			any_pop = {
+				militancy = -0.5
+			}
+			relation = {
+				who = MEX
+				value = 50
+			}
+			MEX = {
+				country_event = {id=379300881}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { relation = { who = USA value = -150 } }
+			}
+		}
+	}
 
 }
