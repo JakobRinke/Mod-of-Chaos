@@ -53,13 +53,18 @@ political_decisions = {
 		
 		effect = {
 			any_country = {	
+				limit = { ai = no }
 				define_general = {
 					name = "Moltke von Igor"
 					personality = implacable
 					background = cursed_luck
 				}
 			}
-
+			define_general = {
+					name = "Moltke von Igor"
+					personality = implacable
+					background = cursed_luck
+			}
 			set_global_flag = gen_for_civwar_kongo
 		}
 		
