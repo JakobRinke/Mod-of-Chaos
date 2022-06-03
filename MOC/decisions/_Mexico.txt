@@ -12,7 +12,7 @@ political_decisions = {
 					tag = MEX
 					NOT = { exists = CUM }	
 				}
-				tag = CLM
+				tag = CLM 
 			}
 			NOT = {has_country_flag = mex_central_american_ambition}			
 		}
@@ -28,7 +28,7 @@ political_decisions = {
 			add_accepted_culture = north_andean
 			add_accepted_culture = mexican
 			UCA = { all_core = { add_core = THIS } }
-			COL = { all_core = { add_core = THIS } }
+			CLM  = { all_core = { add_core = THIS } }
 			MEX = { all_core = { add_core = THIS } }
 			CUB = { all_core = { add_core = THIS } }
 			
@@ -172,60 +172,13 @@ political_decisions = {
 		}
 	}
 
-	assimilate_usa_ter = {
-		potential = {
-			OR = {
-				tag = MEX
-				tag = CO
-			}
-			NOT = {has_country_flag = obtain_texas_as_culture}			
-		}
-		
-		allow = {
-			owns = 139
-			owns = 192
-		}
-		
-		effect = {
-				
-			badboy = 3
-			prestige = 10	
-
-			139 = {add_core = this assimilate = yes}
-			140 = {add_core = this assimilate = yes}
-			141 = {add_core = this assimilate = yes}
-			142 = {add_core = this assimilate = yes}
-
-			192 = {add_core = this assimilate = yes}
-			193 = {add_core = this assimilate = yes}
-			194 = {add_core = this assimilate = yes}
-			
-			#Alabama
-			add_core = 195
-			add_core = 196
-			add_core = 197
-
-
-			#Florida
-			add_core = 198
-			add_core = 199
-			add_core = 200
-
-			add_accepted_culture = dixie
-
-			set_country_flag = obtain_texas_as_culture
-		}
-		
-		ai_will_do = {					
-			factor = 0.01
-		}
-	}
+	
 	
 	assimilate_usa_ter = {
 		potential = {
 			OR = {
 				tag = MEX
-				tag = CO
+				tag = CLM  
 			}
 			NOT = {has_country_flag = obtain_texas_as_culture}			
 		}
