@@ -8,7 +8,7 @@ political_decisions = {
 			OR = {
 				tag = ITA
 				tag = TUR
-				tag = ARA
+				tag = AGN
 				tag = EGY
 			}
 			NOT = { has_country_flag = Greek_Embrace }
