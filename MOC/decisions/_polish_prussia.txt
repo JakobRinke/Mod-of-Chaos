@@ -404,25 +404,28 @@ political_decisions = {
 						owns = this
 					}
 			}
-			BAV = {
+			OR = {
+				BAV = {
 				AND = {
 					vassal_of = THIS
 					PLR = {is_sphere_leader_of = BAV}
-				}
-			}
-			SGF = {
-				AND = {
-					OR= {
-						AND = {
-							is_sphere_leader_of = WUR
-							is_sphere_leader_of = BAD
-						}
-						vassal_of = THIS
 					}
+				}
+				SGF = {
+					AND = {
+						OR= {
+							AND = {
+								is_sphere_leader_of = WUR
+								is_sphere_leader_of = BAD
+							}
+							vassal_of = THIS
+						}
 					
-					 PLR = {is_sphere_leader_of = SGF}
+						 PLR = {is_sphere_leader_of = SGF}
+					}
 				}
 			}
+			
 			
 		}
 

@@ -1,0 +1,37 @@
+#picture 0
+
+political_decisions = {
+	
+	inherit_KONGO_PUPPET = {
+		potential = {
+			NOT = { has_country_flag = inherit_KONGO_PUPPET }
+			THIS = {is_sphere_leader_of = CNG}
+		}
+		
+		
+		allow = {
+			CNG = {vassal_of = THIS}
+			THIS = {is_sphere_leader_of = CNG}
+		}
+		
+		effect = {
+			badboy = 2
+
+			inherit = CNG
+
+			set_country_flag = inherit_KONGO_PUPPET
+		}
+		
+		ai_will_do = {
+			factor = 0.00035
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+		
+		
+	}
+	
+	
+}
