@@ -14,7 +14,16 @@ political_decisions = {
 				tag = CSA
 				tag = JAP
 				tag = TKG
-				tag = CAN
+				tag = KOR 
+				tag = JAP
+				tag = DAI
+				tag = PHL 
+				tag = JAV
+				tag = IAA
+				tag = MGL
+				tag = QNG
+				tag = BUR
+				tag = IND
 			}
 			NOT = { has_country_flag = claim_Hawaii }
 		}

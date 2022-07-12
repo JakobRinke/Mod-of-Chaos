@@ -141,7 +141,6 @@ political_decisions = {
 				add_core = 1547
 				add_core = 1548
 				add_accepted_culture = nanfaren
-				research_points = 25000
 				set_country_flag = claim_south_han_1845
 			}
 
@@ -153,6 +152,7 @@ political_decisions = {
 			}
 		}
 	}
+
 	claim_south_han_1870 = {
 
 			potential = {
@@ -183,7 +183,7 @@ political_decisions = {
 				year = 1870
 			}
 			effect = {
-				badboy = 5
+				badboy = 25
 				ASM   = {
 					all_core = {
 						add_core = THIS
@@ -228,6 +228,7 @@ political_decisions = {
 				factor = 0.00025
 			}
 	}
+
 	claim_south_han_1890 = {
 
 			potential = {

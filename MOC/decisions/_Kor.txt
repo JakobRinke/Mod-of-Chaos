@@ -1,14 +1,36 @@
 political_decisions = {
 
 	claimMGL = {
-		potential = { tag = KOR NOT={ has_country_flag = claimMGL }}
-		allow = { nationalism_n_imperialism = 1 }
-		effect = { MGL = { all_owned = { add_core = KOR } } set_country_flag=claimMGL}
+		potential = { 
+			tag = KOR 
+			NOT = { has_country_flag = claimMGL }
+		}
+		allow = { 
+			nationalism_n_imperialism = 1 
+		}
+		effect = { 
+			MGL = { 
+				all_owned = { 
+					add_core = KOR 
+					} 
+			} 
+
+
+			set_country_flag = claimMGL
+		}
 	}
 	
 	Claim_South_Japan = {
-		potential = { tag = KOR NOT={ has_country_flag = Claim_South_Japan }}
-		allow = { nationalism_n_imperialism = 1 }
+		potential = { 
+			tag = KOR 
+			NOT = { has_country_flag = Claim_South_Japan }
+		
+		}
+
+
+		allow = { 
+			nationalism_n_imperialism = 1 
+		}
 		effect = {
 			badboy = 18
 			add_core = 2589
@@ -23,17 +45,106 @@ political_decisions = {
 			add_core = 1667
 			
 			add_core = 1638
-			add_core = 1638
+			add_core = 1639
 			add_core = 1640
 			add_core = 1641
 			
 			add_core = 1659
 			
-			
+			set_country_flag = Claim_South_Japan
 		}
 	
 	
 	}
+	
+	
+	Claim_Formosa_asia = {
+		potential = { 
+			OR ={
+				tag = KOR 
+				tag = JAP
+				tag = DAI
+				tag = PHL 
+				tag = JAV
+				tag = IAA
+				tag = BUR
+				tag = IND
+			}
+			
+			NOT = { has_country_flag = Claim_Formosa_asia }
+		
+		}
 
 
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 2
+
+			#Taiwan / Formosa 
+			add_core = 2406
+			add_core = 1485
+			add_core = 2562
+			add_core = 2681
+
+			set_country_flag = Claim_Formosa_asia
+		}
+	
+	
+	}
+	
+	assimilate_Formosa_asia = {
+		potential = { 
+			OR ={
+				tag = KOR 
+				tag = JAP
+				tag = DAI
+				tag = PHL 
+				tag = JAV
+				tag = IAA
+				tag = MGL
+				tag = QNG
+				tag = BUR
+				tag = IND
+			}
+			
+			AND = {
+				owns = 1485
+				owns = 2406
+				owns = 2562
+				owns = 2681
+			}
+			
+			AND = {
+				1485 = {
+					is_primary_culture = no
+					}
+				1485 = {
+					is_primary_culture = no
+					}
+				1485 = {
+					is_primary_culture = no
+					}
+				1485 = {
+					is_primary_culture = no
+					}
+
+			}
+		}
+
+
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 2
+			1485 = { assimilate = yes }
+			2406 = { assimilate = yes }
+			2562 = { assimilate = yes }
+			2681 = { assimilate = yes }
+		}
+	
+	
+	}
 }

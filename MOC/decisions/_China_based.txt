@@ -71,6 +71,9 @@ political_decisions = {
 			has_country_flag = China_Modernize_Country
 			NOT = { tech_school = Chinese_Supremacy }
 		}
+		allow = {
+		
+		}
 		effect = {
 			tech_school = Chinese_Supremacy
 		}
