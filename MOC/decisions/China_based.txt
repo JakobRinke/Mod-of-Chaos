@@ -1,0 +1,84 @@
+political_decisions = {
+	
+	westernize_now_QNG = {
+		
+		potential = {
+			tag = QNG
+			civilized = no
+			NOT = {
+				year = 1837
+			}
+
+		}
+		
+		allow = {
+
+		}
+
+		effect = {
+			badboy = 25
+			civilized = yes
+			nationalvalue = nv_productivity 
+			any_owned = {
+				any_pop = {
+					reduce_pop = 0.2
+				}			
+			}
+			political_reform = open_borders
+			remove_country_modifier = uncivilized_isolationism
+		}
+		
+		
+		ai_will_do = {
+			factor = 0.0005
+		}
+	}
+	
+	
+	China_Modernize_Country = {
+		
+		potential = {
+			tag = QNG
+			NOT = { has_country_flag = China_Modernize_Country}
+		}
+		
+		allow = {
+			civilized = yes
+		}
+		
+		effect = {
+			activate_technology = late_enlightenment_philosophy
+			activate_technology = malthusian_thought
+			activate_technology = enlightenment_thought
+			set_country_flag = China_Modernize_Country
+			
+			any_owned = {
+				any_pop = {
+					reduce_pop = 0.8
+				}			
+			}
+			
+		}
+	
+	
+	}
+	
+	
+	China_Change_Techschool = {
+		
+		potential = {
+			tag = QNG
+			has_country_flag = China_Modernize_Country
+			NOT = { tech_school = Chinese_Supremacy }
+		}
+		effect = {
+			tech_school = Chinese_Supremacy
+		}
+	
+	}
+	
+	
+
+
+}
+

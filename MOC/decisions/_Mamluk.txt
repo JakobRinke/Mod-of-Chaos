@@ -160,42 +160,7 @@ political_decisions = {
 		
 	}
 
-	gain_reasearchpoints_adm_ref = {
-		potential = {
-			NOT = { has_country_flag = gain_reasearchpoints_adm_ref }
-			NOT = { OR = { tag = JAP tag = TKG }}
-			civilized = no
-		}
-		
-		
-		allow = {
-			literacy = 0.025
-		}
-		
-		effect = {
-			prestige = 5
-
-			research_points = 25000
-			activate_technology = malthusian_thought
-			activate_technology = enlightenment_thought
-			activate_technology = introspectionism
-
-			nationalvalue = nv_productivity 
-
-			set_country_flag = gain_reasearchpoints_adm_ref
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				NOT={ tag = PER }
-				factor = 0.0001
-			}
-		}
-		
-		
-	}
-
+	
 	egy_claims_arab_wrld = {
 		potential = {
 			NOT = { has_country_flag = egy_claims_arab_wrld }

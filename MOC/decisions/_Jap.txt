@@ -37,6 +37,7 @@ political_decisions = {
 				OR = {
 					tag = JAP
 					tag = TKG
+					tag = KOR
 				}
 				NOT = { has_country_flag = expand_claims_jap}	
 			}
@@ -56,11 +57,17 @@ political_decisions = {
 						add_core = THIS	
 					}
 				}
-				PHL = {
-					all_core = {
-						add_core = THIS	
+				THIS = {
+					limit = {
+						NOT = { tag = KOR }
+					}
+					PHL = {
+						all_core = {
+							add_core = THIS	
+						}
 					}
 				}
+				
 				QNG = {
 					inherit = MCK
 					release = MCK

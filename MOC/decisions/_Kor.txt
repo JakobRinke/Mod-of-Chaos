@@ -1,0 +1,39 @@
+political_decisions = {
+
+	claimMGL = {
+		potential = { tag = KOR NOT={ has_country_flag = claimMGL }}
+		allow = { nationalism_n_imperialism = 1 }
+		effect = { MGL = { all_owned = { add_core = KOR } } set_country_flag=claimMGL}
+	}
+	
+	Claim_South_Japan = {
+		potential = { tag = KOR NOT={ has_country_flag = Claim_South_Japan }}
+		allow = { nationalism_n_imperialism = 1 }
+		effect = {
+			badboy = 18
+			add_core = 2589
+			add_core = 1660
+			add_core = 1661
+			add_core = 1662
+			add_core = 1663
+			add_core = 1664
+			
+			add_core = 1665
+			add_core = 1666
+			add_core = 1667
+			
+			add_core = 1638
+			add_core = 1638
+			add_core = 1640
+			add_core = 1641
+			
+			add_core = 1659
+			
+			
+		}
+	
+	
+	}
+
+
+}

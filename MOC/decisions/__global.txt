@@ -1,0 +1,75 @@
+political_decisions = {
+
+	gen_for_civwar_kongo = {
+		potential = {
+			NOT = { has_global_flag = gen_for_civwar_kongo }
+			NOT = { year = 1837 }
+		}
+		
+		
+		allow = {
+
+		}
+		
+		effect = {
+			any_country = {	
+				limit = { ai = no }
+				define_general = {
+					name = "Moltke von Igor"
+					personality = implacable
+					background = cursed_luck
+				}
+			}
+			define_general = {
+					name = "Moltke von Igor"
+					personality = implacable
+					background = cursed_luck
+			}
+			set_global_flag = gen_for_civwar_kongo
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	gain_reasearchpoints_adm_ref = {
+		potential = {
+			NOT = { has_country_flag = gain_reasearchpoints_adm_ref }
+			NOT = { OR = { tag = JAP tag = TKG tag = QNG}}
+			civilized = no
+		}
+		
+		
+		allow = {
+			literacy = 0.025
+		}
+		
+		effect = {
+			prestige = 5
+
+			research_points = 25000
+			activate_technology = malthusian_thought
+			activate_technology = enlightenment_thought
+			activate_technology = introspectionism
+
+			nationalvalue = nv_productivity 
+
+			set_country_flag = gain_reasearchpoints_adm_ref
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT={ tag = PER }
+				factor = 0.0001
+			}
+		}
+		
+		
+	}
+
+
+}

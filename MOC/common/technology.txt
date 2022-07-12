@@ -131,6 +131,16 @@ schools ={
         unciv_economic_modifier = -0.05
         unciv_military_modifier = -0.15
     }
+	
+	Chinese_Supremacy = {
+        army_tech_research_bonus = 0.1
+        commerce_tech_research_bonus = -0.05
+        culture_tech_research_bonus = 0.15
+        industry_tech_research_bonus = 0.1
+        navy_tech_research_bonus = -0.5
+        unciv_economic_modifier = 0.0
+        unciv_military_modifier = 0.0
+    }
 
     czech_tech_school = {
         army_tech_research_bonus = 0.1
