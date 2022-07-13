@@ -63,6 +63,39 @@ political_decisions = {
 		
 		
 	}
+	
+	
+	global_healthcare = {
+	
+		potential = {
+			NOT = { health_care = good_health_care  }
+		}
+		
+		allow = {
+			electricity = 1
+		}
+		
+		effect = {
+			social_reform = good_health_care
+		}
+	
+	}
+	
+	global_schoolsystem = {
+	
+		potential = {
+			NOT = { school_reforms  = good_schools }
+		}
+		
+		allow = {
+			social_science = 1
+		}
+		
+		effect = {
+			social_reform = good_schools 
+		}
+	
+	}
 
 
 }
