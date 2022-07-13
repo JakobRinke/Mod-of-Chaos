@@ -2983,3 +2983,46 @@ global_infamy = {
 	icon = 4
 }
 
+communist_agenda = {
+	non_accepted_pop_consciousness_modifier = 0.02 
+	education_efficiency_modifier = 0.5
+	ruling_party_support = 0.2
+	factory_input = -0.02
+	factory_output = -0.02
+}
+
+anarchic_system = {
+	loan_interest = 0.5
+	factory_input = 0.5
+	factory_output = 0.5
+	loan_interest = 0.2
+	max_loan_modifier = 2
+	max_social_spending = -0.99
+	import_cost = -0.5
+	ruling_party_support = -0.3
+	prestige = -0.015
+	influence_modifier = -0.1
+	factory_cost = -0.2
+	rich_income_modifier = 0.25
+}
+
+supreme_dictator = {
+	education_efficiency_modifier = -0.1
+	ruling_party_support = 0.5
+	mobilisation_size = 0.02
+	mobilization_economy_impact = -0.9
+	mobilization_impact = -0.9
+	factory_cost = -0.5
+	war_exhaustion = -0.25
+}
+
+free_thought = {
+	plurality = 0.01
+	education_efficiency_modifier = 0.075
+	poor_life_needs = -0.1
+	rich_income_modifier = 0.1
+}
+
+
+
+
