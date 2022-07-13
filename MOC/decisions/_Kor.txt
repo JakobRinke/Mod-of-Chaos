@@ -56,6 +56,38 @@ political_decisions = {
 	
 	
 	}
+
+	Claim_islands_from_Japan = {
+		potential = { 
+			tag = KOR 
+			NOT = { has_country_flag = Claim_South_Japan }
+		}
+
+
+		allow = { 
+			nationalism_n_imperialism = 1 
+		}
+		effect = {
+			badboy = 8
+
+			#Sakhalin
+			add_core = 1086
+			add_core = 1087
+			add_core = 1088
+			add_core = 1089
+
+			#Ezo
+			add_core = 1642
+			add_core = 1643
+			add_core = 1644
+
+			add_core = 2845
+			
+			set_country_flag = Claim_South_Japan
+		}
+	
+	
+	}
 	
 	
 	Claim_Formosa_asia = {

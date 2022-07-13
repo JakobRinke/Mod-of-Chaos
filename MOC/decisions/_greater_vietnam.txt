@@ -214,20 +214,44 @@ political_decisions = {
 				add_core = 1242
 				add_core = 1328
 
-
-				add_accepted_culture = bengali
 				add_accepted_culture = tibetan
 				add_accepted_culture = nepali
 				add_accepted_culture = asian_minor
-				add_accepted_culture = assamese
-				add_accepted_culture = bihari
+
 				set_country_flag = claim_south_han_1870
 			}
 
 			ai_will_do = {
 				factor = 0.00025
 			}
+				
 	}
+
+	vietnam_get_accepted_cultures = {
+
+			potential = {
+				tag = DAI
+				NOT = {has_country_flag = vietnam_get_accepted_cultures}
+				has_country_flag = claim_south_han_1845
+			}
+			allow = {
+				war = no
+				year = 1870
+			}
+			effect = {
+				badboy = 15
+
+				add_accepted_culture = bengali
+				add_accepted_culture = assamese
+				add_accepted_culture = bihari
+
+				set_country_flag = vietnam_get_accepted_cultures
+			}
+
+			ai_will_do = {
+				factor = 0.00025
+			}
+
 
 	claim_south_han_1890 = {
 
