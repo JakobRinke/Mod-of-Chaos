@@ -2,8 +2,10 @@ political_decisions = {
 
 	gen_for_civwar_kongo = {
 		potential = {
-			NOT = { has_global_flag = gen_for_civwar_kongo }
-			NOT = { year = 1837 }
+			
+			ai = no
+			NOT = { has_leader = "Moltke von Igor" }
+			
 		}
 		
 		
@@ -12,20 +14,11 @@ political_decisions = {
 		}
 		
 		effect = {
-			any_country = {	
-				limit = { ai = no }
-				define_general = {
-					name = "Moltke von Igor"
-					personality = implacable
-					background = cursed_luck
-				}
-			}
 			define_general = {
 					name = "Moltke von Igor"
 					personality = implacable
 					background = cursed_luck
 			}
-			set_global_flag = gen_for_civwar_kongo
 		}
 		
 		ai_will_do = {
@@ -38,7 +31,7 @@ political_decisions = {
 	gain_reasearchpoints_adm_ref = {
 		potential = {
 			NOT = { has_country_flag = gain_reasearchpoints_adm_ref }
-			NOT = { OR = { tag = JAP tag = TKG tag = QNG}}
+			NOT = { OR = { tag = JAP tag = TKG tag = QNG } }
 			civilized = no
 		}
 		
