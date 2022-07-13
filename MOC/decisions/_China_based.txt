@@ -18,14 +18,15 @@ political_decisions = {
 		effect = {
 			badboy = 25
 			civilized = yes
-			nationalvalue = nv_productivity 
+			nationalvalue = nv_productivity 	
+			political_reform = open_borders
+			remove_country_modifier = uncivilized_isolationism
+
 			any_owned = {
 				any_pop = {
 					reduce_pop = 0.4
 				}			
 			}
-			political_reform = open_borders
-			remove_country_modifier = uncivilized_isolationism
 		}
 		
 		
