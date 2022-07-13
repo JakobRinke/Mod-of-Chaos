@@ -2772,12 +2772,6 @@ arabian_resources = {
 	icon = 7
 }
 
-fascist_care = {
-	population_growth = 0.0000025
-	immigrant_push = 0.15
-	local_ruling_party_support = -0.2
-}
-
 arm_country_modifier = {
     global_population_growth = 0.0065
     prestige = 0.03
@@ -2981,6 +2975,12 @@ MAM_no_slavery = {
 global_infamy = {
 	badboy = -0.05
 	icon = 4
+}
+
+fascist_care = {
+	population_growth = 0.000001
+	immigrant_push = 0.15
+	local_ruling_party_support = -0.2
 }
 
 communist_agenda = {
