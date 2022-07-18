@@ -36,7 +36,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				badboy = 0.8
+				badboy = 0.1
 			}
 		}
 	}
