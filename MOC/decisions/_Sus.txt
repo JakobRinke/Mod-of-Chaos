@@ -80,18 +80,108 @@ political_decisions
 			add_accepted_culture = south_andean
 			add_accepted_culture = amazonian
 			add_accepted_culture = platinean	
-			add_accepted_culture = afro_brazilian		
+			add_accepted_culture = afro_brazilian
+			
+			ARG      = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+
+			BOL       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			BRZ       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			CHL       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			CLM       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			ECU       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			PEU       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			PRG        = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			URU         = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			VNZ         = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			CUB         = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			GUY         = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			GCO          = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			PBC           = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+
+			SPU            = {
+				all_core = {
+					add_core = SUS
+				}
+			}
 		}
 		ai_will_do = {					
 			factor = 0.05
 			 modifier = {
-                factor = 0
-                year = 1936
-            }
+				factor = 0
+				year = 1936
+			}
 			modifier = {
-                factor = 0
-                badboy = 0.1
-            }
+				factor = 0
+				badboy = 0.1
+			}
 		}
 	}
 	

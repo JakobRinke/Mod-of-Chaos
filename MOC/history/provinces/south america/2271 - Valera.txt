@@ -1,7 +1,0 @@
-owner = VNZ
-controller = VNZ
-add_core = VNZ
-trade_goods = coffee
-terrain = montane_forest
-life_rating = 33
-add_core = SUS
