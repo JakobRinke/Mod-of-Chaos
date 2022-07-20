@@ -179,4 +179,30 @@ political_decisions = {
 	
 	
 	}
+	
+	gain_jap_accepted = {
+		potential = { 
+			OR ={
+				tag = KOR 
+				tag = PHL 
+				tag = MGL
+			}
+			
+			NOT = { has_country_flag = gain_jap_accepted }
+		}
+
+
+		allow = { 
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			badboy = 10
+
+			add_accepted_culture = japanese
+
+			set_country_flag = gain_jap_accepted
+		}
+	
+	
+	}
 }
