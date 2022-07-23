@@ -91,7 +91,6 @@ The following Nations have at least one decision or event added for them:
   <li> Serbia </li>
   <li> Spain  </li>
   <li> Turkey / Ottoman Empire  </li>
-  <br>
 </ul>
 
 
@@ -113,8 +112,6 @@ The following Nations have at least one decision or event added for them:
   <li> Vietnam </li>
 </ul>
 
-
-
 <h3> The Americas </h3>
 <ul>
 <li> Canada  </li>
@@ -124,8 +121,6 @@ The following Nations have at least one decision or event added for them:
 <li> USA  </li>
 <li> All of South America  </li>
 </ul>
-
-<br>
 
 <h3> Africa </h3>
 <ul>
