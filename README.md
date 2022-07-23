@@ -126,7 +126,7 @@ The following Nations have at least one decision or event added for them:
 </ul>
 
 <h2> 
-  More Informations
+  More Information
 </h2>
 <p>
   This is a short Overview of every single nation with changes [might be outdated] <br>
