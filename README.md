@@ -24,7 +24,7 @@ The mod also works well for Multiplayer, by encouraging players to go to war mor
   Added Flavor to almost all Ideologies
 </h2>
 <h2>
-  This Mod is fully Suited for Multiplayer, including:
+  This Mod is fully suited for Multiplayer, including:
 </h2>
 <ul>
 <li> Perma Infamy Reduction </li>
