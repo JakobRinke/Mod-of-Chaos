@@ -34,24 +34,24 @@ The following Nations have at least one decision or event added for them:
   <li> Albania </li>
   <li> Austria / Austria-Hungary / Danubian Conf  </li>
   <li> Belgium and Luxembourg </li>
-  
   <li> England  </li>
   <li> France  </li>
-  <br>
   <li> Germany  </li>
+  <ul>
   <li> Prussia </li>
   <li> Hannover  </li>
   <li> Bavaria  </li>
   <li> Prussia  </li>
-  <br>
+  </ul>
+
   <li> Greece  </li>
-  <br>
   <li> Italy  </li>
+  <ul>
   <li> Formable: Aragon  </li>
   <li> Catalonia  </li>
   <li> Papal State  </li>
   <li> Two Sicilies  </li>
-  <br>
+  </ul>
   <li> Netherlands  </li>
   <li> Poland / PLC </li>
   <li> Portugal  </li>
@@ -59,10 +59,11 @@ The following Nations have at least one decision or event added for them:
   <li> Russia  </li>
   <br>
   <li> Scandinavia  </li>
+  <ul>
   <li> Denmark  </li>
   <li> Finland  </li>
   <li> Sweden  </li>
-  <br>
+  </ul>
   <li> Spain  </li>
   <li> Turkey / Ottoman Empire  </li>
   <li> Ukraine  </li>
@@ -94,7 +95,7 @@ The following Nations have at least one decision or event added for them:
 <li> Mexico  </li>
 <li> USA  </li>
 <li> All of South America  </li>
-<ul>
+</ul>
 
 <br>
 
