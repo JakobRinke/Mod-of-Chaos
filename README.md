@@ -20,9 +20,9 @@ The mod also works well for Multiplayer, by encouraging players to go to war mor
 </ol>
 
 <br>
-<h3>
+<h2>
   Added Flavor to almost all Ideologies
-</h3>
+</h2>
 <h2>
   This Mod is fully Suited for Multiplayer, including:
 </h2>
