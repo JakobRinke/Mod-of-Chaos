@@ -70,7 +70,6 @@ The following Nations have at least one decision or event added for them:
 </ul>
 
 
-<ul>
 
 <h3> Asia and Occiania</h3>
 <ul>
@@ -89,11 +88,13 @@ The following Nations have at least one decision or event added for them:
 
 
 <h3> The Americas </h3>
+<ul>
 <li> Canada  </li>
 <li> Chile  </li> 
 <li> Mexico  </li>
 <li> USA  </li>
 <li> All of South America  </li>
+<ul>
 
 <br>
 
@@ -119,11 +120,6 @@ The following Nations have at least one decision or event added for them:
 
 
 
-
-
-
-
-</ul>
 
 <h2> 
   More Information
