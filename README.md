@@ -20,9 +20,20 @@ The mod also works well for Multiplayer, by encouraging players to go to war mor
 </ol>
 
 <br>
-<h2>
+<h3>
   Added Flavor to almost all Ideologies
+</h3>
+<h2>
+  This Mod is fully Suited for Multiplayer, including:
 </h2>
+<ul>
+<li> Perma Infamy Reduction </li>
+<li> Permanent 5/5 Gerneral for all non-ai Playera </li>
+<li> Changed Unit Balance</li>
+<li> Transfer and Capital and Cheaper Conquest CBs</li>
+</ul>
+
+
 <h2>
   Changed Nations
 </h2>
@@ -34,16 +45,23 @@ The following Nations have at least one decision or event added for them:
   <li> Albania </li>
   <li> Austria / Austria-Hungary / Danubian Conf  </li>
   <li> Belgium and Luxembourg </li>
-  <li> England  </li>
+  <li> Bosnia </li>
+  <li> United Kingdom  </li>
   <li> France  </li>
+  <ul>
+  <li> Parisi </li>
+  <li> Brittany </li>
+  <li> Provonce </li>
+  <li> Burgundy </li>
+  <li> Aquitane </li>
+  </ul>
   <li> Germany  </li>
   <ul>
-  <li> Prussia </li>
-  <li> Hannover  </li>
   <li> Bavaria  </li>
-  <li> Prussia  </li>
+  <li> Hannover  </li>
+  <li> Prussia </li>
+  <li>Saxe-Coburg-Gotha</li>
   </ul>
-
   <li> Greece  </li>
   <li> Italy  </li>
   <ul>
@@ -52,21 +70,27 @@ The following Nations have at least one decision or event added for them:
   <li> Papal State  </li>
   <li> Two Sicilies  </li>
   </ul>
+  <li> Ireland </li>
   <li> Netherlands  </li>
   <li> Poland / PLC </li>
   <li> Portugal  </li>
   <li> Romania  </li>
   <li> Russia  </li>
-  <br>
+  <ul>
+    <li> Muscovy </li>
+    <li> Novgorod </li>
+    <li> Sibiria </li> 
+    <li> Ukraine  </li>
+  </ul>
   <li> Scandinavia  </li>
   <ul>
   <li> Denmark  </li>
   <li> Finland  </li>
   <li> Sweden  </li>
   </ul>
+  <li> Serbia </li>
   <li> Spain  </li>
   <li> Turkey / Ottoman Empire  </li>
-  <li> Ukraine  </li>
   <br>
 </ul>
 
@@ -78,12 +102,15 @@ The following Nations have at least one decision or event added for them:
   <li> Armenia  </li>
   <li> Australia  </li>
   <li> Burma  </li>
+  <li> China / Qing </li>
   <li> Japan  </li>
   <li> Java  </li>
+  <li> Korea </li>
   <li> Mongolia  </li>
   <li> Mughal Empire  </li>
   <li> Persia  </li>
   <li> Timurid Empire  </li>
+  <li> Vietnam </li>
 </ul>
 
 
@@ -92,16 +119,13 @@ The following Nations have at least one decision or event added for them:
 <ul>
 <li> Canada  </li>
 <li> Chile  </li> 
+<li> Columbia </li>
 <li> Mexico  </li>
 <li> USA  </li>
 <li> All of South America  </li>
 </ul>
 
 <br>
-
-
-
-
 
 <h3> Africa </h3>
 <ul>
