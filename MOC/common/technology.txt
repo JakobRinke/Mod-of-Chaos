@@ -133,11 +133,11 @@ schools ={
     }
 	
 	Chinese_Supremacy = {
-        army_tech_research_bonus = 0.1
+        army_tech_research_bonus = 0.15
         commerce_tech_research_bonus = -0.05
         culture_tech_research_bonus = 0.15
         industry_tech_research_bonus = 0.1
-        navy_tech_research_bonus = -0.5
+        navy_tech_research_bonus = -0.3
         unciv_economic_modifier = 0.0
         unciv_military_modifier = 0.0
     }

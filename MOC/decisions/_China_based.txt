@@ -25,7 +25,7 @@ political_decisions = {
 			any_owned = {
 				any_pop = {
 					reduce_pop = 0.4
-				}			
+				}
 			}
 		}
 		
@@ -48,17 +48,30 @@ political_decisions = {
 		}
 		
 		effect = {
+			change_tag = CHI
+
+			country_event = 131730
 			activate_technology = late_enlightenment_philosophy
 			activate_technology = malthusian_thought
 			activate_technology = enlightenment_thought
-			set_country_flag = China_Modernize_Country
+
+			activate_technology = the_command_principle
+
+			add_country_modifier = {
+				name = china_army_modifier
+				duration = 365
+			}
 			
+			money = 200000
+
+			activate_technology = basic_chemistry
+			set_country_flag = China_Modernize_Country
+			set_global_flag  = warlord_era_has_begun
 			any_owned = {
 				any_pop = {
 					reduce_pop = 0.75
 				}			
 			}
-			
 		}
 	
 	
@@ -68,7 +81,11 @@ political_decisions = {
 	China_Change_Techschool = {
 		
 		potential = {
-			tag = QNG
+			OR = {
+				tag = QNG
+				tag = CHI
+			}
+			
 			has_country_flag = China_Modernize_Country
 			NOT = { tech_school = Chinese_Supremacy }
 		}
@@ -77,6 +94,67 @@ political_decisions = {
 		}
 		effect = {
 			tech_school = Chinese_Supremacy
+		}
+	
+	}
+	
+	china_get_southHAN_accepted = {
+		
+		potential = {
+			OR = {
+				tag = QNG
+				tag = CHI
+			}
+			
+			has_country_flag = China_Modernize_Country
+			NOT = { has_country_flag = china_get_southHAN_accepted }
+		}
+		allow = {
+			realism = 1
+			industrial_score = 500
+
+		}
+		effect = {
+			prestige = -25
+			badboy = 10
+
+			add_accepted_culture = nanfaren #south_han
+
+			set_country_flag = china_get_southHAN_accepted
+		}
+	
+	}
+	
+	china_get_northHAN_accepted = {
+		
+		potential = {
+			OR = {
+				tag = QNG
+				tag = CHI
+			}
+			
+			has_country_flag = China_Modernize_Country
+			NOT = { has_country_flag = china_get_northHAN_accepted }
+		}
+		allow = {
+			phenomenalism = 1
+			industrial_score = 500
+
+			
+			
+
+		}
+		effect = {
+			badboy = 5
+
+			add_accepted_culture = beifaren #north_han
+
+			add_country_modifier = {
+				name = china_anti_mob_modifier
+				duration = 4000
+			}
+
+			set_country_flag = china_get_northHAN_accepted
 		}
 	
 	}

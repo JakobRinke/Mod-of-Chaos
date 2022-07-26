@@ -2973,6 +2973,19 @@ MAM_no_slavery = {
     war_exhaustion = -0.1
 }
 
+china_anti_mob_modifier = {
+	mobilisation_size = -0.50
+	land_unit_start_experience = 0.05
+	org_regain = 0.025
+}
+
+china_army_modifier = {
+	mobilisation_size = 5
+	land_unit_start_experience = 0.6
+	naval_unit_start_experience = 1
+	org_regain = 0.666
+}
+
 global_infamy = {
 	badboy = -0.05
 	icon = 4
