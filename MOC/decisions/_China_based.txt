@@ -159,6 +159,33 @@ political_decisions = {
 	
 	}
 	
+	buy_treaty_port_QNG = {
+		potential = {
+			1498 = {
+				owned_by = POR
+			}
+			OR = {
+				tag = QNG
+				tag = CHI
+			} 
+			civilized = yes
+		}
+		allow = {
+			state_n_government = 1
+			money = 100000
+		}
+		effect = {
+			treasury = -100000
+			POR = {
+				treasury =100000
+			}
+			1498 = {
+				secede_province = THIS
+			}
+		}
+		
+	}
+	
 	
 
 
