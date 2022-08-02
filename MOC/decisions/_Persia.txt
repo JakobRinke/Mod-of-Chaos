@@ -200,5 +200,42 @@ political_decisions = {
 		
 		
 	}
+
+	renovate_capital_centralASIA_babyboom = {
+		potential = { 
+
+			OR = {
+				tag = PER
+				tag = TRD
+			}
+			
+			
+			NOT = { has_country_flag = renovate_capital_centralASIA_babyboom }
+		}
+
+
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 10
+			
+			capital_scope = {		
+				life_rating  = 25
+				RGO_size = 700000
+			
+				add_province_modifier = {
+				name = baby_boom
+				duration = 2000
+
+				}
+			}
+			
+			
+			set_country_flag = renovate_capital_centralASIA_babyboom
+		}
+	
+	
+	}
 	
 }

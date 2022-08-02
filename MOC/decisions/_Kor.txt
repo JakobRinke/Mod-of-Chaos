@@ -180,6 +180,21 @@ political_decisions = {
 	
 	}
 	
+	KOREA_Change_Techschool = {
+		
+		potential = {
+			tag = KOR
+			NOT = { tech_school = korean_tech_school }
+		}
+		allow = {
+		
+		}
+		effect = {
+			tech_school = korean_tech_school
+		}
+	
+	}
+
 	gain_jap_accepted = {
 		potential = { 
 			OR ={
@@ -201,6 +216,140 @@ political_decisions = {
 			add_accepted_culture = japanese
 
 			set_country_flag = gain_jap_accepted
+		}
+	
+	
+	}
+
+	kor_build_nav_base_moc = {
+		potential = { 
+			tag = KOR
+			owns = 1632
+			NOT = { has_country_flag = kor_build_nav_base_moc }
+		}
+
+
+		allow = { 
+			naval_plans = 1
+			money = 50000
+		}
+		effect = {
+			money = -50000
+
+			prestige = 5
+
+			1632 = { state_scope = {  any_owned = { naval_base = -6 } } }
+			1632 = { naval_base = 3 }
+
+
+
+			set_country_flag = kor_build_nav_base_moc
+		}
+	
+	
+	}
+
+
+	renovate_pyongyang_babyboom = {
+		potential = { 
+			owns = 1619
+			
+			NOT = { has_country_flag = renovate_pyongyang_babyboom }
+		}
+
+
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 10
+			
+			1619 = {		
+				life_rating  = 20
+				RGO_size = 700000
+			
+				add_province_modifier = {
+				name = baby_boom
+				duration = 1850
+
+				}
+			}
+			
+			
+			set_country_flag = renovate_pyongyang_babyboom
+		}
+	
+	
+	}
+
+	encourage_the_dev_of_the_busan = {
+		potential = { 
+			OR ={
+				owns = 1632
+				owns = 1633
+				owns = 1634
+				owns = 1635
+				owns = 1637
+			}
+			
+			NOT = { has_country_flag = encourage_the_dev_of_the_busan }
+		}
+
+
+		allow = { 
+			enlightenment_thought = 1
+		}
+		effect = {
+			prestige = 15
+			
+			1632 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			1633 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			1634 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			1635 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			1637 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			
+			
+			set_country_flag = encourage_the_dev_of_the_busan
 		}
 	
 	

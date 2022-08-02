@@ -317,4 +317,36 @@ political_decisions = {
 				factor = 0.00025
 			}
 	}
+
+	renovate_hanoi_babyboom = {
+		potential = { 
+			owns = 1369
+			
+			NOT = { has_country_flag = renovate_hanoi_babyboom }
+		}
+
+
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 10
+			
+			1369 = {		
+				life_rating  = 20
+				RGO_size = 700000
+			
+				add_province_modifier = {
+				name = baby_boom
+				duration = 1850
+
+				}
+			}
+			
+			
+			set_country_flag = renovate_hanoi_babyboom
+		}
+	
+	
+	}
 }
