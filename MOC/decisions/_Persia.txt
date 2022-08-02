@@ -175,6 +175,7 @@ political_decisions = {
 			tag = PER
 			NOT = { has_country_flag = great_Showdown }
 			exists = TUR
+
 		}
 		
 		
@@ -235,7 +236,9 @@ political_decisions = {
 			set_country_flag = renovate_capital_centralASIA_babyboom
 		}
 	
-	
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 }

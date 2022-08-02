@@ -137,6 +137,7 @@ political_decisions = {
 				tag = IAA
 				tag = MGL
 				tag = QNG
+				tag = CHI
 				tag = BUR
 				tag = IND
 			}
