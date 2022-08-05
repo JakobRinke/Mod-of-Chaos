@@ -2986,6 +2986,23 @@ china_army_modifier = {
 	org_regain = 0.666
 }
 
+IceLandBuffs = {
+	global_population_growth = 0.01
+	global_assimilation_rate = 0.30
+	education_efficiency_modifier = 0.555
+	research_points_modifier = 0.5
+
+	global_immigrant_attract = 7
+
+	mobilisation_size = 0.99
+	org_regain = 0.2
+	land_unit_start_experience = 0.6
+	naval_unit_start_experience = 1
+
+	badboy = -0.69
+	prestige = 0.05
+}
+
 global_infamy = {
 	badboy = -0.05
 	icon = 4

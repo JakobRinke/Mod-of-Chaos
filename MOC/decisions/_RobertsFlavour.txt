@@ -1,0 +1,267 @@
+#This Decision is a meme => for a friends birthday - WILD
+#picture 0
+
+political_decisions = {	
+	babyBOOOMERS_ICL = {
+		potential = { 
+
+			tag = ICL
+
+			NOT = { has_country_flag = babyBOOOMERS_ICL }
+		}
+
+
+		allow = { 
+			prestige = 18
+			year = 18
+		}
+		effect = {
+			any_owned = {
+				life_rating  = 50
+				RGO_size = 1000000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 7000
+				}
+			}
+			
+			set_country_flag = babyBOOOMERS_ICL
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	release_icl_DENMARK_THICKK = {
+		potential = { 
+			tag = DEN
+
+			NOT = { has_country_flag = release_icl_DENMARK_THICKK }
+		}
+
+
+		allow = { 
+			prestige = 0.18
+			year = 18
+		}
+		effect = {
+			prestige = 0.18
+			country_event = 290007002004
+
+			release = ICL
+			add_accepted_culture = russian
+
+			ICL = {
+				prestige = 18
+			}
+			
+			set_country_flag = release_icl_DENMARK_THICKK
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	become_robert_moc = {
+		potential = { 
+			ai = no
+			NOT = { has_leader = "Robert Foth" }
+
+			tag = ICL
+		}
+
+
+		allow = { 
+			prestige = 18
+			year = 18
+		}
+		effect = {
+			prestige = 18
+			any_owned = {
+				any_pop = {
+					reduce_pop = 8
+				}			
+			}
+			define_general = {
+					name = "Robert Foth"
+					personality = audacious
+					background = womanizer
+			}
+
+			add_country_modifier = {
+				name =	IceLandBuffs
+				duration = 200000
+			}
+			
+
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mussolini_time_robert = {
+		potential = { 
+			ai = no
+
+			tag = ICL
+			
+
+
+			NOT = { has_country_flag = mussolini_time_robert }
+		}
+
+
+		allow = { 
+			government = fascist_dictatorship 
+
+			excist = ITA
+
+			OR = {
+				ITA = {
+					government = fascist_dictatorship 
+					alliance_with = GER
+				}
+
+				has_leader = "Robert Foth"
+			}
+		}
+		effect = {
+			prestige = 18
+
+			ITA    = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			war = {
+				target = ITA
+				attacker_goal = {
+					casus_belli = annex_core_country
+					country = XIN
+				}
+			}
+
+			set_country_flag = mussolini_time_robert
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	spanien_BASED__robertXD = {
+		potential = { 
+			ai = no
+
+			tag = ICL
+			NOT = { has_country_flag = spanien_BASED__robertXD }
+		}
+
+
+		allow = {
+			OR = {
+				excist = SPA
+				excist = SPC
+			}
+		}
+		effect = {
+			prestige = 18
+
+			add_core = 502
+
+			set_country_flag = spanien_BASED__robertXD
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	genocide_MOC_based = {
+		potential = { 
+			ai = no
+
+			tag = ICL
+			
+		}
+
+
+		allow = {
+			num_of_vassals = 1
+		}
+		effect = {
+			prestige = 18
+
+			
+
+			genocide_MOC_based22 = {
+        potential = { 
+            ai = no
+
+            tag = ICL
+
+        }
+
+
+        allow = {
+            num_of_vassals = 1
+        }
+        effect = {
+            prestige = 18
+
+			any_country = {
+                limit = {
+                    is_our_vassal  = THIS
+                }
+                any_owned = {
+                    any_pop = {
+                        reduce_pop = 0.1
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	rename_ICELAND = {
+		potential = { 
+			ai = no
+
+			tag = ICL
+			NOT = { has_country_flag = rename_ICELAND }
+		}
+
+
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 18
+
+			252 = {change_province_name = "Kallmerode"}
+			252 = {state_scope = {change_region_name = "Eichsfeld"]}
+
+			set_country_flag = rename_ICELAND
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
