@@ -196,19 +196,20 @@ political_decisions = {
 			num_of_vassals = 1
 		}
 		effect = {
-			prestige = 18
-
-			
-
-			genocide_MOC_based22 = {
+			prestige = 18	
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	genocide_MOC_based22 = {
         potential = { 
             ai = no
-
             tag = ICL
 
         }
-
-
         allow = {
             num_of_vassals = 1
         }
@@ -217,9 +218,9 @@ political_decisions = {
 
 			any_country = {
                 limit = {
-                    is_our_vassal  = THIS
+                    vassal_of  = THIS
                 }
-                any_owned = {
+                all_core = {
                     any_pop = {
                         reduce_pop = 0.1
                     }
@@ -231,12 +232,7 @@ political_decisions = {
             factor = 0
         }
     }
-		}
 	
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	
 	rename_ICELAND = {
 		potential = { 
