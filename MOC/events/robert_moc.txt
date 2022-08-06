@@ -1,7 +1,7 @@
 country_event = {
-	id = 290007002004
+	id = 29724187
 	title = "Alles Gute ZUM Geburstag - Robert - ehm Mussolini"
-	desc = "Jakob und Luca wünschen dir alles Gute. Wir hoffen, dass durch dich noch viele Menschen ihr leben verlieren - dein MOC modding Team"
+	desc = "Jakob und Luca wuenschen dir alles Gute. Wir hoffen, dass durch dich noch viele Menschen ihr leben verlieren - dein MOC modding Team"
 	
 	is_triggered_only = yes
 	
@@ -10,8 +10,8 @@ country_event = {
 
 		change_tag_no_core_switch  = ICL
 		ICL = {
-			research_points = 180000
-			prestige  = 216
+			research_points = 170000
+			prestige  = 204
 		}
 
 	}
@@ -19,7 +19,7 @@ country_event = {
 	option = {
 		name = "Wir machen Urlaub in Russland"
 
-		research_points = 180000
+		research_points = 170000
 
 	}
 }

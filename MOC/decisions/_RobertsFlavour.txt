@@ -1,4 +1,4 @@
-#This Decision is a meme => for a friends birthday - WILD
+#This File is a meme => for a friends birthday - WILD
 #picture 0
 
 political_decisions = {	
@@ -12,8 +12,8 @@ political_decisions = {
 
 
 		allow = { 
-			prestige = 18
-			year = 18
+			prestige = 17
+			year = 17
 		}
 		effect = {
 			any_owned = {
@@ -43,18 +43,18 @@ political_decisions = {
 
 
 		allow = { 
-			prestige = 0.18
-			year = 18
+			prestige = 0.17
+			year = 17
 		}
 		effect = {
-			prestige = 0.18
-			country_event = 290007002004
+			prestige = 0.17
+			country_event = 29724187
 
 			release = ICL
 			add_accepted_culture = russian
 
 			ICL = {
-				prestige = 18
+				prestige = 17
 			}
 			
 			set_country_flag = release_icl_DENMARK_THICKK
@@ -76,11 +76,11 @@ political_decisions = {
 
 
 		allow = { 
-			prestige = 18
-			year = 18
+			prestige = 17
+			year = 17
 		}
 		effect = {
-			prestige = 18
+			prestige = 17
 			any_owned = {
 				any_pop = {
 					reduce_pop = 8
@@ -132,7 +132,7 @@ political_decisions = {
 			}
 		}
 		effect = {
-			prestige = 18
+			prestige = 17
 
 			ITA    = {
 				all_core = {
@@ -172,7 +172,7 @@ political_decisions = {
 			}
 		}
 		effect = {
-			prestige = 18
+			prestige = 17
 
 			add_core = 502
 
@@ -183,56 +183,7 @@ political_decisions = {
 			factor = 0
 		}
 	}
-	genocide_MOC_based = {
-		potential = { 
-			ai = no
 
-			tag = ICL
-			
-		}
-
-
-		allow = {
-			num_of_vassals = 1
-		}
-		effect = {
-			prestige = 18	
-		}
-	
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	genocide_MOC_based22 = {
-        potential = { 
-            ai = no
-            tag = ICL
-
-        }
-        allow = {
-            num_of_vassals = 1
-        }
-        effect = {
-            prestige = 18
-
-			any_country = {
-                limit = {
-                    vassal_of  = THIS
-                }
-                all_core = {
-                    any_pop = {
-                        reduce_pop = 0.1
-                    }
-                }
-            }
-        }
-
-        ai_will_do = {
-            factor = 0
-        }
-    }
-	
 	
 	rename_ICELAND = {
 		potential = { 
@@ -247,10 +198,10 @@ political_decisions = {
 			state_n_government = 1
 		}
 		effect = {
-			prestige = 18
+			prestige = 17
 
 			252 = {change_province_name = "Kallmerode"}
-			252 = {state_scope = {change_region_name = "Eichsfeld"]}
+			252 = {state_scope = {change_region_name = "Eichsfeld"}}
 
 			set_country_flag = rename_ICELAND
 		}
@@ -259,5 +210,88 @@ political_decisions = {
 			factor = 0
 		}
 	}
+	
+	claim_n_rename_GREENLAND = {
+		potential = { 
+			ai = no
+
+			tag = ICL
+			NOT = { has_country_flag = claim_n_rename_GREENLAND }
+		}
+
+
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 17
+
+			251 = {
+				change_province_name = "Dingelstädt" 
+				secede_province = THIS
+				add_core = this
+				trade_goods = coal 
+				RGO_size = 10000000 
+				any_pop = {
+					reduce_pop = 1v000
+					}
+				life_rating  = 50
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 7000
+					}
+				}
+			2636 = {
+				change_province_name = "Leinefelde" 
+				secede_province = THIS
+				add_core = this 
+				trade_goods = iron 
+				RGO_size = 10000000 
+				any_pop = {
+					reduce_pop = 40000
+					}
+				life_rating  = 50
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 7000
+					}
+				}
+
+			set_country_flag = claim_n_rename_GREENLAND
+		}
+	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	
+	genocide_MOC_based = {
+		potential = { 
+			ai = no
+			tag = ICL
+
+		}
+		allow = {
+			num_of_vassals = 1
+		}
+		effect = {
+			prestige = 17
+			any_country = {
+				limit = {
+					vassal_of = THIS
+				}
+				country_event = 69123456
+				
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 
 }
