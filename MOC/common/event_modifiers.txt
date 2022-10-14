@@ -2638,7 +2638,7 @@ rom_school_system_effect = {
 }
 
 total_mobilisation = {
-	mobilisation_size = 0.6
+	mobilisation_size = 0.13
 	mobilization_economy_impact = -0.50
 	mobilization_impact = 4
 	land_unit_start_experience = 25
