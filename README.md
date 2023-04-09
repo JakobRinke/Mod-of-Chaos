@@ -91,6 +91,7 @@ The following Nations have at least one decision or event added for them:
   <li> Serbia </li>
   <li> Spain  </li>
   <li> Turkey / Ottoman Empire  </li>
+  <li> Iceland </li>
 </ul>
 
 
