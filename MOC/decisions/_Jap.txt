@@ -165,6 +165,43 @@ political_decisions = {
 			}
 		}
 		
-		
+		claim_australia_moc = {
+			potential = {
+				OR = {
+					tag = JAP
+					tag = TKG
+					tag = KOR
+					tag = CAN 
+					tag = CUM 
+					tag = USA 
+					tag = HAW
+					tag = DAI 
+					tag = PHL
+				}
+
+				NOT = { has_country_flag = CLAIM_Kamchatka_moc}	
+			}
+			
+			allow = {
+				revolution_n_counterrevolution = 1
+				prestige = 50
+			}
+			
+			effect = {
+				badboy = 10
+
+				AST  = {
+					all_core = {
+						add_core = THIS	
+					}
+				}
+
+				prestige = 50 
+			}
+			
+			ai_will_do = {					
+				factor = 1
+			}
+		}
 		
 }

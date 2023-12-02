@@ -1,4 +1,4 @@
-#picture 1
+#picture 0
 
 political_decisions
 {
@@ -182,6 +182,49 @@ political_decisions
 				factor = 0
 				badboy = 0.1
 			}
+		}
+	}
+
+	Claim_more_lands_in_the_ocean = {
+		potential = {
+			OR = {
+				tag = SUS
+				tag = MEX
+				tag = CAL
+				tag = CAN
+			}
+
+			NOT = { has_country_flag = Claim_more_lands_in_the_ocean }
+				
+		}
+		
+		allow = {
+			ideological_thought = 1
+			prestige = 35
+		}
+		
+		effect = {		
+			has_country_flag = Claim_more_lands_in_the_ocean
+
+		NZL  = {
+				all_core = {
+					add_core = THIS	
+				}
+			} 
+		
+		AST  = {
+				all_core = {
+					add_core = THIS	
+				}
+			}
+			
+		}
+
+		add_accepted_culture = australian
+
+
+		ai_will_do = {					
+			factor = 0.0001
 		}
 	}
 	

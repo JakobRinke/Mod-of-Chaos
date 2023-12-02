@@ -1,0 +1,328 @@
+#picture 0
+
+
+political_decisions = {
+	
+	add_big_country_modifier_ger = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = PLR
+				tag = BRG
+				tag = BAV
+			}
+	
+
+			NOT = { has_country_flag = add_big_country_modifier_ger }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	german_bratwurst_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_ger
+		}
+	}
+
+	add_big_country_modifier_fra = {
+		potential = {
+			OR = {
+				tag = FRA
+				tag = BRG
+				tag = AQU
+				tag = BRT
+				tag = PRV
+				tag = PRS
+				tag = DUA
+			}
+
+			NOT = { has_country_flag = add_big_country_modifier_fra }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	french_baguette_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_fra
+		}
+	}
+	
+	add_big_country_modifier_UK = {
+		potential = {
+			OR = {
+				tag = ENG
+				tag = CAN
+				tag = AST
+				tag = DUA
+			}
+
+			NOT = { has_country_flag = add_big_country_modifier_UK }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	british_fishNchips_superiority 
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_UK
+		}
+	}
+	
+	add_big_country_modifier_ITA = {
+		potential = {
+			OR = {
+				tag = ITA
+				tag = SIC 
+				tag = AGN
+				tag = SAR
+				tag = VEN
+			}
+
+			NOT = { has_country_flag = add_big_country_modifier_ITA }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	italy_pizza_superiority 
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_ITA
+		}
+	}
+	
+	add_big_country_modifier_AUS = {
+		potential = {
+			OR = {
+				tag = AUS
+				tag = KUK
+				tag = DNB
+				tag = HUN
+			}
+
+			NOT = { has_country_flag = add_big_country_modifier_AUS }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	austrian_schnitzel_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_AUS
+		}
+	}
+	
+	add_big_country_modifier_RUS = {
+		potential = {
+			OR = {
+				tag = RUS
+				tag = NOV
+				tag = SIB
+				tag = MUS
+				tag = UKR
+			}
+			
+
+			NOT = { has_country_flag = add_big_country_modifier_RUS }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	russian_vodka_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_RUS
+		}
+	}
+	
+
+	add_big_country_modifier_TUR = {
+		potential = {
+			OR = {
+				tag = TUR
+				tag = ETH
+				tag = ARA
+			}
+			
+
+
+
+			NOT = { has_country_flag = add_big_country_modifier_TUR }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 25
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	ottoman_kebab_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_TUR
+		}
+	}
+
+	add_big_country_modifier_USA = {
+		potential = {
+			OR = {
+				tag = USA
+				tag = CSA
+				tag = CUM
+			}
+			
+
+			NOT = { has_country_flag = add_big_country_modifier_USA }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 25
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	usa_bbq_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_USA
+		}
+	}
+
+	add_big_country_modifier_JAP = {
+		potential = {
+			OR = {
+				tag = JAP
+				tag = TKG
+			}
+			
+
+			NOT = { has_country_flag = add_big_country_modifier_JAP }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 25
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	japan_anime_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_JAP
+		}
+	}
+	
+	add_big_country_modifier_SCA = {
+		potential = {
+			OR = {
+				tag = DEN
+				tag = SWE
+				tag = NOR
+				tag = FIN
+				tag = SCA
+			}
+			
+
+			NOT = { has_country_flag = add_big_country_modifier_SCA }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 25
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	scandinavian_ikea_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_SCA
+		}
+	}
+
+}
