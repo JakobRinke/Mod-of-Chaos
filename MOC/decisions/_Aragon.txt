@@ -5,7 +5,10 @@ political_decisions = {
 		picture = claim_cores_aragonss
 		potential = {
 
-			OR = {tag=SIC tag=CAT}
+			OR = { 
+				tag = SIC 
+				tag = CAT
+			}
 			NOT = { has_country_flag = claim_aragon_empire}
 		}
 		allow = {
@@ -72,7 +75,10 @@ political_decisions = {
 	reform_aragon_empire = {
 		potential = {
 
-			OR = {tag=SIC tag=CAT}
+			OR = { 
+				tag = SIC 
+				tag = CAT
+			}
 			NOT = { has_country_flag = reform_aragon_empire}
 			has_country_flag = claim_aragon_empire
 		}
@@ -138,7 +144,7 @@ political_decisions = {
 
 			ITA = {
 				all_core = {
-					OR = {owned_by = THIS owner= { OR = {in_sphere = THIS}}}
+					OR = {owned_by = THIS owner = { OR = {in_sphere = THIS}}}
 				}
 			}
 		}

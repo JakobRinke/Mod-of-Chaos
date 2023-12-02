@@ -4,7 +4,8 @@ political_decisions = {
 		
 		potential = {
 			OR = {
-				tag = JAP tag = TKG
+				tag = JAP 
+				tag = TKG
 				tag = KOR
 				tag = QNG
 				tag = CHI
