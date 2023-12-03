@@ -3070,8 +3070,6 @@ german_bratwurst_superiority = {
 	max_loan_modifier = 3
 	rich_life_needs = -0.1
 
-	immigrant_attract = 0.1
-
 	icon = 15
 }
 
@@ -3079,7 +3077,6 @@ french_baguette_superiority = {
 	core_pop_militancy_modifier = 0.25
 	core_pop_conscious_modifier = 0.3
 
-	immigrant_attract = 0.05
 	tax_efficiency = 0.05
 	administrative_efficiency_modifier = 0.1
 	political_reform_desire = 0.1
@@ -3126,7 +3123,6 @@ italy_pizza_superiority = {
 	core_pop_militancy_modifier = -0.15
 	core_pop_conscious_modifier = -0.1
 
-	immigrant_attract = 0.15
 
 	farm_rgo_size = 0.3
 	mine_rgo_size = 0.4
@@ -3155,7 +3151,6 @@ austrian_schnitzel_superiority = {
 	non_accepted_pop_consciousness_modifier = 0.05
 	non_accepted_pop_militancy_modifier = 0.025
 
-	immigrant_attract = 0.025
 
 	farm_rgo_size = 0.15
 	mine_rgo_size = 0.33
@@ -3236,7 +3231,7 @@ usa_bbq_superiority = {
 	non_accepted_pop_consciousness_modifier = 0.05
 
 	global_assimilation_rate = 0.05
-	immigrant_attract = 0.02
+	immigrant_attract = 0.025
 
 	factory_input = 0.05
 	factory_throughput =  0.05
@@ -3263,7 +3258,7 @@ japan_anime_superiority = {
 	pop_militancy_modifier = -0.05
 
 	global_assimilation_rate = 0.4
-	immigrant_attract = 2.5
+	immigrant_attract = 0.5
 
 	farm_rgo_size = 0.2
 	mine_rgo_size = 0.2
@@ -3300,7 +3295,7 @@ japan_anime_superiority = {
 scandinavian_ikea_superiority = {
 	global_assimilation_rate = 0.4
 	global_population_growth = 0.005
-	immigrant_attract = 2.5
+	
 
 	farm_rgo_eff = 0.2
 	mine_rgo_eff = 0.3
