@@ -138,8 +138,6 @@ political_decisions = {
 		allow = {
 			war = no
 			state_n_government = 1
-    
-
 		}
 		effect = {
 			# Granada Region
@@ -183,7 +181,8 @@ political_decisions = {
 			badboy = 10
 
 			set_country_flag = gain_cores_on_spanish_regions
-
+			
+			set_global_flag = gain_cores_on_spanish_regions_no_morocco_annex
 		}
 		ai_will_do = {
 			factor = 0
