@@ -54,12 +54,14 @@ The following Nations have at least one decision or event added for them:
   <li> Provonce </li>
   <li> Burgundy </li>
   <li> Aquitane </li>
+  <li> DM </li>
   </ul>
   <li> Germany  </li>
   <ul>
   <li> Bavaria  </li>
   <li> Hannover  </li>
   <li> Prussia </li>
+  <li> Polish-Prussia </li>
   <li>Saxe-Coburg-Gotha</li>
   </ul>
   <li> Greece  </li>
@@ -131,6 +133,7 @@ The following Nations have at least one decision or event added for them:
 <li> Kongo  </li>
 <li> Nigeria  </li>
 <li> South Africa  </li>
+<li>Morocco</li>
 </ul>
 
 
