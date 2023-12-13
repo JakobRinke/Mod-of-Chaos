@@ -47,10 +47,11 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0.00035
+			factor = 0.000000000000000000000000000000000000000035
 			modifier = {
 				factor = 0
 				badboy = 0.4
+				date = { year = 1837 day = 1 }
 			}
 		}
 		
