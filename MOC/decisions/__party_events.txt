@@ -89,6 +89,63 @@ political_decisions = {
 		}
 	}
 	
+	fascist_flip_moc = {
+		potential = {
+			ai = no
+			upper_house = {
+				ideology = fascist
+				value = 0.1
+			}
+			NOT = {
+				has_country_flag = fascist_flip_trigger
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			government = fascist_dictatorship
+			set_country_flag = fascist_flip_trigger
+
+			prestige = 25
+			badboy = 2
+			
+			plurality = -10
+		}
+	}
+
+	reduce_ashkenazi_pop_moc = {
+		potential = {
+			is_colonial = no
+			NOT = {
+				is_culture_group = ashkenazi
+			}
+			government = fascist_dictatorship
+			has_pop_culture = ashkenazi
+
+			ai = no
+		}
+
+		allow = {}
+
+		effect = {
+			prestige = 5
+
+			any_owned = {
+				limit = {
+					is_colonial = no
+				}
+				any_pop = {
+						limit = {
+							has_pop_culture = ashkenazi
+						}
+						reduce_pop = 0
+					}
+				}
+			}
+		}
+	}
+
 		
 	communist_agenda = {
 		

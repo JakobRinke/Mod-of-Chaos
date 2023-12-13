@@ -325,4 +325,36 @@ political_decisions = {
 		}
 	}
 
+	add_big_country_modifier_SPA = {
+		potential = {
+			OR = {
+				tag = SPA
+				tag = SPC
+				tag = POR
+				tag = MEX
+				tag = CLM
+				tag = CUB
+			}
+			
+			NOT = { has_country_flag = add_big_country_modifier_SPA }
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 25
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	spanish_boritos
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_SPA
+		}
+	}
+
 }

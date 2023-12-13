@@ -7,13 +7,14 @@ political_decisions = {
 		potential = {
 			tag = SAF
 			NOT = { has_country_flag = become_independent}	
+			NOT = { year = 1837 }
 		}
 		allow = {
-            war = no
+			war = no
 		}
 		
 		effect = {
-
+			
 			set_country_flag = become_independent
 			ENG = {release_vassal = SAF}
 			money = 200000
@@ -52,8 +53,13 @@ political_decisions = {
 			add_accepted_culture = boer
 			add_accepted_culture = shona
 			clr_country_flag = lacking_writing_system
+			
 			government = democracy
+
+			build_factory_in_capital_state = cement_factory
+
 			ruling_party_ideology = reactionary
+
 			upper_house = {
 				ideology = reactionary
 				value = 1
@@ -69,10 +75,11 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0.00012
+			factor = 0.000000000001
 		}
 		
 	}
+
 	claim_cores_SAF = {
 		picture = treaty_signing
 		potential = {
