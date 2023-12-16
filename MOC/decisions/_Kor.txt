@@ -19,6 +19,24 @@ political_decisions = {
 			set_country_flag = claimMGL
 		}
 	}
+
+	get_jap_accepted = {
+		potential = { 
+			tag = KOR 
+			NOT = { has_country_flag = get_jap_accepted }
+		}
+		allow = { 
+			realism = 1 
+			prestige = 100
+		}
+		effect = { 
+			add_accepted_culture = japanese
+			prestige = 25
+
+			badboy = -2
+			set_country_flag = get_jap_accepted
+		}
+	}
 	
 	Claim_South_Japan = {
 		potential = { 
