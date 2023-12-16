@@ -60,13 +60,8 @@ political_decisions = {
 	release_poland_for_education_as_russia = {
 		picture = poland_claim_flag
 		potential = {
-			OR = {
-				tag = RUS
-				tag = GER
-				tag = AUS
-				tag = KUK
-				tag = DNB
-			}
+			tag = RUS
+			
 			NOT = { has_country_flag = release_poland_for_education_as_russia }
 			NOT = { year = 1837 }
 		}
