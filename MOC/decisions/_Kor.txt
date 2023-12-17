@@ -20,10 +20,11 @@ political_decisions = {
 		}
 	}
 
-	get_jap_accepted = {
+	get_jap_accepted_as_kor = {
 		potential = { 
 			tag = KOR 
 			NOT = { has_country_flag = get_jap_accepted }
+			NOT = { has_country_flag = gain_jap_accepted }
 		}
 		allow = { 
 			realism = 1 
@@ -33,7 +34,7 @@ political_decisions = {
 			add_accepted_culture = japanese
 			prestige = 25
 
-			badboy = -2
+			badboy = 8
 			set_country_flag = get_jap_accepted
 		}
 	}
@@ -221,7 +222,7 @@ political_decisions = {
 				tag = PHL 
 				tag = MGL
 			}
-			
+			NOT = { has_country_flag = get_jap_accepted }
 			NOT = { has_country_flag = gain_jap_accepted }
 		}
 
