@@ -111,6 +111,8 @@ political_decisions = {
 				add_core = 283
 				add_core = 285
 				add_core = 304
+				add_core = 769
+				add_core = 2583
 				add_core = 854
 				set_country_flag = claim_roman_empire
 				set_country_flag = exclusive_acquire_all_cores_CB
@@ -227,6 +229,231 @@ political_decisions = {
 					factor = 0
 					badboy = 0.01
 				}
+			}
+	}
+
+	get_more_roman_cores = {
+			potential = {
+				tag = SQR
+				NOT = {has_country_flag = get_more_roman_cores}
+			}
+			allow = {
+				prestige = 200
+				realism = 1
+				revolution_n_counterrevolution = 1
+			}
+			
+			effect = {
+				set_country_flag = get_more_roman_cores
+				prestige = 25
+				badboy = 25
+				GER = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+				
+				ROM = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				AUS = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				HUN = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				SWI = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				SLO = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+				
+				EGY = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				ETH = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+			}
+			
+			ai_will_do = {					
+				factor = 0
+			}
+	
+	}
+
+
+
+
+	get_more_roman_cores_arabia = {
+			potential = {
+				tag = SQR
+				NOT = {has_country_flag = get_more_roman_cores}
+			}
+			allow = {
+				prestige = 300
+				realism = 1
+				mass_politics = 1
+			}
+			
+			effect = {
+				set_country_flag = get_more_roman_cores
+				prestige = 15
+				badboy = 5
+
+				ARA = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+				
+				HDJ = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				NEJ = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				IRQ = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				YEM = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				OMA = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+				
+				EGY = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+				ETH = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+
+			}
+			
+			ai_will_do = {					
+				factor = 0
 			}
 	}
 }
