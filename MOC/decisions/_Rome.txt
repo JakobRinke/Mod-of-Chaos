@@ -375,89 +375,49 @@ political_decisions = {
 
 				ARA = {
 					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+						add_core = THIS
 					}
 				}
 				
 				HDJ = {
 					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+						add_core = THIS
 					}
 				}
 
 				NEJ = {
 					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+						add_core = THIS
 					}
 				}
 
 				IRQ = {
 					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+						add_core = THIS
 					}
 				}
 
 				YEM = {
 					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+						add_core = THIS
 					}
 				}
 
 				OMA = {
 					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+						add_core = THIS
 					}
 				}
 				
 				EGY = {
 					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+						add_core = THIS
 					}
 				}
 
 				ETH = {
 					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+						add_core = THIS
 					}
 				}
 
