@@ -231,7 +231,7 @@ political_decisions = {
 
 			potential = {
 				tag = DAI
-				NOT = {has_country_flag = vietnam_get_accepted_cultures}
+				NOT = { has_country_flag = vietnam_get_accepted_cultures }
 				has_country_flag = claim_south_han_1845
 			}
 			allow = {
@@ -252,6 +252,26 @@ political_decisions = {
 				factor = 0.00025
 			}
 
+	}
+	vietnam_inherat_cambodia = {
+
+		potential = {
+			tag = DAI
+			NOT = {has_country_flag = vietnam_inherat_cambodia}
+			has_country_flag = claim_south_han_1845
+		}
+		allow = {
+			civilized = yes
+		}
+		effect = {
+			inherit = CAM
+			set_country_flag = vietnam_inherat_cambodia
+		}
+
+		ai_will_do = {
+			factor = 0.000000000025
+		}
+	}
 
 	claim_south_han_1890 = {
 

@@ -109,6 +109,7 @@ political_decisions = {
 				tag = AGN
 				tag = SAR
 				tag = VEN
+				tag = SQR
 			}
 
 			NOT = { has_country_flag = add_big_country_modifier_ITA }
@@ -204,6 +205,7 @@ political_decisions = {
 				tag = TUR
 				tag = ETH
 				tag = ARA
+				tag = BYZ
 			}
 			
 

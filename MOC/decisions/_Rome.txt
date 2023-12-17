@@ -1,4 +1,4 @@
-#picture 1
+#picture 0
 
 
 political_decisions = {
@@ -23,6 +23,7 @@ political_decisions = {
 			effect = {
 				prestige = -50
 				badboy = 25
+				primary_culture = legionaries
 				add_accepted_culture = south_italian
 				add_accepted_culture = north_italian
 				add_accepted_culture = greek
@@ -110,6 +111,7 @@ political_decisions = {
 				add_core = 283
 				add_core = 285
 				add_core = 304
+				add_core = 854
 				set_country_flag = claim_roman_empire
 				set_country_flag = exclusive_acquire_all_cores_CB
 				
@@ -132,7 +134,29 @@ political_decisions = {
 	}
 	
 	
-	
+	assimilate_all_cores_rome = {
+			potential = {
+				OR = {
+					tag = PAP
+					tag = BYZ
+					tag = SQR
+				}
+			}
+			allow = {
+				
+			}
+			
+			effect = {
+				all_core = { 
+					assimilate = yes 
+				}
+				
+			}
+			
+			ai_will_do = {					
+				factor = 0
+			}
+	}
 	
 	
 	form_roman_empire = {
