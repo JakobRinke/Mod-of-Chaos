@@ -585,7 +585,6 @@ NOV		   ="countries/Novgorod.txt"
 MAM		   ="countries/Mamluk.txt"
 KSI		   ="countries/KSI.txt"
 PAC		   ="countries/PAC.txt"
-WKN		   ="countries/WKN.txt"
 
 
 ##HoD Dominions
