@@ -179,7 +179,7 @@ political_decisions = {
 					tag = PHL
 				}
 
-				NOT = { has_country_flag = CLAIM_Kamchatka_moc}	
+				NOT = { has_country_flag = claim_australia_moc}	
 			}
 			
 			allow = {
@@ -197,6 +197,7 @@ political_decisions = {
 				}
 
 				prestige = 50 
+				set_country_flag = claim_australia_moc
 			}
 			
 			ai_will_do = {					
