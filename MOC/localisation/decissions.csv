@@ -693,3 +693,5 @@ get_more_roman_cores_title; Expand this great empire;;;;;;;;;;;;;
 get_more_roman_cores_desc; Gain more cores to expand your empire for 25 infamy.;;;;;;;;;;;;;
 get_more_roman_cores_arabia_title; Take arabia;;;;;;;;;;;;;
 get_more_roman_cores_arabia_desc; Take arabia to expand your empire and show them what great civilisation you have built.;;;;;;;;;;;;;
+act_union_dm_title; Perform Act of Union ;;;;;;;;;;;;;
+act_union_dm_desc; We are one Nation. Undividable. PS: RIP Manus DM Nov 2023 ;;;;;;;;;;;;;
