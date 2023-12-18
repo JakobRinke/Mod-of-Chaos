@@ -54,7 +54,7 @@ political_decisions = {
 					duration = 15000
 				}
 				add_province_modifier = {
-					name = baby_boom
+					name = small_baby_boom
 					duration = 15000
 				}
 			}
