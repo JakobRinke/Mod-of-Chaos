@@ -54,7 +54,7 @@ political_decisions = {
 					duration = 15000
 				}
 				add_province_modifier = {
-					name = small_baby_boom
+					name = baby_boom
 					duration = 15000
 				}
 			}
@@ -94,7 +94,7 @@ political_decisions = {
 			ai = no
 			upper_house = {
 				ideology = fascist
-				value = 0.1
+				value = 0.075
 			}
 			NOT = {
 				has_country_flag = fascist_flip_trigger
