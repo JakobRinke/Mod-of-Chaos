@@ -143,13 +143,13 @@ schools ={
     }
     
     korean_tech_school = {
-        army_tech_research_bonus = 0.1
-        commerce_tech_research_bonus = 0.05
-        culture_tech_research_bonus = 0.15
-        industry_tech_research_bonus = 0.1
+        army_tech_research_bonus = 0.15
+        commerce_tech_research_bonus = 0.1
+        culture_tech_research_bonus = 0.25
+        industry_tech_research_bonus = 0.2
         navy_tech_research_bonus = 0.3
-        unciv_economic_modifier = 0.0
-        unciv_military_modifier = 0.0
+        unciv_economic_modifier = 0.1
+        unciv_military_modifier = 0.1
     }
 
     czech_tech_school = {
