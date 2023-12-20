@@ -1,0 +1,242 @@
+political_decisions = {
+
+
+	
+	moc_day_one_danubia = {
+		potential = {
+			tag = DNB
+			NOT = {
+				has_country_flag = moc_day_one_danubia
+			}
+			has_global_flag = austrian_battle_royale_moc
+			
+		}
+		allow = {
+			year = 1845
+		}
+		
+		effect = {
+			badboy = 25
+			prestige = 30
+			add_accepted_culture = north_italian
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			add_accepted_culture = hungarian
+			add_accepted_culture = slovak
+			add_accepted_culture = slovene
+			add_accepted_culture = czech
+			add_accepted_culture = romanian
+			add_accepted_culture = croat
+			
+			HUN = {
+				add_accepted_culture = south_german
+				add_accepted_culture = hungarian
+				add_accepted_culture = croatian
+				any_owned  = {
+					limit = {
+						is_colonial = no
+					}
+					add_core = THIS
+				}
+			}
+			
+			war = {
+				target = HUN
+				attacker_goal = { casus_belli = annex_core_country  }
+				defender_goal = { casus_belli = annex_core_country  }
+				call_ally = yes
+			}
+			
+			LOM = {
+				all_core = {
+					add_core = DNB
+				}
+			}
+			VEN = {
+				all_core = {
+					add_core = DNB
+				}
+			}
+			GER = {
+				all_core = {
+					add_core = DNB
+				}
+			}
+			CRO = {
+				any_owned  = {
+					limit = {
+						is_colonial = no
+					}
+					add_core = THIS
+				}
+			}
+			SER = {
+				any_owned  = {
+					limit = {
+						is_colonial = no
+					}
+					add_core = THIS
+				}
+			}
+			GLM = {
+				any_owned  = {
+					limit = {
+						is_colonial = no
+					}
+					add_core = THIS
+				}
+			}
+			
+			CZH = {
+				any_owned  = {
+					limit = {
+						is_colonial = no
+					}
+					add_core = THIS
+				}
+			}
+			
+			SLO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			SIE = {
+				any_owned  = {
+					limit = {
+						is_colonial = no
+					}
+					add_core = THIS
+				}
+			}
+			
+			
+			set_country_flag = moc_day_one_danubia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	hun_final_countdown = {
+		potential = {
+			tag = HUN
+			NOT = {
+				AND = {
+					has_country_flag = hun_final_countdown
+					OR = {
+						exists = AUS
+						exists = DNB
+					}
+				}
+			}
+			has_global_flag = austrian_battle_royale_moc
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			activate_technology = positivism
+			activate_technology = functionalism
+			activate_technology = biologism
+
+			badboy = 25
+			add_accepted_culture = ukrainian
+			add_accepted_culture = romanian
+			add_accepted_culture = serbian
+			add_accepted_culture = croat
+			add_accepted_culture = turkish
+			add_accepted_culture = bosnian
+			add_accepted_culture = bulgarian
+			add_accepted_culture = polish
+			
+			
+			TUR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ROM = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			UKR = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BOH = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			SLO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			SLV = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			BOS = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			BUL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			CRO = {
+				any_owned = {
+					add_core = THIS
+				}
+			}
+			
+			SER = {
+				any_owned = {
+					add_core = THIS
+				}
+			}
+			
+			AUS = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			POL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			
+			GRE = {
+				any_owned = {
+					remove_core = THIS
+				}
+			}
+			set_country_flag = hun_final_countdown
+			
+		}
+		ai_will_do = {
+			factor = 0.0003
+		}
+	}
+	
+
+}

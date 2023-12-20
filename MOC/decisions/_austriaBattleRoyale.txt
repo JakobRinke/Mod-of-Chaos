@@ -1,0 +1,341 @@
+political_decisions = {
+
+	austrian_battle_royale_moc = {
+		potential = {
+			tag = AUS
+			NOT = { has_global_flag = austrian_battle_royale_moc}
+		}
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_country_flag = ChooseNationAustrianBattleRoyal
+			
+			change_tag = DNB
+			
+			set_global_flag = austrian_battle_royale_moc
+			
+			663 = {
+				secede_province = MOL
+			}
+			662 = {
+				secede_province = MOL
+			}
+			
+			792 = {
+				secede_province = SER
+			}
+			791 = {
+				secede_province = SER
+			}
+			2538 = {
+				secede_province = SER
+			}
+		
+			SLO = {
+				all_core = {
+					add_core = CRO
+				}
+			}
+			
+			DNB = {
+				set_country_flag = cb_czh
+			}
+			
+			AUS = {
+				set_country_flag = cb_czh
+			}
+			
+			HUN = {
+				set_country_flag = cb_czh
+			}
+			
+			CZH = {
+				all_core = {
+					remove_core = THIS
+				}
+			}
+			
+			HUN = {
+				all_core = {
+					remove_core = THIS
+				}
+			}
+			
+			SLV = {
+				all_core = {
+					remove_core = THIS
+				}
+			}
+			
+			VEN = {
+				all_core = {
+					remove_core = THIS
+				}
+			}
+
+			
+			set_global_flag = austrian_battle_royale_moc
+			
+			country_event = 13373000
+			
+			
+		}
+		
+		ai_will_do = {					
+			factor = 0.005
+			modifier = {
+				factor = 0
+				year = 1837
+			}
+		}
+		
+	}
+	
+	
+	sie_fight_for_romania = {
+		potential = {
+			tag = SIE
+			has_global_flag = austrian_battle_royale_moc
+			NOT = {
+				war_with = TUR
+				truce_with = TUR
+			}
+			OR = {
+				MOL = {
+					vassal_of = TUR
+				}
+				WAL = {
+					vassal_of = TUR
+				}
+			}
+		}
+		allow = {
+			#has_global_flag = austrian_battle_royale_moc
+			state_n_government = 1
+		}
+		
+		effect = {
+			prestige = 30
+			inherit = WAL
+			inherit = MOL
+			change_tag = ROM
+			TUR = {
+				add_casus_belli = {
+					target = ROM
+					type = conquest
+					months = 6
+				}
+
+				war = {
+					target = ROM
+					attacker_goal = { casus_belli = conquest }
+					defender_goal = { casus_belli = status_quo }
+					call_ally = yes
+				}
+				
+				badboy = -22
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0.0005
+			
+		}
+	}
+	
+	
+	counter_attack_glm = {
+	
+		potential = {
+				tag = SIE
+				NOT = { has_country_flag = counter_attack_glm}
+			}
+			allow = {
+				war = no
+			}
+			
+			effect = {
+				badboy = 10
+				GLM = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				set_country_flag = counter_attack_glm
+			}
+			
+			ai_will_do = {
+				factor = 1
+				
+			}
+			
+	}
+	
+	on_our_way_to_poland_glm = {
+	
+		potential = {
+			tag = GLM
+			NOT = { has_country_flag = on_our_way_to_poland_glm}
+		}
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			badboy = 10
+			ROM = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_accepted_culture = romanian
+			add_accepted_culture = ukrainian
+			set_country_flag = on_our_way_to_poland_glm
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+			
+	}
+	
+	glm_fight_poland = {
+		potential = {
+			tag = GLM
+			has_global_flag = austrian_battle_royale_moc
+			NOT = {
+				has_country_flag = glm_fight_poland
+			}
+		}
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			prestige = 30
+			change_tag = POL
+			POL =  {
+				all_core = {
+					add_core = GLM
+				}
+			}	
+			set_country_flag = glm_fight_poland
+		}
+		
+		ai_will_do = {
+			factor = 0.0008
+			
+		}
+	}
+	
+	cro_literate_pop = {
+		potential = {
+			tag = CRO
+			NOT = {
+				has_country_flag = cro_literate_pop
+			}
+		}
+		allow = {
+			positivism = 1
+		}
+		effect = {
+			badboy = 8
+			plurality = 30
+			prestige = 10
+			add_accepted_culture = south_german
+			set_country_flag = cro_literate_pop
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	ser_accept_the_turks_pop = {
+		potential = {
+			tag = SER
+			NOT = {
+				has_country_flag = ser_accept_the_turks_pop
+			}
+		}
+		
+		allow = {
+			positivism = 1
+		}
+		
+		effect = {
+			badboy = 5
+			prestige = 20
+			positivism = 1
+			any_pop = {
+				limit = {
+					is_accepted_culture = yes
+				}
+				literacy = 75
+			}
+			plurality = 30
+			set_country_flag = ser_accept_the_turks_pop
+			add_accepted_culture = turkish
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	czh_get_based = {
+		potential = {
+			tag = CZH
+			NOT = {
+				has_country_flag = czh_get_based
+			}
+			OR = {
+				exists = AUS 
+				exists = HUN
+				exists = KUK
+				exists = DNB
+			}
+			has_global_flag = austrian_battle_royale_moc
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			badboy = 10
+			all_core = {
+				add_core = AUS
+				add_core = HUN
+				add_core = KUK
+				add_core = DNB
+			}
+			add_accepted_culture = hungarian
+			add_accepted_culture = slovene
+			add_accepted_culture = polish
+			any_country = {
+				limit = {
+					has_country_flag = cb_czh
+					exists = yes
+				}
+				
+				any_owned_province  = {
+					add_core = THIS
+				}
+				war = {
+					target = THIS
+					attacker_goal = { casus_belli = annex_core_country  }
+					defender_goal = { casus_belli = annex_core_country  }
+					call_ally = yes
+				}
+			}	
+			set_country_flag = czh_get_based
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

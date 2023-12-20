@@ -8,6 +8,7 @@ political_decisions = {
 				OR = {
 					tag = BEL
 					tag = LUX
+					tag = CZH
 				}
 				NOT = { has_country_flag = claim_the_HRE}	
 			}
@@ -74,6 +75,7 @@ political_decisions = {
 				OR = {
 					tag = BEL
 					tag = LUX
+					tag = CZH
 				}
 				NOT = { has_country_flag = become_the_HRE}	
 				has_country_flag = claim_the_HRE

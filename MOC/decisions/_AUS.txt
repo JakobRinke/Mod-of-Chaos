@@ -13,7 +13,7 @@ political_decisions = {
 			}
 
 			exists = GER
-
+			NOT = {has_global_flag = austrian_battle_royale_moc}
 			NOT = { has_country_flag = claim_south_germany }
 			NOT = { has_country_flag = become_south_HRE }
 		}
@@ -62,6 +62,7 @@ political_decisions = {
 		potential = {
 			tag = KUK
 			NOT = { has_country_flag = become_south_HRE }
+			NOT = {has_global_flag = austrian_battle_royale_moc}
 		}
 
 
@@ -161,6 +162,8 @@ political_decisions = {
 			}
 			
 			NOT = { has_country_flag = form_danubian_moc }
+			NOT = {has_global_flag = austrian_battle_royale_moc}
+			
 		}
 
 
@@ -232,7 +235,7 @@ political_decisions = {
 				tag = HUN
 			
 			}
-			
+			NOT = {has_global_flag = austrian_battle_royale_moc}
 			NOT = { has_country_flag = accepted_ukr_as_dnb }
 		}
 
@@ -280,7 +283,7 @@ political_decisions = {
 				tag = AUS
 				tag = KUK
 			}
-			
+			NOT = {has_global_flag = austrian_battle_royale_moc}
 			NOT = { has_country_flag = gain_partsOFserbia_as_dnb }
 		}
 
