@@ -1,0 +1,372 @@
+#picture 0
+
+
+political_decisions = {
+
+	alsaka_organize_oil = {
+
+		potential = {
+			AND = {
+				owns = 4
+				owns = 5
+			}
+			
+
+			NOT = { has_country_flag = alsaka_organize_oil }
+		}
+
+
+		allow = {
+			organic_chemistry = 1
+			money = 100000
+		}
+
+		effect = {
+			
+			money = -100000
+			
+			4 = { 
+				life_rating = 35 
+				trade_goods = oil 
+				RGO_size = 450000
+				
+				add_province_modifier = {
+					name = baby_boom
+					duration = 18000
+
+				}
+			}
+
+			5 = { 
+				life_rating = 35 
+				trade_goods = oil 
+				RGO_size = 550000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 18000
+
+				}
+			}
+			
+			
+			set_country_flag = alsaka_organize_oil
+		}
+
+		
+		ai_will_do = {
+			factor = 0.000000000001
+		}
+
+	}
+
+	cores_on_alaska_kamp = {
+
+		potential = {
+			
+			OR = {
+				tag = USA
+				tag = CAN 
+				tag = MEX
+				tag = PHL
+				tag = AST 
+				tag = IAA
+				tag = RUS
+				AND = {
+					owns = 46
+					OR = {
+						tag = ENG
+						tag = FRA 
+						tag = POR 
+						tag = SPA
+						tag = NET
+					}
+					 
+				}
+				
+			}
+
+			NOT = { has_country_flag = cores_on_alaska_kamp }
+		}
+
+
+		allow = {
+			realism = 1
+		}
+
+		effect = {
+			
+
+			badboy = 2.5
+
+			# North East Russia
+			add_core = 1074
+			add_core = 2616
+			add_core = 2622
+			add_core = 2634
+			add_core = 2637
+			add_core = 2633
+			add_core = 2661
+			add_core = 2663
+			add_core = 2666
+			
+			# Alaska tag = LSK
+			add_core = 2599 
+			add_core = 2630 
+			add_core = 2631 
+			add_core = 1
+			add_core = 2
+			add_core = 3
+			add_core = 4
+			add_core = 5
+			
+			prestige = 25
+			
+			set_country_flag = cores_on_alaska_kamp
+		}
+
+		
+		ai_will_do = {
+			factor = 0.000000000001
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+
+	}
+
+	baby_boom_in_the_cold = {
+
+		potential = {
+			
+			AND = {
+				owns = 1074
+				owns = 2616
+				owns = 2634
+				owns = 2637
+				owns = 2633
+	
+			
+				# Alaska tag = LSK
+				owns = 2631 
+				owns = 1
+				owns = 2
+				owns = 3
+				owns = 4
+				owns = 5
+			}
+			
+
+			NOT = { has_country_flag = baby_boom_in_the_cold }
+		}
+
+
+		allow = {
+			steam_turbine = 1
+			invention = machine_tools
+			drilling_and_blasting = 1
+		}
+
+		effect = {
+			
+
+			prestige = 10
+
+	
+			1074 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				trade_goods = iron 
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2616 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2622 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2634 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2637 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				trade_goods = oil 
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2633 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2661 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2663 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2667 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			
+			# Alaska tag = LSK
+			2599 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2630 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2631 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			1 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				trade_goods = iron 
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			2 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				trade_goods = coal 
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			3 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			4 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			5 = { 				
+				life_rating = 35 
+				RGO_size = 250000
+				trade_goods = iron 
+				assimilate = yes
+				add_province_modifier = {
+						name = baby_boom
+						duration = 18000
+
+					}
+				}
+			
+			prestige = 25
+			
+			set_country_flag = baby_boom_in_the_cold
+		}
+
+		ai_will_do = {
+			factor = 0.000000000001
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+
+
+	}
+}
+
+
