@@ -263,13 +263,13 @@ political_decisions = {
 		}
 		
 		allow = {
-			positivism = 1
+			functionalism = 1
+			state_n_government = 1
 		}
 		
 		effect = {
 			badboy = 5
 			prestige = 20
-			positivism = 1
 			any_pop = {
 				limit = {
 					is_accepted_culture = yes
