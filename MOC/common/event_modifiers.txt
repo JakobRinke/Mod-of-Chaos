@@ -2954,7 +2954,7 @@ Last_Stand = {
 }
 
 colonial_might = {
-	badboy = -0.1
+	badboy = -0.175
 	prestige = 0.05
 }
 
