@@ -274,7 +274,7 @@ political_decisions = {
 				limit = {
 					is_accepted_culture = yes
 				}
-				literacy = 75
+				literacy = 50
 			}
 			plurality = 30
 			set_country_flag = ser_accept_the_turks_pop
