@@ -50,6 +50,10 @@ political_decisions = {
 					reduce_pop = 0
 				}
 				add_province_modifier = {
+					name = fascist_welfare
+					duration = 15000
+				}
+				add_province_modifier = {
 					name = fascist_care
 					duration = 15000
 				}
