@@ -3004,7 +3004,7 @@ IceLandBuffs = {
 }
 
 global_infamy = {
-	badboy = -0.05
+	badboy = -0.1
 	icon = 3
 }
 
