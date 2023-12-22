@@ -235,7 +235,7 @@ political_decisions = {
 			}
 		}
 		ai_will_do = {					
-			factor = 0.115
+			factor = 0.10015
 		}
 	}
 	claim_russia_as_trd = {

@@ -58,7 +58,7 @@ political_decisions = {
 
 		
 		ai_will_do = {
-			factor = 0.000000000001
+			factor = 0.0002
 		}
 
 	}
