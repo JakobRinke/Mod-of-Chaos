@@ -36,7 +36,12 @@ political_decisions = {
 		potential = {
 			NOT = { tech_school = russian_tech_school }
 			NOT = { has_country_modifier = interment_camps }
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = MUS
+				tag = NOV
+				tag = SIB
+			}
 			civilized = yes
 		}
 

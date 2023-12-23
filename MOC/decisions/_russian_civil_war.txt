@@ -225,14 +225,16 @@ political_decisions = {
 			biologism = 1
 		}
 		effect = {
-			prestige = 30
+			prestige = 10
 			activate_technology = social_science
 			activate_technology = social_alienation
 			add_accepted_culture = polish
 			add_accepted_culture = ukrainian
 			set_country_flag = Boost_School
 		}
-		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	Claim_Scandinavia = {
@@ -263,11 +265,18 @@ political_decisions = {
 			add_accepted_culture = finnish
 			add_accepted_culture = norwegian
 			add_accepted_culture = sami
+			add_accepted_culture = estonian
+			add_accepted_culture = latvian
+			add_accepted_culture = lithuanian
+
 			set_country_flag = Claim_Scandinavia
+		}
+		ai_will_do = {
+			factor = 1
 		}
 		
 	}
-	
+
 	Claim_Asia = {
 		potential = {
 			tag = SIB
@@ -296,10 +305,7 @@ political_decisions = {
 			add_core = 1645
 			add_core = 1674
 			add_core = 12
-			
-			
-			
-			
+		
 			
 			MCK = {
 				all_core = { add_core = THIS }
@@ -318,8 +324,131 @@ political_decisions = {
 			add_accepted_culture = japanese
 			set_country_flag = Claim_Scandinavia
 		}
+		ai_will_do = {
+			factor = 1
+		}
 		
 	}
+
+	Claim_Rest_Of_Jpan = {
+		potential = {
+			tag = SIB
+			NOT = { has_country_flag = Claim_Rest_Of_Jpan }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 30
+			badboy = 14
+			JAP = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			TKG = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = Claim_Rest_Of_Jpan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+
+
+	claim_the_south_muscovy = {
+		potential = {
+			tag = MUS
+			NOT = { has_country_flag = claim_the_south_muscovy }
+		}
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 30
+			badboy = 10
+			PER = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ARM = { 
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_accepted_culture = armenian
+			add_accepted_culture = persian
+			add_accepted_culture = turkish
+			set_country_flag = claim_the_south_muscovy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+
+	start_the_great_restoration = {
+		potential = {
+			OR = {
+				tag = MUS
+				tag = NOV
+				tag = SIB
+			}
+			NOT = { exists = RUS }
+			NOT = { has_country_flag = start_the_great_restoration }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			MUS = {
+				war = {
+					target = NOV
+					attacker_goal = {
+						casus_belli = annex_core_country
+					}
+					defender_goal = {
+						casus_belli = annex_core_country
+					}
+					call_ally = yes
+				}
+				war = {
+					target = SIB
+					attacker_goal = {
+						casus_belli = annex_core_country
+					}
+					defender_goal = {
+						casus_belli = annex_core_country
+					}
+					call_ally = yes
+				}
+			}
+
+			NOV = {
+				war = {
+					target = SIB
+					attacker_goal = {
+						casus_belli = annex_core_country
+					}
+					defender_goal = {
+						casus_belli = annex_core_country
+					}
+					call_ally = yes
+				}
+			}
+			
+		}	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
 	
 	
 }
