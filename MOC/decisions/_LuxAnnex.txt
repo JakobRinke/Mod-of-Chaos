@@ -12,7 +12,7 @@ political_decisions = {
                 tag = FRA
                 tag = GER
             }
-
+            exists = LUX
         }
 
         allow = {
