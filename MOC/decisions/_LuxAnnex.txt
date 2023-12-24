@@ -1,0 +1,45 @@
+
+
+
+political_decisions = {
+    
+    annex_lux = {
+        potential = {
+            OR = {
+                tag = NET
+                tag = NGF
+                tag = PRU
+                tag = FRA
+            }
+
+        }
+
+        allow = {
+            revolution_n_counterrevolution = 1
+            LUX = {
+                in_sphere=THIS
+            }
+        }
+
+        effect = {
+            LUX = {
+                any_owned_province = {
+                    add_core = FRA
+                    add_core = NET
+                    add_core = GER
+                    add_core = THIS
+                }
+            }
+            inherit = LUX
+        }
+
+
+        ai_will_do {
+            factor = 1
+        }
+    }
+
+    
+
+
+}

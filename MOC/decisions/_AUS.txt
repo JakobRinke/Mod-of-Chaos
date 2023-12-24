@@ -55,6 +55,31 @@ political_decisions = {
 
 	}
 
+	accept_the_czech = {
+		potential = {
+			tag = AUS
+			NOT = { has_country_flag = accept_the_czech }
+		}
+
+		allow = {
+			ideological_thought = 1
+			medicine = 1
+			positivsim = 1
+		}
+
+		potential = {
+			prestige = 10
+			badboy = 4
+			add_accepted_culture = czech
+			set_country_flag = accept_the_czech
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+
 
 
 	become_south_HRE = {
