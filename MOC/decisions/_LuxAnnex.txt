@@ -10,8 +10,9 @@ political_decisions = {
                 tag = NGF
                 tag = PRU
                 tag = FRA
+                tag = GER
             }
-
+            exists = LUX
         }
 
         allow = {
