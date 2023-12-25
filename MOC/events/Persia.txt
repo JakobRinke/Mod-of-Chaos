@@ -3,20 +3,56 @@
 country_event = {
 	id = 969696
 	title = "THE GREAT SHOWDOWN"
-	desc = "The Last war aigenst an old enemy! "
+	desc = "The Last war against an old enemy!"
 	
 	is_triggered_only = yes
 	
 	immediate = {
 		war = {
 			target = FROM
-			attacker_goal = { casus_belli = conquest }
-			defender_goal = { casus_belli = conquest }
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = annex_core_country }
 			call_ally = no
 		}
 	}     
 	
 	option = {
 		name = "WE WILL FIGHT TO OUR DEATH!"
+	}
+}
+
+country_event = {
+	id = 1969696961
+	title = "The Xinjang Question"
+	desc = "Free our Brothers"
+	
+	is_triggered_only = yes
+	
+	 
+	
+	option = {
+		name = "Lets Free them"
+		
+		prestige = 10
+		badboy = 5
+
+		war = {
+			target = QNG
+			attacker_goal = {
+				casus_belli = release_puppet
+				country = XIN
+			}
+		}
+	}
+
+	option = {
+		name = "Back down with your claims"
+		prestige = -50
+		badboy = -2
+		
+		remove_core = 1595
+		remove_core = 1596
+		remove_core = 1599
+		remove_core = 1600
 	}
 }

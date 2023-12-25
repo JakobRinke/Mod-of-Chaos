@@ -41,7 +41,7 @@ political_decisions = {
 			
 			add_country_modifier = {
 				name = artiljerija
-				duration = 18000
+				duration = 25000
 			}
 			
 			

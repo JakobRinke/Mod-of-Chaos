@@ -1,0 +1,155 @@
+political_decisions = {
+	
+	
+	ire_claim_scot = {
+	
+		potential = {
+			tag = IRE
+			ai = no
+			war = no
+			NOT = { has_country_flag = ire_claim_scot }
+		}
+		
+		allow = {
+			ideological_thought = 1
+		}
+		
+		effect = {
+			badboy = 10
+			SCO = {
+				all_core = {
+					add_core = IRE
+				}
+			}
+			set_country_flag = ire_claim_scot
+		}
+		
+	
+	
+	}
+	
+	ire_integrate_sco = {
+	
+		potential = {
+			tag = IRE
+			ai = no
+			war = no
+			NOT = { has_country_flag = ire_integrate_sco }
+		}
+		
+		allow = {
+			state_n_government = 1
+			SCO = {
+				all_core = {
+					owned_by = IRE
+				}
+			}
+		}
+		
+		effect = {
+			badboy = 8
+			prestige = 10
+			SCO = {
+				all_core = {
+					remove_core = ENG
+					remove_core = SCO
+					assimilate = yes
+					
+				}
+			}
+			set_country_flag = ire_integrate_sco
+		}
+		
+	
+	
+	}
+	
+	south_african_sneaky = {
+	
+		potential = {
+			tag = IRE
+			exists = SAF
+			NOT = { has_country_flag = south_african_sneaky }
+		}
+		
+		allow = {
+			prestige = 20
+			badboy = 0.3
+			war = no
+			nationalism_n_imperialism = 1
+			NOT = { SAF = { vassal_of = THIS } }	
+		}
+		
+		effect = {
+			badboy = 14
+			add_casus_belli = {
+				target = SAF
+				type = make_puppet
+				months = 5
+			}
+			war = {
+				target = SAF
+				attacker_goal = { casus_belli = make_puppet }
+				call_ally = yes
+			} 
+			set_country_flag = south_african_sneaky
+		}
+
+	}
+
+	south_african_expedition = {
+	
+		potential = {
+			tag = IRE
+			exists = SAF
+			NOT = { has_country_flag = south_african_expedition }
+		}
+		
+		allow = {
+			prestige = 30
+			nationalism_n_imperialism = 1
+			SAF = { vassal_of = THIS }			
+		}
+		
+		effect = {
+			badboy = 22
+			SAF = {
+				civilized = no
+			}
+			inherit = SAF
+			set_country_flag = south_african_expedition
+		}
+
+	}
+	
+	
+	claim_can = {
+	
+		potential = {
+			tag = IRE
+			NOT = { has_country_flag = claim_can }
+			ai = no
+		}
+		
+		allow = {
+			prestige = 50
+			revolution_n_counterrevolution = 1		
+		}
+		
+		effect = {
+			badboy = 16
+			QUE = { all_core = { add_core = THIS } }
+			CAN = { all_core = { add_core = THIS } }
+			MRU = { all_core = { add_core = THIS } }
+			RPL = { all_core = { add_core = THIS } }
+			COL = { all_core = { add_core = THIS } }
+			NEW = { all_core = { add_core = THIS } }
+			set_country_flag = claim_can
+		}
+
+	}
+
+
+
+
+}

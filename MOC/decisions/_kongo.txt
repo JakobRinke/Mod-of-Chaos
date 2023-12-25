@@ -2,6 +2,45 @@
 
 political_decisions = {
 
+	encourage_total_mobilisation_afr = {
+		picture = rom_total_war_time
+		potential = {
+			OR = {
+				tag = LOA
+				tag = KON
+				tag = KSI
+				tag = LBA
+			}
+			
+			NOT = { has_country_flag = encourage_total_mobilisation_afr }
+		}
+		
+		
+		allow = {
+			OR = {
+				war_policy = jingoism
+				war_policy = pro_military
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+					name = total_mobilisation
+					duration = 35000
+			}
+
+			change_national_value = order
+			set_country_flag = encourage_total_mobilisation_afr
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+
+
 	kongo_school_system = {
 	
 		potential = {
@@ -16,30 +55,23 @@ political_decisions = {
 		
 		
 		effect = {
-			plurality = 40
+			plurality = 10
 			add_accepted_culture = ovimbundu
-			inherit = LOA
-			add_core = 2003
 			add_core = 2624
 			add_core = 1978
 			add_core = 1977
-			all_core = {
-				owner = {
-					treasury = 500000
-				}				
-				secede_province = THIS
-				
-			}
+			remove_core = 1999
+			1985 = {secede_province = THIS life_rating = 10 add_core = THIS}
 			treasury = -2000000
 			add_country_modifier = {
 				name = kongo_school_system_modifier
-				duration = 13000
+				duration = 10000
 			}
 			
-			
+			country_event = 13000 
 			
 			remove_country_modifier = lacks_writing_system
-			
+			clr_country_flag = lacks_writing_system
 			
 			set_country_flag = kongo_school_system
 		}
@@ -48,22 +80,306 @@ political_decisions = {
 			factor = 0.00005
 		}	
 	}
+
+
+	loango_school_system = {
 	
+		potential = {
+			tag = LOA
+			NOT = { has_country_flag = loango_school_system }
+		}
+		
+		allow = {
+
+		}
+		
+		
+		effect = {
+			plurality = 10
+			add_accepted_culture = forest_bantu
+			add_accepted_culture = fang
+			add_core = 1982
+			add_core = 1983
+			add_core = 1985
+			add_core = 2000
+			
+
+			#gabon
+			1972 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1974 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1975 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1976 = {secede_province = THIS life_rating = 10 add_core = THIS}
+
+			#Cameroon
+			1956 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1957 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1958 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1959 = {secede_province = THIS life_rating = 10 add_core = THIS}
+			1962 = {secede_province = THIS life_rating = 10 add_core = THIS}
+
+
+
+			1973 = {secede_province = THIS life_rating = 10 add_core = THIS}
+
+
+			1980 = {secede_province = THIS life_rating = 10 add_core = THIS}
+
+			1995 = {secede_province = THIS life_rating = 10 add_core = THIS}
+
+			add_country_modifier = {
+				name = kongo_school_system_modifier
+				duration = 10000
+			}
+			
+			country_event = 13000 
+			
+			remove_country_modifier = lacks_writing_system
+			clr_global_flag = lacks_writing_system
+			clr_country_flag = lacks_writing_system
+			
+			set_country_flag = loango_school_system
+		}
+		
+		ai_will_do = {
+			factor = 0.00005
+		}	
+	}
+
+	kasai_school_system = {
+	
+		potential = {
+			tag = KSI
+			NOT = { has_country_flag = kasai_school_system }
+		}
+		
+		allow = {
+
+		}
+		
+		
+		effect = {
+			plurality = 10
+			add_accepted_culture = forest_bantu
+			add_accepted_culture = fang
+			add_core = 1980
+			add_core = 1982
+			add_core = 1983
+			add_core = 1985
+			add_core = 1977
+			add_core = 2000
+			remove_core = 1995
+			remove_core = 1990
+	
+
+			add_country_modifier = {
+				name = kongo_school_system_modifier
+				duration = 10000
+			}
+			
+			country_event = 13000 
+			
+			remove_country_modifier = lacks_writing_system
+			clr_global_flag = lacks_writing_system
+			clr_country_flag = lacks_writing_system
+			
+			
+			set_country_flag = kasai_school_system
+		}
+		
+		ai_will_do = {
+			factor = 0.00005
+		}	
+	}
+	
+	luba_school_system = {
+	
+		potential = {
+			tag = LBA
+			NOT = { has_country_flag = luba_school_system }
+		}
+		
+		allow = {
+
+		}
+		
+		
+		effect = {
+			plurality = 10
+			add_accepted_culture = forest_bantu
+			add_accepted_culture = fang
+			add_accepted_culture = lunda
+			add_core = 1980
+			add_core = 1982
+			add_core = 1983
+			add_core = 1984
+			add_core = 1985
+			add_core = 1977
+			add_core = 2000
+	
+
+			add_country_modifier = {
+				name = kongo_school_system_modifier
+				duration = 10000
+			}
+			
+			country_event = 13000 
+			
+			remove_country_modifier = lacks_writing_system
+			clr_global_flag = lacks_writing_system
+			clr_country_flag = lacks_writing_system
+			
+			
+			set_country_flag = luba_school_system
+		}
+		
+		ai_will_do = {
+			factor = 0.00005
+		}	
+	}
+	
+
+	#Kongo Civil War#
+	start_kongo_civWar = {
+	
+		potential = {
+			OR = {
+				tag = LBA
+				tag = LOA
+				tag = KON
+				tag = KSI
+			}
+
+			
+			NOT = { has_country_flag = start_kongo_civWar }
+			NOT = { has_global_flag = start_kongo_civWar }
+		}
+		
+		allow = {
+
+		}
+		
+		
+		effect = {
+
+			KON     = {
+				all_core = {
+					add_core = LBA
+					add_core = LOA
+					add_core = KON
+					add_core = KSI
+				}
+			}
+
+			LOA     = {
+				all_core = {
+					add_core = LBA
+					add_core = LOA
+					add_core = KON
+					add_core = KSI
+				}
+			}
+			
+			LBA     = {
+				all_core = {
+					add_core = LBA
+					add_core = LOA
+					add_core = KON
+					add_core = KSI
+				}
+			}
+			
+			KSI     = {
+				all_core = {
+					add_core = LBA
+					add_core = LOA
+					add_core = KON
+					add_core = KSI
+				}
+			}
+			
+
+			remove_core = 1995
+			remove_core = 1990
+			set_country_flag = start_kongo_civWar
+			set_global_flag = start_kongo_civWar
+		}
+		
+		ai_will_do = {
+			factor = 0.0005
+		}	
+	}
+
+
 	
 	kongo_annex_congo = {
 	
 		potential = {
-			tag = KON
+			OR {
+				AND = {
+					tag = KON
+					OR = {
+						has_country_flag = start_kongo_civWar
+						has_global_flag = start_kongo_civWar
+					}
+				}
+				
+				AND = {
+					tag = KSI
+					OR = {
+						has_country_flag = start_kongo_civWar
+						has_global_flag = start_kongo_civWar
+					}
+				}
+				
+				AND = {
+					tag = LOA
+					OR = {
+						has_country_flag = start_kongo_civWar
+						has_global_flag = start_kongo_civWar
+					}
+				}
+				
+				AND = {
+					tag = LBA
+					OR = {
+						has_country_flag = start_kongo_civWar
+						has_global_flag = start_kongo_civWar
+					}
+				}
+			}
+			
 			NOT = { has_country_flag = kongo_annex_congo }
+			
 		}
 		
 		
 		allow = {
-			civilized = yes
+			#KON = {
+			#	all_core = {
+			#		limit = {
+			#			AND = {
+			#				empty = no 
+			#				is_core = yes
+			#			}
+			#			
+			#		}
+			#		OR = {
+			#			owned_by = THIS
+			#			owner = {
+			#				in_sphere = THIS
+			#			}
+			#		}
+			#	}
+			#}
+
+			KON = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
 		}
 		
 		effect = {
-			
 			add_accepted_culture = mongo
 			add_accepted_culture = kingwana
 			add_accepted_culture = lunda
@@ -108,62 +424,42 @@ political_decisions = {
 			add_core = 1996
 			add_core = 1997
 			add_core = 1998
-			all_core = {
-				secede_province = THIS
-			}
-			
-			UTI = {
-				add_core = 1958
-				add_core = 1959	
-				add_core = 1962
-				add_core = 2002
-				add_core = 2009
-				add_core = 1966
-				add_core = 1965
-				add_core = 1967
-				add_core = 1968
-				add_core = 1969
-				add_core = 1970
-				add_core = 1971
-				add_core = 1980
-				add_core = 1984
-				add_core = 1986
-				add_core = 1993
-				add_core = 1992
-				add_core = 1994
-				add_core = 1995
-				add_core = 1972
-				add_core = 1973
-				add_core = 1974
-				add_core = 1975
-				add_core = 1976
-				add_core = 1976
-				add_core = 1976
-				add_core = 1986
-				add_core = 1987
-				add_core = 1988
-				add_core = 1996
-				add_core = 1997
-				add_core = 1998
-			}
-			
-			
-			UTI = { civilized = yes }
-			release = UTI
-			UTI = {
-				all_core = {
-					add_core = THIS
-				}
-			}
-			
-			inherit = UTI
-			UTI = {
-				civilized = no
-				all_core = { remove_core = UTI }
-			}
-			
-			
-			
+			add_core = 1958
+			add_core = 1959	
+			add_core = 1962
+			add_core = 2002
+			add_core = 2009
+			add_core = 1966
+			add_core = 1965
+			add_core = 1967
+			add_core = 1968
+			add_core = 1969
+			add_core = 1970
+			add_core = 1971
+			add_core = 1980
+			add_core = 1984
+			add_core = 1986
+			add_core = 1993
+			add_core = 1992
+			add_core = 1994
+			add_core = 1995
+			add_core = 1972
+			add_core = 1973
+			add_core = 1974
+			add_core = 1975
+			add_core = 1976
+			add_core = 1976		
+			add_core = 1976
+			add_core = 1986
+			add_core = 1987
+			add_core = 1988
+			add_core = 1996
+			add_core = 1997
+			add_core = 1998
+
+			add_core = 1995
+			add_core = 1990
+
 			set_country_flag = kongo_annex_congo
 		}
 		

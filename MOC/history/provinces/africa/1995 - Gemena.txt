@@ -1,0 +1,4 @@
+add_core = KSI
+add_core = MNG
+trade_goods = fruit
+life_rating = 10

@@ -1,0 +1,19 @@
+country_event = {
+	id = 69123456
+	title = "Genocide time"
+	desc = "Kill your pops cause we want u 2"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Atleast I have something to burn now."
+		all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				any_pop = {
+					reduce_pop = 0.01
+				}
+			}
+	}
+}

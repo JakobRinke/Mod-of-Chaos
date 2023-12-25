@@ -3,7 +3,10 @@
 political_decisions = {
 	Expand_our_empire = {
 		potential = {
-			tag = SER
+			OR = { 
+				tag = SER
+				tag = CRO
+			}
 			NOT = { has_country_flag = Expand_our_empire}
 		}
 		allow = {
@@ -20,8 +23,7 @@ political_decisions = {
 			add_accepted_culture = croat
 			add_accepted_culture = slovene
 			add_accepted_culture = greek
-			add_accepted_culture = turkish
-			add_accepted_culture = south_german
+			
 			set_country_flag = Expand_our_empire
 			ALB   = {
 				all_core = {
@@ -80,7 +82,10 @@ political_decisions = {
 	}
 	get_strong_serbia_based = {
 		potential = {
-			tag = SER
+			OR = { 
+				tag = SER
+				tag = CRO
+			}
 			NOT = { has_country_flag = get_strong_serbia_based}
 		}
 		allow = {

@@ -12,7 +12,7 @@ political_decisions = {
 					tag = MEX
 					NOT = { exists = CUM }	
 				}
-				tag = CLM
+				tag = CLM 
 			}
 			NOT = {has_country_flag = mex_central_american_ambition}			
 		}
@@ -23,22 +23,251 @@ political_decisions = {
 		
 		effect = {
 				
-			prestige = 10	
-			add_accepted_culture = central_americans
+			prestige = 15	
+			add_accepted_culture = central_american
 			add_accepted_culture = north_andean
 			add_accepted_culture = mexican
 			UCA = { all_core = { add_core = THIS } }
-			COL = { all_core = { add_core = THIS } }
+			CLM  = { all_core = { add_core = THIS } }
 			MEX = { all_core = { add_core = THIS } }
 			CUB = { all_core = { add_core = THIS } }
+			
+			#UCA cores 
+			add_core = 2186
+			add_core = 2187
+			add_core = 2188
+			add_core = 2189
+			add_core = 2190
+			add_core = 2191
+			add_core = 2192
+			add_core = 2193
+			add_core = 2194
+			add_core = 2195
+			add_core = 2196
+			add_core = 2197
+
+			add_core = 2628
+			add_core = 2198
+			add_core = 2199
+
+			#Costa Rica
+			add_core = 2201
+			add_core = 2202
+			add_core = 2203
+
+			add_core 1723
+			
+			#Panama
+			add_core = 2204
+			add_core = 2205
+			add_core = 2206
+			add_core = 2208
+			
 			set_country_flag = mex_central_american_ambition
 		}
 		
 		ai_will_do = {					
-			factor = 0.0001
+			factor = 0.01
+		}
+	}
+
+	gain_more_cultures = {
+		picture = mexico_claims_COROES_on_central_africa
+		potential = {
+			OR = {
+				tag = MEX
+				tag = CLM
+				tag = UCA
+				tag = CUB
+			}
+			NOT = {has_country_flag = gain_more_cultures}			
+		}
+		
+		allow = {
+			ideological_thought = 1
+		}
+		
+		effect = {
+				
+			prestige = 15	
+
+			add_accepted_culture = afro_american
+			add_accepted_culture = afro_caribbean
+			add_accepted_culture = afro_caribeno
+			add_accepted_culture = north_andean
+			add_accepted_culture = mayan
+			add_accepted_culture = native_american_minor
+			
+			add_core = 2200
+
+			#UCA cores 
+			add_core = 2186
+			add_core = 2187
+			add_core = 2188
+			add_core = 2189
+			add_core = 2190
+			add_core = 2191
+			add_core = 2192
+			add_core = 2193
+			add_core = 2194
+			add_core = 2195
+			add_core = 2196
+			add_core = 2197
+
+			add_core = 2628
+			add_core = 2198
+			add_core = 2199
+
+			#Costa Rica
+			add_core = 2201
+			add_core = 2202
+			add_core = 2203
+
+			add_core = 1723
+			
+			#Panama
+			add_core = 2204
+			add_core = 2205
+			add_core = 2206
+			add_core = 2208
+
+			set_country_flag = gain_more_cultures
+		}
+		
+		ai_will_do = {					
+			factor = 0.01
 		}
 	}
 	
+	obtain_texas_as_culture = {
+		potential = {
+			OR = {
+				tag = CSA
+				tag = MEX
+				tag = CAL
+			}
+			NOT = {has_country_flag = obtain_texas_as_culture}			
+		}
+		
+		allow = {
+			owns = 132
+			owns = 136
+			ideological_thought = 1
+		}
+		
+		effect = {
+				
+			badboy = 2
+			prestige = 10	
 
+			add_accepted_culture = texan
+
+			TEX = { all_core = { add_core = THIS } }
+
+			set_country_flag = obtain_texas_as_culture
+		}
+		
+		ai_will_do = {					
+			factor = 0.01
+		}
+	}
+
+	
+	
+	assimilate_usa_ter = {
+		potential = {
+			OR = {
+				tag = MEX
+				tag = CLM  
+			}
+			NOT = {has_country_flag = obtain_texas_as_culture}			
+		}
+		
+		allow = {
+			owns = 139
+			owns = 192
+		}
+		
+		effect = {
+				
+			badboy = 3
+			prestige = 10	
+
+			139 = {add_core = this assimilate = yes}
+			140 = {add_core = this assimilate = yes}
+			141 = {add_core = this assimilate = yes}
+			142 = {add_core = this assimilate = yes}
+
+			192 = {add_core = this assimilate = yes}
+			193 = {add_core = this assimilate = yes}
+			194 = {add_core = this assimilate = yes}
+			
+			#Alabama
+			add_core = 195
+			add_core = 196
+			add_core = 197
+
+
+			#Florida
+			add_core = 198
+			add_core = 199
+			add_core = 200
+
+			add_accepted_culture = dixie
+
+			set_country_flag = obtain_texas_as_culture
+		}
+		
+		ai_will_do = {					
+			factor = 0.01
+		}
+	}
+
+	liberty_enlightening_the_world_mex = {
+		potential = {
+			NOT = {
+				has_global_flag = statue_of_liberty_has_been_built_mexmoc
+				has_country_flag = statue_of_liberty_has_been_built_mexmoc
+			}
+			OR ={
+				tag = SPA
+				tag = SPC
+			}
+			
+			OR ={
+				exists = SPA
+				exists = SPC
+			}
+
+			exists = MEX
+			year = 1850
+		}
+
+		allow = {
+			MEX = { slavery = no_slavery }
+		}
+
+		effect = {
+			set_global_flag = statue_of_liberty_has_been_built_mexmoc
+			set_country_flag = statue_of_liberty_has_been_built_mexmoc
+			any_pop = {
+				militancy = -0.5
+			}
+			relation = {
+				who = MEX
+				value = 50
+			}
+			MEX = {
+				country_event = {id=379300881}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { relation = { who = USA value = -150 } }
+			}
+		}
+	}
 
 }

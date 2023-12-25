@@ -1,4 +1,4 @@
-#picture  1
+#picture  0
 
 political_decisions = {
 
@@ -10,7 +10,7 @@ political_decisions = {
 			NOT = {has_global_flag = frenhc_battle_royal_moc_Glo}
 		}
 		allow = {
-			ai = no
+			NOT = { year=1837 }
 		}
 		
 		effect = {
@@ -239,7 +239,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {					
-			factor = 1
+			factor = 0.001
 			modifier = {
 				factor = 0
 				badboy = 0.4
@@ -676,9 +676,9 @@ political_decisions = {
 		
 		effect = {
 			
-			badboy = 15
+			badboy = 18
 
-			prestige = 50
+			prestige = 250
 
 			#Piemonte 
 			add_core = 720
@@ -688,16 +688,16 @@ political_decisions = {
 			add_core = 724
 			add_core = 725
 
-			BAD = {
-				all_core = { add_core = THIS }
-			}
-
-
 			#Sicily
 			add_core = 762
 			add_core = 763
 			add_core = 764
 			add_core = 854
+
+			#Baden
+			add_core = 586
+			add_core = 587
+			add_core = 588
 
 			add_accepted_culture = south_italien
 
@@ -798,15 +798,16 @@ political_decisions = {
 			has_country_flag = claim_more_of_fra_aqu
 		}
 		allow = {
-			prestige = 25
+			prestige = 40
 			nationalism_n_imperialism = 1
+			impressionism = 1
 		}
 		
 		effect = {
 			
-			badboy = 10
+			badboy = 12
 
-			add_accepted_culture = walonian
+			add_accepted_culture = wallonian
 			
 			add_core = 397
 
@@ -928,9 +929,10 @@ political_decisions = {
 		
 		effect = {
 			
-			badboy = 10
+			badboy = 15
 
-			add_accepted_culture = catalan
+			primary_culture = catalan
+			add_accepted_culture = french
 			
 			#Leon Castilla 
 			add_core = 475
@@ -988,32 +990,11 @@ political_decisions = {
 			prestige = 50
 			
 			add_accepted_culture = spanish
-			add_accepted_culture = portuguese
 			
 			#Galicia
 			add_core = 474
 			add_core = 476
 
-			#Duoro 
-			add_core = 518
-			add_core = 519
-			add_core = 520
-
-			#Estremadura
-			add_core = 521
-			add_core = 522
-			add_core = 523
-			add_core = 524
-
-			#Alentejo
-			add_core = 525
-			add_core = 526
-			add_core = 527
-
-			#Extremadura
-			add_core = 484
-			add_core = 485
-			add_core = 486
 
 			#Andalucia
 			add_core = 509
@@ -1028,6 +1009,10 @@ political_decisions = {
 			add_core = 515
 			add_core = 516
 			
+			#Extremadura
+			add_core = 484
+			add_core = 485
+			add_core = 486
 
 			primary_culture = catalan
 			add_accepted_culture = french
@@ -1046,6 +1031,57 @@ political_decisions = {
 		}
 	}
 
+	integrate_portugal_into_aragon{
+		
+		potential = {
+				tag = AGN
+				NOT = {has_country_flag = integrate_portugal_into_aragon}
+			}
+			allow = {
+				prestige = 350
+				revolution_n_counterrevolution = 1
+				is_greater_power = yes
+			}
+		
+			effect = {
+				
+				prestige = 50
+
+				badboy = 15
+				add_accepted_culture = portuguese
+
+				#Duoro 
+				add_core = 518
+				add_core = 519
+				add_core = 520
+
+				#Estremadura
+				add_core = 521
+				add_core = 522
+				add_core = 523
+				add_core = 524
+
+				#Alentejo
+				add_core = 525
+				add_core = 526
+				add_core = 527
+
+				
+				
+
+				set_country_flag = integrate_portugal_into_aragon
+			}
+		
+			ai_will_do = {					
+				factor = 1
+				modifier = {
+					factor = 0
+					badboy = 0.4
+				}
+			}
+		
+	}
+
 	clain_more_of_the_medterian = {
 		potential = {
 			tag = AGN
@@ -1053,7 +1089,7 @@ political_decisions = {
 			NOT = {has_country_flag = clain_more_of_the_medterian}
 		}
 		allow = {
-			prestige = 450
+			prestige = 475
 			revolution_n_counterrevolution = 1
 			invention = machine_tools
 			drilling_and_blasting = 1
@@ -1066,9 +1102,7 @@ political_decisions = {
 		
 		effect = {
 			
-			badboy = 17
-			
-			prestige = 50
+			badboy = 25
 			
 			add_accepted_culture = berber
 			add_accepted_culture = maghrebi
@@ -1171,6 +1205,12 @@ political_decisions = {
 				all_core = { add_core = THIS }
 			}
 
+			add_core = 496
+			add_core = 499
+			add_core = 500
+
+			
+
 			 set_country_flag = reclaim_cores_to_unite_FRA_moc
 
 			
@@ -1191,7 +1231,7 @@ political_decisions = {
 			NOT = {has_country_flag = form_france_again_moc}
 		}
 		allow = {
-			nationalism_n_imperialism = 1
+			state_n_government = 1
 			PRS = {
 				all_core = { 
 					owned_by = THIS
@@ -1207,6 +1247,87 @@ political_decisions = {
 				name = Parisii_modifier
 				duration = 36525
 			 }
+
+			add_country_modifier = {
+				name = PARIS_MOC_modifier
+				duration = 1800
+			 }
+
+			2570 = { life_rating = 15 }
+			399 = { life_rating = 20 }
+			400 = { life_rating = 15 }
+			401 = { life_rating = 20 }
+			402 = { life_rating = 15 }
+			403 = { life_rating = 15 }
+			404 = { life_rating = 20 }
+			405 = { life_rating = 20 }
+			406 = { life_rating = 15 }
+			407 = { life_rating = 20 }
+			408 = { life_rating = 15 }
+			409 = { life_rating = 25 }
+			410 = { life_rating = 25 }
+			411 = { life_rating = 15 }
+			412 = { life_rating = 27 }
+			413 = { life_rating = 16 }
+			414 = { life_rating = 20 }
+			415 = { life_rating = 15 }
+			416 = { life_rating = 15 }
+			417 = { life_rating = 15 }
+			418 = { life_rating = 15 }
+			420 = { life_rating = 20 }
+			421 = { life_rating = 20 }
+			422 = { life_rating = 20 }
+			423 = { life_rating = 15 }
+			424 = { life_rating = 15 }
+			425 = { life_rating = 20 }
+			426 = { life_rating = 20 }
+			427 = { life_rating = 20 }
+			428 = { life_rating = 15 }
+			429 = { life_rating = 15 }
+			430 = { life_rating = 15 }
+			431 = { life_rating = 15 }
+			432 = { life_rating = 20 }
+			433 = { life_rating = 15 }
+			434 = { life_rating = 15 }
+			435 = { life_rating = 15 }
+			436 = { life_rating = 15 }
+			437 = { life_rating = 15 }
+			438 = { life_rating = 15 }
+			439 = { life_rating = 15 }
+			440 = { life_rating = 15 }
+			441 = { life_rating = 15 }
+			442 = { life_rating = 15 }
+			443 = { life_rating = 15 }
+			444 = { life_rating = 15 }
+			445 = { life_rating = 15 }
+			446 = { life_rating = 15 }
+			447 = { life_rating = 15 }
+			448 = { life_rating = 20 }
+			449 = { life_rating = 15 }
+			450 = { life_rating = 20 }
+			451 = { life_rating = 20 }
+			452 = { life_rating = 20 }
+			453 = { life_rating = 15 }
+			454 = { life_rating = 15 }
+			455 = { life_rating = 15 }
+			456 = { life_rating = 15 }
+			457 = { life_rating = 15 }
+			458 = { life_rating = 15 }
+			459 = { life_rating = 15 }
+			460 = { life_rating = 15 }
+			461 = { life_rating = 15 }
+			462 = { life_rating = 15 }
+			463 = { life_rating = 15 }
+			464 = { life_rating = 15 }
+			465 = { life_rating = 15 }
+			466 = { life_rating = 15 }
+			467 = { life_rating = 15 }
+			468 = { life_rating = 15 }
+			469 = { life_rating = 15 }
+			470 = { life_rating = 15 }
+			471 = { life_rating = 15 }
+			472 = { life_rating = 15 }
+			473 = { life_rating = 10 }
 
 			set_country_flag = form_france_again_moc
 			set_global_flag = frenhc_battle_royal_moc_Glo
@@ -1226,6 +1347,7 @@ political_decisions = {
 	BRG_gain_germans_accepted = {
 		potential = {
 			tag = BRG
+			has_country_flag = BRG_claim_cores_on_FRA
 			NOT = {has_country_flag = BRG_gain_germans_accepted}
 		}
 		allow = {
@@ -1251,6 +1373,118 @@ political_decisions = {
 		}
 	}
 
+	HRE_Claim_Alps = {
+		potential = {
+			tag = HLR
+			has_country_flag = BRG_form_HRE_moc
+			NOT = {has_country_flag = HRE_Claim_Alps}
+		}
+		allow = {
+			prestige = 150
+			owns = 622
+			owns = 625
+		}
+		
+		effect = {
+			badboy = 15
+			set_country_flag = HRE_Claim_Alps
+
+			#Tirol
+			add_core = 612
+			add_core = 613
+			add_core = 614
+			add_core = 615
+
+			#South Tirol
+			add_core = 734
+			add_core = 735
+
+			#North Italy - a part
+			add_core = 2669
+			add_core = 8
+			add_core = 453
+			add_core = 454
+			add_core = 720
+			add_core = 721
+			add_core = 722
+			add_core = 723
+			add_core = 724
+			add_core = 726
+			add_core = 727
+
+			#Swiss
+			add_accepted_culture = swiss
+			add_accepted_culture = north_italian
+			add_core = 611
+			add_core = 603
+			add_core = 604
+			add_core = 605
+			add_core = 606
+			add_core = 2568
+			add_core = 609
+			add_core = 607
+			add_core = 608
+
+		}
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	}
+	
+	HRE_Claim_MORE = {
+		potential = {
+			tag = HLR
+			has_country_flag = BRG_form_HRE_moc
+			NOT = {has_country_flag = HRE_Claim_MORE}
+		}
+		allow = {
+			prestige = 250
+			owns = 595
+			owns = 558
+			owns = 534
+		}
+		
+		effect = {
+			badboy = 12
+			set_country_flag = HRE_Claim_MORE
+
+			#Bayern
+			add_core = 592
+			add_core = 598
+			add_core = 599
+			add_core = 600
+			add_core = 601
+			add_core = 602
+
+			#Linz (Austria)
+			add_core = 622
+
+			#Czech - a part
+			add_core = 625
+			add_core = 627
+			add_core = 628
+			add_core = 629
+			add_core = 630
+
+		}
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	}
+
+
+
+
 	BRG_form_HRE_moc = {
 		potential = {
 			tag = BRG
@@ -1271,45 +1505,6 @@ political_decisions = {
 			badboy = 25
 			prestige = 20
 			set_country_flag = BRG_form_HRE_moc
-
-			add_core = 622
-			
-			add_core = 538
-
-			#Friesland
-			add_core = 383
-			add_core = 384
-			add_core = 385
-			add_core = 386
-			
-			#East Friesland
-			
-			add_core = 539
-			add_core = 540
-			add_core = 541
-			add_core = 542
-			add_core = 543
-			add_core = 1743
-			add_core = 385
-			add_core = 386
-
-			#Bayern
-			add_core = 592
-			add_core = 598
-			add_core = 599
-			add_core = 600
-			add_core = 601
-			add_core = 602
-
-			#Tirol
-			add_core = 612
-			add_core = 613
-			add_core = 614
-			add_core = 615
-
-			#South Tirol
-			add_core = 734
-			add_core = 735
 
 			#Hannover
 			add_core = 534
@@ -1341,40 +1536,22 @@ political_decisions = {
 			add_core = 560
 			add_core = 587
 
-			#Czech - a part
-			add_core = 625
-			add_core = 627
-			add_core = 628
-			add_core = 629
-			add_core = 630
-
-			#North Italy - a part
-			add_core = 2669
-			add_core = 8
-			add_core = 453
-			add_core = 454
-			add_core = 720
-			add_core = 721
-			add_core = 722
-			add_core = 723
-			add_core = 724
-			add_core = 726
-			add_core = 727
-
-			#Swiss
-			add_accepted_culture = swiss
-			add_accepted_culture = north_italian
-			add_core = 611
-			add_core = 603
-			add_core = 604
-			add_core = 605
-			add_core = 606
-			add_core = 2568
-			add_core = 609
-			add_core = 607
-			add_core = 608
-
-
+			#Friesland
+			add_core = 383
+			add_core = 384
+			add_core = 385
+			add_core = 386
+			
+			#East Friesland
+			add_core = 539
+			add_core = 540
+			add_core = 541
+			add_core = 542
+			add_core = 543
+			add_core = 1743
+			add_core = 385
+			add_core = 386
+			add_core = 538
 
 		}
 		
@@ -1395,23 +1572,11 @@ political_decisions = {
 		}
 		allow = {
 			prestige = 50
-			year = 1840
 			is_greater_power = yes
 		}
 		
 		effect = {
-			badboy = 25
-			#rhineland
-			add_core = 396
-			add_core = 570
-			add_core = 571
-			add_core = 572
-			add_core = 573
-			add_core = 574
-			add_core = 575
-			add_core = 576
-			add_core = 577
-
+			badboy = 15
 
 			#Luxenburg
 			add_core = 397
@@ -1454,62 +1619,9 @@ political_decisions = {
 			add_core = 445
 			add_core = 446
 			
+			#Savoi-ish
 			add_core = 465
 			add_core = 466
-			
-
-			#Zeeland
-
-			add_core = 378
-			add_core = 379
-			add_core = 380
-			add_core = 381
-
-			BAD = {
-				all_core = { add_core = THIS }
-			}
-			WUR = {
-				all_core = { add_core = THIS }
-			}
-
-			WES  = {
-				all_core = {add_core = THIS}
-			}
-			RHI   = {
-				all_core = {add_core = THIS}
-			}
-
-			add_core = 570
-			
-			add_core = 594
-
-			add_core = 562
-			add_core = 564
-			add_core = 565
-			add_core = 566
-			add_core = 567
-			add_core = 568
-
-			add_core = 2560
-
-			#franconia
-			add_core = 595
-			add_core = 596
-			add_core = 597
-			add_core = 598
-
-			#Eastern Rhineland
-			add_core = 578
-			add_core = 579
-			add_core = 583
-			add_core = 2561
-
-			#Holland
-			add_core = 375
-			add_core = 376
-			add_core = 377
-			add_core = 382
-
 
 			set_country_flag = BRG_claim_cores_on_FRA
 		}
@@ -1523,5 +1635,134 @@ political_decisions = {
 		}
 	}
 	
+	BRG_claim_cores_on_GER = {
+		potential = {
+			tag = BRG
+			has_country_flag = BRG_claim_cores_on_FRA
+			NOT = {has_country_flag = BRG_claim_cores_on_GER}
+		}
+		allow = {
+			prestige = 50
+			is_greater_power = yes
+			romanticism = 1
+			state_n_government = 1
+		}
+		
+		effect = {
+			badboy = 15
+			
+
+			#rhineland
+			add_core = 396
+			add_core = 570
+			add_core = 571
+			add_core = 572
+			add_core = 573
+			add_core = 574
+			add_core = 575
+			add_core = 576
+			add_core = 577	
+
+			#Zeeland
+			add_core = 378
+			add_core = 379
+			add_core = 380
+			add_core = 381
+
+			
+			RHI   = {
+				all_core = {add_core = THIS}
+			}
+
+			add_core = 570
+
+			#Darmstadt
+			add_core = 2560
+
+			#Holland
+			add_core = 375
+			add_core = 376
+			add_core = 377
+			add_core = 382
+
+			
+
+
+			set_country_flag = BRG_claim_cores_on_GER
+		}
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	}
+
+	BRG_claim_cores_more_on_GER = {
+		potential = {
+			tag = BRG
+			has_country_flag = BRG_claim_cores_on_FRA
+			has_country_flag = BRG_claim_cores_on_GER
+			NOT = {has_country_flag = BRG_claim_cores_more_on_GER}
+		}
+		allow = {
+			prestige = 75
+			is_greater_power = yes
+
+			owns = 570
+			owns = 575
+		}
+		
+		effect = {
+			badboy = 15
+			
+			#Mittel De (hessen????)
+			add_core = 562
+			add_core = 564
+			add_core = 565
+			add_core = 566
+			add_core = 567
+			add_core = 568
+			
+			BAD = {
+				all_core = { add_core = THIS }
+			}
+			WUR = {
+				all_core = { add_core = THIS }
+			}
+
+			#Sigmaringen
+			add_core = 594
+
+			#Eastern Rhineland
+			add_core = 578
+			add_core = 579
+			add_core = 583
+			add_core = 2561
+
+			#franconia
+			add_core = 595
+			add_core = 596
+			add_core = 597
+			add_core = 598
+
+			WES  = {
+				all_core = {add_core = THIS}
+			}
+
+			set_country_flag = BRG_claim_cores_more_on_GER
+		}
+		
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	}
+
 }
 

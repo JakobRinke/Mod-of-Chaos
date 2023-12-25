@@ -1,0 +1,47 @@
+KON = {
+    value = 25
+}
+
+NET = {
+    value = 40
+}
+
+LOA = {
+    value = 50
+}
+
+LBA = {
+    value = 30
+}
+
+KZB = {
+    value = 30
+}
+
+KUB = {
+    value = 30
+}
+
+LUN = {
+    value = 50
+}
+
+army = {
+    name = "Army of the Bongo Kingdom"
+    location = 1994
+regiment = {
+        name= "the Kongo Guards"
+    type = irregular
+    home = 1994    }
+
+
+regiment = {
+        name= "1st Bongo Warriors"
+    type = irregular
+    home = 1994    }
+regiment = {
+        name= "2nd Bongo Warriors"
+    type = irregular
+    home = 1994
+    }
+}

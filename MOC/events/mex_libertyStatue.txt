@@ -1,0 +1,30 @@
+country_event = {
+	id = 379300881
+	picture = "statue_of_liberty"
+
+	is_triggered_only = yes
+
+	title = "The Statue of Equality"
+	desc = "The Spanish gifted us an statue to underline our friendship."
+
+
+	option = {
+		name = "We are glad to received the Statue. Heil Mexiko!"
+		prestige = 5
+		relation = {
+			who = FROM
+			value = 100
+		}
+		add_country_modifier = {
+			name = the_statue_of_liberty
+			duration = 3650
+		}
+		2172 = {
+			add_province_modifier = {
+				name = gateway_to_america
+				duration = 1825
+			}
+			life_rating = 20
+		}
+	}
+}

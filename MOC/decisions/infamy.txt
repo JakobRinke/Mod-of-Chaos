@@ -1,0 +1,17 @@
+political_decisions = {
+  global_infamy = {
+    potential = {
+      NOT = { has_country_modifier = global_infamy }
+    }
+    allow = {
+    
+    }
+    effect = {
+      add_country_modifier = {
+        name = global_infamy
+        duration = 36500
+      }
+    }
+    ai_will_do = { factor = 1 }
+  }
+}

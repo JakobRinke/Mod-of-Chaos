@@ -1,4 +1,4 @@
-#picture 1
+#picture 0
 
 political_decisions = {
 
@@ -37,6 +37,7 @@ political_decisions = {
 				OR = {
 					tag = JAP
 					tag = TKG
+					tag = KOR
 				}
 				NOT = { has_country_flag = expand_claims_jap}	
 			}
@@ -56,11 +57,17 @@ political_decisions = {
 						add_core = THIS	
 					}
 				}
-				PHL = {
-					all_core = {
-						add_core = THIS	
+				THIS = {
+					limit = {
+						NOT = { tag = KOR }
+					}
+					PHL = {
+						all_core = {
+							add_core = THIS	
+						}
 					}
 				}
+				
 				QNG = {
 					inherit = MCK
 					release = MCK
@@ -74,7 +81,128 @@ political_decisions = {
 				factor = 1
 			}
 		}
+
+		CLAIM_Kamchatka_moc = {
+			potential = {
+				OR = {
+					tag = JAP
+					tag = TKG
+					tag = KOR
+					tag = LSK 
+				}
+				NOT = { has_country_flag = CLAIM_Kamchatka_moc}	
+			}
+			
+			allow = {
+				revolution_n_counterrevolution = 1
+				prestige = 20
+			}
+			
+			effect = {
+				badboy = 5
+				KAM  = {
+					all_core = {
+						add_core = THIS	
+					}
+				}
+				add_accepted_culture = inuit
+				add_accepted_culture = siberian
+				add_accepted_culture = yakut
+				set_country_flag = CLAIM_Kamchatka_moc
+			}
+			
+			ai_will_do = {					
+				factor = 1
+			}
+		}
 		
+		CLAIM_alaska_moc = {
+			potential = {
+				OR = {
+					tag = JAP
+					tag = TKG
+					tag = KOR
+					tag = CAN 
+					tag = CUM 
+					tag = USA 
+					tag = HAW 
+				}
+				NOT = { has_country_flag = CLAIM_Kamchatka_moc}	
+			}
+			
+			allow = {
+				revolution_n_counterrevolution = 1
+				prestige = 15
+			}
+			
+			effect = {
+				badboy = 10
+				KAM  = {
+					all_core = {
+						add_core = THIS	
+					}
+				}
+				add_accepted_culture = inuit
+				add_accepted_culture = alaskan
+
+				#Columbia
+				add_core = 15
+				add_core = 16
+				add_core = 17
+				add_core = 18
+				add_core = 19
+				add_core = 20
+				add_core = 21
+				add_core = 2629
+
+				#Part of Washigton
+				add_core = 79
+				set_country_flag = CLAIM_Kamchatka_moc
+			}
+			
+			ai_will_do = {					
+				factor = 1
+			}
+		}
 		
+		claim_australia_moc = {
+			potential = {
+				OR = {
+					tag = JAP
+					tag = TKG
+					tag = KOR
+					tag = CAN 
+					tag = CUM 
+					tag = USA 
+					tag = HAW
+					tag = DAI 
+					tag = PHL
+				}
+
+				NOT = { has_country_flag = claim_australia_moc}	
+			}
+			
+			allow = {
+				revolution_n_counterrevolution = 1
+				prestige = 50
+			}
+			
+			effect = {
+				badboy = 10
+
+				AST  = {
+					all_core = {
+						add_core = THIS	
+					}
+				}
+
+				prestige = 50 
+				set_country_flag = claim_australia_moc
+			}
+			
+			ai_will_do = {					
+				factor = 1
+			}
+		}
 		
 }

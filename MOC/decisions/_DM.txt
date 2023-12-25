@@ -9,7 +9,7 @@ political_decisions = {
 			NOT = { has_country_flag = claim_south_england}	
 		}
 		allow = {
-			has_global_flag = french_counter_event
+			OR = { has_global_flag = french_counter_event has_global_flag = release_AST_get_Cores }
 		}
 		
 		effect = {
@@ -299,4 +299,37 @@ political_decisions = {
             }
 		}
 	}
+	
+	act_union_dm ={
+		picture = form_dm
+		potential = {
+			tag = DUA
+			NOT = { has_country_flag = act_union_dm}
+		}
+		
+		allow = {
+			is_greater_power = yes
+			prestige = 300
+			year = 1900
+		}
+		
+		effect = {
+			set_country_flag = act_union_dm
+			prestige = 50
+			any_core   = {
+				remove_core = FRA
+				remove_core = ENG
+				remove_core = IRE
+				remove_core = SCO
+			}
+			any_pop   = {
+				militancy = -10
+				consciousness = -10
+			}
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
 }

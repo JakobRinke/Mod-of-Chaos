@@ -67,7 +67,7 @@ political_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0.001
+			factor = 0.0018
 			modifier = {
 				factor = 0
 				badboy = 0.4
@@ -141,7 +141,6 @@ political_decisions = {
 				add_core = 1547
 				add_core = 1548
 				add_accepted_culture = nanfaren
-				research_points = 25000
 				set_country_flag = claim_south_han_1845
 			}
 
@@ -153,6 +152,7 @@ political_decisions = {
 			}
 		}
 	}
+
 	claim_south_han_1870 = {
 
 			potential = {
@@ -183,7 +183,7 @@ political_decisions = {
 				year = 1870
 			}
 			effect = {
-				badboy = 5
+				badboy = 25
 				ASM   = {
 					all_core = {
 						add_core = THIS
@@ -214,20 +214,65 @@ political_decisions = {
 				add_core = 1242
 				add_core = 1328
 
-
-				add_accepted_culture = bengali
 				add_accepted_culture = tibetan
 				add_accepted_culture = nepali
 				add_accepted_culture = asian_minor
-				add_accepted_culture = assamese
-				add_accepted_culture = bihari
+
 				set_country_flag = claim_south_han_1870
 			}
 
 			ai_will_do = {
 				factor = 0.00025
 			}
+				
 	}
+
+	vietnam_get_accepted_cultures = {
+
+			potential = {
+				tag = DAI
+				NOT = { has_country_flag = vietnam_get_accepted_cultures }
+				has_country_flag = claim_south_han_1845
+			}
+			allow = {
+				war = no
+				year = 1870
+			}
+			effect = {
+				badboy = 15
+
+				add_accepted_culture = bengali
+				add_accepted_culture = assamese
+				add_accepted_culture = bihari
+
+				set_country_flag = vietnam_get_accepted_cultures
+			}
+
+			ai_will_do = {
+				factor = 0.00025
+			}
+
+	}
+	vietnam_inherat_cambodia = {
+
+		potential = {
+			tag = DAI
+			NOT = {has_country_flag = vietnam_inherat_cambodia}
+			has_country_flag = claim_south_han_1845
+		}
+		allow = {
+			civilized = yes
+		}
+		effect = {
+			inherit = CAM
+			set_country_flag = vietnam_inherat_cambodia
+		}
+
+		ai_will_do = {
+			factor = 0.000000000025
+		}
+	}
+
 	claim_south_han_1890 = {
 
 			potential = {
@@ -291,5 +336,37 @@ political_decisions = {
 			ai_will_do = {
 				factor = 0.00025
 			}
+	}
+
+	renovate_hanoi_babyboom = {
+		potential = { 
+			owns = 1369
+			
+			NOT = { has_country_flag = renovate_hanoi_babyboom }
+		}
+
+
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 10
+			
+			1369 = {		
+				life_rating  = 20
+				RGO_size = 700000
+			
+				add_province_modifier = {
+				name = baby_boom
+				duration = 1850
+
+				}
+			}
+			
+			
+			set_country_flag = renovate_hanoi_babyboom
+		}
+	
+	
 	}
 }

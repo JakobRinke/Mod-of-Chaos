@@ -1,7 +1,40 @@
 #picture 1
 
 political_decisions = {
+	
+	
+	accept_the_wallonian = {
+              picture = attack_the_dutch_Asdasd
+              potential = {
+                  tag = NET
+		  NOT = { has_country_flag = wall }
+              }
+	      
+	      allow = {
+		 is_greater_power = yes
+	         nationalism_n_imperialism = 1
+              }
+	       
+	      effect = {
+	          prestige = 20
+                  badboy = 7
+		  add_accepted_culture = wallonian
+		  add_accepted_culture = picard
+		  set_country_flag = wall
+              }
+	      
+	      ai_will_do = {
+			factor = 1
+			modifier = {
+                            factor = 0
+                            badboy = 0.4
+            		}
+	     }
 
+       }
+	
+	
+	
 	attack_the_dutch_FRA = {
 		picture = attack_the_dutch_Asdasd
 		potential = {
@@ -215,7 +248,7 @@ political_decisions = {
 		effect = {
 			badboy = 15
 			add_accepted_culture = north_german
-
+ 
 			#East Friesland
 			add_core = 1743
 			add_core = 543

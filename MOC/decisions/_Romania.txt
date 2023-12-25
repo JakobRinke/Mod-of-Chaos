@@ -9,6 +9,7 @@ political_decisions = {
 				tag = WAL
 				tag = MOL
 				tag = ROM
+				tag = SIE
 			}
 			
 			
@@ -76,7 +77,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0.0001
+			factor = 0.00017
 			modifier = {
                 factor = 0
                 badboy = 0.4

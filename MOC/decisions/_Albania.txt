@@ -1,0 +1,76 @@
+political_decisions = {
+
+
+	fuck_shit_alb = {
+		
+		potential = {
+			tag = ALB
+			NOT = { has_country_flag = fuck_shit_alb }
+		}
+		
+		allow = {}
+		
+		effect = {
+			badboy = 10
+			add_country_modifier = {
+					name = colonial_might
+					duration = 36500
+			}
+			set_country_flag = fuck_shit_alb
+		}	
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	
+	
+	genocide_alb = {
+		potential = {
+			tag = ALB
+			any_owned_province = {
+				AND = {
+					NOT = {
+						is_core = ALB
+					}
+					is_colonial = no
+				}
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			any_owned = {
+				limit = {
+					AND = {
+					NOT = {
+						is_core = ALB
+					}
+					is_colonial = no
+					}			
+				}
+				add_core = ALB
+				add_province_modifier = {
+					name = provinz_growth_modifier
+					duration = 7300
+				}
+				any_pop = { reduce_pop = 0 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	
+
+
+
+
+}

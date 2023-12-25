@@ -582,6 +582,10 @@ EIH	 	   ="countries/EIH.txt"
 EUR        ="countries/EUR.txt"
 MUS		   ="countries/Muscovy.txt"
 NOV		   ="countries/Novgorod.txt"
+MAM		   ="countries/Mamluk.txt"
+KSI		   ="countries/KSI.txt"
+PAC		   ="countries/PAC.txt"
+
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

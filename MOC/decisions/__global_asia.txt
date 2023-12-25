@@ -1,0 +1,69 @@
+political_decisions = {
+
+	claim_borneo = {
+		
+		potential = {
+			OR = {
+				tag = JAP 
+				tag = TKG
+				tag = KOR
+				tag = QNG
+				tag = CHI
+				tag = DAI
+				tag = PER
+				tag = TRD
+			}
+			civilized = yes
+			NOT = {
+				has_country_flag = claim_borneo
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			SUL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			BRU = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SWK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KTI = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			KLM = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			SWK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_core = 1426
+			set_country_flag = claim_borneo
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	
+	}
+
+}

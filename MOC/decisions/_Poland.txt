@@ -13,6 +13,7 @@ political_decisions = {
 				tag = DNB
 			}
 			NOT = { has_country_flag = Polish_Embrace }
+			NOT = { has_country_flag = release_poland_for_education_as_russia }
 		}
 		
 		
@@ -46,15 +47,261 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
+			factor = 0.000000335
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+		
+		
+	}
+
+	release_poland_for_education_as_russia = {
+		picture = poland_claim_flag
+		potential = {
+			tag = RUS
+			
+			NOT = { has_country_flag = release_poland_for_education_as_russia }
+			NOT = { year = 1837 }
+		}
+		
+		
+		allow = {}
+		
+		effect = {
+			badboy = 5
+
+			social_reform = good_schools
+
+			release = CPL
+			
+			
+
+			set_country_flag = release_poland_for_education_as_russia
+		}
+		
+		ai_will_do = {
 			factor = 0.00035
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
+		}
+		
+		
+	}
+
+	claim_czechia_for_greater_poland = {
+		picture = poland_claim_flag
+		potential = {
+			OR = {
+				tag = POL
+				tag = CPL
+			}
+			NOT = { has_country_flag = claim_czechia_for_greater_poland }
+		}
+		
+		
+		allow = {
+			state_n_government = 1
+			prestige = 10
+		}
+		
+		effect = {
+			badboy = 5
+		
+			prestige = 5
+
+			add_accepted_culture = czech
+			
+			#Bohemia
+			add_core = 625
+			add_core = 627
+			add_core = 628
+			add_core = 629
+			add_core = 630
+
+			#Moravia
+			add_core = 631
+			add_core = 632
+
+			set_country_flag = claim_czechia_for_greater_poland
+		}
+		
+		ai_will_do = {
+			factor = 0.00035
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
 		}
 		
 		
 	}
 	
+	
+	claim_jews_for_greater_poland = {
+		potential = {
+			OR = {
+				tag = POL
+				tag = CPL
+			}
+			NOT = { has_country_flag = claim_jews_for_greater_poland }
+		}
+		
+		
+		allow = {
+			ideological_thought = 1
+			realism = 1
+			war = no
+			prestige = 75
+
+			owns = 706
+		}
+		
+		effect = {
+			badboy = -5
+		
+			prestige = 50
+
+			add_accepted_culture = ashkenazi
+			
+			set_country_flag = claim_jews_for_greater_poland
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		
+	}
+
+	claim_lithuania_for_greater_poland = {
+		potential = {
+			OR = {
+				tag = POL
+				tag = CPL
+			}
+			NOT = { has_country_flag = claim_lithuania_for_greater_poland }
+		}
+		
+		
+		allow = {
+			ideological_thought = 1
+			prestige = 35
+
+			owns = 706
+		}
+		
+		effect = {
+			badboy = 5
+		
+			prestige = 5
+
+			add_accepted_culture = lithuanian
+			
+			#Lietuva
+			add_core = 360
+			add_core = 361
+			add_core = 362
+			add_core = 363
+			add_core = 364
+			add_core = 365
+
+
+			set_country_flag = claim_lithuania_for_greater_poland
+		}
+		
+		ai_will_do = {
+			factor = 0.00035
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+		
+		
+	}
+
+	claim_urkaine_for_greater_poland = {
+		potential = {
+			OR = {
+				tag = POL
+				tag = CPL
+			}
+			NOT = { has_country_flag = claim_urkaine_for_greater_poland }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			prestige = 75
+
+			owns = 706
+		}
+		
+		effect = {
+			badboy = 2
+		
+			prestige = 25
+
+			add_accepted_culture = ukrainian
+
+			set_country_flag = claim_urkaine_for_greater_poland
+		}
+		
+		ai_will_do = {
+			factor = 0.00035
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+		
+		
+	}
+
+	inherit_urkaine_for_greater_poland = {
+		potential = {
+			OR = {
+				tag = POL
+				tag = CPL
+			}
+
+
+			ai = no
+			has_country_flag = claim_urkaine_for_greater_poland
+			NOT = { has_country_flag = inherit_urkaine_for_greater_poland }
+		}
+		
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			prestige = 100
+
+			is_our_vassal = UKR
+		}
+		
+		effect = {
+			badboy = 10
+		
+			prestige = 25
+
+			inherit = UKR
+
+			set_country_flag = inherit_urkaine_for_greater_poland
+		}
+		
+		ai_will_do = {
+			factor = 0.00035
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+		
+		
+	}
 	
 }

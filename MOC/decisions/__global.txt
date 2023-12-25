@@ -1,0 +1,125 @@
+political_decisions = {
+
+	gen_for_civwar_kongo = {
+		potential = {
+			
+			ai = no
+			NOT = { has_leader = "Moltke von Igor" }
+			
+		}
+		
+		
+		allow = {
+
+		}
+		
+		effect = {
+			define_general = {
+					name = "Moltke von Igor"
+					personality = implacable
+					background = cursed_luck
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	gain_reasearchpoints_adm_ref = {
+		potential = {
+			NOT = { has_country_flag = gain_reasearchpoints_adm_ref }
+			NOT = { OR = { tag = JAP tag = TKG tag = QNG } }
+			civilized = no
+		}
+		
+		
+		allow = {
+			literacy = 0.025
+		}
+		
+		effect = {
+			prestige = 5
+
+			research_points = 25000
+			activate_technology = malthusian_thought
+			activate_technology = enlightenment_thought
+			activate_technology = introspectionism
+
+			nationalvalue = nv_productivity 
+
+			set_country_flag = gain_reasearchpoints_adm_ref
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT={ tag = PER }
+				factor = 0.0001
+			}
+		}
+		
+		
+	}
+
+	global_starting_ressources = {
+		
+		potential = {
+			NOT = { has_country_flag = global_starting_ressources }
+		}
+
+		effect = {
+			treasury = 250000
+			iron  = 200
+			maschine_parts = 50
+			cement = 150
+			artillery = 100
+			small_arms = 100
+			ammunition = 100
+			set_country_flag = global_starting_ressources
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+	}
+	
+	
+	global_healthcare = {
+	
+		potential = {
+			NOT = { health_care = good_health_care  }
+		}
+		
+		allow = {
+			electricity = 1
+		}
+		
+		effect = {
+			social_reform = good_health_care
+		}
+	
+	}
+	
+	global_schoolsystem = {
+	
+		potential = {
+			NOT = { school_reforms  = good_schools }
+		}
+		
+		allow = {
+			social_science = 1
+		}
+		
+		effect = {
+			social_reform = good_schools 
+		}
+	
+	}
+
+
+}

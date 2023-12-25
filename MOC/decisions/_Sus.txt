@@ -1,4 +1,4 @@
-#picture 1
+#picture 0
 
 political_decisions
 {
@@ -20,6 +20,7 @@ political_decisions
 			}
 			NOT = { exists = SUS } 
 			NOT = { has_global_flag = SUS_FORMED }
+			war = no
 				
 		}
 		
@@ -38,7 +39,7 @@ political_decisions
 			
 		}
 		ai_will_do = {					
-			factor = 0.00005
+			factor = 0.001
 		}
 	}
 	
@@ -80,19 +81,202 @@ political_decisions
 			add_accepted_culture = south_andean
 			add_accepted_culture = amazonian
 			add_accepted_culture = platinean	
-			add_accepted_culture = afro_brazilian		
+			add_accepted_culture = afro_brazilian
+			
+			ARG      = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+
+			BOL       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			BRZ       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			CHL       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			CLM       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			ECU       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			PEU       = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			PRG        = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			URU         = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			VNZ         = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			CUB         = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			GUY         = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			GCO          = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+			
+			PBC           = {
+				all_core = {
+					add_core = SUS
+				}
+			}
+
+			SPU            = {
+				all_core = {
+					add_core = SUS
+				}
+			}
 		}
 		ai_will_do = {					
 			factor = 0.05
 			 modifier = {
-                factor = 0
-                year = 1936
-            }
+				factor = 0
+				year = 1936
+			}
 			modifier = {
-                factor = 0
-                badboy = 0.1
-            }
+				factor = 0
+				badboy = 0.1
+			}
 		}
+	}
+
+	Claim_more_lands_in_the_ocean = {
+		potential = {
+			OR = {
+				tag = SUS
+				tag = MEX
+				tag = CAL
+				tag = CAN
+			}
+
+			NOT = { has_country_flag = Claim_more_lands_in_the_ocean }
+				
+		}
+		
+		allow = {
+			ideological_thought = 1
+			prestige = 35
+		}
+		
+		effect = {		
+			has_country_flag = Claim_more_lands_in_the_ocean
+
+		NZL  = {
+				all_core = {
+					add_core = THIS	
+				}
+			} 
+		
+		AST  = {
+				all_core = {
+					add_core = THIS	
+				}
+			}
+			
+		}
+
+		add_accepted_culture = australian
+
+
+		ai_will_do = {					
+			factor = 0.0001
+		}
+	}
+
+	orerganize_sus_ressources = {
+		potential = {
+			tag = SUS 
+			NOT = { has_country_flag = organize_sus }
+		}
+		allow = {
+			medicine = 1
+		}
+
+		effect = {
+			
+			activate_technology = positivsim
+            activate_technology = functionalsim
+            activate_technology = biologism
+
+			all_core = {
+				limit = {
+					trade_goods = coffee
+				}
+				trade_goods = coal RGO_size = 6000000000000
+				add_province_modifier = { name = baby_boom duration =  600}
+			}
+
+			all_core = {
+				limit = {
+					trade_goods = tobacco
+					NOT = {
+						is_core = CUB
+					}
+				}
+				trade_goods = oil RGO_size = 6000000000000
+				add_province_modifier = { name = baby_boom duration =  800}
+			}
+
+			all_core = {
+				limit = {
+					trade_goods = wool
+				}
+				trade_goods = iron RGO_size = 6000000000000
+				add_province_modifier = { name = baby_boom duration =  3650}
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
 	}
 	
 	

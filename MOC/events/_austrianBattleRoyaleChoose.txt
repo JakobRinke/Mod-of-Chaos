@@ -1,0 +1,87 @@
+#picture 0
+
+country_event = {
+	id = 13373000
+	title = "Choose a country"
+	desc = "Austrian Battle Royale -> Choose your player for demob remob!!!"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Stay as Austria"
+		release = CZH
+		release = LOM
+		release = CRO
+		release = VEN
+		release = GLM
+		release = SIE
+		release = HUN
+	}
+
+	option = {
+		name = "Play as Czhekoslovakia"
+		release = CZH
+		release = LOM
+		release = CRO
+		release = VEN
+		release = GLM
+		release = SIE
+		release = HUN
+		change_tag_no_core_switch  = CZH
+	}
+	
+	option = {
+		name = "Play as Croatia"
+		release = CZH
+		release = LOM
+		release = CRO
+		release = VEN
+		release = GLM
+		release = SIE
+		release = HUN
+		change_tag_no_core_switch  = CRO
+	}
+	
+	
+	option = {
+		name = "Play as Transylvania"
+		release = CZH
+		release = LOM
+		release = CRO
+		release = VEN
+		release = GLM
+		release = SIE
+		release = HUN
+		change_tag_no_core_switch  = SIE
+	}
+	
+	option = {
+		name = "Play as Galicia"
+		release = CZH
+		release = LOM
+		release = CRO
+		release = VEN
+		release = GLM
+		release = SIE
+		release = HUN
+		change_tag_no_core_switch  = GLM
+	}
+	
+	
+	option = {
+		name = "Play as Hungary"
+		release = CZH
+		release = LOM
+		release = CRO
+		release = VEN
+		release = GLM
+		release = SIE
+		release = HUN
+		change_tag_no_core_switch  = HUN
+	}
+	
+	
+	
+	
+	
+}

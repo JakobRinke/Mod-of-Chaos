@@ -23,6 +23,8 @@ political_decisions = {
 		
 		effect = {
 
+			remove_country_modifier = shastar_vidya
+	
 			change_tag = TRD
 			set_country_flag = unite_TRD
             prestige = 5
@@ -233,7 +235,7 @@ political_decisions = {
 			}
 		}
 		ai_will_do = {					
-			factor = 0.115
+			factor = 0.0015
 		}
 	}
 	claim_russia_as_trd = {

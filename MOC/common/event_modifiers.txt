@@ -2638,8 +2638,9 @@ rom_school_system_effect = {
 }
 
 total_mobilisation = {
-	mobilisation_size = 0.6
-	mobilization_economy_impact = 0.50
+	mobilisation_size = 0.13
+	mobilization_economy_impact = -0.50
+	mobilization_impact = 4
 	land_unit_start_experience = 25
 	war_exhaustion = -2
 	org_regain = 0.3
@@ -2737,6 +2738,13 @@ south_african_new_world ={
 	icon = 7
 }
 
+PAC_new_world ={
+	global_immigrant_attract = 4.335
+	global_assimilation_rate = 0.155
+	icon = 7
+	prestige = 0.05
+}
+
 provinz_growth_modifier = {
 	immigrant_attract = 4
 	assimilation_rate = 0.2
@@ -2746,10 +2754,9 @@ provinz_growth_modifier = {
 
 
 kongo_school_system_modifier = {
-	education_efficiency_modifier = 10
-	research_points_modifier = 4
-	global_population_growth = 0.0003
-	prestige = 0.01
+	education_efficiency_modifier = 5
+	research_points_modifier = 0.25
+	global_population_growth = 0.0001
 	icon = 7
 }
 
@@ -2764,12 +2771,6 @@ arabian_resources = {
 	farm_rgo_size = 0.5
 	mine_rgo_size = 0.5
 	icon = 7
-}
-
-fascist_care = {
-	population_growth = 0.00000025
-	immigrant_push = 0.15
-	local_ruling_party_support = -0.2
 }
 
 arm_country_modifier = {
@@ -2812,8 +2813,24 @@ breslau_modifier = {
 
 vienna_modifier = {
 	immigrant_attract = 0.25
-	farm_rgo_size = 0.1
-	farm_rgo_eff = 0.1
+	farm_rgo_size = 0.15
+	farm_rgo_eff = 0.15
+	mine_rgo_size = 0.15
+	mine_rgo_eff = 0.15
+	local_rgo_output = 0.05
+	local_factory_input = 0.05
+	local_factory_output = 0.0225
+	local_factory_throughput = 0.15
+	assimilation_rate = 0.2
+	icon = 13
+}
+
+capital_modifier_moc = {
+	immigrant_attract = 0.25
+	farm_rgo_size = 0.15
+	farm_rgo_eff = 0.15
+	mine_rgo_size = 0.15
+	mine_rgo_eff = 0.15
 	local_rgo_output = 0.05
 	local_factory_input = 0.05
 	local_factory_output = 0.0225
@@ -2886,11 +2903,18 @@ munich_modifier = {
 Parisii_modifier = {
 	factory_output = 0.11
 	factory_throughput = 0.1
-	factory_owner_cost = -0.05
+	factory_owner_cost = -0.15
 	import_cost = -0.15
 	loan_interest = -0.25
 	max_loan_modifier = 0.33
 	tax_efficiency = 0.055
+}
+
+PARIS_MOC_modifier = {
+	immigrant_attract = 0.2
+	population_growth = 0.0145
+	local_factory_output = 0.0225
+	icon = 13
 }
 
 Eich_Home = {
@@ -2930,11 +2954,398 @@ Last_Stand = {
 }
 
 colonial_might = {
-	badboy = -0.15
+	badboy = -0.175
 	prestige = 0.05
 }
 
 artiljerija = {
 	org_regain = -0.15
 	land_unit_start_experience = -1
+}
+
+
+MAM_no_slavery = {
+    prestige = 0.03
+    local_ruling_party_support = 0.5
+    social_reform_desire = 0.15
+    leadership_modifier = 0.15
+	supply_consumption = -0.1
+    war_exhaustion = -0.1
+}
+
+china_anti_mob_modifier = {
+	mobilisation_size = -0.50
+	land_unit_start_experience = 0.05
+	org_regain = 0.025
+}
+
+china_army_modifier = {
+	mobilisation_size = 5
+	land_unit_start_experience = 0.6
+	naval_unit_start_experience = 1
+	org_regain = 0.666
+}
+
+IceLandBuffs = {
+	global_population_growth = 0.01
+	global_assimilation_rate = 0.30
+	education_efficiency_modifier = 0.555
+	research_points_modifier = 0.5
+
+	global_immigrant_attract = 7
+
+	mobilisation_size = 0.99
+	org_regain = 0.2
+	land_unit_start_experience = 0.6
+	naval_unit_start_experience = 1
+
+	badboy = -0.69
+	prestige = 0.05
+}
+
+global_infamy = {
+	badboy = -0.1
+	icon = 3
+}
+
+fascist_care = {
+	life_rating = 0.2
+	immigrant_push = 0.15
+	local_ruling_party_support = -0.2
+	local_factory_output = 0.15
+}
+
+communist_agenda = {
+	non_accepted_pop_consciousness_modifier = 0.02 
+	education_efficiency_modifier = 0.5
+	ruling_party_support = 0.2
+	factory_output = -0.01
+}
+
+anarchic_system = {
+	factory_input = 0.05
+	factory_output = 0.1
+	loan_interest = -0.2
+	max_loan_modifier = 2
+	max_social_spending = -0.99 
+	import_cost = -0.2
+	ruling_party_support = -0.3
+	prestige = -0.05
+	influence_modifier = -0.1
+	factory_cost = -0.2
+	rich_income_modifier = 1
+}
+
+supreme_dictator = {
+	education_efficiency_modifier = -0.1
+	ruling_party_support = 0.5
+	mobilisation_size = 0.03
+	mobilization_economy_impact = -0.9
+	mobilization_impact = 1
+	war_exhaustion = -0.25
+}
+
+free_thought = {
+	political_reform_desire = 0.4
+	social_reform_desire = 0.4
+	rgo_output = 0.075
+	education_efficiency_modifier = 0.075
+	poor_life_needs = -0.1
+	rich_income_modifier = 0.1
+}
+
+german_bratwurst_superiority = {
+	org_regain = 0.15
+	mobilization_economy_impact = -0.35
+	leadership_modifier = 0.1
+	ruling_party_support = 0.1
+
+	factory_input = 0.05
+	factory_throughput = 0.1
+	factory_output = 0.1
+	rgo_output = 0.1
+	factory_owner_cost = -0.25
+	factory_cost = -0.1
+	rgo_output = 0.075
+	max_loan_modifier = 3
+	rich_life_needs = -0.1
+
+	icon = 15
+}
+
+french_baguette_superiority = {
+	core_pop_militancy_modifier = 0.25
+	core_pop_conscious_modifier = 0.3
+
+	tax_efficiency = 0.05
+	administrative_efficiency_modifier = 0.1
+	political_reform_desire = 0.1
+
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
+	farm_rgo_eff = 0.1
+	rgo_output = 0.1
+
+	factory_owner_cost = -0.10
+	factory_cost = -0.05
+
+	poor_life_needs = -0.2
+
+	icon = 15
+}
+
+british_fishNchips_superiority = {
+
+	immigrant_attract = -0.05
+
+	farm_rgo_size = 0.25
+	mine_rgo_size = 0.25
+	farm_rgo_eff = 0.15
+	mine_rgo_eff = 0.25
+
+	factory_owner_cost = -0.05
+	import_cost = -0.1
+
+	naval_organisation = 0.2
+	naval_unit_start_experience = 0.15
+	mobilization_economy_impact = 0.2
+	mobilization_impact = 0.1
+	mobilisation_size = -0.0025
+
+	leadership_modifier = -0.05
+	non_accepted_pop_consciousness_modifier = 0.01
+	non_accepted_pop_militancy_modifier = -0.01
+
+	icon = 15
+}
+
+italy_pizza_superiority = {
+	core_pop_militancy_modifier = -0.15
+	core_pop_conscious_modifier = -0.1
+
+
+	farm_rgo_size = 0.3
+	mine_rgo_size = 0.4
+	farm_rgo_eff = 0.25
+	rgo_output = 0.1
+
+	factory_owner_cost = -0.05
+	poor_life_needs = -0.35
+	rich_life_needs = 0.1
+
+	naval_organisation = 0.1
+	naval_unit_start_experience = 0.05
+	mobilization_impact = -0.1
+
+	leadership_modifier = -0.05
+	ruling_party_support = -0.1
+
+	research_points = 0.035
+	cb_generation_speed_modifier = 0.05
+
+	icon = 15
+}
+
+
+austrian_schnitzel_superiority = {
+	non_accepted_pop_consciousness_modifier = 0.05
+	non_accepted_pop_militancy_modifier = 0.025
+
+
+	farm_rgo_size = 0.15
+	mine_rgo_size = 0.33
+	rgo_output = 0.1
+
+	factory_owner_cost = -0.1
+	poor_life_needs = -0.05
+	middle_life_needs = -0.05
+	rich_life_needs = -0.05
+	industry_tech_research_bonus = 0.05
+
+	naval_organisation = 0.1
+	mobilization_impact = -0.25
+	org_regain = -0.05
+	land_unit_start_experience = -0.05
+
+	leadership_modifier = 0.05
+	ruling_party_support = -0.2
+
+	research_points = 0.015
+
+
+	icon = 15
+}
+
+russian_vodka_superiority = {
+	immigrant_attract = -0.1
+
+	farm_rgo_size = 0.2
+	mine_rgo_size = 0.2
+	farm_rgo_eff = 0.1
+	mine_rgo_eff = 0.1
+
+	factory_throughput = 0.15
+	poor_life_needs = -0.15
+	rich_life_needs = 0.25
+
+	mobilization_economy_impact = -0.1
+	mobilization_impact = -0.1
+	leadership_modifier = -0.1
+	ruling_party_support = -0.25
+
+	education_efficiency_modifier = 0.075
+	badboy = 0.01
+	icon = 15
+}
+
+ottoman_kebab_superiority = {
+
+	global_assimilation_rate = 0.25
+	immigrant_attract = -0.35
+
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
+	rgo_output = 0.2
+
+	influence_modifier = 0.05
+
+	poor_life_needs = -0.1
+	rich_life_needs = 0.1
+	tax_efficiency = 0.1
+	industry_tech_research_bonus = 0.05
+
+	naval_organisation = 0.1
+	naval_unit_start_experience = 0.2
+	mobilization_economy_impact = -0.2
+	mobilization_impact = -0.2
+	leadership_modifier = 0.1
+
+	ruling_party_support = 0.15
+	suppression_points_modifier = 0.25
+
+	education_efficiency_modifier = 0.05
+	icon = 15
+}
+
+usa_bbq_superiority = {
+	non_accepted_pop_consciousness_modifier = 0.05
+
+	global_assimilation_rate = 0.05
+	immigrant_attract = 0.025
+
+	factory_input = 0.05
+	factory_throughput =  0.05
+	factory_output =  0.05
+	rgo_output = 0.1
+	factory_owner_cost = -0.25
+	factory_cost = -0.25
+	rgo_output = 0.075
+
+	mobilization_economy_impact = 0.2
+	mobilization_impact = 0.2
+	leadership_modifier = 0.2
+
+	ruling_party_support = 0.1
+
+	cb_generation_speed_modifier = -0.05
+	political_reform_desire = -0.1
+
+	icon = 15
+}
+
+japan_anime_superiority = {
+	non_accepted_pop_consciousness_modifier = 0.05
+	pop_militancy_modifier = -0.05
+
+	global_assimilation_rate = 0.4
+	immigrant_attract = 0.5
+
+	farm_rgo_size = 0.2
+	mine_rgo_size = 0.2
+	farm_rgo_eff = 0.2
+	mine_rgo_eff = 0.2
+	rgo_output = 0.3
+
+	factory_throughput =  0.025
+	factory_output =  0.025
+	rgo_output = 0.05
+	factory_owner_cost = -0.1
+	factory_cost = -0.1
+
+	influence_modifier = 0.05
+
+	poor_life_needs = -0.2
+	rich_life_needs = -0.1
+	industry_tech_research_bonus = 0.05
+
+	naval_organisation = 0.1
+	naval_unit_start_experience = 0.2
+	mobilization_economy_impact = -0.2
+	mobilization_impact = -0.2
+	leadership_modifier = 0.1
+
+	ruling_party_support = 0.1
+	suppression_points_modifier = 0.25
+	political_reform_desire = 0.2
+	badboy = 0.01
+
+	icon = 15
+}
+
+scandinavian_ikea_superiority = {
+	global_assimilation_rate = 0.4
+	global_population_growth = 0.005
+	
+
+	farm_rgo_eff = 0.2
+	mine_rgo_eff = 0.3
+	rgo_output = 0.3
+
+	factory_throughput =  0.1
+	factory_output =  0.2
+	rgo_output = 0.1
+	factory_owner_cost = -0.25
+	factory_cost = -0.25
+
+	influence_modifier = 0.1
+
+	poor_life_needs = -0.25
+	rich_life_needs = -0.15
+	industry_tech_research_bonus = 0.05
+
+	naval_organisation = 0.2
+	naval_unit_start_experience = 0.2
+	mobilization_economy_impact = 0.05
+	mobilization_impact = 0.1
+	leadership_modifier = 0.1
+	icon = 15
+}
+
+
+spanish_boritos = {
+	core_pop_militancy_modifier = -0.1
+	core_pop_conscious_modifier = -0.05
+
+
+	farm_rgo_size = 0.25
+	mine_rgo_size = 0.25
+	farm_rgo_eff = 0.2
+	rgo_output = 0.125
+	factory_owner_cost = -0.05
+
+	poor_life_needs = -0.15
+	rich_life_needs = 0.1
+
+	naval_organisation = 0.05
+	naval_unit_start_experience = 0.025
+	ruling_party_support = -0.15
+
+	icon = 15
+}
+
+alaska_provinces_modifier = {
+	immigrant_attract = 1.25
+	assimilation_rate = 0.5
+	population_growth = 0.0187
+	icon = 3
 }

@@ -1,0 +1,377 @@
+political_decisions = {
+
+	claimMGL = {
+		potential = { 
+			tag = KOR 
+			NOT = { has_country_flag = claimMGL }
+		}
+		allow = { 
+			nationalism_n_imperialism = 1 
+		}
+		effect = { 
+			MGL = { 
+				all_owned = { 
+					add_core = KOR 
+					} 
+			} 
+
+
+			set_country_flag = claimMGL
+		}
+	}
+
+	get_jap_accepted_as_kor = {
+		potential = { 
+			tag = KOR 
+			NOT = { has_country_flag = get_jap_accepted }
+			NOT = { has_country_flag = gain_jap_accepted }
+		}
+		allow = { 
+			realism = 1 
+			prestige = 100
+		}
+		effect = { 
+			add_accepted_culture = japanese
+			prestige = 25
+
+			badboy = 8
+			set_country_flag = get_jap_accepted
+		}
+	}
+	
+	Claim_South_Japan = {
+		potential = { 
+			tag = KOR 
+			NOT = { has_country_flag = Claim_South_Japan }
+		
+		}
+
+
+		allow = { 
+			nationalism_n_imperialism = 1 
+		}
+		effect = {
+			badboy = 18
+			add_core = 2589
+			add_core = 1660
+			add_core = 1661
+			add_core = 1662
+			add_core = 1663
+			add_core = 1664
+			
+			add_core = 1665
+			add_core = 1666
+			add_core = 1667
+			
+			add_core = 1638
+			add_core = 1639
+			add_core = 1640
+			add_core = 1641
+			
+			add_core = 1659
+			
+			set_country_flag = Claim_South_Japan
+		}
+	
+	
+	}
+
+	Claim_islands_from_Japan = {
+		potential = { 
+			tag = KOR 
+			NOT = { has_country_flag = Claim_South_Japan }
+		}
+
+
+		allow = { 
+			nationalism_n_imperialism = 1 
+		}
+		effect = {
+			badboy = 8
+
+			#Sakhalin
+			add_core = 1086
+			add_core = 1087
+			add_core = 1088
+			add_core = 1089
+
+			#Ezo
+			add_core = 1642
+			add_core = 1643
+			add_core = 1644
+
+			add_core = 2845
+			
+			set_country_flag = Claim_South_Japan
+		}
+	
+	
+	}
+	
+	
+	Claim_Formosa_asia = {
+		potential = { 
+			OR ={
+				tag = KOR 
+				tag = JAP
+				tag = DAI
+				tag = PHL 
+				tag = JAV
+				tag = IAA
+				tag = BUR
+				tag = IND
+			}
+			
+			NOT = { has_country_flag = Claim_Formosa_asia }
+		
+		}
+
+
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 2
+
+			#Taiwan / Formosa 
+			add_core = 2406
+			add_core = 1485
+			add_core = 2562
+			add_core = 2681
+
+			set_country_flag = Claim_Formosa_asia
+		}
+	
+	
+	}
+	
+	assimilate_Formosa_asia = {
+		potential = { 
+			OR ={
+				tag = KOR 
+				tag = JAP
+				tag = DAI
+				tag = PHL 
+				tag = JAV
+				tag = IAA
+				tag = MGL
+				tag = QNG
+				tag = CHI
+				tag = BUR
+				tag = IND
+			}
+			
+			AND = {
+				owns = 1485
+				owns = 2406
+				owns = 2562
+				owns = 2681
+			}
+			
+			AND = {
+				1485 = {
+					is_primary_culture = no
+					}
+				1485 = {
+					is_primary_culture = no
+					}
+				1485 = {
+					is_primary_culture = no
+					}
+				1485 = {
+					is_primary_culture = no
+					}
+
+			}
+		}
+
+
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 2
+			1485 = { assimilate = yes }
+			2406 = { assimilate = yes }
+			2562 = { assimilate = yes }
+			2681 = { assimilate = yes }
+		}
+	
+	
+	}
+	
+	KOREA_Change_Techschool = {
+		
+		potential = {
+			tag = KOR
+			NOT = { tech_school = korean_tech_school }
+		}
+		allow = {
+		
+		}
+		effect = {
+			tech_school = korean_tech_school
+		}
+	
+	}
+
+	gain_jap_accepted = {
+		potential = { 
+			OR ={
+				tag = KOR 
+				tag = PHL 
+				tag = MGL
+			}
+			NOT = { has_country_flag = get_jap_accepted }
+			NOT = { has_country_flag = gain_jap_accepted }
+		}
+
+
+		allow = { 
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			badboy = 10
+
+			add_accepted_culture = japanese
+
+			set_country_flag = gain_jap_accepted
+		}
+	
+	
+	}
+
+	kor_build_nav_base_moc = {
+		potential = { 
+			tag = KOR
+			owns = 1632
+			NOT = { has_country_flag = kor_build_nav_base_moc }
+		}
+
+
+		allow = { 
+			naval_plans = 1
+			money = 50000
+		}
+		effect = {
+			money = -50000
+
+			prestige = 5
+
+			1632 = { state_scope = {  any_owned = { naval_base = -6 } } }
+			1632 = { naval_base = 3 }
+
+
+
+			set_country_flag = kor_build_nav_base_moc
+		}
+	
+	
+	}
+
+
+	renovate_pyongyang_babyboom = {
+		potential = { 
+			owns = 1619
+			
+			NOT = { has_country_flag = renovate_pyongyang_babyboom }
+		}
+
+
+		allow = { 
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 10
+			
+			1619 = {		
+				life_rating  = 20
+				RGO_size = 700000
+			
+				add_province_modifier = {
+				name = baby_boom
+				duration = 1850
+
+				}
+			}
+			
+			
+			set_country_flag = renovate_pyongyang_babyboom
+		}
+	
+	
+	}
+
+	encourage_the_dev_of_the_busan = {
+		potential = { 
+			OR ={
+				owns = 1632
+				owns = 1633
+				owns = 1634
+				owns = 1635
+				owns = 1637
+			}
+			
+			NOT = { has_country_flag = encourage_the_dev_of_the_busan }
+		}
+
+
+		allow = { 
+			enlightenment_thought = 1
+		}
+		effect = {
+			prestige = 15
+			
+			1632 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			1633 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			1634 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			1635 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			1637 = {		
+				life_rating  = 20
+				RGO_size = 700000
+
+				add_province_modifier = {
+					name = baby_boom
+					duration = 1500
+				}
+			}
+			
+			
+			set_country_flag = encourage_the_dev_of_the_busan
+		}
+	
+	
+	}
+}

@@ -16,6 +16,9 @@ political_decisions = {
 				tag = PRV
 				tag = PRS
 				tag = DUA
+				tag = ARA
+				tag = SGF
+				tag = BAY
 			}
 			NOT = { has_country_flag = Swiss_Embrace }
 		}
@@ -69,6 +72,10 @@ political_decisions = {
 				tag = BRG
 				tag = PRV
 				tag = PRS
+				tag = DUA
+				tag = ARA
+				tag = SGF
+				tag = BAY
 			}
 			NOT = { has_country_flag = annex_swiss }
 			has_country_flag = Swiss_Embrace

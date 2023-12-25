@@ -1,0 +1,37 @@
+#picture 0
+
+country_event = {
+	id = 13370187000
+	title = "The Slave Question"
+	desc = "We encourage slaves. Why don't get them back. AH the good old times. Init FAM?"
+	
+	trigger = {
+		has_country_flag = form_mamluk_empire
+		MAM = {
+            exists = yes
+			NOT = {has_global_flag = mam_slave_not_allowed_again}
+        }
+		slavery = no_slavery
+        NOT = { has_global_flag = release_AST_get_Cores_A }
+	}
+
+	option = {
+		name = "Enslave them all"
+		badboy = -2
+		prestige = 5
+		set_global_flag = mam_slave_allowed_again 
+		political_reform = yes_slavery	
+	}
+	option = {
+		name = "Screw it. We don't want slavery" 
+		badboy = 15
+		prestige = -5
+		MAM = {
+			add_country_modifier = {
+					name = MAM_no_slavery
+					duration = 365000
+				}
+		}
+		set_global_flag = mam_slave_not_allowed_again 
+	}
+}

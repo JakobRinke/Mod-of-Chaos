@@ -8,6 +8,7 @@ political_decisions = {
 			OR{
 				tag = SCA
 				tag = FIN
+				tag = NOV
 			}
 			
 			NOT = { has_country_flag = claim_the_baltic }

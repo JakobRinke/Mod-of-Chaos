@@ -1,0 +1,75 @@
+#picture 0
+
+political_decisions = {
+	
+	inherit_KONGO_PUPPET = {
+		potential = {
+			NOT = { has_country_flag = inherit_KONGO_PUPPET }
+			THIS = {is_sphere_leader_of = CNG}
+		}
+		
+		
+		allow = {
+			CNG = {vassal_of = THIS}
+			THIS = {is_sphere_leader_of = CNG}
+		}
+		
+		effect = {
+			badboy = 2
+
+			inherit = CNG
+
+			set_country_flag = inherit_KONGO_PUPPET
+		}
+		
+		ai_will_do = {
+			factor = 0.00035
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+		
+		
+	}
+
+	aquire_part_of_kasai = {
+		potential = {
+			NOT = { has_country_flag = aquire_part_of_kasai }
+			1995 = {empty = yes}
+			OR = {
+				owns = 1965
+				owns = 1970
+				owns = 1980
+				owns = 1993
+				owns = 1995
+				owns = 1996
+				owns = 1998
+			}
+		}
+		
+		
+		allow = {
+			year = 1860
+		}
+		
+		effect = {
+
+			1995 = { secede_province = THIS life_rating = 40 }
+
+			set_country_flag = aquire_part_of_kasai
+		}
+		
+		ai_will_do = {
+			factor = 0.00035
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+		
+		
+	}
+	
+	
+}

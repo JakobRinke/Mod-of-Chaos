@@ -1,0 +1,362 @@
+political_decisions = {
+	
+	fascist_genozid = {
+		picture = sign_the_geneva_convention_BASED
+		potential = {
+			government = fascist_dictatorship 
+			NOT = {
+				has_country_flag = fascist_genozid
+			}
+		}
+			
+		allow = {
+			mass_politics = 1
+			NOT = {
+				has_country_modifier  = law_changed_by_force
+			}
+		}
+		
+		effect = {
+		
+			remove_country_modifier = free_thought
+			clr_country_flag = free_thought
+			remove_country_modifier = supreme_dictator
+			clr_country_flag = supreme_dictator
+			remove_country_modifier = anarchic_system
+			clr_country_flag = anarchic_system
+			all_core = {
+				remove_province_modifier = fascist_care
+			}
+			clr_country_flag = fascist_genozid
+			
+		
+		
+			badboy = 6
+			plurality = -20
+			
+
+			all_core = {
+				limit = {
+					is_colonial = no
+					owned_by = THIS
+					any_pop = {
+						is_accepted_culture = no
+					}
+				}
+				any_pop = {
+					limit = {
+						is_accepted_culture = no
+					}
+					reduce_pop = 0
+				}
+				add_province_modifier = {
+					name = fascist_welfare
+					duration = 15000
+				}
+				add_province_modifier = {
+					name = fascist_care
+					duration = 15000
+				}
+				add_province_modifier = {
+					name = small_baby_boom
+					duration = 15000
+				}
+			}
+			
+			all_core = {
+				limit = {
+					is_colonial = no
+					owned_by = THIS
+					NOT = {
+						total_pops = 30000
+					}
+				}
+				add_province_modifier = {
+					name = baby_boom
+					duration = 15000
+				}
+			}
+			
+			add_country_modifier = {
+				name = law_changed_by_force
+				duration = 730
+			}
+			set_country_flag = fascist_genozid
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	fascist_flip_moc = {
+		potential = {
+			ai = no
+			upper_house = {
+				ideology = fascist
+				value = 0.075
+			}
+			NOT = {
+				has_country_flag = fascist_flip_trigger
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			government = fascist_dictatorship
+			set_country_flag = fascist_flip_trigger
+
+			prestige = 25
+			badboy = 2
+			
+			plurality = -10
+		}
+	}
+
+	reduce_ashkenazi_pop_moc = {
+		potential = {
+			is_colonial = no
+			NOT = {
+				is_culture_group = ashkenazi
+			}
+			government = fascist_dictatorship
+			has_pop_culture = ashkenazi
+
+			ai = no
+		}
+
+		allow = {}
+
+		effect = {
+			prestige = 5
+
+			any_owned = {
+				limit = {
+					is_colonial = no
+				}
+				any_pop = {
+						limit = {
+							has_pop_culture = ashkenazi
+						}
+						reduce_pop = 0
+					}
+				}
+			}
+		
+		ai_will_do = {
+			factor = 0.0001
+		}
+	}
+
+		
+	communist_agenda = {
+		
+		potential = {
+			government = proletarian_dictatorship 
+			NOT = {
+				has_country_flag = communist_agenda
+			}
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			NOT = {
+				has_country_modifier  = law_changed_by_force
+			}
+		}
+		
+		effect = {
+			
+			remove_country_modifier = free_thought
+			clr_country_flag = free_thought
+			remove_country_modifier = supreme_dictator
+			clr_country_flag = supreme_dictator
+			remove_country_modifier = anarchic_system
+			clr_country_flag = anarchic_system
+			all_core = {
+				remove_province_modifier = fascist_care
+			}
+			clr_country_flag = fascist_genozid
+			
+		
+			plurality = -20
+			add_country_modifier = {
+				name = law_changed_by_force
+				duration = 730
+			}
+			add_country_modifier = {
+				name = communist_agenda
+				duration = 36500
+			}
+			set_country_flag = communist_agenda
+
+		}	
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+	
+	anarchic_system = {
+	
+		
+	
+	
+		potential = {
+		
+			government = bourgeois_dictatorship  
+			NOT = {
+				has_country_flag = anarchic_system
+			}
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			NOT = {
+				has_country_modifier  = law_changed_by_force
+			}
+		}
+		
+		effect = {
+		
+			remove_country_modifier = free_thought
+			clr_country_flag = free_thought
+			remove_country_modifier = supreme_dictator
+			clr_country_flag = supreme_dictator
+			remove_country_modifier = anarchic_system
+			clr_country_flag = anarchic_system
+			all_core = {
+				remove_province_modifier = fascist_care
+			}
+			clr_country_flag = fascist_genozid
+			
+			
+		
+			plurality = 100
+			add_country_modifier = {
+				name = law_changed_by_force
+				duration = 730
+			}
+			add_country_modifier = {
+				name = anarchic_system
+				duration = 36500
+			}
+			set_country_flag = anarchic_system
+			
+		
+		}	
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	supreme_dictator  = {
+	
+		potential = {
+			government = presidential_dictatorship  
+			NOT = {
+				has_country_flag = supreme_dictator
+			}
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			NOT = {
+				has_country_modifier  = law_changed_by_force
+			}
+		}
+		
+		effect = {
+		
+			remove_country_modifier = free_thought
+			clr_country_flag = free_thought
+			remove_country_modifier = supreme_dictator
+			clr_country_flag = supreme_dictator
+			remove_country_modifier = anarchic_system
+			clr_country_flag = anarchic_system
+			all_core = {
+				remove_province_modifier = fascist_care
+			}
+			clr_country_flag = fascist_genozid
+		
+			plurality = -30
+			add_country_modifier = {
+				name = law_changed_by_force
+				duration = 730
+			}
+			add_country_modifier = {
+				name = supreme_dictator
+				duration = 36500
+			}
+			set_country_flag = supreme_dictator
+			
+		
+		}	
+
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+	
+	
+	free_thought  = {
+	
+		potential = {
+			OR = { government = democracy government = hms_government }
+			NOT = {
+				has_country_flag = free_thought
+			}
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			NOT = {
+				has_country_modifier  = law_changed_by_force
+			}
+		}
+		
+		effect = {
+			
+			remove_country_modifier = free_thought
+			clr_country_flag = free_thought
+			remove_country_modifier = supreme_dictator
+			clr_country_flag = supreme_dictator
+			remove_country_modifier = anarchic_system
+			clr_country_flag = anarchic_system
+			all_core = {
+				remove_province_modifier = fascist_care
+			}
+			clr_country_flag = fascist_genozid
+			
+			
+			plurality = 20
+			add_country_modifier = {
+				name = law_changed_by_force
+				duration = 730
+			}
+			add_country_modifier = {
+				name = free_thought
+				duration = 36500
+			}
+			set_country_flag = free_thought
+			
+		
+		}	
+
+		ai_will_do = {
+			factor = 1
+		}
+	
+	}
+		
+		
+		
+}

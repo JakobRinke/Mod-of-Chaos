@@ -1,0 +1,303 @@
+
+#picture 0
+
+political_decisions = {	
+	claim_xinjang_moc = {
+		potential = { 
+
+			OR = {
+				tag = PER
+				tag = TRD
+				tag = RUS
+				tag = SIB
+			}
+			
+			excist = XIN
+			excist = QNG
+			
+			NOT = { has_country_flag = claim_xinjang_moc }
+			NOT = { has_country_flag = claim_xinjang_moc_noEvent }
+		}
+
+
+		allow = { 
+			civilized = yes
+			state_n_government = 1
+			war = no
+		}
+		effect = {
+			prestige = 10
+			
+			#Khotan
+			add_core = 1594
+			add_core = 1597
+			add_core = 1598
+			add_core = 2607
+			
+			#Urumqui
+			add_core = 1595
+			add_core = 1596
+			add_core = 1599
+			add_core = 1600
+			
+
+			add_accepted_culture = uighur
+			country_event = 1969696961
+
+			set_country_flag = claim_xinjang_moc
+		}
+	
+		ai_will_do = {
+			factor = 0.0001
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	claim_xinjang_moc_noEvent = {
+		potential = { 
+
+			OR = {
+				tag = PER
+				tag = TRD
+				tag = RUS
+				tag = SIB
+			}
+			
+			OR ={
+				NOT = {excist = XIN}
+				NOT = {excist = QNG}
+			}
+
+
+			NOT = { has_country_flag = claim_xinjang_moc }
+			NOT = { has_country_flag = claim_xinjang_moc_noEvent }
+		}
+
+
+		allow = { 
+			civilized = yes
+			state_n_government = 1
+			war = no
+		}
+		effect = {
+			prestige = 10
+			
+			badboy = 5
+
+			#Khotan
+			add_core = 1594
+			add_core = 1597
+			add_core = 1598
+			add_core = 2607
+			
+			#Urumqui
+			add_core = 1595
+			add_core = 1596
+			add_core = 1599
+			add_core = 1600
+
+			add_accepted_culture = uighur
+			set_country_flag = claim_xinjang_moc_noEvent
+		}
+	
+		ai_will_do = {
+			factor = 0.0001
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+	annex_xinjang_moc = {
+		potential = { 
+			
+			OR = {
+				tag = PER
+				tag = TRD
+				tag = RUS
+				tag = SIB
+			}
+
+			excist = XIN
+			civilized = yes
+
+			NOT = { has_country_flag = annex_xinjang_moc }
+		}
+
+
+		allow = { 
+			
+			state_n_government = 1
+			war = no
+
+			XIN = {
+				is_independant = yes
+				is_greater_power = no 
+				is_secondary_power = no 
+				is_substate = no
+				is_vassal = no 
+				in_sphere = THIS
+			}
+
+		}
+		effect = {
+			prestige = 10
+			badboy = 2
+
+			inherit = XIN
+
+			set_country_flag = annex_xinjang_moc
+		}
+	
+		ai_will_do = {
+			factor = 0.0001
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+	make_Xinjang_Great = {
+		potential = { 
+			
+			OR = {
+				tag = PER
+				tag = TRD
+				tag = RUS
+				tag = CHI
+				tag = QNG
+				tag = CHI
+				tag = JAP
+				tag = TKG
+				tag = SIB
+			}
+
+			NOT = { has_country_flag = make_Xinjang_Great }
+		}
+
+
+		allow = { 
+			money = 400000
+
+			invention = machine_tools
+
+			realism = 1
+			drilling_and_blasting = 1
+
+			#Khotan
+			owns = 1594
+			owns = 1597
+			owns = 1598
+			owns = 2607
+			
+			#Urumqui
+			owns = 1595
+			owns = 1596
+			owns = 1600
+		}
+		effect = {
+			prestige = 10
+			money = -400000
+
+			1594 = {
+				life_rating  = 25
+				RGO_size = 1000000
+				trade_goods = coal
+
+
+				add_province_modifier = {
+				name = baby_boom
+				duration = 6000
+
+				}
+			}
+			1595 = {
+				life_rating  = 25
+				RGO_size = 1000000
+
+
+				add_province_modifier = {
+				name = baby_boom
+				duration = 6500
+
+				}
+			}
+			1597 = {
+				life_rating  = 25
+				RGO_size = 1000000
+
+
+				add_province_modifier = {
+				name = baby_boom
+				duration = 6500
+
+				}
+			}
+			2607 = {
+				life_rating  = 25
+				RGO_size = 1000000
+				trade_goods = coal
+
+
+				add_province_modifier = {
+				name = baby_boom
+				duration = 6000
+
+				}
+			}
+			
+			1596 = {
+				life_rating  = 25
+				RGO_size = 1000000
+				trade_goods = iron
+
+
+				add_province_modifier = {
+				name = baby_boom
+				duration = 6000
+
+				}
+			}
+			1598 = {
+				life_rating  = 25
+				RGO_size = 1000000
+				trade_goods = iron
+
+
+				add_province_modifier = {
+				name = baby_boom
+				duration = 6000
+
+				}
+			}
+			1600 = {
+				life_rating  = 25
+				RGO_size = 1000000
+				trade_goods = iron
+
+				add_province_modifier = {
+				name = baby_boom
+				duration = 6000
+
+				}
+			}
+			
+			
+			set_country_flag = make_Xinjang_Great
+		}
+	
+		ai_will_do = {
+			factor = 0.0001
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+}
