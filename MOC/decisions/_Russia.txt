@@ -7,7 +7,7 @@ political_decisions = {
 				tag = RUS
 				tag = TUR
 			}
-			
+			NOT = { has_country_flag = tur_advance_schoolsystem}
 			NOT = {has_country_flag = add_romanian_culture}
 		}
 

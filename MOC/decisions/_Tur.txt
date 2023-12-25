@@ -10,7 +10,6 @@ political_decisions = {
 		
 		allow = {
 			positivism = 1
-			year = 1845
 		}
 		effect = {
 			plurality = 10
@@ -55,6 +54,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = deal_yugoslav}
+			NOT = {has_country_flag = tur_go_souther_route }
 		}
 		
 		allow = {
@@ -96,6 +96,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = deal_rom}
+			NOT = {has_country_flag = tur_go_souther_route }
 		}
 		
 		allow = {
@@ -129,6 +130,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = deal_bul}
+			NOT = {has_country_flag = tur_go_souther_route }
 		}
 		
 		allow = {
@@ -162,6 +164,7 @@ political_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = deal_alb}
+			NOT = {has_country_flag = tur_go_souther_route }
 		}
 		
 		allow = {
@@ -196,6 +199,7 @@ political_decisions = {
 			tag = TUR
 			GRE = { exists = no }
 			NOT = { has_country_flag = deal_gre}
+			NOT = {has_country_flag = tur_go_souther_route }
 		}
 		
 		allow = {

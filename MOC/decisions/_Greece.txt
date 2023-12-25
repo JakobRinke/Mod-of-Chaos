@@ -12,6 +12,7 @@ political_decisions = {
 				tag = EGY
 			}
 			NOT = { has_country_flag = Greek_Embrace }
+			NOT = {has_country_flag = tur_go_souther_route }
 		}
 		
 		
