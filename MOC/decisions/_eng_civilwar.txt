@@ -1,0 +1,261 @@
+
+
+
+political_decisions = {
+
+    start_civil_war_eng = {
+
+        potential = {
+            tag = ENG 
+            NOT = {
+                has_country_flag = start_civil_war_eng
+            }
+        }
+        allow = {
+             NOT = {
+                year = 1837
+            }
+        }
+
+        effect = {
+            prestige = -10
+            
+            
+
+            release = SCO
+            release = IRE
+
+            add_accepted_culture = scottish
+            add_accepted_culture = irish
+
+            IRE = {
+                all_core = {
+                    remove_core = ENG 
+                }
+            }
+
+            SCO = {
+                all_core = {
+                    remove_core = ENG 
+                }
+            }
+
+            set_country_flag = start_civil_war_eng
+
+            country_event = 13375000
+            
+        }
+        
+
+
+        ai_will_do = {
+           factor = 0.001
+        }
+    }
+
+
+    reintegrate_celtic_land {
+        potential = {
+            OR = {
+                tag = ENG
+                tag = ENL
+            }
+            has_country_flag = start_civil_war_eng
+            NOT= { has_country_flag = reintegrate_celtic_land }
+
+        }
+        allow = {
+            NOT = { exists = SCO exists = IRE exists = CEL}
+
+        }
+        effect = {
+            prestige = 20
+            change_tag = ENG
+            SCO = {
+                all_core = {
+                    limit = {
+                        is_colonial = no
+                    }
+                    add_province_modifier = { name = baby_boom duration = 2000 }
+                    remove_core = SCO
+                    remove_core = IRE
+                    remove_core = CEL
+                }
+            }
+            IRE = {
+                all_core = {
+                    limit = {
+                    is_colonial = no
+                    }
+                    add_province_modifier = { name = baby_boom duration = 2000 }
+                }
+                remove_core = SCO
+                remove_core = IRE
+                remove_core = CEL
+            }
+
+            CEL = {
+                all_core = {
+                    limit = {
+                    is_colonial = no
+                    }
+                    add_province_modifier = { name = baby_boom duration = 2000 }
+                }
+                remove_core = SCO
+                remove_core = IRE
+                remove_core = CEL
+            }
+
+            WAL = {
+                all_core = {
+                    limit = {
+                    is_colonial = no
+                    }
+                    add_province_modifier = { name = baby_boom duration = 2000 }
+                }
+                remove_core = SCO
+                remove_core = IRE
+                remove_core = CEL
+                add_core = THIS
+            }
+
+            set_country_flag = reintegrate_celtic_land
+
+        }
+
+        ai_will_do = {
+           factor = 1
+        }
+
+    }
+
+
+    recliam_celts = {
+        potential = {
+            OR = {
+                tag = ENG
+                tag = ENL
+            }
+            has_country_flag = start_civil_war_eng
+            NOT= { has_country_flag = recliam_celts }
+        }
+
+        allow = {
+            state_n_government = 1
+            OR = {
+                IRE = { exists = yes }
+                SCO = { exists = yes }
+                CEL = { exists = yes }
+            }
+        }
+
+        effect = {
+            IRE = {
+                limit = {
+                    owned_by = IRE 
+                }
+                all_core = {
+                    add_core = THIS
+                }
+            }
+
+            SCO = {
+                limit = {
+                    owned_by = SCO 
+                }
+                all_core = {
+                    add_core = THIS
+                }
+            }
+
+            CEL = {
+                limit = {
+                    owned_by = CEL 
+                }
+                all_core = {
+                    add_core = THIS
+                }
+            }
+
+            set_country_flag = recliam_celts
+
+        }
+
+        ai_will_do = {
+           factor = 1
+        }
+
+    }
+
+
+
+    cel_claim_celtic_empire = {
+        potential = {
+            tag = CEL
+            NOT = { has_country_flag = cel_claim_celtic_empire }
+        }
+
+        allow = {
+            nationalism_n_imperialism = 1
+        }
+
+        effect = {
+            badboy = 10
+            add_accepted_culture = british
+            add_accepted_culture = swedish
+            add_accepted_culture = finish
+            add_accepted_culture = danish
+            add_accepted_culture = norwegian
+            ENG = {
+                all_core = {
+                    add_core = THIS
+                }
+            }
+            WAL = {
+                all_core = {
+                    add_core = THIS
+                }
+            }
+            SWE = {
+                all_core = {
+                    add_core = THIS
+                }
+            }
+            DEN = {
+                all_core = {
+                    add_core = THIS
+                }
+            }
+            NOR = {
+                all_core = {
+                    add_core = THIS
+                }
+            }
+            FIN = {
+                all_core = {
+                    add_core = THIS
+                }
+            }
+            SCA = {
+                all_core = {
+                    add_core = THIS
+                }
+            }
+            set_country_flag = cel_claim_celtic_empire
+        }
+
+        ai_will_do = {
+            factor = 1 
+            modifier = {
+                factor = 0
+                badboy = 0.1
+            }
+        }
+
+    }
+
+
+           
+
+    
+}
