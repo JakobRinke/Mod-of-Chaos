@@ -231,7 +231,20 @@ political_decisions
 
 	orerganize_sus_ressources = {
 		potential = {
-			tag = SUS 
+			OR = {
+				tag = CHL	
+				tag = BRZ
+				tag = ARC
+				tag = ARG
+				tag = BOL
+				tag = CLM
+				tag = ECU
+				tag = PEU
+				tag = PRG
+				tag = URU
+				tag = VNZ
+				tag = SUS
+			}
 			NOT = { has_country_flag = organize_sus }
 		}
 		allow = {
@@ -270,6 +283,7 @@ political_decisions
 				trade_goods = iron RGO_size = 6000000000000
 				add_province_modifier = { name = baby_boom duration =  3650}
 			}
+			set_country_flag = organize_sus
 
 		}
 
