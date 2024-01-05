@@ -254,8 +254,8 @@ political_decisions
 		effect = {
 			
 			activate_technology = positivsim
-            activate_technology = functionalsim
-            activate_technology = biologism
+			activate_technology = functionalsim
+			activate_technology = biologism
 
 			all_core = {
 				limit = {

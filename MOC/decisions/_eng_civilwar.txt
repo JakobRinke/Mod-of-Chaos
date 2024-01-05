@@ -130,7 +130,7 @@ political_decisions = {
     }
 
 
-    recliam_celts = {
+    reclaim_celts_land = {
         potential = {
             OR = {
                 tag = ENG
