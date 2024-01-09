@@ -59,19 +59,25 @@ country_event = {
     option = {
         name = "Trade 4M for 10 infamy"
         badboy = -10
-        treasury = -4000000
+        treasury = -2000000
+        treasury = -2000000
     }
     
     option = {
         name = "Trade 6M for 15 infamy"
         badboy = -15
-        treasury = -6000000
+        treasury = -2000000
+        treasury = -2000000
+        treasury = -2000000
     }
 
     option = {
         name = "Trade 8M for 20 infamy"
         badboy = -20
-        treasury = -8000000
+        treasury = -2000000
+        treasury = -2000000
+        treasury = -2000000
+        treasury = -2000000
     }
 
     option = {
