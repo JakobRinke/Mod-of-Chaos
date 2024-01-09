@@ -72,12 +72,14 @@ political_decisions = {
 
 		effect = {
 			treasury = 250000
-			iron  = 200
-			maschine_parts = 50
-			cement = 150
-			artillery = 100
-			small_arms = 100
-			ammunition = 100
+			iron  = 250
+			steel = 250
+			maschine_parts = 250
+			cement = 250
+			artillery = 250
+			small_arms = 250
+			ammunition = 250
+			canned_food = 250
 			set_country_flag = global_starting_ressources
 		}
 
