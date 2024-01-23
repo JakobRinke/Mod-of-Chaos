@@ -1,5 +1,49 @@
 political_decisions = {
 
+
+	disable_rebels = {
+	
+		potential = {
+			revolution_n_counterrevolution = 1
+			NOT = {
+				has_country_modifier = rebel_disable
+			}
+		}
+		
+		allow = {
+			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = rebel_disable
+				duration = 36500
+			}
+			any_pop {
+				militancy = -10
+			}
+		}
+	
+	}
+	
+	enable_rebels = {
+	
+		potential = {
+			revolution_n_counterrevolution = 1
+			has_country_modifier = rebel_disable
+		}
+		
+		allow = {
+			
+		}
+		
+		effect = {
+			remove_country_modifier = rebel_disable
+			
+		}
+	
+	}
+
 	gen_for_civwar_kongo = {
 		potential = {
 			
