@@ -1,0 +1,87 @@
+country_event = {
+    id = 1510001
+    title = "Trade Infamy for Money"
+    desc = "Sell your soul for money"
+
+    major = no
+    news = no
+
+    is_triggered_only = yes
+    
+
+    option = {
+        name = "Trade 5 Infamy for 250k"
+        badboy = 5
+        treasury = 250000
+    }
+    
+    option = {
+        name = "Trade 10 Infamy for 550k"
+        badboy = 10
+        treasury = 550000
+    }
+    
+    option = {
+        name = "Trade 15 Infamy for 850k"
+        badboy = 15
+        treasury = 850000
+    }
+
+    option = {
+        name = "Trade 20 Infamy for 1.25M"
+        badboy = 20
+        treasury = 1250000
+    }
+
+    option = {
+        name = "Sorry, I missclicked"
+        
+    }
+}
+
+country_event = {
+    id = 1510002
+    title = "Trade Money for Infamy"
+    desc = "Buy your soul with money"
+
+    major = no
+    news = no
+
+    is_triggered_only = yes
+    
+
+    option = {
+        name = "Trade 2M for 5 infamy"
+        badboy = -5
+        treasury = -2000000
+    }
+
+    option = {
+        name = "Trade 4M for 10 infamy"
+        badboy = -10
+        treasury = -2000000
+        treasury = -2000000
+    }
+    
+    option = {
+        name = "Trade 6M for 15 infamy"
+        badboy = -15
+        treasury = -2000000
+        treasury = -2000000
+        treasury = -2000000
+    }
+
+    option = {
+        name = "Trade 8M for 20 infamy"
+        badboy = -20
+        treasury = -2000000
+        treasury = -2000000
+        treasury = -2000000
+        treasury = -2000000
+    }
+
+    option = {
+        name = "Sorry, I missclicked"
+        
+    }
+}
