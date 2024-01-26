@@ -101,19 +101,95 @@ political_decisions = {
 				value = 0.075
 			}
 			NOT = {
-				has_country_flag = fascist_flip_trigger
+				has_country_flag = flip_trigger
 			}
 		}
 		allow = {
 			war = no
+			revolution_n_counterrevolution = 1
 		}
 		effect = {
+			event = 60110
 			government = fascist_dictatorship
-			set_country_flag = fascist_flip_trigger
+			set_country_flag = flip_trigger
 
-			prestige = 25
-			badboy = 2
-			
+
+			prestige = -25
+			plurality = -10
+		}
+	}
+
+	communist_flip_moc = {
+		potential = {
+			ai = no
+			upper_house = {
+				ideology = communist
+				value = 0.075
+			}
+			NOT = {
+				has_country_flag = flip_trigger
+			}
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			event = 60100
+			government = communist_dictatorship
+			set_country_flag = flip_trigger
+
+			prestige = -25
+			plurality = -10
+		}
+	}
+
+	radical_flip_moc = {
+		potential = {
+			ai = no
+			upper_house = {
+				ideology = anarcho_liberal
+				value = 0.075
+			}
+			NOT = {
+				has_country_flag = flip_trigger
+			}
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			event = 60090
+			government = radical_dictatorship
+			set_country_flag = flip_trigger
+
+			prestige = -25
+			plurality = -10
+		}
+	}
+
+	military_flip_flip_moc = {
+		potential = {
+			ai = no
+			upper_house = {
+				ideology = reactionary
+				value = 0.075
+			}
+			NOT = {
+				has_country_flag = flip_trigger
+			}
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			event = 60080
+			government = military_dictatorship
+			set_country_flag = flip_trigger
+
+			prestige = -25
 			plurality = -10
 		}
 	}
