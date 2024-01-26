@@ -84,7 +84,7 @@ political_decisions = {
 				tag = HUN
 				tag = AUS
 			}
-			NOT = {has_country_flag = tur_go_souther_route }
+			
 			NOT = { has_country_flag = integrate_montenegro_moc }
 		}
 		allow = { 

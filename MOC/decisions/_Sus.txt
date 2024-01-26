@@ -20,7 +20,6 @@ political_decisions
 			}
 			NOT = { exists = SUS } 
 			NOT = { has_global_flag = SUS_FORMED }
-			war = no
 				
 		}
 		
@@ -39,7 +38,7 @@ political_decisions
 			
 		}
 		ai_will_do = {					
-			factor = 0.01
+			factor = 0.0001
 		}
 	}
 	
@@ -227,70 +226,6 @@ political_decisions
 		ai_will_do = {					
 			factor = 0.0001
 		}
-	}
-
-	orerganize_sus_ressources = {
-		potential = {
-			OR = {
-				tag = CHL	
-				tag = BRZ
-				tag = ARC
-				tag = ARG
-				tag = BOL
-				tag = CLM
-				tag = ECU
-				tag = PEU
-				tag = PRG
-				tag = URU
-				tag = VNZ
-				tag = SUS
-			}
-			NOT = { has_country_flag = organize_sus }
-		}
-		allow = {
-			medicine = 1
-		}
-
-		effect = {
-			
-			activate_technology = positivsim
-			activate_technology = functionalsim
-			activate_technology = biologism
-
-			all_core = {
-				limit = {
-					trade_goods = coffee
-				}
-				trade_goods = coal RGO_size = 6000000000000
-				add_province_modifier = { name = baby_boom duration =  600}
-			}
-
-			all_core = {
-				limit = {
-					trade_goods = tobacco
-					NOT = {
-						is_core = CUB
-					}
-				}
-				trade_goods = oil RGO_size = 6000000000000
-				add_province_modifier = { name = baby_boom duration =  800}
-			}
-
-			all_core = {
-				limit = {
-					trade_goods = wool
-				}
-				trade_goods = iron RGO_size = 6000000000000
-				add_province_modifier = { name = baby_boom duration =  3650}
-			}
-			set_country_flag = organize_sus
-
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-
 	}
 	
 	

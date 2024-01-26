@@ -85,7 +85,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.00018
 			modifier = {
 				factor = 0
 				badboy = 0.8
@@ -147,9 +147,6 @@ political_decisions = {
 					}
 				}
 			}
-		
-		ai_will_do = {
-			factor = 0.0001
 		}
 	}
 
@@ -196,11 +193,6 @@ political_decisions = {
 			set_country_flag = communist_agenda
 
 		}	
-
-		ai_will_do = {
-			factor = 1
-		}
-
 	}
 	
 	anarchic_system = {
@@ -252,9 +244,6 @@ political_decisions = {
 		
 		}	
 	
-		ai_will_do = {
-			factor = 1
-		}
 	}
 	
 	supreme_dictator  = {
@@ -299,10 +288,6 @@ political_decisions = {
 			
 		
 		}	
-
-		ai_will_do = {
-			factor = 1
-		}
 	
 	}
 	
@@ -350,10 +335,6 @@ political_decisions = {
 			
 		
 		}	
-
-		ai_will_do = {
-			factor = 1
-		}
 	
 	}
 		

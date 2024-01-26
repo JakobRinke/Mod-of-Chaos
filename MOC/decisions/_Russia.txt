@@ -7,7 +7,7 @@ political_decisions = {
 				tag = RUS
 				tag = TUR
 			}
-			NOT = { has_country_flag = tur_advance_schoolsystem}
+			
 			NOT = {has_country_flag = add_romanian_culture}
 		}
 
@@ -36,12 +36,7 @@ political_decisions = {
 		potential = {
 			NOT = { tech_school = russian_tech_school }
 			NOT = { has_country_modifier = interment_camps }
-			OR = {
-				tag = RUS
-				tag = MUS
-				tag = NOV
-				tag = SIB
-			}
+			tag = RUS
 			civilized = yes
 		}
 
