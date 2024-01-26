@@ -12,6 +12,7 @@ political_decisions = {
 				tag = EGY
 			}
 			NOT = { has_country_flag = Greek_Embrace }
+			NOT = {has_country_flag = tur_go_souther_route }
 		}
 		
 		
@@ -31,7 +32,7 @@ political_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0.00035
+			factor = 1
 			modifier = {
                 factor = 0
                 badboy = 0.4

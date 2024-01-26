@@ -1,0 +1,47 @@
+#picture 0
+
+country_event = {
+	id = 13375000
+	title = "Choose a country"
+	desc = "Balkan Battle Royale"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Stay as England"
+		SCO = {
+			all_core = {
+				assimilate = yes
+			}
+		}
+	}
+
+	option = {
+		name = "Play as Ireland"
+		SCO = {
+			all_core = {
+				assimilate = yes
+			}
+		}
+		change_tag_no_core_switch  = IRE
+	}
+
+	option = {
+		name = "Play as Scortland"
+
+		SCO = {
+			all_core = {
+				assimilate = yes
+			}
+		}
+            
+		change_tag_no_core_switch  = SCO
+	}
+
+	
+
+	
+	
+	
+	
+}

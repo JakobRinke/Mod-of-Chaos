@@ -107,6 +107,32 @@ political_decisions = {
 		
 		
 	}
+
+	global_starting_ressources = {
+		
+		potential = {
+			NOT = { has_country_flag = global_starting_ressources }
+		}
+
+		effect = {
+			treasury = 250000
+			iron  = 250
+			steel = 250
+			maschine_parts = 250
+			cement = 250
+			artillery = 250
+			small_arms = 250
+			ammunition = 250
+			canned_food = 250
+			set_country_flag = global_starting_ressources
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+	}
 	
 	
 	global_healthcare = {
