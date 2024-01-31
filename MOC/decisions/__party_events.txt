@@ -109,7 +109,7 @@ political_decisions = {
 			revolution_n_counterrevolution = 1
 		}
 		effect = {
-			country_event = 60110
+			country_event = 60030
 			government = fascist_dictatorship
 			set_country_flag = flip_trigger
 
@@ -135,7 +135,7 @@ political_decisions = {
 			revolution_n_counterrevolution = 1
 		}
 		effect = {
-			country_event = 60100
+			country_event = 60000
 			government = communist_dictatorship
 			set_country_flag = flip_trigger
 
@@ -160,7 +160,7 @@ political_decisions = {
 			revolution_n_counterrevolution = 1
 		}
 		effect = {
-			country_event = 60090
+			country_event = 60020
 			government = radical_dictatorship
 			set_country_flag = flip_trigger
 
@@ -185,7 +185,7 @@ political_decisions = {
 			revolution_n_counterrevolution = 1
 		}
 		effect = {
-			country_event = 60080
+			country_event = 60010
 			government = military_dictatorship
 			set_country_flag = flip_trigger
 
