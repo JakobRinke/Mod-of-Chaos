@@ -16,9 +16,15 @@ political_decisions = {
 					name = colonial_might
 					duration = 36500
 			}
-			signed_the_geneva_convention = {
-				name = colonial_might
+
+			add_country_modifier = {
+				name = mongol_game_boost
 				duration = 36500
+			}
+
+			add_country_modifier = {
+				name = rom_school_system_effect
+				duration = 3650
 			}
 			set_country_flag = fuck_shit_alb
 		}	
@@ -47,6 +53,12 @@ political_decisions = {
 		}
 		
 		effect = {
+			badboy = -5
+			add_country_modifier = {
+				name = global_baby_boom
+				duration = 700
+			}
+				
 			any_owned = {
 				limit = {
 					AND = {
@@ -59,7 +71,25 @@ political_decisions = {
 				add_core = ALB
 				add_province_modifier = {
 					name = provinz_growth_modifier
-					duration = 7300
+					duration = 7500
+				}
+				add_province_modifier = {
+					name = baby_boom
+					duration = 15000
+				}
+				add_province_modifier = {
+					name = small_baby_boom
+					duration = 36500
+				}
+			
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 7500
+				}
+				
+				add_province_modifier = {
+					name = home_of_the_mormons
+					duration = 15000
 				}
 				any_pop = { reduce_pop = 0 }
 			}
