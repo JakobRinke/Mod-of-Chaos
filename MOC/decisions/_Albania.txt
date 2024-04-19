@@ -16,6 +16,10 @@ political_decisions = {
 					name = colonial_might
 					duration = 36500
 			}
+			signed_the_geneva_convention = {
+				name = colonial_might
+				duration = 36500
+			}
 			set_country_flag = fuck_shit_alb
 		}	
 		ai_will_do = {
@@ -39,7 +43,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			state_n_government = 1
+			ai=no
 		}
 		
 		effect = {
