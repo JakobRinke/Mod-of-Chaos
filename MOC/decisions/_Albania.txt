@@ -75,11 +75,11 @@ political_decisions = {
 				}
 				add_province_modifier = {
 					name = baby_boom
-					duration = 15000
+					duration = 10000
 				}
 				add_province_modifier = {
 					name = small_baby_boom
-					duration = 36500
+					duration = 15000
 				}
 			
 				add_province_modifier = {
@@ -89,7 +89,7 @@ political_decisions = {
 				
 				add_province_modifier = {
 					name = home_of_the_mormons
-					duration = 15000
+					duration = 7500
 				}
 				any_pop = { reduce_pop = 0 }
 			}
