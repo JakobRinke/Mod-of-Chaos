@@ -65,6 +65,7 @@ The following Nations have at least one decision or event added for them:
   <li>Saxe-Coburg-Gotha</li>
   </ul>
   <li> Greece  </li>
+  <li> Switzerland  </li>
   <li> Italy  </li>
   <ul>
   <li> Formable: Aragon  </li>
@@ -122,6 +123,7 @@ The following Nations have at least one decision or event added for them:
 <li> Columbia </li>
 <li> Mexico  </li>
 <li> USA  </li>
+<li> Cuba  </li>
 <li> All of South America  </li>
 </ul>
 
