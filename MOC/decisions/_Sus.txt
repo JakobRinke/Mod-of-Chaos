@@ -10,7 +10,6 @@ political_decisions
 				tag = ARG
 			}
 			NOT = { has_global_flag = Argentine_annex_entre_rios_bug_fix }
-			war = no
 			excist = ENT 
 		}
 		
