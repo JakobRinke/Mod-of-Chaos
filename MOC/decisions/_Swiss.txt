@@ -21,6 +21,7 @@ political_decisions = {
 				tag = BAY
 			}
 			NOT = { has_country_flag = Swiss_Embrace }
+			NOT = { has_country_flag = greater_swiss_moc }
 		}
 		
 		
@@ -32,6 +33,8 @@ political_decisions = {
 		effect = {
 			badboy = 4
 			add_accepted_culture = swiss
+
+			#Swiss
 			add_core = 611
 			add_core = 603
 			add_core = 604
@@ -97,6 +100,73 @@ political_decisions = {
 		ai_will_do = {
 			factor = 1
 			
+		}
+		
+		
+	}
+
+	greater_swiss_moc = {
+		picture = reject_neutarekejmgksajg_swiss
+		potential = {
+			OR = {
+				tag = SWI
+			}
+			NOT = { has_country_flag = greater_swiss_moc }
+		}
+		
+		
+		allow = {
+			NOT = { year = 1837 }
+		}
+		
+		effect = {
+			badboy = 25
+			
+			GER = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			AUS = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			FRA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			ITA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			#Venetia
+			add_core = 8
+			add_core = 729
+			add_core = 730
+			add_core = 731
+			add_core = 732
+			add_core = 733
+
+
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			add_accepted_culture = hungarian
+			add_accepted_culture = french
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			add_accepted_culture = polish
+			add_accepted_culture = wallonian
+			add_accepted_culture = flemish
+
+			set_country_flag = greater_swiss_moc
+		}
+		
+		ai_will_do = {
+			factor = 0
 		}
 		
 		

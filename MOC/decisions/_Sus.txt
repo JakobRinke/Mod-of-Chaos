@@ -2,6 +2,32 @@
 
 political_decisions
 {
+	Argentine_annex_entre_rios_bug_fix = {
+		picture = sus_PICTURE
+		potential = {
+			OR = {
+				tag = ARC
+				tag = ARG
+			}
+			NOT = { has_global_flag = Argentine_annex_entre_rios_bug_fix }
+			war = no
+			excist = ENT 
+		}
+		
+		allow = {
+		}
+		
+		effect = {		
+			set_global_flag = Argentine_annex_entre_rios_bug_fix
+			inherit = ENT
+			
+		}
+		ai_will_do = {					
+			factor = 1
+		}
+	}
+	
+	
 	SouthAmericanBattleRoyale = {
 		picture = sus_PICTURE
 		potential = {
@@ -143,12 +169,12 @@ political_decisions
 				}
 			}
 			
-			CUB         = {
-				all_core = {
-					add_core = SUS
-				}
-			}
-			
+			# Cuba
+			add_core = 2209
+			add_core = 2210
+			add_core = 2211
+			add_core = 2212
+
 			GUY         = {
 				all_core = {
 					add_core = SUS

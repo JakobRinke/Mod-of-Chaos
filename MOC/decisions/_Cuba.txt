@@ -1,0 +1,267 @@
+#picture 0
+
+political_decisions = {
+
+	cuba_gain_cores_on_usa = {
+		potential = {
+			tag = CUB
+			NOT = { has_country_flag = cuba_gain_cores_on_usa}	
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			plurality = 10
+			badboy = 5
+			
+			prestige = 15
+
+			add_accepted_culture = dixie
+			add_accepted_culture = afro_american 
+
+			#Alabama
+			add_core = 195
+			add_core = 196
+			add_core = 197
+
+			#Florida
+			add_core = 198
+			add_core = 199
+			add_core = 200
+
+
+			set_country_flag = cuba_gain_cores_on_usa
+			
+		}
+		ai_will_do = {					
+				factor = 0.0	
+		}
+	}
+
+	cuba_gain_cores_on_spain_first = {
+		potential = {
+			tag = CUB
+			NOT = { has_country_flag = cuba_gain_cores_on_spain_first}	
+		}
+		allow = {
+			war = no
+			naval_plans = 1
+			nationalism_n_imperialism = 1
+			prestige = 150
+		}
+		effect = {
+			plurality = 10
+			badboy = 5
+
+			# Granada Region
+			add_core = 503 # Granada
+			add_core = 504 # Almeria
+			add_core = 505 # Malaga
+			add_core = 506 # Cordoba
+			add_core = 507 # Jaen
+			add_core = 508 # Cadiz
+			add_core = 509 # Huelva
+			add_core = 510 # Seville
+			add_core = 511 # Granada
+			add_core = 512 # Granada
+			add_core = 513 # Granada
+			add_core = 514 # Granada
+			add_core = 515 # Granada
+
+			# Andalusia Region
+			add_core = 516 # Andalusia
+			add_core = 517 # Andalusia
+			add_core = 518 # Andalusia
+			add_core = 519 # Andalusia
+			add_core = 520 # Andalusia
+
+			# Valencia 
+			add_core = 521 # Valencia
+			add_core = 522 # Valencia
+			add_core = 523 # Valencia
+			add_core = 524 # Valencia
+			add_core = 525 # Valencia
+			add_core = 526 # Valencia
+			add_core = 527 # Valencia
+
+			#Extremadura
+			add_core = 484
+			add_core = 485
+			add_core = 486
+
+
+			set_country_flag = cuba_gain_cores_on_spain_first
+			
+		}
+		ai_will_do = {					
+				factor = 0.0	
+		}
+	}
+
+	cuba_gain_cores_on_spain_second = {
+		potential = {
+			tag = CUB
+			has_country_flag = cuba_gain_cores_on_spain_first	
+			NOT = { has_country_flag = cuba_gain_cores_on_spain_second}	
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			romanticism = 1
+			prestige = 150
+		}
+		effect = {
+			plurality = 20
+
+			SPA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			#Duoro 
+			add_core = 518
+			add_core = 519
+			add_core = 520
+
+			#Estremadura
+			add_core = 521
+			add_core = 522
+			add_core = 523
+			add_core = 524
+
+			#Alentejo
+			add_core = 525
+			add_core = 526
+			add_core = 527
+
+			badboy = 17
+
+			add_accepted_culture = basque
+			add_accepted_culture = catalan
+			add_accepted_culture = portuguese
+
+
+			set_country_flag = cuba_gain_cores_on_spain_second
+			
+		}
+		ai_will_do = {					
+				factor = 0.0	
+		}
+	}
+
+	cuba_gain_cores_on_pananama = {
+		potential = {
+			tag = CUB
+			NOT = { has_country_flag = cuba_gain_cores_on_pananama}	
+		}
+		allow = {
+			war = no
+			year = 1840
+			prestige = 15
+		}
+		effect = {
+			badboy = 7
+			
+			prestige = 15
+
+			#Panama
+			add_core = 2204
+			add_core = 2205
+			add_core = 2206
+			add_core = 2208
+			add_core = 1723
+
+			add_accepted_culture = central_american
+			add_accepted_culture = north_andean
+
+			set_country_flag = cuba_gain_cores_on_pananama
+			
+		}
+		ai_will_do = {					
+				factor = 0.0	
+		}
+	}
+
+	cuba_gain_spain_accepted = {
+		potential = {
+			tag = CUB
+			NOT = { has_country_flag = cuba_gain_spain_accepted}	
+		}
+		allow = {
+			owns = 487
+			positivism = 1
+		}
+		effect = {
+			badboy = -2
+			
+			prestige = 50
+
+			add_accepted_culture = caribeno
+			add_accepted_culture = afro_caribeno
+			add_accepted_culture = afro_caribbean
+			add_accepted_culture = afro_antillean
+			primary_culture = spanish
+
+			set_country_flag = cuba_gain_spain_accepted
+			
+		}
+		ai_will_do = {					
+				factor = 0.0	
+		}
+	}
+
+	cuba_gain_cores_on_big_cities = {
+		potential = {
+			tag = CUB
+			NOT = { has_country_flag = cuba_gain_cores_on_big_cities}	
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			badboy = 5
+			add_core = 229
+			add_core = 223
+			add_core = 232
+			add_core = 132
+			add_core = 139
+
+			#Mexico (with mexico City ; the state)
+			add_core = 2172
+			add_core = 2173
+			add_core = 2174
+			add_core = 2175
+			add_core = 2176
+
+			#Veracruz
+			add_core = 2159
+			add_core = 2162
+			add_core = 2163
+			add_core = 2164
+
+			#Costa Rica
+			add_core = 2201
+			add_core = 2202
+			add_core = 2203
+
+			add_core = 2217
+
+			#Iceland & Greenland
+			add_core = 251
+			add_core = 252
+			add_core = 2636
+
+			add_accepted_culture = yankee
+			add_accepted_culture = mexican
+			add_accepted_culture = icelandic
+
+			set_country_flag = cuba_gain_cores_on_big_cities
+			
+		}
+		ai_will_do = {					
+				factor = 0.0	
+		}
+	}
+}

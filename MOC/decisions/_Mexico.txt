@@ -30,7 +30,12 @@ political_decisions = {
 			UCA = { all_core = { add_core = THIS } }
 			CLM  = { all_core = { add_core = THIS } }
 			MEX = { all_core = { add_core = THIS } }
-			CUB = { all_core = { add_core = THIS } }
+
+			# Cuba
+			add_core = 2209
+			add_core = 2210
+			add_core = 2211
+			add_core = 2212
 			
 			#UCA cores 
 			add_core = 2186
@@ -55,13 +60,12 @@ political_decisions = {
 			add_core = 2202
 			add_core = 2203
 
-			add_core 1723
-			
 			#Panama
 			add_core = 2204
 			add_core = 2205
 			add_core = 2206
 			add_core = 2208
+			add_core = 1723
 			
 			set_country_flag = mex_central_american_ambition
 		}
@@ -122,14 +126,13 @@ political_decisions = {
 			add_core = 2201
 			add_core = 2202
 			add_core = 2203
-
-			add_core = 1723
 			
 			#Panama
 			add_core = 2204
 			add_core = 2205
 			add_core = 2206
 			add_core = 2208
+			add_core = 1723
 
 			set_country_flag = gain_more_cultures
 		}
