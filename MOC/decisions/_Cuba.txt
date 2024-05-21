@@ -2,6 +2,27 @@
 
 political_decisions = {
 
+	release_cuba_as_spain_if_you_want_toPLAYASCUBA = {
+		potential = {
+			OR = {
+				tag = SPA
+				tag = SPC
+			}
+			NOT = { has_country_flag = release_cuba_as_spain_if_you_want_toPLAYASCUBA}	
+		}
+		allow = {
+		}
+		effect = {
+			release = CUB
+			set_country_flag = release_cuba_as_spain_if_you_want_toPLAYASCUBA
+			change_tag_no_core_switch = CUB
+			
+		}
+		ai_will_do = {					
+				factor = 0.0	
+		}
+	}
+	
 	cuba_gain_cores_on_usa = {
 		potential = {
 			tag = CUB
