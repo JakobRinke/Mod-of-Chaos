@@ -1,8 +1,9 @@
+#picture 0
+
 political_decisions = {
 
-
 	disable_rebels = {
-	
+		picture = disable_rebels_moc
 		potential = {
 			revolution_n_counterrevolution = 1
 			NOT = {
@@ -27,7 +28,7 @@ political_decisions = {
 	}
 	
 	enable_rebels = {
-	
+		picture = enable_rebels_moc
 		potential = {
 			revolution_n_counterrevolution = 1
 			has_country_modifier = rebel_disable
@@ -45,6 +46,7 @@ political_decisions = {
 	}
 
 	gen_for_civwar_kongo = {
+		picture = kongo_general_moc
 		potential = {
 			
 			ai = no
@@ -73,6 +75,7 @@ political_decisions = {
 	}
 	
 	gain_reasearchpoints_adm_ref = {
+		picture = education_for_asia_because_books_moc
 		potential = {
 			NOT = { has_country_flag = gain_reasearchpoints_adm_ref }
 			NOT = { OR = { tag = JAP tag = TKG tag = QNG } }
@@ -109,16 +112,15 @@ political_decisions = {
 	}
 
 	global_starting_ressources = {
-		
+		picture = kickstart_with_good_resources_moc
 		potential = {
 			NOT = { has_country_flag = global_starting_ressources }
 		}
-
 		effect = {
 			treasury = 250000
 			iron  = 250
 			steel = 250
-			maschine_parts = 250
+			machine_parts = 250
 			cement = 250
 			artillery = 250
 			small_arms = 250
@@ -136,7 +138,7 @@ political_decisions = {
 	
 	
 	global_healthcare = {
-	
+		picture = global_healthcare_moc
 		potential = {
 			NOT = { health_care = good_health_care  }
 		}
@@ -152,7 +154,7 @@ political_decisions = {
 	}
 	
 	global_schoolsystem = {
-	
+		picture = global_eduacation_moc
 		potential = {
 			NOT = { school_reforms  = good_schools }
 		}

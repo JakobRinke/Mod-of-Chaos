@@ -1,7 +1,8 @@
-political_decisions = {
+#picture 1
 
+political_decisions = {
 	claim_borneo = {
-		
+		picture = claim_borneo_moc
 		potential = {
 			OR = {
 				tag = JAP 

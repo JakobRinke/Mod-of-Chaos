@@ -1,10 +1,10 @@
-#picture 0
+#picture 1
 
 
 political_decisions = {
 
 	alsaka_organize_oil = {
-
+		picture = oil_sparkes_from_the_ground_moc
 		potential = {
 			AND = {
 				owns = 4
@@ -64,7 +64,7 @@ political_decisions = {
 	}
 
 	cores_on_alaska_kamp = {
-
+		picture = alaska_claim_cores
 		potential = {
 			
 			OR = {
@@ -143,7 +143,7 @@ political_decisions = {
 	}
 
 	baby_boom_in_the_cold = {
-
+		picture = baby_boom_moc
 		potential = {
 			
 			AND = {
@@ -451,7 +451,7 @@ political_decisions = {
 	
 	
 	baby_boom_in_the_cold_assimilate = {
-
+		picture = great_city_view_colds_moc
 		potential = {
 			
 			AND = {

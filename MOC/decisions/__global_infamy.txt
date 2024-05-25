@@ -1,6 +1,8 @@
+#picture 0 
 political_decisions = {
 
     trade_infamy_for_money = {
+        picture = dealWithDevil_moc
         alert = no
         allow = {
             NOT = { badboy = 0.8 }
@@ -15,9 +17,8 @@ political_decisions = {
         }
     }
 
-
-
     trade_money_for_infamy = {
+        picture = dealWIthGOD_moc
         alert = no
         allow = {
             money = 1000000
@@ -31,7 +32,5 @@ political_decisions = {
             factor = 0
         }
     }
-
-
 
 }
