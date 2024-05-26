@@ -51,9 +51,9 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-                factor = 0
-                badboy = 0.8
-            }
+				factor = 0
+				badboy = 0.8
+			}
 		}
 		
 		
@@ -173,237 +173,237 @@ political_decisions = {
 	}
 
 	swiss_gain_cores_serbia = {
-        potential = {
-            tag = SWI
-            has_country_flag = greater_swiss_moc
-            NOT = { has_country_flag = swiss_gain_cores_serbia }
-        }
-        allow = {
-            prestige = 10
-            romanticism = 1
-        }
-        effect = {
-            
-            #Northern Serbia
-            add_core = 794
-            add_core = 795
-            add_core = 796
-            add_core = 797
+		potential = {
+			tag = SWI
+			has_country_flag = greater_swiss_moc
+			NOT = { has_country_flag = swiss_gain_cores_serbia }
+		}
+		allow = {
+			prestige = 10
+			romanticism = 1
+		}
+		effect = {
+			
+			#Northern Serbia
+			add_core = 794
+			add_core = 795
+			add_core = 796
+			add_core = 797
 
-            #Southern Serbia
-            add_core = 798
-            add_core = 799
-            add_core = 802
-            add_core = 803
-            add_core = 804
+			#Southern Serbia
+			add_core = 798
+			add_core = 799
+			add_core = 802
+			add_core = 803
+			add_core = 804
 
-            set_country_flag = swiss_gain_cores_serbia
-            badboy = 10
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+			set_country_flag = swiss_gain_cores_serbia
+			badboy = 10
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    swiss_gain_cores_croatia = {
-        potential = {
-            tag = SWI
-            has_country_flag = greater_swiss_moc
-            NOT = { has_country_flag = swiss_gain_cores_croatia }
-        }
-        allow = {
-            prestige = 10
-            idealism = 1
-        }
-        effect = {
-            #Croatia
-            add_core = 771 # Zagreb
-            add_core = 772 # Split
-            add_core = 773 # Rijeka
-            add_core = 775
-            add_core = 776
+	swiss_gain_cores_croatia = {
+		potential = {
+			tag = SWI
+			has_country_flag = greater_swiss_moc
+			NOT = { has_country_flag = swiss_gain_cores_croatia }
+		}
+		allow = {
+			prestige = 10
+			idealism = 1
+		}
+		effect = {
+			#Croatia
+			add_core = 771 # Zagreb
+			add_core = 772 # Split
+			add_core = 773 # Rijeka
+			add_core = 775
+			add_core = 776
 
-            #Dalmatia
-            add_core = 774
-            add_core = 780
-            add_core = 781
-            add_core = 782
+			#Dalmatia
+			add_core = 774
+			add_core = 780
+			add_core = 781
+			add_core = 782
 
-            #Montenegro
-            add_core = 2582
+			#Montenegro
+			add_core = 2582
 
-            set_country_flag = swiss_gain_cores_croatia
-            badboy = 10
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+			set_country_flag = swiss_gain_cores_croatia
+			badboy = 10
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    swiss_gain_cores_bosnia = {
-        potential = {
-            tag = SWI
-            has_country_flag = greater_swiss_moc
-            NOT = { has_country_flag = swiss_gain_cores_bosnia }
-        }
-        allow = {
-            prestige = 10
-            realism = 1
-        }
-        effect = {
-            # Bosnia
-            add_core = 783
-            add_core = 784
-            add_core = 785
-            add_core = 787
-            add_core = 788
-            add_core = 789
-            set_country_flag = swiss_gain_cores_bosnia
-            badboy = 10
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	swiss_gain_cores_bosnia = {
+		potential = {
+			tag = SWI
+			has_country_flag = greater_swiss_moc
+			NOT = { has_country_flag = swiss_gain_cores_bosnia }
+		}
+		allow = {
+			prestige = 10
+			realism = 1
+		}
+		effect = {
+			# Bosnia
+			add_core = 783
+			add_core = 784
+			add_core = 785
+			add_core = 787
+			add_core = 788
+			add_core = 789
+			set_country_flag = swiss_gain_cores_bosnia
+			badboy = 10
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    swiss_gain_cores_albania = {
-        potential = {
-            tag = SWI
-            has_country_flag = greater_swiss_moc
-            NOT = { has_country_flag = swiss_gain_cores_albania }
-        }
-        allow = {
-            prestige = 10
-            impressionism = 1
-        }
-        effect = {
-            #Albania
-            add_core = 849
-            add_core = 850
-            add_core = 851
-            add_core = 852
-            add_core = 853
-            add_core = 780
+	swiss_gain_cores_albania = {
+		potential = {
+			tag = SWI
+			has_country_flag = greater_swiss_moc
+			NOT = { has_country_flag = swiss_gain_cores_albania }
+		}
+		allow = {
+			prestige = 10
+			impressionism = 1
+		}
+		effect = {
+			#Albania
+			add_core = 849
+			add_core = 850
+			add_core = 851
+			add_core = 852
+			add_core = 853
+			add_core = 780
 
-            #Nothern Macedonia
-            add_core = 1780
+			#Nothern Macedonia
+			add_core = 1780
 
-            #Southern Serbia
-            add_core = 803
+			#Southern Serbia
+			add_core = 803
 
-            #Thessaly
-            add_core = 824
+			#Thessaly
+			add_core = 824
 
-            set_country_flag = swiss_gain_cores_albania
-            badboy = 10
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+			set_country_flag = swiss_gain_cores_albania
+			badboy = 10
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    swiss_accept_serbian_culture = {
-        potential = {
-            tag = SWI
-            has_country_flag = greater_swiss_moc
-            NOT = { has_country_flag = swiss_accept_serbian_culture }
-        }
-        allow = {
-            prestige = 10
-            owns = 794 # Belgrade
-            romanticism = 1
-        }
-        effect = {
-            add_accepted_culture = serb
-            set_country_flag = swiss_accept_serbian_culture
-            badboy = 5
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	swiss_accept_serbian_culture = {
+		potential = {
+			tag = SWI
+			has_country_flag = greater_swiss_moc
+			NOT = { has_country_flag = swiss_accept_serbian_culture }
+		}
+		allow = {
+			prestige = 10
+			owns = 794 # Belgrade
+			romanticism = 1
+		}
+		effect = {
+			add_accepted_culture = serb
+			set_country_flag = swiss_accept_serbian_culture
+			badboy = 5
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    swiss_accept_croatian_culture = {
-        potential = {
-            tag = SWI
-            has_country_flag = greater_swiss_moc
-            NOT = { has_country_flag = swiss_accept_croatian_culture }
-        }
-        allow = {
-            owns = 771 # Zagreb
-            prestige = 10
-            idealism = 1
-        }
-        effect = {
-            add_accepted_culture = croat
-            set_country_flag = swiss_accept_croatian_culture
-            badboy = 4
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	swiss_accept_croatian_culture = {
+		potential = {
+			tag = SWI
+			has_country_flag = greater_swiss_moc
+			NOT = { has_country_flag = swiss_accept_croatian_culture }
+		}
+		allow = {
+			owns = 771 # Zagreb
+			prestige = 10
+			idealism = 1
+		}
+		effect = {
+			add_accepted_culture = croat
+			set_country_flag = swiss_accept_croatian_culture
+			badboy = 4
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    swiss_accept_bosnian_culture = {
-        potential = {
-            tag = SWI
-            has_country_flag = greater_swiss_moc
-            NOT = { has_country_flag = swiss_accept_bosnian_culture }
-        }
-        allow = {
-            prestige = 10
-            realism = 1
-            owns = 783 # Sarajevo
-        }
-        effect = {
-            add_accepted_culture = bosniak
-            set_country_flag = swiss_accept_bosnian_culture
-            badboy = 3
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	swiss_accept_bosnian_culture = {
+		potential = {
+			tag = SWI
+			has_country_flag = greater_swiss_moc
+			NOT = { has_country_flag = swiss_accept_bosnian_culture }
+		}
+		allow = {
+			prestige = 10
+			realism = 1
+			owns = 783 # Sarajevo
+		}
+		effect = {
+			add_accepted_culture = bosniak
+			set_country_flag = swiss_accept_bosnian_culture
+			badboy = 3
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    swiss_accept_albanian_culture = {
-        potential = {
-            tag = SWI
-            NOT = { has_country_flag = swiss_accept_albanian_culture }
-        }
-        allow = {
-            prestige = 10
-            owns = 849 # Tirana
-            impressionism = 1
-        }
-        effect = {
-            add_accepted_culture = albanian
-            set_country_flag = swiss_accept_albanian_culture
-            badboy = 2
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	swiss_accept_albanian_culture = {
+		potential = {
+			tag = SWI
+			NOT = { has_country_flag = swiss_accept_albanian_culture }
+		}
+		allow = {
+			prestige = 10
+			owns = 849 # Tirana
+			impressionism = 1
+		}
+		effect = {
+			add_accepted_culture = albanian
+			set_country_flag = swiss_accept_albanian_culture
+			badboy = 2
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    swiss_accept_slovenian_culture = {
-        potential = {
-            tag = SWI
-            NOT = { has_country_flag = swiss_accept_slovenian_culture }
-        }
-        allow = {
-            prestige = 10
-            owns = 768 # Ljubljana
-            expressionism = 1
-        }
-        effect = {
-            add_accepted_culture = slovene
-            set_country_flag = swiss_accept_slovenian_culture
-            badboy = 2
-        }
-        ai_will_do = {
-            factor = 0
-        }
-    }
+	swiss_accept_slovenian_culture = {
+		potential = {
+			tag = SWI
+			NOT = { has_country_flag = swiss_accept_slovenian_culture }
+		}
+		allow = {
+			prestige = 10
+			owns = 768 # Ljubljana
+			expressionism = 1
+		}
+		effect = {
+			add_accepted_culture = slovene
+			set_country_flag = swiss_accept_slovenian_culture
+			badboy = 2
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 
 

@@ -1,6 +1,8 @@
+#picture 1
 political_decisions = {
 
 	will_receive = {
+		picture = request_a_grant_moc
 		alert = no
 		potential = {
 			ai = no
@@ -36,6 +38,7 @@ political_decisions = {
 #	}
 
 	will_give = {
+		picture = give_money_moc
 		alert = no
 		potential = {
 			ai = no
@@ -50,6 +53,7 @@ political_decisions = {
 
 
 	will_not_give = {
+		picture = dont_give_money_moc
 		alert = no
 		potential = {
 			ai = no
@@ -58,9 +62,10 @@ political_decisions = {
 		
 		allow = { 
 			ai = no
-			has_country_flag = will_give_grants }
+			has_country_flag = will_give_grants 
+		}
 		effect = {
 			clr_country_flag = will_give_grants 
-			}
+		}
 	}
 }

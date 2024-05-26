@@ -1,41 +1,41 @@
-#picture 0 
+#picture 1 
 
 political_decisions = {
 	assimilate_all_cores_MOC = {
-
-	potential = {
-		OR = {
-			tag = SAF
-			tag = NGR 
-			tag = KON 
-			tag = ETH
-		}
+		picture = assimilate_all_cores_moc
+		potential = {
+			OR = {
+				tag = SAF
+				tag = NGR 
+				tag = KON 
+				tag = ETH
+			}
 		
-		ai = no
+			ai = no
 		
-		NOT = {has_country_flag = assimilate_all_cores_MOC}	
-	}
-	allow = {
-		ai = no
-		all_core  = {
-			controlled_by = this
+			NOT = {has_country_flag = assimilate_all_cores_MOC}	
 		}
-	}
-			
-	effect = {
-		all_core = {
-			limit{
-				owned_by = this
+		allow = {
+			ai = no
+			all_core  = {
+				controlled_by = this
 			}
-		assimilate = yes
 		}
-        
-				set_country_flag = assimilate_all_cores_MOC
-			}
 			
-			ai_will_do = {					
-				factor = 0
+		effect = {
+			all_core = {
+				limit{
+					owned_by = this
+				}
+				assimilate = yes
 			}
+		
+			set_country_flag = assimilate_all_cores_MOC
+		}
+			
+		ai_will_do = {	
+			factor = 0
+		}
 	}
   
  }

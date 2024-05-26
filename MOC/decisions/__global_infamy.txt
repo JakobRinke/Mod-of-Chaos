@@ -1,36 +1,37 @@
-#picture 0 
+#picture 1
+
 political_decisions = {
 
-    trade_infamy_for_money = {
-        picture = dealWithDevil_moc
-        alert = no
-        allow = {
-            NOT = { badboy = 0.8 }
-        }
+	trade_infamy_for_money = {
+		picture = dealWithDevil_moc
+		alert = no
+		allow = {
+			NOT = { badboy = 0.8 }
+		}
 
-        effect = {
-            country_event = 1510001
-        }  
+		effect = {
+			country_event = 1510001
+		}  
 
-        ai_will_do = {
-            factor = 0
-        }
-    }
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-    trade_money_for_infamy = {
-        picture = dealWIthGOD_moc
-        alert = no
-        allow = {
-            money = 1000000
-        }
+	trade_money_for_infamy = {
+		picture = dealWIthGOD_moc
+		alert = no
+		allow = {
+			money = 1000000
+		}
 
-        effect = {
-            country_event = 1510002
-        }  
+		effect = {
+			country_event = 1510002
+		}  
 
-        ai_will_do = {
-            factor = 0
-        }
-    }
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 }

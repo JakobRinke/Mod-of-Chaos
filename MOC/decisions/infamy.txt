@@ -1,5 +1,8 @@
+#picture 1
+
 political_decisions = {
   global_infamy = {
+    picture = MOC_infamy_BOOOST
     potential = {
       NOT = { has_country_modifier = global_infamy }
     }

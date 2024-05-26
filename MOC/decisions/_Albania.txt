@@ -1,8 +1,10 @@
+#picture 1
+
 political_decisions = {
 
 
 	fuck_shit_alb = {
-		
+		picture = fuck_shit_abania_moc
 		potential = {
 			tag = ALB
 			NOT = { has_country_flag = fuck_shit_alb }
@@ -36,6 +38,7 @@ political_decisions = {
 	
 	
 	genocide_alb = {
+		picture = abania_genocide_moc
 		potential = {
 			tag = ALB
 			any_owned_province = {

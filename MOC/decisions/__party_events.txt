@@ -1,7 +1,9 @@
+#picture 1
+
 political_decisions = {
 	
 	fascist_genozid = {
-		picture = sign_the_geneva_convention_BASED
+		picture = facist_genocide_moc
 		potential = {
 			government = fascist_dictatorship 
 			NOT = {
@@ -17,7 +19,6 @@ political_decisions = {
 		}
 		
 		effect = {
-		
 			remove_country_modifier = free_thought
 			clr_country_flag = free_thought
 			remove_country_modifier = supreme_dictator
@@ -29,12 +30,9 @@ political_decisions = {
 			}
 			clr_country_flag = fascist_genozid
 			
-		
-		
 			badboy = 6
 			plurality = -20
 			
-
 			all_core = {
 				limit = {
 					is_colonial = no
@@ -94,6 +92,7 @@ political_decisions = {
 	}
 	
 	fascist_flip_moc = {
+		picture = facist_flip_moc
 		potential = {
 			ai = no
 			upper_house = {
@@ -120,6 +119,7 @@ political_decisions = {
 	}
 
 	communist_flip_moc = {
+		picture = communist_flip_moc
 		potential = {
 			ai = no
 			upper_house = {
@@ -145,6 +145,7 @@ political_decisions = {
 	}
 
 	radical_flip_moc = {
+		picture = anarcho_flip_moc
 		potential = {
 			ai = no
 			upper_house = {
@@ -170,6 +171,7 @@ political_decisions = {
 	}
 
 	military_flip_flip_moc = {
+		picture = military_coup_flip_moc
 		potential = {
 			ai = no
 			upper_house = {
@@ -195,6 +197,7 @@ political_decisions = {
 	}
 
 	reduce_ashkenazi_pop_moc = {
+		picture = reduce_ashekenazi_pop_moc
 		potential = {
 			is_colonial = no
 			NOT = {
@@ -231,7 +234,7 @@ political_decisions = {
 
 		
 	communist_agenda = {
-		
+		picture = communist_agenda_moc
 		potential = {
 			government = proletarian_dictatorship 
 			NOT = {
@@ -247,7 +250,6 @@ political_decisions = {
 		}
 		
 		effect = {
-			
 			remove_country_modifier = free_thought
 			clr_country_flag = free_thought
 			remove_country_modifier = supreme_dictator
@@ -259,7 +261,6 @@ political_decisions = {
 			}
 			clr_country_flag = fascist_genozid
 			
-		
 			plurality = -20
 			add_country_modifier = {
 				name = law_changed_by_force
@@ -280,12 +281,8 @@ political_decisions = {
 	}
 	
 	anarchic_system = {
-	
-		
-	
-	
+		picture = anarcho_agenda_moc
 		potential = {
-		
 			government = bourgeois_dictatorship  
 			NOT = {
 				has_country_flag = anarchic_system
@@ -334,7 +331,7 @@ political_decisions = {
 	}
 	
 	supreme_dictator  = {
-	
+		picture = supreme_leader_moc
 		potential = {
 			government = presidential_dictatorship  
 			NOT = {
@@ -384,7 +381,7 @@ political_decisions = {
 	
 	
 	free_thought  = {
-	
+		picture = free_thought_moc
 		potential = {
 			OR = { government = democracy government = hms_government }
 			NOT = {
@@ -432,7 +429,4 @@ political_decisions = {
 		}
 	
 	}
-		
-		
-		
 }

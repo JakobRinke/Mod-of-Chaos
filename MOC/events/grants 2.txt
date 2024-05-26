@@ -317,6 +317,7 @@ country_event = {
 	id = 100010
 	title = "$FROMCOUNTRY$ Declines Aid Request"
 	desc = "$FROMCOUNTRY$ decided against giving us a grant"
+	picture = NO_grant_received_moc
 	allow_multiple_instances = yes	
 	is_triggered_only = yes
 	option = {

@@ -14,6 +14,8 @@ country_event = {
 	title = "Aid Requested"
 	
 	desc = "We have requested aid from foreign powers. We can only hope they respond kindly."
+
+	picture = grant_received_moc
 	
 	is_triggered_only = yes	
 	
@@ -53,6 +55,8 @@ id = 100002
 	title = "$FROMCOUNTRY$ Grants Aid"
 	
 	desc = "$FROMCOUNTRY$ has decided to give us aid on the order of thousands of pounds."
+
+	picture = grant_received_moc
 	
 	allow_multiple_instances = yes		
 	
@@ -79,6 +83,8 @@ country_event = {
 	title = "$FROMCOUNTRY$ Grants Aid"
 
 	desc = "$FROMCOUNTRY$ has decided to give us aid on the order of tens of thousands of pounds."
+
+	picture = grant_received_moc
 
 	allow_multiple_instances = yes
 	is_triggered_only = yes
@@ -108,6 +114,8 @@ country_event = {
 	title = "$FROMCOUNTRY$ Grants Aid"
 
 	desc = "$FROMCOUNTRY$ has decided to give us aid on the order of hundereds of thousands of pounds."
+
+	picture = grant_received_moc
 
 	is_triggered_only = yes
 	allow_multiple_instances = yes
@@ -139,6 +147,8 @@ country_event = {
 
 	is_triggered_only = yes
 	desc = "$FROMCOUNTRY$ has decided to give us aid on the order of millions of pounds."
+
+	picture = grant_received_moc
 	
 	allow_multiple_instances = yes
 		
