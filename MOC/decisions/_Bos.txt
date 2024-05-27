@@ -4,7 +4,7 @@
 political_decisions = {
 
 	artiljerija = {
-		picture = sign_the_geneva_convention_BASED
+		picture = atilerija_moc
 		potential = {
 			tag = BOS
 

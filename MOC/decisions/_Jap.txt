@@ -1,7 +1,6 @@
-#picture 0
+#picture 1
 
 political_decisions = {
-
 
 	jap_accept_the_korean = {
 		picture = accept_korean_as_jap
@@ -83,6 +82,7 @@ political_decisions = {
 		}
 
 		CLAIM_Kamchatka_moc = {
+			picture = claim_kamhfghdhfgdhfgd_moc
 			potential = {
 				OR = {
 					tag = JAP
@@ -117,6 +117,7 @@ political_decisions = {
 		}
 		
 		CLAIM_alaska_moc = {
+			picture = claim_alaska_moc
 			potential = {
 				OR = {
 					tag = JAP
@@ -166,6 +167,7 @@ political_decisions = {
 		}
 		
 		claim_australia_moc = {
+			picture = claim_australia_moc
 			potential = {
 				OR = {
 					tag = JAP
