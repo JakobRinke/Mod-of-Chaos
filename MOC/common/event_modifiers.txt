@@ -3361,3 +3361,19 @@ rebel_disable = {
 	non_accepted_pop_militancy_modifier = -1
 	ruling_party_support = 1.5
 }
+
+anti_colonial_modifier = {
+	badboy = 1
+	
+	pop_militancy_modifier = 1
+	pop_conscious_modifier = 1
+	global_population_growth = -0.02
+	education_efficiency_modifier = -0.5
+	mobilisation_size = -2
+	factory_throughput =  -2
+	factory_output =  -5
+	rgo_output = -5
+	factory_owner_cost = 5
+	factory_cost = 2
+}
+

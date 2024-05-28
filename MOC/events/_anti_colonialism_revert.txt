@@ -1,0 +1,16 @@
+country_event = {
+	id = 2337018742
+	title = "No need for colonies"
+	desc = "You have released your colinies and therefore. The game no longer hates you : )!"
+	
+	trigger = {
+		has_global_flag = anti_colonial
+		has_country_modifier = anti_colonial_modifier
+		colonial_nation = no
+	}
+	option = {
+		name = "I better release my colonies" 
+		badboy = -10
+		THIS = { remove_country_modifier = anti_colonial_modifier }
+	}
+}

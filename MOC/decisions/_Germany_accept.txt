@@ -17,7 +17,7 @@ political_decisions = {
 			ai = no 
 		}
 		
-		effect = {			
+		effect = {
 			prestige = 25
 			money 200000
 
@@ -84,6 +84,7 @@ political_decisions = {
 			set_country_flag = Han_rise_in_power
 			}
 	}
+
 	accept_danish_before_ger = {
 		picture = claim_danish
 		potential = {
@@ -98,7 +99,7 @@ political_decisions = {
 			ai = no 
 		}
 		
-		effect = {			
+		effect = {
 			prestige = 10
 			badboy = 5
 			DEN = {
@@ -109,11 +110,11 @@ political_decisions = {
 			set_country_flag = accept_danish_uno
 			}
 		
-		ai_will_do = {					
+		ai_will_do = {
 			factor = 1
 			modifier = {
-                factor = 0
-                badboy = 0.7
+				factor = 0
+				badboy = 0.7
 			}
 		}
 	}
@@ -129,7 +130,7 @@ political_decisions = {
 			prestige = 100
 		}
 		
-		effect = {			
+		effect = {
 			DEN = {
 				all_core = {add_core = THIS}
 			}
@@ -137,14 +138,15 @@ political_decisions = {
 			set_country_flag = accept_danish_ngf
 			}
 		
-		ai_will_do = {					
+		ai_will_do = {
 			factor = 1
 			modifier = {
-                factor = 0
-                badboy = 0.7
+				factor = 0
+				badboy = 0.7
 			}
 		}
 	}
+
 	accept_danish_GERM = {
 		picture = claim_danish
 		potential = {
@@ -170,8 +172,8 @@ political_decisions = {
 		ai_will_do = {					
 			factor = 1
 			modifier = {
-                factor = 0
-                badboy = 0.7
+				factor = 0
+				badboy = 0.7
 			}
 		}
 	}
@@ -210,11 +212,37 @@ political_decisions = {
 			add_core = 618
 		}
 		
-		ai_will_do = {					
+		ai_will_do = {
 			factor = 1
 			modifier = {
-                factor = 0
-                badboy = 0.5
+				factor = 0
+				badboy = 0.5
+			}
+		}
+	}
+
+	accepted_czech_byelorussian_moc = {
+		picture = accepted_czech_byelorussian_moc
+		potential = {
+			tag = GER
+			NOT = {has_country_flag = accepted_czech_byelorussian_moc}
+		}
+		allow = {
+			colonial_nation = no 
+		}
+		effect = {
+			prestige = 30
+			badboy = 10
+			add_accepted_culture = czech 
+			add_accepted_culture = byelorussian
+			set_country_flag = accepted_czech_byelorussian_moc
+			set_country_flag = no_colonies
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.5
 			}
 		}
 	}
