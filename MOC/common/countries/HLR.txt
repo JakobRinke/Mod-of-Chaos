@@ -45,7 +45,8 @@ party = {
     citizenship_policy = residency
     war_policy = anti_military
 }
-party = {
+part
+y = {
     name = "HLR_conservative_2"
     start_date = 1856.1.1
     end_date = 2000.1.1
