@@ -511,6 +511,8 @@ encourage_total_mobilisation_afr_title;Mobilize to Secure the hegemony within Ce
 encourage_total_mobilisation_afr_desc;Gain a mobilization modifier to conquer your neighbours;;;;;;;;;;;;;
 gen_for_civwar_kongo_title;Enable Chad starting General ;;;;;;;;;;;;;
 gen_for_civwar_kongo_desc;Igor von Moltke will serve the country ;;;;;;;;;;;;;
+gen_for_civwar_kongo_civ_title;Enable Chad starting General ;;;;;;;;;;;;;
+gen_for_civwar_kongo_civ_desc;Igor von Moltke will serve the country ;;;;;;;;;;;;;
 provinz_growth_modifier;Provinz Growth Modifier;;;;;;;;;;;;;
 provinz_growth_modifier_desc;Let this provinz grow;;;;;;;;;;;;;
 claim_kongo_title;Claim Kongo;;;;;;;;;;;;;

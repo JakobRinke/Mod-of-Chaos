@@ -12,8 +12,78 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = ChooseNationAustrianBattleRoyal
+			prestige = -50
 			
-			change_tag = DNB
+			relation = {
+				who = BAV
+				value = -200
+			}
+			end_military_access = BAV
+			leave_alliance = BAV
+			diplomatic_influence = {
+				who = BAV
+				value = -300
+			}
+				
+				
+			relation = {
+				who = BAD
+				value = -200
+			}
+			diplomatic_influence = {
+				who = BAV
+				value = -300
+			}
+			end_military_access = BAD
+			leave_alliance = BAD
+
+
+			relation = {
+				who = PAR
+				value = -200
+			}
+			diplomatic_influence = {
+				who = PAR
+				value = -300
+			}
+			
+			end_military_access = PAR
+			leave_alliance = PAR
+			
+			relation = {
+				who = MOD
+				value = -200
+			}
+			diplomatic_influence = {
+				who = MOD
+				value = -300
+			}
+			end_military_access = MOD
+			leave_alliance = MOD
+			
+			relation = {
+				who = TUS
+				value = -200
+			}
+			diplomatic_influence = {
+				who = TUS
+				value = -300
+			}
+			end_military_access = TUS
+			leave_alliance = TUS
+			
+			relation = {
+				who = LUC
+				value = -200
+			}
+			diplomatic_influence = {
+				who = LUC
+				value = -300
+			}
+			end_military_access = LUC
+			leave_alliance = LUC
+			
+			
 			
 			set_global_flag = austrian_battle_royale_moc
 			
@@ -75,8 +145,9 @@ political_decisions = {
 					remove_core = THIS
 				}
 			}
-
 			
+			change_tag = DNB
+						
 			set_global_flag = austrian_battle_royale_moc
 			
 			country_event = 13373000

@@ -51,7 +51,7 @@ political_decisions = {
 			
 			ai = no
 			NOT = { has_leader = "Moltke von Igor" }
-			
+			civilized = no
 		}
 		
 		
@@ -60,11 +60,45 @@ political_decisions = {
 		}
 		
 		effect = {
+			
+		
 			define_general = {
-					name = "Moltke von Igor"
-					personality = implacable
-					background = cursed_luck
+				name = "Moltke von Igor"
+				personality = implacable
+				background = cursed_luck
 			}
+		
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+	gen_for_civwar_kongo_civ = {
+		picture = kongo_general_moc
+		potential = {
+			civilized = yes
+			ai = no
+			NOT = { has_leader = "Moltke von Igor" }
+			
+		}
+		
+		
+		allow = {
+
+		}
+		
+		effect = {	
+	
+			define_general = {
+				name = "Moltke von Igor"
+				personality = daring
+				background = school_of_defense
+			}
+			
 		}
 		
 		ai_will_do = {
