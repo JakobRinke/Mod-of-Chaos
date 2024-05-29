@@ -3143,7 +3143,6 @@ italy_pizza_superiority = {
 	naval_unit_start_experience = 0.05
 	mobilization_impact = -0.1
 
-	leadership_modifier = -0.05
 	ruling_party_support = -0.1
 
 	research_points = 0.035
