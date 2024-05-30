@@ -204,6 +204,8 @@ no_standard = {
     cost = 3600
 
     administrative_efficiency = 0.05
+    leadership_modifier = 0.05
+
     ai_chance = {
         factor = 2
         modifier = {
@@ -220,7 +222,7 @@ ad_hoc_money_bill_printing = {
     area = monetary_system
     year = 1836
     cost = 7200
-
+    leadership_modifier = 0.05
     administrative_efficiency = 0.05
     ai_chance = {
         factor = 2
@@ -252,6 +254,8 @@ private_bank_money_bill_printing = {
     cost = 10800
 
     administrative_efficiency = 0.05
+    leadership_modifier = 0.1
+
     ai_chance = {
         factor = 1.5
         modifier = {
@@ -274,6 +278,8 @@ central_bank_money_bill_printing = {
     cost = 14400
 
     administrative_efficiency = 0.05
+    leadership_modifier = 0.1
+
     ai_chance = {
         factor = 1.5
         modifier = {
@@ -300,6 +306,7 @@ modern_central_bank_system = {
     cost = 18000
 
     administrative_efficiency = 0.05
+    leadership_modifier = 0.1
     ai_chance = {
         factor = 1.5
         modifier = {
@@ -331,6 +338,7 @@ market_determined_exchange_rates = {
 
 
     administrative_efficiency = 0.05
+    leadership_modifier = 0.2
     ai_chance = {
         factor = 1.2
         modifier = {
