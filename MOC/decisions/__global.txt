@@ -95,8 +95,8 @@ political_decisions = {
 	
 			define_general = {
 				name = "Moltke von Igor"
-				personality = daring
-				background = school_of_defense
+				personality = implacable
+				background = school_of_firepower
 			}
 			
 		}
