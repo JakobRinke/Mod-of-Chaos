@@ -141,7 +141,7 @@ political_decisions = {
 				}
 			}
 
-			#Duoro 
+			#Douro 
 			add_core = 518
 			add_core = 519
 			add_core = 520

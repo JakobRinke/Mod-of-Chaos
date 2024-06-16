@@ -377,7 +377,7 @@ political_decisions = {
 			add_accepted_culture = catalan
 			add_accepted_culture = spanish
 
-			#Duoro 
+			#Douro 
 			add_core = 518
 			add_core = 519
 			add_core = 520

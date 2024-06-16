@@ -1,0 +1,142 @@
+#picture 0
+
+political_decisions = {
+	
+	form_gaul_moc = {
+		potential = {
+			OR = {
+				tag = WHA
+				tag = IRE
+				tag = BRT
+			}
+			NOT = { exist = GAU }§"§"
+			NOT = { has_country_flag = form_gaul_moc }
+		}
+		
+		allow = {
+			all_core = { 
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+					empty = yes
+				}
+			}
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			change_tag = GAU
+			prestige = 150
+			FRA = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			RHI = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			badboy = 5
+			set_country_flag = form_gaul_moc
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	claim_iberia_moc_gau = {
+		potential = {
+			tag = GAU
+			
+			NOT = { has_country_flag = claim_iberia_moc_gau }
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			is_greater_power = yes
+		}
+		
+		effect = {
+			prestige = 25
+			badboy = 12
+
+			#Galicia
+			add_core = 474
+			add_core = 476
+
+			#Extremadura
+			add_core = 484
+			add_core = 485
+			add_core = 486
+
+			#Leon Castilla 
+			add_core = 475
+			add_core = 477 
+			add_core = 478 
+			add_core = 479 
+			add_core = 480
+			add_core = 481
+			add_core = 482
+			add_core = 483
+
+			#Castilla la Nueva
+			add_core = 487
+			add_core = 488
+			add_core = 489
+			add_core = 490
+			add_core = 491
+
+			#Douro 
+			add_core = 518
+			add_core = 519
+			add_core = 520
+
+			#Estremadura
+			add_core = 521
+			add_core = 522
+			add_core = 523
+			add_core = 524
+
+			#Alentejo
+			add_core = 525
+			add_core = 526
+			add_core = 527
+
+			set_country_flag = claim_iberia_moc_gau
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	get_iberia_accepted_moc_gau = {
+		potential = {
+			tag = GAU
+			
+			NOT = { has_country_flag = get_iberia_accepted_moc_gau }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			is_greater_power = yes
+		}
+		effect = {
+			prestige = 25
+			badboy = 7
+			add_accepted_culture = spanish
+			add_accepted_culture = basque
+			add_accepted_culture = catalan
+			add_accepted_culture = portuguese
+			set_country_flag = get_iberia_accepted_moc_gau
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
+
