@@ -183,7 +183,7 @@ political_decisions = {
 				tag = MEX
 				tag = CLM  
 			}
-			NOT = {has_country_flag = obtain_texas_as_culture}			
+			NOT = {has_country_flag = assimilate_usa_ter}			
 		}
 		
 		allow = {
@@ -218,7 +218,7 @@ political_decisions = {
 
 			add_accepted_culture = dixie
 
-			set_country_flag = obtain_texas_as_culture
+			set_country_flag = assimilate_usa_ter
 		}
 		
 		ai_will_do = {					
@@ -229,8 +229,10 @@ political_decisions = {
 	liberty_enlightening_the_world_mex = {
 		potential = {
 			NOT = {
-				has_global_flag = statue_of_liberty_has_been_built_mexmoc
-				has_country_flag = statue_of_liberty_has_been_built_mexmoc
+				AND = {
+					has_global_flag = statue_of_liberty_has_been_built_mexmoc
+					has_country_flag = statue_of_liberty_has_been_built_mexmoc
+				}
 			}
 			OR ={
 				tag = SPA

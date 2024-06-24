@@ -587,6 +587,7 @@ KSI		   ="countries/KSI.txt"
 PAC		   ="countries/PAC.txt"
 CEL		   ="countries/CEL.txt"
 GAU		   ="countries/Gaul.txt"
+FRE		   ="countries/Freiland.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

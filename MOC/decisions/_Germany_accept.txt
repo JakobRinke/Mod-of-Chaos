@@ -246,4 +246,32 @@ political_decisions = {
 			}
 		}
 	}
+
+	release_all_colonies_moc = {
+		potential = {
+			OR = {
+				tag = GER
+				tag = EUR
+				tag = HLR
+			}
+			colonial_nation = yes
+		}
+		allow = {
+			
+		}
+		effect = {
+			badboy = 3
+
+			any_owned {
+				any_owned_province{
+
+					limit = {
+						 is_colonial = yes
+					}
+					add_core = FRE
+					secede_province = FRE
+					
+				}
+			}
+	}
 }
