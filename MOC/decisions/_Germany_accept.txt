@@ -248,6 +248,7 @@ political_decisions = {
 	}
 
 	release_all_colonies_moc = {
+		picture = disable_rebels_moc
 		potential = {
 			OR = {
 				tag = GER
