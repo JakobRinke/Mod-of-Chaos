@@ -1,3 +1,4 @@
+#picture 1
 political_decisions = {
 
 	create_eu = {

@@ -2,7 +2,7 @@
 political_decisions = {
 
 	claim_dalmatia = {
-		picture = 
+		picture = claim_dalmatio_moc
 		potential = { 
 
 			OR ={
