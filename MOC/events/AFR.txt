@@ -1,26 +1,26 @@
 country_event = {
-	id = 66688
-	title = "The European Union"
-	desc = "Our foreign minister reports the creation of the European Union. We, as a sovereign European state have to decide, rather we want to join it or not!"
+	id = 66689
+	title = "The African Union"
+	desc = "Our foreign minister reports the creation of the African Union. We, as a sovereign African state have to decide, rather we want to join it or not!"
 	
 	is_triggered_only = yes
 	   
 	
 	option = {
-		name = "We will join the European Union"
+		name = "We will join the African Union"
 		
 		ai_chance = {
 				factor = 0.3
 		} 
-		annex_to = EUR
+		annex_to = AFR
 		
 	}
 	
 	option = {
 		ai_chance = { factor = 0.7 } 
 		name = "We will fight for our rights and against this stupid idea!"
-		leave_alliance = EUR
-		EUR = {
+		leave_alliance = AFR
+		AFR = {
 			release_vassal = THIS
 			relation = {
 				who = THIS

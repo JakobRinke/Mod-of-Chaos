@@ -2,7 +2,7 @@ color = { 26  141  87 }
 graphical_culture = PrussianGC
 
 party = {
-	name = "FRE_liberal"
+	name = "FRE_liberal" #Freie Liberale Partei
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -17,7 +17,7 @@ party = {
 }
 
 party = {
-	name = "FRE_conservative"
+	name = "FRE_conservative" #Zentrumspartei
 	start_date = 1830.1.1
 	end_date = 2000.1.1
 
@@ -32,7 +32,7 @@ party = {
 }
 
 party = {
-	name = "FRE_conservative_2"
+	name = "FRE_conservative_2" #Bauernpartei
 	start_date = 1891.1.1
 	end_date = 2000.1.1
 
@@ -47,7 +47,7 @@ party = {
 }
 
 party = {
-	name = "FRE_radical"
+	name = "FRE_radical" #Freiheit Partei
 	start_date = 1820.1.1
 	end_date = 1936.1.1
 
@@ -62,7 +62,7 @@ party = {
 }
 
 party = {
-	name = "FRE_reactionary"
+	name = "FRE_reactionary" #KNVP
 	start_date = 1820.1.1
 	end_date = 2000.1.1
 
@@ -77,7 +77,7 @@ party = {
 }
 
 party = {
-	name = "FRE_socialist"
+	name = "FRE_socialist" #Rote Mauer
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -92,7 +92,7 @@ party = {
 }
 
 party = {
-	name = "FRE_communist"
+	name = "FRE_communist" #Haken und Sichel
 	start_date = 1848.1.1
 	end_date = 2000.1.1
 
@@ -107,7 +107,7 @@ party = {
 }
 
 party = {
-	name = "FRE_fascist"
+	name = "FRE_fascist" #Freie Faschos
 	start_date = 1900.1.1
 	end_date = 2000.1.1
 

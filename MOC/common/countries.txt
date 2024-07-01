@@ -588,6 +588,7 @@ PAC		   ="countries/PAC.txt"
 CEL		   ="countries/CEL.txt"
 GAU		   ="countries/Gaul.txt"
 FRE		   ="countries/Freiland.txt"
+AFR		   ="countries/Africa.txt"
 
 ##HoD Dominions
 dynamic_tags  = yes # any tags after this is considered dynamic dominions

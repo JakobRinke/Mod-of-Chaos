@@ -1173,8 +1173,16 @@ PAC = {
 
 #Gaul
 
-PAC = {
+GAU = {
 	color1= { 45 100  5 }
     color2= { 55 110 15 }
     color3= { 75 120 25 }
+}
+
+#Africa
+
+AFR = {
+	color1= { 51 51 51 }
+    color2= { 61 61 61}
+    color3= { 71 71 71 }
 }

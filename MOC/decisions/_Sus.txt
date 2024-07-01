@@ -230,25 +230,21 @@ political_decisions
 		}
 		
 		effect = {		
-			has_country_flag = Claim_more_lands_in_the_ocean
-
-		NZL  = {
+			set_country_flag = Claim_more_lands_in_the_ocean
+			add_accepted_culture = australian
+			NZL  = {
 				all_core = {
 					add_core = THIS	
 				}
 			} 
 		
-		AST  = {
+			AST  = {
 				all_core = {
 					add_core = THIS	
 				}
 			}
 			
 		}
-
-		add_accepted_culture = australian
-
-
 		ai_will_do = {					
 			factor = 0.0001
 		}
@@ -277,9 +273,9 @@ political_decisions
 		}
 
 		effect = {
-			
-			activate_technology = positivsim
-			activate_technology = functionalsim
+			activate_technology = social_thought
+			activate_technology = positivism
+			activate_technology = functionalism
 			activate_technology = biologism
 
 			all_core = {
