@@ -82,29 +82,17 @@ political_decisions = {
 
 			MEX = {
 				all_core = {
-					secede_province = CUM
 					add_core = CUM
-				}
-				all_owned =  {
-					secede_province = CUM
 				}
 			}
 			USA = {
 				all_core = {
-					secede_province = CUM
 					add_core = CUM
-				}
-				all_owned =  {
-					secede_province = CUM
 				}
 			}
 			CAN = {
 				all_core = {
-					secede_province = CUM
 					add_core = CUM
-				}
-				all_owned =  {
-					secede_province = CUM
 				}
 			}
 			
