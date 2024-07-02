@@ -263,6 +263,36 @@ political_decisions = {
 			set_country_flag = add_big_country_modifier_USA
 		}
 	}
+	
+	add_big_country_modifier_SUS = {
+		potential = {
+			OR = {
+				tag = SUS
+			}
+			
+
+			NOT = { has_country_flag = add_big_country_modifier_SUS }
+
+			
+		}
+		
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			military_score = 100
+			prestige = 25
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name =	imposter_people_superiority
+				duration = 36525
+			}
+			
+			set_country_flag = add_big_country_modifier_SUS
+		}
+	}
+
 
 	add_big_country_modifier_JAP = {
 		potential = {
