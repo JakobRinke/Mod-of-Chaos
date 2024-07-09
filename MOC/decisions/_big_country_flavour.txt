@@ -77,6 +77,7 @@ political_decisions = {
 				tag = CAN
 				tag = AST
 				tag = DUA
+				tag = BRT
 			}
 
 			NOT = { has_country_flag = add_big_country_modifier_UK }

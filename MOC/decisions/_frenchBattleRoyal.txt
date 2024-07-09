@@ -130,8 +130,8 @@ political_decisions = {
 
 				add_core = 417
 				add_core = 418
-
-				
+				prestige = 10
+				add_accepted_culture = french
 			}
 
 			PRV = {

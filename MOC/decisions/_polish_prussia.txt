@@ -520,4 +520,112 @@ political_decisions = {
 		}
 	
 	}
+
+	expand_baltic_sea_cultures = {
+		potential = {
+			OR = {
+				has_country_flag = become_PLR
+				tag = PLR
+			}
+			NOT = {has_country_flag = expand_baltic_sea_cultures}
+		}
+
+		allow = {
+			is_greater_power = yes
+			owns = 625
+			owns = 706
+			owns = 354
+			owns = 718
+			owns = 322
+		}
+
+		effect = {
+			set_country_flag = expand_baltic_sea_cultures
+			badboy = 10
+			add_accepted_culture = swedish
+			add_accepted_culture = danish
+			add_accepted_culture = norwegian
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	
+	}
+
+	expand_baltic_sea_territory = {
+		potential = {
+			OR = {
+				has_country_flag = become_PLR
+				tag = PLR
+			}
+			NOT = {has_country_flag = expand_baltic_sea_territory}
+		}
+
+		allow = {
+			is_greater_power = yes
+			owns = 372
+			owns = 322
+		}
+
+		effect = {
+			set_country_flag = expand_baltic_sea_territory
+			badboy = 15
+
+			#Nordnorge
+			add_core = 305
+			add_core = 306
+			add_core = 307
+			add_core = 308
+
+			#Vestlandet
+			add_core = 309
+			add_core = 310
+			add_core = 311
+			add_core = 312
+
+			#Ostlandet
+			add_core = 313
+			add_core = 314
+			add_core = 315
+			add_core = 316
+
+			#Norrland
+			add_core = 317
+			add_core = 318
+			add_core = 319
+			add_core = 320
+			add_core = 321
+
+			#Svealand
+			add_core = 322
+			add_core = 323
+			add_core = 324
+			add_core = 325
+			add_core = 326
+			add_core = 327
+			add_core = 328
+
+			#Gotland
+			add_core = 329
+			add_core = 330
+			add_core = 331
+			add_core = 332
+			add_core = 333
+			add_core = 334
+			add_core = 335
+
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	
+	}
 }
