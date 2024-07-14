@@ -1,7 +1,7 @@
+#picture 1
+
 political_decisions = {
-
-
-	
+	picture = moc_day_one_danubia
 	moc_day_one_danubia = {
 		potential = {
 			tag = DNB
@@ -121,6 +121,7 @@ political_decisions = {
 	
 	
 	hun_final_countdown = {
+		pictures = hun_final_countdown
 		potential = {
 			tag = HUN
 			NOT = {

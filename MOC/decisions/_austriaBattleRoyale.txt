@@ -1,6 +1,9 @@
+#picture 1
+
 political_decisions = {
 
 	austrian_battle_royale_moc = {
+		picture = austrian_battle_royale_moc
 		potential = {
 			tag = AUS
 			NOT = { has_global_flag = austrian_battle_royale_moc}
@@ -163,6 +166,7 @@ political_decisions = {
 	
 	
 	sie_fight_for_romania = {
+		picture = sie_fight_for_romania
 		potential = {
 			tag = SIE
 			has_global_flag = austrian_battle_royale_moc
@@ -215,7 +219,7 @@ political_decisions = {
 	
 	
 	counter_attack_glm = {
-	
+		picture = counter_attack_glm
 		potential = {
 				tag = SIE
 				NOT = { has_country_flag = counter_attack_glm}
@@ -223,7 +227,6 @@ political_decisions = {
 			allow = {
 				war = no
 			}
-			
 			effect = {
 				badboy = 10
 				GLM = {
@@ -242,7 +245,7 @@ political_decisions = {
 	}
 	
 	on_our_way_to_poland_glm = {
-	
+		picture = on_our_way_to_poland_glm
 		potential = {
 			tag = GLM
 			NOT = { has_country_flag = on_our_way_to_poland_glm}
@@ -271,6 +274,7 @@ political_decisions = {
 	}
 	
 	glm_fight_poland = {
+		picture = glm_fight_poland
 		potential = {
 			tag = GLM
 			has_global_flag = austrian_battle_royale_moc
@@ -300,6 +304,7 @@ political_decisions = {
 	}
 	
 	cro_literate_pop = {
+		pictures = cro_literate_pop
 		potential = {
 			tag = CRO
 			NOT = {
@@ -323,6 +328,7 @@ political_decisions = {
 	
 	
 	ser_accept_the_turks_pop = {
+		picture = ser_accept_the_turks_pop
 		potential = {
 			tag = SER
 			NOT = {
@@ -354,6 +360,7 @@ political_decisions = {
 	}
 	
 	czh_get_based = {
+		picture = czh_get_based
 		potential = {
 			tag = CZH
 			NOT = {
