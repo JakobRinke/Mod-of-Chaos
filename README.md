@@ -138,13 +138,13 @@ The following Nations have at least one decision or event added for them:
 <li>Morocco</li>
 </ul>
 
-
-
-
-
-
-
-
+<h3> Formable Continents </h3>
+<ul>
+<li> Africa </li>
+<li> European Union (Europe) </li>
+<li> CUM (North Amerika) </li>
+<li> SUs (South Amerika)  </li>
+</ul>
 
 
 <h2> 
