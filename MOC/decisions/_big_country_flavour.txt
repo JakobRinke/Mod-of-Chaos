@@ -12,10 +12,7 @@ political_decisions = {
 				tag = BRG
 				tag = BAV
 			}
-	
-
 			NOT = { has_country_flag = add_big_country_modifier_ger }
-
 			
 		}
 		
