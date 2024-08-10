@@ -117,6 +117,7 @@ political_decisions = {
 			
 			#Bohemia
 			add_core = 625
+			add_core = 626
 			add_core = 627
 			add_core = 628
 			add_core = 629

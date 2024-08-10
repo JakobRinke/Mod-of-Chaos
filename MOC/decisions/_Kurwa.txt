@@ -1,0 +1,370 @@
+#pictures 0
+
+political_decisions = {
+
+	form_kurwa = {
+		potential = {
+			OR = {
+				tag = POL
+				tag = UKR
+				tag = BYE
+				tag = ROM
+				tag = MON
+				tag = SER
+				tag = MOL
+				tag = CRO
+				tag = LIT
+				tag = SLV
+				tag = HUN
+				tag = KRA
+				tag = CPL
+			}
+			NOT = { has_country_flag = form_kurwa}	
+			NOT = { exist = KUR }
+		}
+		allow = {
+			owns = 702 # Lvov
+			owns = 703 # Krakow
+			owns = 794 # Belgrade
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			set_country_flag = form_kurwa
+			change_tag = KUR
+			prestige = 25
+			
+			# Cores are AI generated => province names might not be right
+
+			# Poland
+			add_core = 703
+			add_core = 704
+			add_core = 705
+			add_core = 706  # Warsaw
+			add_core = 707  # Suwalki
+			add_core = 708  # Plock
+			add_core = 709  # Lomza
+			add_core = 710  # Skierniewicz
+			add_core = 711  # Siedlice
+			add_core = 712  # Lodz
+			add_core = 713  # Radom
+			add_core = 714  
+			add_core = 715  # Lublin
+			add_core = 716  # Kielce
+			add_core = 717  # Kalisz
+			add_core = 719  # Bialystock
+
+			#Bohemia
+			add_core = 625
+			add_core = 626
+			add_core = 627
+			add_core = 628
+			add_core = 629
+			add_core = 630
+
+			#Moravia
+			add_core = 631
+			add_core = 632
+
+			# Posen 
+			add_core = 699
+			add_core = 700
+			add_core = 701
+
+			# Slovakia
+			add_core = 633
+			add_core = 634
+			add_core = 635
+			add_core = 636
+			add_core = 637
+			add_core = 638
+			add_core = 950
+
+			# Eastern Transylvania
+			add_core = 657
+			add_core = 659
+			add_core = 660
+			add_core = 2533
+
+			# Wallachia 
+			add_core = 664
+			add_core = 665
+			add_core = 666
+			add_core = 667
+			add_core = 668
+			add_core = 669
+
+			# Montenegro
+			add_core = 800
+			add_core = 2569
+			add_core = 2577
+			add_core = 2582
+			add_core = 2583
+
+			add_core = 718
+			add_core = 942
+			add_core = 947
+
+			add_core = 623
+			add_core = 639 
+			add_core = 640
+			add_core = 662
+			add_core = 663
+			add_core = 670 
+			add_core = 2538
+			add_core = 2584
+			add_core = 671  # Prague
+			add_core = 672  # Plzen
+			add_core = 673  # Budweis
+			add_core = 674  # Pilsen
+			add_core = 675  # Reichenberg
+			add_core = 676  # Aussig
+			add_core = 677  # Eger
+			add_core = 678  # Kladno
+			add_core = 682  # Olomouc
+			add_core = 683  # Ostrava
+			add_core = 684  # Zlin
+
+			# Slovakia
+			add_core = 684  # Bratislava
+			add_core = 685  # Nitra
+			add_core = 688  # Banska Bystrica
+			add_core = 689  # Kosice
+
+			# Hungary
+			add_core = 641  # Budapest
+			add_core = 642  # Szeged
+			add_core = 643  # Debrecen
+			add_core = 644  # Pécs
+			add_core = 645  # Miskolc
+			add_core = 646  # Győr
+			add_core = 647  # Kecskemét
+			add_core = 648  # Nyíregyháza
+			add_core = 649  # Székesfehérvár
+			add_core = 650  # Szombathely
+			add_core = 651  # Kaposvár
+			add_core = 652  # Eger
+			add_core = 653
+
+			add_core = 654
+			add_core = 655
+			add_core = 656
+			add_core = 661
+			add_core = 782
+
+
+			# Croatia
+			add_core = 771  # Zagreb
+			add_core = 772  # Varazdin
+			add_core = 773  # Karlovac
+			add_core = 774  # Rijeka
+			add_core = 775  # Zadar
+			add_core = 776  # Split
+			add_core = 777  # Dubrovnik
+			add_core = 778  # Osijek
+			add_core = 779  # Bjelovar
+			add_core = 780
+			add_core = 781
+
+			# Bosnia
+			add_core = 789  # Sarajevo
+			add_core = 791  # Mostar
+			add_core = 792  # Tuzla
+			add_core = 793  # Zenica
+			add_core = 794  # Bihac
+
+			# Serbia
+			add_core = 794  # Belgrade
+			add_core = 795  # Bor
+			add_core = 796  # Kragujevac
+			add_core = 797  # Užice
+			add_core = 798  # Niš
+			add_core = 799  # Leskovac
+			add_core = 802  # Pristina
+			add_core = 803  # Prizren
+			add_core = 804  # Novi Pazar
+
+			# Montenegro
+			add_core = 801  # Cetinje
+			add_core = 802  # Niksic
+			add_core = 803  # Pljevlja
+			add_core = 804  # Ulcinj
+
+
+			#Albania
+			add_core = 849
+			add_core = 850
+			add_core = 851
+			add_core = 852
+			add_core = 853
+			add_core = 780
+
+			#Nothern Macedonia
+			add_core = 1780
+
+			#Southern Serbia
+			add_core = 803
+
+			# North Macedonia
+			add_core = 806
+			add_core = 807
+			add_core = 808
+
+			# Bulgaria
+			add_core = 809
+			add_core = 810
+			add_core = 811
+			add_core = 812  # Pleven
+			add_core = 813  # Shumen
+			add_core = 814  # Varna
+			add_core = 815  # Plovdiv
+			add_core = 816  # Stara Zagora
+			add_core = 817  # Burgas
+			add_core = 818  # Silistre
+			add_core = 829  # Xanthe
+			add_core = 830  # Dedeagatch
+
+			# Bosnia
+			add_core = 783
+			add_core = 784
+			add_core = 785
+			add_core = 786
+			add_core = 787
+			add_core = 788
+
+			# Belarus
+			add_core = 936  # Grodno
+			add_core = 937  # Brest
+			add_core = 938  # Minsk
+			add_core = 939  # Vitebsk
+			add_core = 940  # Mogilev
+			add_core = 941  # Gomel
+
+			# Lithuania
+			add_core = 360  # Vilnius
+			add_core = 361  # Kaunas
+			add_core = 362  # Panevėžys
+			add_core = 363  # Šiauliai
+			add_core = 364  # Klaipėda
+			add_core = 365
+
+
+			define_general = {
+				name = "KURWA"
+				personality = yellow
+				background = school_of_defense 	
+			}
+		}
+	}
+
+	assimalite_kurwa_ashkenazi_pop = {
+		potential = {
+			tag = KUR
+			NOT = { has_country_flag = assimalite_kurwa_ashkenazi_pop }	
+		}
+		allow = {
+			functionalism = 1
+			prestige = 10 
+			war = no 
+		}
+		
+		effect = {
+			primary_culture = ashkenazi
+			remove_accepted_culture = ashkenazi
+
+			activate_technology = biologism 
+			set_country_flag = assimalite_kurwa_ashkenazi_pop
+			all_core = {
+				limit{
+					owned_by = this
+					has_national_minority = yes
+					is_accepted_culture = no 
+				}
+				assimilate = yes
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						culture = north_german
+						culture = south_german
+						culture = ashkenazi
+					}
+				}
+				literacy = 10
+			}
+
+			add_country_modifier = {
+				name = rom_school_system_effect
+				duration = 2500
+			}
+		}
+	}
+
+	gain_accepted_cultures_kurwa = {
+		potential = {
+			tag = KUR
+			NOT = { has_country_flag = gain_accepted_cultures_kurwa}	
+		}
+		allow = {
+			realism = 1
+		}
+		
+		effect = {
+			add_accepted_culture = polish 
+			add_accepted_culture = ukrainian 
+			add_accepted_culture = hungarian 
+			add_accepted_culture = byelorussian 
+			add_accepted_culture = romanian 
+
+			prestige = 25
+			badboy = 4
+			
+			set_country_flag = gain_accepted_cultures_kurwa
+		}
+	}
+
+	change_capital_krakow = {
+		potential = {
+			OR = {
+				tag = POL
+				tag = UKR
+				tag = BYE
+				tag = ROM
+				tag = MON
+				tag = SER
+				tag = MOL
+				tag = CRO
+				tag = LIT
+				tag = SLV
+				tag = HUN
+				tag = KRA
+				tag = CPL
+				tag = GER
+				tag = AUS
+				tag = KUK 
+				tag = DNB
+				tag = KUR
+			}
+			
+			NOT = { capital = 703 }
+		}
+		allow = {
+			the_historical_theory = 1
+			army_professionalism = 1
+		}
+		
+		effect = {
+			prestige = 50
+			capital = 703
+			add_core = 703
+			plurality = 10
+			money = 100000
+
+			define_general = {
+				name = "Krakauer Wuerstchen"
+				personality = resolute
+				background = hated
+			}
+		}
+	}
+}

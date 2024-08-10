@@ -1,6 +1,7 @@
 color = { 0 0 100 }
+fascist_dictatorship = { 0 0 50 }
 
-graphical_culture = european
+graphical_culture = EuropeanGC
 
 
 party = {
