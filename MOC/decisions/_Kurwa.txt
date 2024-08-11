@@ -1,7 +1,6 @@
-#pictures 0
+#pictures 1
 
 political_decisions = {
-
 	form_kurwa = {
 		picture = form_kurwa
 		potential = {
