@@ -3,6 +3,7 @@
 political_decisions = {
 
 	form_kurwa = {
+		picture = form_kurwa
 		potential = {
 			OR = {
 				tag = POL
@@ -258,6 +259,7 @@ political_decisions = {
 	}
 
 	assimalite_kurwa_ashkenazi_pop = {
+		picture = assimalite_kurwa_ashkenazi_pop
 		potential = {
 			tag = KUR
 			NOT = { has_country_flag = assimalite_kurwa_ashkenazi_pop }	
@@ -301,6 +303,7 @@ political_decisions = {
 	}
 
 	gain_accepted_cultures_kurwa = {
+		picture = gain_accepted_cultures_kurwa
 		potential = {
 			tag = KUR
 			NOT = { has_country_flag = gain_accepted_cultures_kurwa}	
@@ -324,6 +327,7 @@ political_decisions = {
 	}
 
 	change_capital_krakow = {
+		picture = change_capital_krakow
 		potential = {
 			OR = {
 				tag = POL
