@@ -141,6 +141,7 @@ political_decisions = {
 
 
 	byz_cores_ita = {
+		picture = byz_cores_ita
 		potential = {
 			tag = BYZ
 			NOT = { has_country_flag = byz_cores_ita}
