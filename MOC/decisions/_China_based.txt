@@ -1,7 +1,9 @@
+#picture 1
+
 political_decisions = {
 	
 	westernize_now_QNG = {
-		
+		picture = chinese_modernisation_moc
 		potential = {
 			tag = QNG
 			civilized = no
@@ -37,7 +39,7 @@ political_decisions = {
 	
 	
 	China_Modernize_Country = {
-		
+		picture = China_Modernize_Country_MOC
 		potential = {
 			tag = QNG
 			NOT = { has_country_flag = China_Modernize_Country}
@@ -79,7 +81,7 @@ political_decisions = {
 	
 	
 	China_Change_Techschool = {
-		
+		picture = China_Change_Techschool_MOC
 		potential = {
 			OR = {
 				tag = QNG
@@ -99,7 +101,7 @@ political_decisions = {
 	}
 	
 	china_get_southHAN_accepted = {
-		
+		picture = china_get_southHAN_accepted
 		potential = {
 			OR = {
 				tag = QNG
@@ -126,7 +128,7 @@ political_decisions = {
 	}
 	
 	china_get_northHAN_accepted = {
-		
+		picture = china_get_northHAN_accepted
 		potential = {
 			OR = {
 				tag = QNG
@@ -139,10 +141,6 @@ political_decisions = {
 		allow = {
 			phenomenalism = 1
 			industrial_score = 500
-
-			
-			
-
 		}
 		effect = {
 			badboy = 5
@@ -160,6 +158,7 @@ political_decisions = {
 	}
 	
 	buy_treaty_port_QNG = {
+		picture = buy_treaty_port_QNG
 		potential = {
 			1498 = {
 				owned_by = POR
@@ -185,9 +184,5 @@ political_decisions = {
 		}
 		
 	}
-	
-	
-
-
 }
 
