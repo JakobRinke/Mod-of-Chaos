@@ -3,6 +3,7 @@
 political_decisions = {
 
 	release_cuba_as_spain_if_you_want_toPLAYASCUBA = {
+		picture = release_cuba_as_spain_if_you_want_toPLAYASCUBA
 		potential = {
 			OR = {
 				tag = SPA
@@ -24,6 +25,7 @@ political_decisions = {
 	}
 	
 	cuba_gain_cores_on_usa = {
+		picture = cuba_gain_cores_on_usa
 		potential = {
 			tag = CUB
 			NOT = { has_country_flag = cuba_gain_cores_on_usa}	
@@ -61,6 +63,7 @@ political_decisions = {
 	}
 
 	cuba_gain_cores_on_spain_first = {
+		picture = cuba_gain_cores_on_spain_first
 		potential = {
 			tag = CUB
 			NOT = { has_country_flag = cuba_gain_cores_on_spain_first}	
@@ -121,6 +124,7 @@ political_decisions = {
 	}
 
 	cuba_gain_cores_on_spain_second = {
+		picture = cuba_gain_cores_on_spain_second
 		potential = {
 			tag = CUB
 			has_country_flag = cuba_gain_cores_on_spain_first	
@@ -173,6 +177,7 @@ political_decisions = {
 	}
 
 	cuba_gain_cores_on_pananama = {
+		picture = cuba_gain_cores_on_pananama
 		potential = {
 			tag = CUB
 			NOT = { has_country_flag = cuba_gain_cores_on_pananama}	
@@ -206,6 +211,7 @@ political_decisions = {
 	}
 
 	cuba_gain_spain_accepted = {
+		picture = cuba_gain_spain_accepted
 		potential = {
 			tag = CUB
 			NOT = { has_country_flag = cuba_gain_spain_accepted}	
@@ -234,6 +240,7 @@ political_decisions = {
 	}
 
 	cuba_gain_cores_on_big_cities = {
+		picture = cuba_gain_cores_on_big_cities
 		potential = {
 			tag = CUB
 			NOT = { has_country_flag = cuba_gain_cores_on_big_cities}	
@@ -281,8 +288,8 @@ political_decisions = {
 			set_country_flag = cuba_gain_cores_on_big_cities
 			
 		}
-		ai_will_do = {					
-				factor = 0.0	
+		ai_will_do = {
+				factor = 0.0
 		}
 	}
 }
