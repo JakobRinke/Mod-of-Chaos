@@ -1,4 +1,4 @@
-#picture 0
+#picture 1
 
 political_decisions = {
 
@@ -19,7 +19,7 @@ political_decisions = {
 			change_tag_no_core_switch = CUB
 			
 		}
-		ai_will_do = {					
+		ai_will_do = {
 				factor = 0.0	
 		}
 	}
@@ -57,7 +57,7 @@ political_decisions = {
 			set_country_flag = cuba_gain_cores_on_usa
 			
 		}
-		ai_will_do = {					
+		ai_will_do = {
 				factor = 0.0	
 		}
 	}
@@ -118,7 +118,7 @@ political_decisions = {
 			set_country_flag = cuba_gain_cores_on_spain_first
 			
 		}
-		ai_will_do = {					
+		ai_will_do = {
 				factor = 0.0	
 		}
 	}
@@ -171,7 +171,7 @@ political_decisions = {
 			set_country_flag = cuba_gain_cores_on_spain_second
 			
 		}
-		ai_will_do = {					
+		ai_will_do = {
 				factor = 0.0	
 		}
 	}
@@ -205,7 +205,7 @@ political_decisions = {
 			set_country_flag = cuba_gain_cores_on_pananama
 			
 		}
-		ai_will_do = {					
+		ai_will_do = {
 				factor = 0.0	
 		}
 	}
@@ -234,7 +234,7 @@ political_decisions = {
 			set_country_flag = cuba_gain_spain_accepted
 			
 		}
-		ai_will_do = {					
+		ai_will_do = {
 				factor = 0.0	
 		}
 	}
