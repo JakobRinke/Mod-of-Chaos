@@ -2,6 +2,7 @@
 political_decisions = {
 
 	create_eich = {
+		picture = create_eich
 		potential = {
 			tag = COB
 		}
@@ -16,8 +17,8 @@ political_decisions = {
 				}
 			}
 			add_country_modifier = {
-					name = mongol_baby_boom
-					duration = 400
+				name = mongol_baby_boom
+				duration = 400
 			}
 			
 			562 = {
@@ -48,9 +49,9 @@ political_decisions = {
 	}
 	
 	demand_higher_administration = {
+		picture = demand_higher_administration_MOC
 		potential = {
 			tag = EIH
-			
 		}
 		allow = {
 			any_sphere_member  = {
