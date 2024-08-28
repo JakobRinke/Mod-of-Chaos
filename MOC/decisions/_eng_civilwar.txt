@@ -1,10 +1,10 @@
-#picture 0
+#picture 1
 
 
 political_decisions = {
 
     start_civil_war_eng = {
-
+        picture = start_civil_war_eng
         potential = {
             tag = ENG 
             NOT = {
@@ -20,8 +20,6 @@ political_decisions = {
         effect = {
             prestige = -10
             
-            
-
             release = SCO
             release = IRE
 
@@ -55,6 +53,7 @@ political_decisions = {
 
 
     reintegrate_celtic_land {
+        picture = reintegrate_celtic_land
         potential = {
             OR = {
                 tag = ENG
@@ -65,8 +64,11 @@ political_decisions = {
 
         }
         allow = {
-            NOT = { exists = SCO exists = IRE exists = CEL}
-
+            NOT = { 
+                exists = SCO 
+                exists = IRE 
+                exists = CEL 
+            }
         }
         effect = {
             prestige = 20
@@ -131,6 +133,7 @@ political_decisions = {
 
 
     reclaim_celts_land = {
+        picture = reclaim_celts_land
         potential = {
             OR = {
                 tag = ENG
@@ -190,6 +193,7 @@ political_decisions = {
 
 
     cel_claim_celtic_empire = {
+        picture = cel_claim_celtic_empire
         potential = {
             tag = CEL
             NOT = { has_country_flag = cel_claim_celtic_empire }
@@ -251,11 +255,5 @@ political_decisions = {
                 badboy = 0.1
             }
         }
-
     }
-
-
-           
-
-    
 }
