@@ -542,6 +542,7 @@ political_decisions = {
 	}
 
 	assimilate_all_cores_ger = {
+		picture = demand_higher_administration_MOC
 		potential = {
 			is_culture_group = germanic
 			has_global_flag = france_rename_rhine
@@ -571,5 +572,5 @@ political_decisions = {
 				badboy = 0.4
 			}
 		}
-		}
+	}
 }

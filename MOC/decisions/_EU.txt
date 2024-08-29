@@ -40,13 +40,7 @@ political_decisions = {
 					add_core = EUR
 				}
 			}
-
-
 		}
-
-
-
-
 		ai_will_do = {
 			factor = 0.00003
 			modifier = {
@@ -138,19 +132,8 @@ political_decisions = {
 
 			has_country_flag = solidify_eu
 		}
-
-
-
-
 		ai_will_do = {
 			factor = 1
 		}
-
-
-
 	}
-
-
-
-
 }
