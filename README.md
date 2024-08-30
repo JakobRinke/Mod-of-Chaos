@@ -28,7 +28,7 @@ The mod also works well for Multiplayer, by encouraging players to go to war mor
 </h2>
 <ul>
 <li> Perma Infamy Reduction </li>
-<li> Permanent 4/3 Gerneral for all non-ai Playera </li>
+<li> Permanent 5/5 Gerneral for all non-ai Playera </li>
 <li> Changed Unit Balance</li>
 <li> Transfer and Capital and Cheaper Conquest CBs</li>
 </ul>
