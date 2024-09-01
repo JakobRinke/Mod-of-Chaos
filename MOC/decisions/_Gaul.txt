@@ -1,8 +1,9 @@
-#picture 0
+#picture 1
 
 political_decisions = {
 	
 	form_gaul_moc = {
+		picture = form_gaul_moc
 		potential = {
 			OR = {
 				tag = WHA
@@ -49,6 +50,7 @@ political_decisions = {
 	}
 
 	claim_iberia_moc_gau = {
+		picture = claim_iberia_moc_gau
 		potential = {
 			tag = GAU
 			
@@ -115,6 +117,7 @@ political_decisions = {
 	}
 
 	get_iberia_accepted_moc_gau = {
+		piocture = get_iberia_accepted_moc_gau
 		potential = {
 			tag = GAU
 			
