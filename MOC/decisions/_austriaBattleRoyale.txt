@@ -149,13 +149,13 @@ political_decisions = {
 				}
 			}
 
-			GLM = { 
+		
 				POL = {
 					all_core = {
-						add_core = THIS
+						add_core = GLM
 					}
 				}
-			}
+			
 			
 			change_tag = DNB
 						
