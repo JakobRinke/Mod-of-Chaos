@@ -1,13 +1,14 @@
 capital = 425
 primary_culture = french
-culture = north_italian
+culture = breton
+culture = picard
 
 
 religion = catholic
-government = hms_government
-plurality = 22
+government = democracy
+plurality = 45
 nationalvalue = nv_liberty
-literacy = 0.50
+literacy = 0.75
 civilized = yes
 
 # Political reforms
@@ -41,18 +42,9 @@ set_country_flag = catholic_country
 
 # Technologies
     post_napoleonic_thought = 1
-    strategic_mobility = 1
     flintlock_rifles = 1
-    muzzle_loaded_rifles = 1
-    breech_loaded_rifles = 1
     bronze_muzzle_loaded_artillery = 1
-    iron_muzzle_loaded_artillery = 1
-    military_staff_system = 1
-    military_plans = 1
-    military_statistics = 1
     army_command_principle = 1
-    army_professionalism = 1
-    army_decision_making = 1
 
     post_nelsonian_thought = 1
     battleship_column_doctrine = 1
@@ -112,17 +104,18 @@ set_country_flag = catholic_country
 #Inventions
 secularization = yes
 social_conscience = yes
+hussar = yes
 
 # Starting Consciousness
-consciousness = 1
+consciousness = 4
 nonstate_consciousness = 1
 
-ruling_party = PRV_conservative_3
+ruling_party = PRS_liberal_2
 last_election = 1834.6.21
 upper_house = {
     fascist = 0
-    liberal = 2
-    conservative = 70
+    liberal = 42
+    conservative = 30
     reactionary = 18
     anarcho_liberal = 0
     socialist = 0
