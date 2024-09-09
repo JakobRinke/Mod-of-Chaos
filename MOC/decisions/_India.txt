@@ -1,4 +1,4 @@
-#pciture 1
+#picture 1
 
 political_decisions = {
 	picture = indian_schools_ysdsas

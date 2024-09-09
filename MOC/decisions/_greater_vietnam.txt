@@ -1,8 +1,9 @@
-#picture 0
+#picture 1
 
 political_decisions = {
 
 	claim_south_han_1836 = {
+		picture = claim_south_han_1836
 		potential = {
 			tag = DAI
 			NOT = {has_country_flag = claim_south_han}
@@ -16,6 +17,7 @@ political_decisions = {
 			add_accepted_culture = lao
 			add_accepted_culture = burmese
 			research_points = 25000
+
 			DAI  = {
 				all_core = {
 					add_core = THIS
@@ -61,7 +63,13 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			GNG = { all_core = { add_core = THIS } }
+
+			GNG    = { 
+				all_core = { 
+					add_core = THIS 
+				} 
+			}
+
 			nationalvalue = nv_productivity
 			set_country_flag = claim_south_han
 		}
@@ -80,71 +88,72 @@ political_decisions = {
 	}
 
 	claim_south_han_1845 = {
+		picture = claim_south_han_1845
+		potential = {
+			tag = DAI
+			NOT = { has_country_flag = claim_south_han_1845 }
+			has_country_flag = claim_south_han
+		}
+		allow = {
+			war = no
+			year = 1845
+		}
+		effect = {
 
-			potential = {
-				tag = DAI
-				NOT = {has_country_flag = claim_south_han_1845}
-				has_country_flag = claim_south_han
-			}
-			allow = {
-				war = no
-				year = 1845
-			}
-			effect = {
+			#Culture techs
+			activate_technology = late_enlightenment_philosophy
+			activate_technology = malthusian_thought
+			activate_technology = enlightenment_thought
 
-				#Culture techs
-				activate_technology = late_enlightenment_philosophy
-				activate_technology = malthusian_thought
-				activate_technology = enlightenment_thought
+			#Industry techs
+			activate_technology = piston_steam_engine
+			activate_technology = mechanical_production
+			activate_technology = basic_chemistry
 
-				#Industry techs
-				activate_technology = piston_steam_engine
-				activate_technology = mechanical_production
-				activate_technology = basic_chemistry
+			#Army techs
+			activate_technology = post_napoleonic_thought
+			activate_technology = flintlock_rifles
+			activate_technology = bronze_muzzle_loaded_artillery
+			activate_technology = military_staff_system
+			activate_technology = army_command_principle
 
-				#Army techs
-				activate_technology = post_napoleonic_thought
-				activate_technology = flintlock_rifles
-				activate_technology = bronze_muzzle_loaded_artillery
-				activate_technology = military_staff_system
-				activate_technology = army_command_principle
+			#Navy techs
+			activate_technology = post_nelsonian_thought
 
-				#Navy techs
-				activate_technology = post_nelsonian_thought
+			#Commerce techs
+			activate_technology = private_banks
+			activate_technology = no_standard
+			activate_technology = early_classical_theory_and_critique
+			activate_technology = guild_based_production
 
-				#Commerce techs
-				activate_technology = private_banks
-				activate_technology = no_standard
-				activate_technology = early_classical_theory_and_critique
-				activate_technology = guild_based_production
+			#Guizhou
+			add_core = 1505
+			add_core = 1506
+			add_core = 1507
 
-				#Guizhou
-				add_core = 1505
-				add_core = 1506
-				add_core = 1507
+			#Westsichuan
+			add_core = 1578
+			add_core = 1580
+			add_core = 1582
+			add_core = 1584
+			add_core = 1585
+			add_core = 1586
 
-				#Westsichuan
-				add_core = 1578
-				add_core = 1580
-				add_core = 1582
-				add_core = 1584
-				add_core = 1585
-				add_core = 1586
+			#South Hunan
+			add_core = 1530
+			add_core = 1527
+			add_core = 1526
 
-				#South Hunan
-				add_core = 1530
-				add_core = 1527
-				add_core = 1526
+			#South Jiangxi
+			add_core = 1550
+			add_core = 1547
+			add_core = 1548
 
-				#South Jiangxi
-				add_core = 1550
-				add_core = 1547
-				add_core = 1548
-				add_accepted_culture = nanfaren
-				set_country_flag = claim_south_han_1845
-			}
+			add_accepted_culture = nanfaren
+			set_country_flag = claim_south_han_1845
+		}
 
-			ai_will_do = {
+		ai_will_do = {
 			factor = 0.0007
 			modifier = {
 				factor = 0
@@ -154,110 +163,107 @@ political_decisions = {
 	}
 
 	claim_south_han_1870 = {
-
-			potential = {
-				tag = DAI
-				NOT = {has_country_flag = claim_south_han_1870}
-				has_country_flag = claim_south_han_1845
+		picture = claim_south_han_1870
+		potential = {
+			tag = DAI
+			NOT = {has_country_flag = claim_south_han_1870}
+			has_country_flag = claim_south_han_1845
+		}
+		allow = {
+			AND = {
+				owns = 1550
+				owns = 1547
+				owns = 1548
+				owns = 1530
+				owns = 1527
+				owns = 1526
+				owns = 1505
+				owns = 1506
+				owns = 1507
+				owns = 1578
+				owns = 1580
+				owns = 1582
+				owns = 1584
+				owns = 1585
+				owns = 1586
 			}
-			allow = {
-				AND = {
-					owns = 1550
-					owns = 1547
-					owns = 1548
-					owns = 1530
-					owns = 1527
-					owns = 1526
-					owns = 1505
-					owns = 1506
-					owns = 1507
-					owns = 1578
-					owns = 1580
-					owns = 1582
-					owns = 1584
-					owns = 1585
-					owns = 1586
+			war = no
+			prestige = 250
+			year = 1870
+		}
+		effect = {
+			badboy = 25
+			ASM   = {
+				all_core = {
+					add_core = THIS
 				}
-				war = no
-				prestige = 250
-				year = 1870
 			}
-			effect = {
-				badboy = 25
-				ASM   = {
-					all_core = {
-						add_core = THIS
-					}
+			BNG   = {
+				all_core = {
+					add_core = THIS
 				}
-				BNG   = {
-					all_core = {
-						add_core = THIS
-					}
+			}
+			TIB   = {
+				all_core = {
+					add_core = THIS
 				}
-				TIB   = {
-					all_core = {
-						add_core = THIS
-					}
+			}
+			NEP   = {
+				all_core = {
+					add_core = THIS
 				}
-				NEP   = {
-					all_core = {
-						add_core = THIS
-					}
+			}
+			BHU   = {
+				all_core = {
+					add_core = THIS
 				}
-				BHU   = {
-					all_core = {
-						add_core = THIS
-					}
-				}
-
-				add_core = 1244
-				add_core = 1242
-				add_core = 1328
-
-				add_accepted_culture = tibetan
-				add_accepted_culture = nepali
-				add_accepted_culture = asian_minor
-
-				set_country_flag = claim_south_han_1870
 			}
 
-			ai_will_do = {
-				factor = 0.00025
-			}
-				
+			add_core = 1244
+			add_core = 1242
+			add_core = 1328
+
+			add_accepted_culture = tibetan
+			add_accepted_culture = nepali
+			add_accepted_culture = asian_minor
+
+			set_country_flag = claim_south_han_1870
+		}
+		ai_will_do = {
+			factor = 0.00025
+		}	
 	}
 
 	vietnam_get_accepted_cultures = {
-
-			potential = {
-				tag = DAI
-				NOT = { has_country_flag = vietnam_get_accepted_cultures }
-				has_country_flag = claim_south_han_1845
-			}
-			allow = {
-				war = no
-				year = 1870
-			}
-			effect = {
-				badboy = 15
-
-				add_accepted_culture = bengali
-				add_accepted_culture = assamese
-				add_accepted_culture = bihari
-
-				set_country_flag = vietnam_get_accepted_cultures
-			}
-
-			ai_will_do = {
-				factor = 0.00025
-			}
-
-	}
-	vietnam_inherat_cambodia = {
-
+		picture = vietnam_get_accepted_cultures
 		potential = {
 			tag = DAI
-			NOT = {has_country_flag = vietnam_inherat_cambodia}
+			NOT = { has_country_flag = vietnam_get_accepted_cultures }
+			has_country_flag = claim_south_han_1845
+		}
+		allow = {
+			war = no
+			year = 1870
+		}
+		effect = {
+			badboy = 15
+
+			add_accepted_culture = bengali
+			add_accepted_culture = assamese
+			add_accepted_culture = bihari
+
+			set_country_flag = vietnam_get_accepted_cultures
+		}
+		ai_will_do = {
+			factor = 0.00025
+		}
+	}
+
+	vietnam_inherit_cambodia = {
+		picture = vietnam_inherit_cambodia
+		potential = {
+			tag = DAI
+			NOT = {has_country_flag = vietnam_inherit_cambodia}
 			has_country_flag = claim_south_han_1845
 		}
 		allow = {
@@ -265,7 +271,7 @@ political_decisions = {
 		}
 		effect = {
 			inherit = CAM
-			set_country_flag = vietnam_inherat_cambodia
+			set_country_flag = vietnam_inherit_cambodia
 		}
 
 		ai_will_do = {
@@ -274,78 +280,77 @@ political_decisions = {
 	}
 
 	claim_south_han_1890 = {
+		picture = claim_south_han_1890
+		potential = {
+			tag = DAI
+			NOT = {has_country_flag = claim_south_han_1890}
+			has_country_flag = claim_south_han_1870
+		}
+		allow = {
+			war = no
+			prestige = 400
+			year = 1890
+			is_greater_power = yes
+		}
+		effect = {
+			badboy = 15
 
-			potential = {
-				tag = DAI
-				NOT = {has_country_flag = claim_south_han_1890}
-				has_country_flag = claim_south_han_1870
-			}
-			allow = {
-				war = no
-				prestige = 400
-				year = 1890
-				is_greater_power = yes
-			}
-			effect = {
+			#south Zhejiang
+			add_core = 1607
+			add_core = 1610
+			add_core = 1611
 
-				badboy = 15
-				#south Zhejiang
-				add_core = 1607
-				add_core = 1610
-				add_core = 1611
+			#South Anhui
+			add_core = 1470
+			add_core = 1471
+			add_core = 1473
+			add_core = 1475
 
-				#South Anhui
-				add_core = 1470
-				add_core = 1471
-				add_core = 1473
-				add_core = 1475
+			#West Hubei
+			add_core = 1519
+			add_core = 1520
+			add_core = 1521
+			add_core = 1523
 
-				#West Hubei
-				add_core = 1519
-				add_core = 1520
-				add_core = 1521
-				add_core = 1523
+			#East Hubei
+			add_core = 1516
+			add_core = 1517
+			add_core = 1518
+			add_core = 1522
 
-				#East Hubei
-				add_core = 1516
-				add_core = 1517
-				add_core = 1518
-				add_core = 1522
+			#North Jiangxi
+			add_core = 1545
+			add_core = 1546
+			add_core = 1549
+			add_core = 1551
 
-				#North Jiangxi
-				add_core = 1545
-				add_core = 1546
-				add_core = 1549
-				add_core = 1551
+			#East Sichuan
+			add_core = 1577
+			add_core = 1579
+			add_core = 1581
+			add_core = 1583
 
-				#East Sichuan
-				add_core = 1577
-				add_core = 1579
-				add_core = 1581
-				add_core = 1583
+			#North Hunan
+			add_core = 1524
+			add_core = 1525
+			add_core = 1528
+			add_core = 1529
 
-				#North Hunan
-				add_core = 1524
-				add_core = 1525
-				add_core = 1528
-				add_core = 1529
+			set_country_flag = claim_south_han_1890
+		}
 
-				set_country_flag = claim_south_han_1890
-			}
-
-			ai_will_do = {
-				factor = 0.00025
-			}
+		ai_will_do = {
+			factor = 0.00025
+		}
 	}
 
 	renovate_hanoi_babyboom = {
+		picture = renovate_hanoi_babyboom
 		potential = { 
 			owns = 1369
 			
 			NOT = { has_country_flag = renovate_hanoi_babyboom }
 		}
-
-
 		allow = { 
 			state_n_government = 1
 		}
@@ -353,7 +358,7 @@ political_decisions = {
 			prestige = 10
 			
 			1369 = {		
-				life_rating  = 20
+				life_rating  = 30
 				RGO_size = 700000
 			
 				add_province_modifier = {
@@ -362,11 +367,7 @@ political_decisions = {
 
 				}
 			}
-			
-			
 			set_country_flag = renovate_hanoi_babyboom
 		}
-	
-	
 	}
 }
