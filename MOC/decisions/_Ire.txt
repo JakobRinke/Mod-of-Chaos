@@ -1,10 +1,8 @@
-#picture 0
+#picture 1
 
 political_decisions = {
-	
-	
 	ire_claim_scot = {
-	
+		picture = ire_claim_scot
 		potential = {
 			OR = { tag = IRE tag = SCO }
 			war = no
@@ -40,9 +38,12 @@ political_decisions = {
 	}
 
 	ire_integrate_sco = {
-	
+		picture = ire_integrate_sco
 		potential = {
-			OR = { tag = IRE tag = SCO }
+			OR = { 
+				tag = IRE
+				tag = SCO
+			}
 			ai = no
 			war = no
 			NOT = { has_country_flag = ire_integrate_sco }
@@ -78,7 +79,6 @@ political_decisions = {
 					add_core = ENG
 				}
 			}
-
 			ENL = {
 				all_core = {
 					add_core = ENG
@@ -86,19 +86,18 @@ political_decisions = {
 			}
 			set_country_flag = ire_integrate_sco
 		}
-		
-	
-	
 	}
 	
 	south_african_sneaky = {
-	
+		picture = south_african_sneaky
 		potential = {
-			OR = { tag = IRE tag = CEL}
+			OR = { 
+				tag = IRE
+				tag = CEL
+			}
 			primary_culture = irish
 			exists = SAF
 			NOT = { has_country_flag = south_african_sneaky }
-			
 		}
 		
 		allow = {
@@ -125,7 +124,7 @@ political_decisions = {
 	}
 
 	south_african_expedition = {
-	
+		picture = south_african_expedition
 		potential = {
 			OR = { tag = IRE  tag = CEL}
 			exists = SAF
@@ -136,7 +135,9 @@ political_decisions = {
 		allow = {
 			prestige = 30
 			state_n_government = 1
-			SAF = { vassal_of = THIS }			
+			SAF = {
+				vassal_of = THIS
+			}
 		}
 		
 		effect = {
@@ -152,35 +153,50 @@ political_decisions = {
 	
 	
 	claim_can = {
-	
+		picture = claim_can
 		potential = {
 			OR = { tag = SCO }
 			NOT = { has_country_flag = claim_can }
 			ai = no
 			ideological_thought = 1
 		}
-		
-		allow = {	
-		}
-		
+		allow = {}
 		effect = {
 			badboy = 10
-			QUE = { all_core = { add_core = THIS } }
-			CAN = { all_core = { add_core = THIS } }
-			MRU = { all_core = { add_core = THIS } }
-			RPL = { all_core = { add_core = THIS } }
-			COL = { all_core = { add_core = THIS } }
-			NEW = { all_core = { add_core = THIS } }
+			QUE = { 
+				all_core = {
+					add_core = THIS
+				}
+			}
+			CAN = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			MRU = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			RPL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			COL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			NEW = {
+				all_core = {
+					add_core = THIS
+				}
+			}
 			set_country_flag = claim_can
 		}
-
 		ai_will_do = {
 			factor = 1
 		}
-
 	}
-
-
-
-
 }

@@ -93,24 +93,22 @@ political_decisions = {
 				set_country_flag = become_the_HRE
 				capital = 619
 			}
-			GER = {all_core = {remove_core = GER}}
-			LUX = {all_core = {remove_core = LUX}}
-			BEL = {all_core = {remove_core = BEL}}
-			BOH = {all_core = {remove_core = BOH}}
-			AUS = {all_core = {
-							limit = {
-								AND = {
-									NOT = {is_core=CRO}
-									NOT = {is_core=VEN}
-									NOT = {is_core=POL}
-								}
-							}
-							remove_core = AUS
+			GER = { all_core = { remove_core = GER } }
+			LUX = { all_core = { remove_core = LUX } }
+			BEL = { all_core = { remove_core = BEL } }
+			BOH = { all_core = { remove_core = BOH } }
+			AUS = {
+				all_core = {
+					limit = {
+						AND = {
+							NOT = {is_core=CRO}
+							NOT = {is_core=VEN}
+							NOT = {is_core=POL}
+						}
+					}
+					remove_core = AUS
 				 }
 		   }
-		   
-		  
-			
 			ai_will_do = {					
 				factor = 0.000035
 			}
