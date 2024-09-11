@@ -1,6 +1,6 @@
-# picture 0
-political_decisions = {
+# picture 1
 
+political_decisions = {
 	claim_dalmatia = {
 		picture = claim_dalmatio_moc
 		potential = { 
@@ -44,26 +44,21 @@ political_decisions = {
 	}
 
 	albanian_brothers = {
-		potential = { 
-
+		picture = albanian_brothers_moc
+		potential = {
 			OR ={
 				tag = ITA 
 				tag = AGN 
 				tag = GRE
-			}
-			
-			NOT = { has_country_flag = albanian_brothers }
+			}			NOT = { has_country_flag = albanian_brothers }
 		}
 		allow = { 
-			nationalism_n_imperialism = 1 
+			nationalism_n_imperialism = 1
 			prestige = 25
 		}
-		effect = { 
-
+		effect = {
 			badboy = 5
-
 			add_accepted_culture = albanian
-
 			set_country_flag = albanian_brothers
 		}
 		ai_will_do = {
@@ -76,6 +71,7 @@ political_decisions = {
 	}
 
 	integrate_montenegro_moc = {
+		picture = integrate_montenegro_moc
 		potential = { 
 			OR ={
 				tag = ITA 
@@ -86,7 +82,7 @@ political_decisions = {
 				tag = HUN
 				tag = AUS
 			}
-			NOT = {has_country_flag = tur_go_souther_route }
+			NOT = { has_country_flag = tur_go_souther_route }
 			NOT = { has_country_flag = integrate_montenegro_moc }
 		}
 		allow = { 
