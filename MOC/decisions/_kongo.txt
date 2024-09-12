@@ -1,4 +1,4 @@
-#picture 0
+#picture 1
 
 political_decisions = {
 
@@ -42,18 +42,12 @@ political_decisions = {
 
 
 	kongo_school_system = {
-	
+		picture = kongo_school_system
 		potential = {
 			tag = KON
 			NOT = { has_country_flag = kongo_school_system }
 		}
-		
-		
-		allow = {
-
-		}
-		
-		
+		allow = {}
 		effect = {
 			plurality = 10
 			add_accepted_culture = ovimbundu
@@ -83,17 +77,12 @@ political_decisions = {
 
 
 	loango_school_system = {
-	
+		picture = kongo_school_system
 		potential = {
 			tag = LOA
 			NOT = { has_country_flag = loango_school_system }
 		}
-		
-		allow = {
-
-		}
-		
-		
+		allow = {}
 		effect = {
 			plurality = 10
 			add_accepted_culture = forest_bantu
@@ -146,17 +135,12 @@ political_decisions = {
 	}
 
 	kasai_school_system = {
-	
+		picture = kongo_school_system
 		potential = {
 			tag = KSI
 			NOT = { has_country_flag = kasai_school_system }
 		}
-		
-		allow = {
-
-		}
-		
-		
+		allow = {}
 		effect = {
 			plurality = 10
 			add_accepted_culture = forest_bantu
@@ -192,17 +176,12 @@ political_decisions = {
 	}
 	
 	luba_school_system = {
-	
+		picture = kongo_school_system
 		potential = {
 			tag = LBA
 			NOT = { has_country_flag = luba_school_system }
 		}
-		
-		allow = {
-
-		}
-		
-		
+		allow = {}
 		effect = {
 			plurality = 10
 			add_accepted_culture = forest_bantu
@@ -240,7 +219,7 @@ political_decisions = {
 
 	#Kongo Civil War#
 	start_kongo_civWar = {
-	
+		picture = start_kongo_civWar
 		potential = {
 			OR = {
 				tag = LBA
@@ -248,19 +227,11 @@ political_decisions = {
 				tag = KON
 				tag = KSI
 			}
-
-			
 			NOT = { has_country_flag = start_kongo_civWar }
 			NOT = { has_global_flag = start_kongo_civWar }
 		}
-		
-		allow = {
-
-		}
-		
-		
+		allow = {}
 		effect = {
-
 			KON     = {
 				all_core = {
 					add_core = LBA
@@ -312,7 +283,7 @@ political_decisions = {
 
 	
 	kongo_annex_congo = {
-	
+		picture = kongo_annex_congo
 		potential = {
 			OR {
 				AND = {
@@ -347,31 +318,9 @@ political_decisions = {
 					}
 				}
 			}
-			
 			NOT = { has_country_flag = kongo_annex_congo }
-			
 		}
-		
-		
 		allow = {
-			#KON = {
-			#	all_core = {
-			#		limit = {
-			#			AND = {
-			#				empty = no 
-			#				is_core = yes
-			#			}
-			#			
-			#		}
-			#		OR = {
-			#			owned_by = THIS
-			#			owner = {
-			#				in_sphere = THIS
-			#			}
-			#		}
-			#	}
-			#}
-
 			KON = {
 				all_core = {
 					owned_by = THIS
@@ -462,14 +411,8 @@ political_decisions = {
 
 			set_country_flag = kongo_annex_congo
 		}
-		
 		ai_will_do = {
 			factor = 1
 		}
-		
-		
 	}
-	
-	
-	
 }
