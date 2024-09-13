@@ -1,6 +1,9 @@
+# picture 1
+
 political_decisions = {
 
 	claimMGL = {
+		picture = claimMGL
 		potential = { 
 			tag = KOR 
 			NOT = { has_country_flag = claimMGL }
@@ -13,14 +16,13 @@ political_decisions = {
 				all_owned = { 
 					add_core = KOR 
 					} 
-			} 
-
-
+			}
 			set_country_flag = claimMGL
 		}
 	}
 
 	get_jap_accepted_as_kor = {
+		picture = get_jap_accepted_as_kor
 		potential = { 
 			tag = KOR 
 			NOT = { has_country_flag = get_jap_accepted }
@@ -40,13 +42,11 @@ political_decisions = {
 	}
 	
 	Claim_South_Japan = {
+		picture = Claim_South_Japan
 		potential = { 
 			tag = KOR 
 			NOT = { has_country_flag = Claim_South_Japan }
-		
 		}
-
-
 		allow = { 
 			nationalism_n_imperialism = 1 
 		}
@@ -77,12 +77,11 @@ political_decisions = {
 	}
 
 	Claim_islands_from_Japan = {
+		picture = Claim_islands_from_Japan
 		potential = { 
 			tag = KOR 
 			NOT = { has_country_flag = Claim_South_Japan }
 		}
-
-
 		allow = { 
 			nationalism_n_imperialism = 1 
 		}
@@ -104,12 +103,11 @@ political_decisions = {
 			
 			set_country_flag = Claim_South_Japan
 		}
-	
-	
 	}
 	
 	
 	Claim_Formosa_asia = {
+		picture = Claim_Formosa_asia
 		potential = { 
 			OR ={
 				tag = KOR 
@@ -121,12 +119,8 @@ political_decisions = {
 				tag = BUR
 				tag = IND
 			}
-			
 			NOT = { has_country_flag = Claim_Formosa_asia }
-		
 		}
-
-
 		allow = { 
 			state_n_government = 1
 		}
@@ -141,11 +135,10 @@ political_decisions = {
 
 			set_country_flag = Claim_Formosa_asia
 		}
-	
-	
 	}
 	
 	assimilate_Formosa_asia = {
+		picture = assimilate_Formosa_asia
 		potential = { 
 			OR ={
 				tag = KOR 
@@ -160,32 +153,27 @@ political_decisions = {
 				tag = BUR
 				tag = IND
 			}
-			
 			AND = {
 				owns = 1485
 				owns = 2406
 				owns = 2562
 				owns = 2681
 			}
-			
 			AND = {
 				1485 = {
 					is_primary_culture = no
-					}
-				1485 = {
+				}
+				2406 = {
 					is_primary_culture = no
-					}
-				1485 = {
+				}
+				2562 = {
 					is_primary_culture = no
-					}
-				1485 = {
+				}
+				2681 = {
 					is_primary_culture = no
-					}
-
+				}
 			}
 		}
-
-
 		allow = { 
 			state_n_government = 1
 		}
@@ -196,26 +184,22 @@ political_decisions = {
 			2562 = { assimilate = yes }
 			2681 = { assimilate = yes }
 		}
-	
-	
 	}
 	
 	KOREA_Change_Techschool = {
-		
+		picture = KOREA_Change_Techschool
 		potential = {
 			tag = KOR
 			NOT = { tech_school = korean_tech_school }
 		}
-		allow = {
-		
-		}
+		allow = {}
 		effect = {
 			tech_school = korean_tech_school
 		}
-	
 	}
 
 	gain_jap_accepted = {
+		picture = gain_jap_accepted
 		potential = { 
 			OR ={
 				tag = KOR 
@@ -225,30 +209,23 @@ political_decisions = {
 			NOT = { has_country_flag = get_jap_accepted }
 			NOT = { has_country_flag = gain_jap_accepted }
 		}
-
-
 		allow = { 
 			revolution_n_counterrevolution = 1
 		}
 		effect = {
 			badboy = 10
-
 			add_accepted_culture = japanese
-
 			set_country_flag = gain_jap_accepted
 		}
-	
-	
 	}
 
 	kor_build_nav_base_moc = {
+		picture = kor_build_nav_base_moc
 		potential = { 
 			tag = KOR
 			owns = 1632
 			NOT = { has_country_flag = kor_build_nav_base_moc }
 		}
-
-
 		allow = { 
 			naval_plans = 1
 			money = 50000
@@ -258,26 +235,28 @@ political_decisions = {
 
 			prestige = 5
 
-			1632 = { state_scope = {  any_owned = { naval_base = -6 } } }
-			1632 = { naval_base = 3 }
-
-
-
+			1632 = {
+				state_scope = {
+					any_owned = {
+						naval_base = -6
+					}
+				}
+			}
+			1632 = {
+				naval_base = 3
+			}
 			set_country_flag = kor_build_nav_base_moc
 		}
-	
-	
 	}
 
 
 	renovate_pyongyang_babyboom = {
+		picture = renovate_pyongyang_babyboom
 		potential = { 
 			owns = 1619
 			
 			NOT = { has_country_flag = renovate_pyongyang_babyboom }
 		}
-
-
 		allow = { 
 			state_n_government = 1
 		}
@@ -291,18 +270,14 @@ political_decisions = {
 				add_province_modifier = {
 				name = baby_boom
 				duration = 1850
-
 				}
 			}
-			
-			
 			set_country_flag = renovate_pyongyang_babyboom
 		}
-	
-	
 	}
 
 	encourage_the_dev_of_the_busan = {
+		picture = encourage_the_dev_of_the_busan
 		potential = { 
 			OR ={
 				owns = 1632
@@ -311,11 +286,8 @@ political_decisions = {
 				owns = 1635
 				owns = 1637
 			}
-			
 			NOT = { has_country_flag = encourage_the_dev_of_the_busan }
 		}
-
-
 		allow = { 
 			enlightenment_thought = 1
 		}
@@ -367,11 +339,7 @@ political_decisions = {
 					duration = 1500
 				}
 			}
-			
-			
 			set_country_flag = encourage_the_dev_of_the_busan
 		}
-	
-	
 	}
 }
