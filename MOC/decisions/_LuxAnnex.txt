@@ -1,9 +1,9 @@
-
+# picture 1
 
 
 political_decisions = {
-    
     annex_lux = {
+        picture = annex_lux_moc
         potential = {
             OR = {
                 tag = NET
@@ -14,14 +14,12 @@ political_decisions = {
             }
             exists = LUX
         }
-
         allow = {
             revolution_n_counterrevolution = 1
             LUX = {
                 in_sphere=THIS
             }
         }
-
         effect = {
             LUX = {
                 any_owned_province = {
@@ -33,14 +31,8 @@ political_decisions = {
             }
             inherit = LUX
         }
-
-
         ai_will_do {
             factor = 1
         }
     }
-
-    
-
-
 }
