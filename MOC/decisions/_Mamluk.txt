@@ -1,10 +1,9 @@
-#picture 0
-
+#picture 1
 
 #Greece path
 political_decisions = {
-	
 	form_mamluk_empire = {
+		picture = form_mamluk_empire
 		potential = {
 			OR = {
 				tag = CIR
@@ -12,12 +11,9 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = form_mamluk_empire }
 		}
-		
-		
 		allow = {
 			war = no
 		}
-		
 		effect = {
 			badboy = 10
 			primary_culture = circassian
@@ -33,32 +29,27 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			
 			EGY = {
 				civilize = yes
 				all_core = {
 					add_core = THIS
 				}
 			}
-			
 			CIR = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-
 			ARM = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-
 			TCA = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-
 			inherit = TCA
 			inherit = GRE
 			inherit = EGY
@@ -72,32 +63,26 @@ political_decisions = {
 				government = absolute_monarchy
 				political_reform = yes_slavery	
 			}
-
 			RUS = {
 				remove_core = 1049
 			}
 			set_country_flag = form_mamluk_empire
 		}
-		
 		ai_will_do = {
 			factor = 0.00005
 		}
-		
-		
 	}
 	
 	connectent_our_lands_mam = {
+		picture = connectent_our_lands_mam
 		potential = {
 			tag = MAM
 			NOT = { has_country_flag = connectent_our_lands_mam }
 		}
-		
-		
 		allow = {
 			war = no
 			state_n_government = 1
 		}
-		
 		effect = {
 			badboy = 10
 			prestige = 10
@@ -113,17 +98,15 @@ political_decisions = {
 
 			set_country_flag = connectent_our_lands_mam
 		}
-		
 		ai_will_do = {
 			factor = 0
 		}
-		
-		
 	}
 	
 
 	#Egypt path
 	gain_reasearchpoints_mil_ref = {
+		picture = gain_reasearchpoints_mil_ref
 		potential = {
 			tag = EGY
 			NOT = { has_country_flag = gain_reasearchpoints_mil_ref }
@@ -162,24 +145,19 @@ political_decisions = {
 
 	
 	egy_claims_arab_wrld = {
+		picture = egy_claims_arab_wrld
 		potential = {
 			NOT = { has_country_flag = egy_claims_arab_wrld }
-
-			OR ={
+			OR = {
 				tag = EGY
 				tag = MAM
 			}
-			
 		}
-		
-		
 		allow = {
 			civilized = yes
 		}
-		
 		effect = {
 			prestige = 10
-
 			badboy = 5
 
 			MHR = {
@@ -187,49 +165,41 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			
 			NEJ = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-			
 			ABU = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-
 			HAL = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-			
 			HDJ = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-
 			IRQ  = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-			
 			SYR   = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-			
 			BHR   = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-			
 			CLC    = {
 				all_core = {
 					add_core = THIS
@@ -251,7 +221,6 @@ political_decisions = {
 			add_core = 1172
 			add_core = 1174
 			
-			
 			TRI    = {
 				all_core = {
 					add_core = THIS
@@ -260,15 +229,13 @@ political_decisions = {
 			
 			set_country_flag = egy_claims_arab_wrld
 		}
-		
 		ai_will_do = {
 			factor = 0
 		}
-		
-		
 	}
 	
 	claim_esp_as_arab = {
+		picture = claim_esp_as_arab
 		potential = {
 			NOT = { has_country_flag = claim_esp_as_arab }
 
@@ -326,22 +293,18 @@ political_decisions = {
 	}
 	
 	claim_more_arab_land_to_rule_em = {
+		picture = claim_more_arab_land_to_rule_em
 		potential = {
 			NOT = { has_country_flag = claim_more_arab_land_to_rule_em }
-
 			OR ={
 				tag = EGY
 				tag = MAM
 			}
-			
 		}
-		
-		
 		allow = {
 			civilized = yes
 			is_greater_power = yes 
 		}
-		
 		effect = {
 			prestige = 50
 
@@ -417,21 +380,17 @@ political_decisions = {
 			
 			set_country_flag = claim_more_arab_land_to_rule_em
 		}
-		
 		ai_will_do = {
 			factor = 0
 		}
-		
-		
 	}
 	
 	egy_bcm_mam_empire_moc = {
+		picture = form_mamluk_empire
 		potential = {
 			NOT = { has_country_flag = egy_bcm_mam_empire_moc }
 			tag = EGY
 		}
-		
-		
 		allow = {
 			civilized = yes
 			owns = 1745
@@ -440,7 +399,6 @@ political_decisions = {
 			owns = 848
 			prestige = 50
 		}
-		
 		effect = {
 			prestige = 25
 
@@ -462,13 +420,9 @@ political_decisions = {
 
 			set_country_flag = egy_bcm_mam_empire_moc
 		}
-		
 		ai_will_do = {
 			factor = 0
 		}
-		
-		
 	}
-	
 }
 
