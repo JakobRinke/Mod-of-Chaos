@@ -143,6 +143,7 @@ political_decisions = {
 	}
 	
 	obtain_texas_as_culture = {
+		picture = obtain_texas_as_culture
 		potential = {
 			OR = {
 				tag = CSA
@@ -159,18 +160,17 @@ political_decisions = {
 		}
 		
 		effect = {
-				
-			badboy = 2
-			prestige = 10	
-
 			add_accepted_culture = texan
-
-			TEX = { all_core = { add_core = THIS } }
-
+			badboy = 2
+			prestige = 10
+			TEX = { 
+				all_core = {
+					add_core = THIS
+				}
+			}
 			set_country_flag = obtain_texas_as_culture
 		}
-		
-		ai_will_do = {					
+		ai_will_do = {
 			factor = 0.01
 		}
 	}
@@ -178,19 +178,18 @@ political_decisions = {
 	
 	
 	assimilate_usa_ter = {
+		picture = assimilate_usa_ter
 		potential = {
 			OR = {
 				tag = MEX
 				tag = CLM  
 			}
-			NOT = {has_country_flag = assimilate_usa_ter}			
+			NOT = { has_country_flag = assimilate_usa_ter }			
 		}
-		
 		allow = {
 			owns = 139
 			owns = 192
 		}
-		
 		effect = {
 				
 			badboy = 3
@@ -263,7 +262,7 @@ political_decisions = {
 				value = 50
 			}
 			MEX = {
-				country_event = {id=379300881}
+				country_event = { id=379300881 }
 			}
 		}
 		ai_will_do = {
