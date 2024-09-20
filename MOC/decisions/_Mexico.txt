@@ -226,6 +226,7 @@ political_decisions = {
 	}
 
 	liberty_enlightening_the_world_mex = {
+		picture = liberty_enlightening_the_world_mex
 		potential = {
 			NOT = {
 				AND = {
