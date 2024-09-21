@@ -1,55 +1,48 @@
-#picture 0
+#picture 1
 
 
 political_decisions = {
 
 	supported_westernisazion_morocco = {
-
-			potential = {
-				tag = MOR
-				NOT = { has_country_flag = supported_westernisazion_morocco}	
-			}
-			
-			allow = {
-				war = no
-			}
-			
-			effect = {
-				money = 100000
-				plurality = 35
-				research_points = 30000
-				MOR = {
-					add_country_modifier = {
-						name = african_schools
-						duration = 10000 
-					}
+		picture = supported_westernisazion_morocco
+		potential = {
+			tag = MOR
+			NOT = { has_country_flag = supported_westernisazion_morocco}	
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			money = 100000
+			plurality = 35
+			research_points = 30000
+			MOR = {
+				add_country_modifier = {
+					name = african_schools
+					duration = 10000 
 				}
-
-				any_state = {
-					any_pop = {
-						literacy = 0.105
-					}
+			}
+			any_state = {
+				any_pop = {
+					literacy = 0.105
 				}
-
-				set_country_flag = supported_westernisazion_morocco
 			}
-			
-			ai_will_do = {
-				factor = 0
-			}
+			set_country_flag = supported_westernisazion_morocco
+		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 
 	gain_tech_morocco = {
-
+		picture = gain_tech_morocco
 		potential = {
 			tag = MOR
 			NOT = { has_country_flag = gain_tech_morocco}	
 		}
-			
 		allow = {
 			literacy = 0.12
 		}
-			
 		effect = {
 			plurality = 10
 			research_points = 15000
@@ -75,18 +68,16 @@ political_decisions = {
 
 			set_country_flag = gain_tech_morocco
 		}
-			
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	acquire_algerian_cores_as_morocco = {
+		picture = acquire_algerian_cores_as_morocco
 		potential = {
-			
 			tag = MOR
 			NOT = { has_country_flag = acquire_algerian_cores_as_morocco }
-
 		}
 		allow = {
 			war = no
@@ -121,9 +112,7 @@ political_decisions = {
 			add_accepted_culture = bedouin
 
 			set_country_flag = acquire_algerian_cores_as_morocco 
-
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
@@ -131,6 +120,7 @@ political_decisions = {
 
 
 	gain_cores_on_spanish_regions = {
+		picture = gain_cores_on_spanish_regions
 		potential = {
 			tag = MOR
 			NOT = { has_country_flag = gain_cores_on_spanish_regions }
@@ -190,17 +180,16 @@ political_decisions = {
 	}
 
 	gain_cores_and_cede_sahara_moc = {
+		picture = gain_cores_and_cede_sahara_moc
 		potential = {
 			tag = MOR
 			NOT = { has_country_flag = gain_cores_and_cede_sahara_moc }
 		}
-
 		allow = {
 			war = no
 			nationalism_n_imperialism = 1
 			prestige = 5
 		}
-
 		effect = {
 				
 			 # Sahara
@@ -218,20 +207,16 @@ political_decisions = {
 			1774 = { secede_province = THIS add_core = MOR life_rating = 45 }
 
 			prestige = 10
-
 			add_accepted_culture = maures
-
 			set_country_flag = gain_cores_and_cede_sahara_moc
-
 		}
-	  
-
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	add_cores_morocco_tunis_provinces = {
+		picture = add_cores_morocco_tunis_provinces
 		potential = {
 			tag = MOR
 			NOT = { has_country_flag = add_cores_morocco_tunis_provinces }
@@ -240,12 +225,9 @@ political_decisions = {
 			war = no
 			functionalism = 1
 			nationalism_n_imperialism = 1
-
 			prestige = 50
-
 		}
 		effect = {
-
 			# Tunis Provinces
 			add_core = 1725 # Tunis
 			add_core = 1726 # Bizerte
@@ -258,18 +240,16 @@ political_decisions = {
 			add_core = 854 
 
 			badboy = 2
-
 			prestige = 15	
-
 			set_country_flag = add_cores_morocco_tunis_provinces
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	add_cores_morocco_tripoli_provinces = {
+		picture = add_cores_morocco_tripoli_provinces
 		potential = {
 			tag = MOR
 			NOT = { has_country_flag = add_cores_morocco_tripoli_provinces }
@@ -311,6 +291,7 @@ political_decisions = {
 	}
 
 	add_cores_morocco_egypt_provinces = {
+		picture= add_cores_morocco_egypt_provinces
 		potential = {
 			tag = MOR
 			NOT = { has_country_flag = add_cores_morocco_egypt_provinces }
@@ -418,6 +399,7 @@ political_decisions = {
 	}
 
 	add_cores_morocco_allover_spain = {
+		picture = add_cores_morocco_allover_spain
 		potential = {
 			tag = MOR
 			NOT = { has_country_flag = add_cores_morocco_allover_spain }
