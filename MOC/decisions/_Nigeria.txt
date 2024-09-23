@@ -45,13 +45,10 @@ political_decisions = {
 					all_core = {add_core = THIS}
 				}
 				
-				
 				add_country_modifier = {
 					name = 	nigerian_schools
 					duration = 10000
 				}
-
-								
 				set_country_flag = nigerian_battle_royale
 			}
 			
@@ -160,22 +157,18 @@ political_decisions = {
 	change_rgo_ngr = {
 		potential = {
 			tag = NGR
-			NOT = {has_country_flag = change_rgo_ngr}
+			NOT = { has_country_flag = change_rgo_ngr }
 		}
 		allow = {
 			money = 200000	
 		}
-		
 		effect = {			
 			prestige = 30
 			country_event = 199038
 			set_country_flag = change_rgo_ngr
 		}
-		
-		ai_will_do = {					
+		ai_will_do = {
 			factor = 1
 		}
 	}
 }
-	
-	
