@@ -155,6 +155,7 @@ political_decisions = {
 	
 	
 	change_rgo_ngr = {
+		picture = change_rgo_ngr
 		potential = {
 			tag = NGR
 			NOT = { has_country_flag = change_rgo_ngr }
