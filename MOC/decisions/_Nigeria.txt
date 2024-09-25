@@ -147,7 +147,6 @@ political_decisions = {
 			add_core = 1889
 			add_core = 1900
 		}
-		
 		ai_will_do = {					
 			factor = 1
 		}

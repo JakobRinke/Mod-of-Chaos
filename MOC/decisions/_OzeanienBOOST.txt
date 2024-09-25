@@ -6,27 +6,27 @@ political_decisions = {
 	ozeanien_get_immigration_attraction_country = {
 		picture = manifest_destiny_from_vanilla_game
 		potential = {
-			tag = IAA	
+			tag = IAA
 			NOT = { has_country_flag = ozeanien_get_immigration_attraction_country}	
 		}
 		allow = {
-            war = no
+			war = no
 			nationalism_n_imperialism = 1
 			is_greater_power = yes
 			money = 200000
 		}
 		effect = {
-		money = -200000
-		prestige = 15
-		set_country_flag = ozeanien_get_immigration_attraction_country
-		 IAA = {
+			money = -200000
+			prestige = 15
+			IAA = {
 				add_country_modifier = {
 					name = IAA_country_modifier
 					duration = 5475
 				}
 			}		
+			set_country_flag = ozeanien_get_immigration_attraction_country
 		}
-		ai_will_do = {					
+		ai_will_do = {
 				factor = 1
 		}
 	}
@@ -38,7 +38,7 @@ political_decisions = {
 			NOT = { has_country_flag = ozeanien_get_immigration_attraction}	
 		}
 		allow = {
-            war = no
+			war = no
 			nationalism_n_imperialism = 1
 			is_greater_power = yes
 			prestige = 50
@@ -57,7 +57,7 @@ political_decisions = {
 			}
 			prestige = 10
 		}
-		ai_will_do = {					
+		ai_will_do = {
 				factor = 1
 		}
 	}
@@ -74,10 +74,10 @@ political_decisions = {
 			}
 			effect = {
 				set_country_flag = net_take_java_back
-				inherit = JAV 	
+				inherit = JAV
 			}
 			
-		ai_will_do = {					
+		ai_will_do = {
 			factor = 0.0001
 		}
 	}
@@ -101,6 +101,7 @@ political_decisions = {
 				owns = 2508
 				owns = 2479
 				owns = 2474
+
 				war = no
 				steam_turbine = 1
 				organic_chemistry = 1
@@ -120,7 +121,7 @@ political_decisions = {
 				2479 = {trade_goods = coal RGO_size = 1000000}
 				2474 = {trade_goods = coal RGO_size = 1000000}
 			}
-		ai_will_do = {					
+		ai_will_do = {
 			factor = 0.001
 		}
 	}

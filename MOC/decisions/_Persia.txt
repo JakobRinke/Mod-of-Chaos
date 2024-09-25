@@ -9,10 +9,7 @@ political_decisions = {
 			tag = PER
 			NOT = { has_country_flag = greater_Persia }
 		}
-		allow = {
-			
-		}
-		
+		allow = {}
 		effect = {
 			badboy = 10
 			add_accepted_culture = pashtun
@@ -76,7 +73,6 @@ political_decisions = {
 			}		
 			set_country_flag = greater_Persia				
 		}
-		
 		ai_will_do = {
 			factor = 0.00021
 		}	
@@ -88,43 +84,33 @@ political_decisions = {
 			tag = PER
 			NOT = { has_country_flag = treaty_of_teheran }
 		}
-		
-		
 		allow = {
-			
 			prestige = 100
 			war = no
 			TRD = {
 				in_sphere = PER 
 			}
 		}
-		
 		effect = {
-			set_country_flag = treaty_of_teheran		
+			set_country_flag = treaty_of_teheran
 			inherit = TRD
 		}
-		
 		ai_will_do = {
 			factor = 0.1
 		}
-		
-		
 	}
 
-	#Picture MISSIN
 	accepted_arabs_persia = {
+		picture = accepted_arabs_persia
 		potential = {
 			tag = PER
 			NOT = { has_country_flag = accepted_arabs_persia }
 		}
-		
-		
 		allow = {
 			civilized = yes
 			war = no
 			owns = 1151
 		}
-		
 		effect = {
 			set_country_flag = accepted_arabs_persia	
 			badboy = 7
@@ -132,12 +118,9 @@ political_decisions = {
 			add_accepted_culture = bedouin
 			add_accepted_culture = sudanese
 		}
-		
 		ai_will_do = {
 			factor = 0.1
 		}
-		
-		
 	}
 
 	treaty_of_teheran_trd = {
@@ -146,27 +129,20 @@ political_decisions = {
 			tag = TRD
 			NOT = { has_country_flag = treaty_of_teheran }
 		}
-		
-		
 		allow = {
-			
 			prestige = 100
 			war = no
 			PER = {
 				in_sphere = TRD 
 			}
 		}
-		
 		effect = {
 			set_country_flag = treaty_of_teheran		
 			inherit = PER
 		}
-		
 		ai_will_do = {
 			factor = 0.1
 		}
-		
-		
 	}
 	
 	great_Showdown = {
@@ -175,17 +151,11 @@ political_decisions = {
 			tag = PER
 			NOT = { has_country_flag = great_Showdown }
 			exists = TUR
-
 		}
-		
-		
 		allow = {
 			civilized = yes
 		}
-		
 		effect = {
-			
-			
 			TUR = {
 				country_event = 969696
 				add_accepted_culture = persian 
@@ -194,27 +164,20 @@ political_decisions = {
 			add_core = 1190
 			set_country_flag = great_Showdown				
 		}
-		
 		ai_will_do = {
 			factor = 0.0018
 		}
-		
-		
 	}
 
 	renovate_capital_centralASIA_babyboom = {
+		picture = renovate_capital_centralASIA_babyboom
 		potential = { 
-
 			OR = {
 				tag = PER
 				tag = TRD
 			}
-			
-			
 			NOT = { has_country_flag = renovate_capital_centralASIA_babyboom }
 		}
-
-
 		allow = { 
 			state_n_government = 1
 		}
@@ -228,17 +191,13 @@ political_decisions = {
 				add_province_modifier = {
 				name = baby_boom
 				duration = 2000
-
 				}
 			}
-			
-			
+
 			set_country_flag = renovate_capital_centralASIA_babyboom
 		}
-	
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	
 }
