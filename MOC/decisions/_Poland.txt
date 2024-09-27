@@ -1,4 +1,4 @@
-#picture 1
+#picture 0
 
 political_decisions = {
 	
@@ -143,6 +143,7 @@ political_decisions = {
 	
 	
 	claim_jews_for_greater_poland = {
+		picture = claim_jews_for_greater_poland
 		potential = {
 			OR = {
 				tag = POL
