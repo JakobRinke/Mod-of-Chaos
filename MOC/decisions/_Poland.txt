@@ -180,6 +180,7 @@ political_decisions = {
 	}
 
 	claim_lithuania_for_greater_poland = {
+		picture = claim_lithuania_for_greater_poland
 		potential = {
 			OR = {
 				tag = POL
@@ -227,6 +228,7 @@ political_decisions = {
 	}
 
 	claim_urkaine_for_greater_poland = {
+		picture = claim_urkaine_for_greater_poland
 		potential = {
 			OR = {
 				tag = POL
@@ -265,6 +267,7 @@ political_decisions = {
 	}
 
 	inherit_urkaine_for_greater_poland = {
+		picture = inherit_urkaine_for_greater_poland
 		potential = {
 			OR = {
 				tag = POL

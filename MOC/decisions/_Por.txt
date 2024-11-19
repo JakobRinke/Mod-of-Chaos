@@ -1,9 +1,19 @@
+#picture 1
+
 political_decisions = {
 	
 	colonial_might = {
-
+		picture = colonial_might_moc
 		potential = {
-			OR = { tag = POR tag = DEN tag = FIN tag = SWE  tag = MEX tag = BEL tag = GRE }
+			OR = { 
+				tag = POR 
+				tag = DEN 
+				tag = FIN 
+				tag = SWE  
+				tag = MEX 
+				tag = BEL 
+				tag = GRE 
+			}
 			NOT = { has_country_flag = colonial_might }
 			civilized = yes
 		}
@@ -11,7 +21,6 @@ political_decisions = {
 		allow = {
 			prestige = 50
 			state_n_government = 1
-			
 		}
 
 		effect = {
@@ -22,7 +31,14 @@ political_decisions = {
 					duration = 7300
 			}
 			THIS = {
-				limit = { NOT = { OR = { tag = MEX tag = BEL} } }
+				limit = { 
+					NOT = { 
+						OR = { 
+							tag = MEX 
+							tag = BEL
+						} 
+					} 
+				}
 				add_country_modifier = {
 					name = colonial_might
 					duration = 14600
@@ -34,19 +50,16 @@ political_decisions = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
-
-
-
 	}
 	
 	
 	
 	reclaim_brazil = {
-
+		picture = reclaim_brazil_moc
 		potential = {
 			OR = {
 				tag = POR
@@ -88,9 +101,9 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.002
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 
 
@@ -98,7 +111,7 @@ political_decisions = {
 	}
 	
 	reclaim_PAC = {
-
+		picture = reclaim_PAC
 		potential = {
 			OR = {
 				tag = POR
@@ -137,9 +150,9 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.002
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 
 
@@ -147,7 +160,7 @@ political_decisions = {
 	}
 
 	releasePCA = {
-
+		picture = releasePCA
 		potential = {
 			tag = POR
 			
@@ -178,9 +191,9 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.004
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 
 
@@ -188,7 +201,7 @@ political_decisions = {
 	}
 	
 	enhance_our_lands = {
-
+		picture = enhance_our_lands
 		potential = {
 			tag = PAC
 			NOT = { has_country_flag = enhance_our_lands }
@@ -235,9 +248,9 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.004
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 
 
@@ -246,7 +259,7 @@ political_decisions = {
 	
 	
 	new_lisbon = {
-
+		picture = new_lisbon
 		potential = {
 			in_culture_group  = iberian
 			civilized = yes
@@ -285,9 +298,9 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.004
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 
 
@@ -295,7 +308,7 @@ political_decisions = {
 	}
 	
 	claim_kongo = {
-
+		picture = claim_kongo
 		potential = {
 			civilized = yes
 			tag = PAC
@@ -343,9 +356,9 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.004
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 
 
@@ -353,7 +366,7 @@ political_decisions = {
 	}
 	
 	claim_iberia = {
-
+		picture = claim_iberia
 		potential = {
 			civilized = yes
 			tag = PAC
@@ -401,14 +414,14 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.004
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 	}
 		
 	sphere_por_to_annex = {
-
+		picture = sphere_por_to_annex
 		potential = {
 			civilized = yes
 			tag = PAC
@@ -446,19 +459,13 @@ political_decisions = {
 			set_country_flag = sphere_por_to_annex
 
 		}
-
 		ai_will_do = {
 			factor = 0.004
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
-
-
-
 	}
 	
-	
-
 } 
