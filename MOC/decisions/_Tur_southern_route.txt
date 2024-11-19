@@ -24,7 +24,9 @@ political_decisions = {
             release = ALB
             release = BOS
 
-            ALB= {
+            capital = 1151
+
+            ALB = {
                 all_core = {
                     remove_core = THIS
                 }
