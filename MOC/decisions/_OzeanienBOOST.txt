@@ -2,7 +2,6 @@
 
 political_decisions = {
 
-
 	ozeanien_get_immigration_attraction_country = {
 		picture = manifest_destiny_from_vanilla_game
 		potential = {
