@@ -37,6 +37,8 @@ political_decisions = {
 					tag = JAP
 					tag = TKG
 					tag = KOR
+					tag = PHL
+					tag = HAW
 				}
 				NOT = { has_country_flag = expand_claims_jap}	
 			}
@@ -89,6 +91,12 @@ political_decisions = {
 					tag = TKG
 					tag = KOR
 					tag = LSK 
+					tag = CHI
+					tag = QNG
+					tag = CAN
+					tag = PHL
+					tag = HAW
+					tag = CUM 
 				}
 				NOT = { has_country_flag = CLAIM_Kamchatka_moc}	
 			}
@@ -127,8 +135,13 @@ political_decisions = {
 					tag = CUM 
 					tag = USA 
 					tag = HAW 
+					tag = PHL 
+					tag = IAA
+					tag = AST 
+					tag = CHI
+					tag = QNG
 				}
-				NOT = { has_country_flag = CLAIM_Kamchatka_moc}	
+				NOT = { has_country_flag = CLAIM_alaska_moc}	
 			}
 			
 			allow = {
@@ -158,7 +171,7 @@ political_decisions = {
 
 				#Part of Washigton
 				add_core = 79
-				set_country_flag = CLAIM_Kamchatka_moc
+				set_country_flag = CLAIM_alaska_moc
 			}
 			
 			ai_will_do = {					
