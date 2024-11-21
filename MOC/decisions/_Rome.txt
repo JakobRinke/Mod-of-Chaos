@@ -1,356 +1,355 @@
-#picture 0
+#picture 1
 
 
 political_decisions = {
 	claim_roman_empire = {
-			picture = become_rome
-			potential = {
-				OR = {
-					tag = PAP
-					AND	= {
-						tag = BYZ
-						has_country_flag = byz_assimilate
-						has_country_flag = byz_cores_ita
-					}
+		picture = become_rome
+		potential = {
+			OR = {
+				tag = PAP
+				AND	= {
+					tag = BYZ
+					has_country_flag = byz_assimilate
+					has_country_flag = byz_cores_ita
 				}
-				NOT = { has_country_flag = claim_roman_empire}	
 			}
+			NOT = { has_country_flag = claim_roman_empire}	
+		}
 			
-			allow = {
+		allow = {
 				
-			}
+		}
 			
-			effect = {
-				prestige = -50
-				badboy = 25
-				primary_culture = legionaries
-				add_accepted_culture = south_italian
-				add_accepted_culture = north_italian
-				add_accepted_culture = greek
+		effect = {
+			prestige = -50
+			badboy = 25
+			primary_culture = legionaries
+			add_accepted_culture = south_italian
+			add_accepted_culture = north_italian
+			add_accepted_culture = greek
 				
-				FRA = {
-					all_core = {add_core = THIS}
-				}
-				ENL = {
-					all_core = {add_core = THIS}
-				}
-				ITA = {
-					all_core = {add_core = THIS}
-				}
-				TUR = {
-					all_core = {add_core = THIS}
-				}
-				SPA = {
-					all_core = {add_core = THIS}
-				}
-				POR = {
-					all_core = {add_core = THIS}
-				}
-				BEL = {
-					all_core = {add_core = THIS}
-				}
-				EGY = {
-					all_core = {add_core = THIS}
-				}
-				TUN = {
-					all_core = {add_core = THIS}
-				}	
-				TRI = {
-					all_core = {add_core = THIS}
-				}
-				GRE = {
-					all_core = {add_core = THIS}
-				}
-				MOR = {
-					all_core = {add_core = THIS}
-				}
-				CRO = {
-					all_core = {add_core = THIS}
-				}
-				SER = {
-					all_core = {add_core = THIS}
-				}
-				BOS = {
-					all_core = {add_core = THIS}
-				}
-				VEN = {
-					all_core = {add_core = THIS}
-				}
-				ALD = {
-					all_core = {add_core = THIS}
-				}	
-				add_core = 1735
-				add_core = 1736
-				add_core = 1737
-				add_core = 1738
-				add_core = 296
-				add_core = 297
-				add_core = 298
-				add_core = 299
-				add_core = 294
-				add_core = 300
-				add_core = 301
-				add_core = 302
-				add_core = 303
-				add_core = 293
-				add_core = 292
-				add_core = 291
-				add_core = 295
-				add_core = 284
-				add_core = 286
-				add_core = 287
-				add_core = 288
-				add_core = 289
-				add_core = 290
-				add_core = 277
-				add_core = 278
-				add_core = 279
-				add_core = 280
-				add_core = 281
-				add_core = 282
-				add_core = 283
-				add_core = 285
-				add_core = 304
-				add_core = 769
-				add_core = 2583
-				add_core = 854
-				set_country_flag = claim_roman_empire
-				set_country_flag = exclusive_acquire_all_cores_CB
-				
-				any_country = {
-					relation = {
-						who = THIS
-						value = -400
-					}
-				}
-				
+			FRA = {
+				all_core = {add_core = THIS}
 			}
+			ENL = {
+				all_core = {add_core = THIS}
+			}
+			ITA = {
+				all_core = {add_core = THIS}
+			}
+			TUR = {
+				all_core = {add_core = THIS}
+			}
+			SPA = {
+				all_core = {add_core = THIS}
+			}
+			POR = {
+				all_core = {add_core = THIS}
+			}
+			BEL = {
+				all_core = {add_core = THIS}
+			}
+			EGY = {
+				all_core = {add_core = THIS}
+			}
+			TUN = {
+				all_core = {add_core = THIS}
+			}	
+			TRI = {
+				all_core = {add_core = THIS}
+			}
+			GRE = {
+				all_core = {add_core = THIS}
+			}
+			MOR = {
+				all_core = {add_core = THIS}
+			}
+			CRO = {
+				all_core = {add_core = THIS}
+			}
+			SER = {
+				all_core = {add_core = THIS}
+			}
+			BOS = {
+				all_core = {add_core = THIS}
+			}
+			VEN = {
+				all_core = {add_core = THIS}
+			}
+			ALD = {
+				all_core = {add_core = THIS}
+			}	
+			add_core = 1735
+			add_core = 1736
+			add_core = 1737
+			add_core = 1738
+			add_core = 296
+			add_core = 297
+			add_core = 298
+			add_core = 299
+			add_core = 294
+			add_core = 300
+			add_core = 301
+			add_core = 302
+			add_core = 303
+			add_core = 293
+			add_core = 292
+			add_core = 291
+			add_core = 295
+			add_core = 284
+			add_core = 286
+			add_core = 287
+			add_core = 288
+			add_core = 289
+			add_core = 290
+			add_core = 277
+			add_core = 278
+			add_core = 279
+			add_core = 280
+			add_core = 281
+			add_core = 282
+			add_core = 283
+			add_core = 285
+			add_core = 304
+			add_core = 769
+			add_core = 2583
+			add_core = 854
+			set_country_flag = claim_roman_empire
+			set_country_flag = exclusive_acquire_all_cores_CB
+				
+			any_country = {
+				relation = {
+					who = THIS
+					value = -400
+				}
+			}
+				
+		}
 			
-			ai_will_do = {					
-				factor = 0.0001
-				modifier = {
-					factor = 0
-					badboy = 0.01
-				}
+		ai_will_do = {					
+			factor = 0.0001
+			modifier = {
+				factor = 0
+				badboy = 0.01
 			}
+		}
 	}
 	
 	
 	assimilate_all_cores_rome = {
-			potential = {
-				OR = {
-					tag = PAP
-					tag = BYZ
-					tag = SQR
-				}
+		picture = assimilate_all_cores_rome
+		potential = {
+			OR = {
+				tag = PAP
+				tag = BYZ
+				tag = SQR
 			}
-			allow = {
+		}
+		allow = {
 				
+		}
+		effect = {
+			all_core = { 
+				assimilate = yes 
 			}
-			
-			effect = {
-				all_core = { 
-					assimilate = yes 
-				}
-				
-			}
-			
-			ai_will_do = {					
-				factor = 0
-			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	
 	
 	form_roman_empire = {
-			picture = form_rome
-			potential = {
-				OR = {
-					tag = PAP
-					tag = BYZ
-					tag = ITA
-				}
-				NOT = {has_country_flag = form_roman_empire}
-				has_country_flag = claim_roman_empire
+		picture = form_rome
+		potential = {
+			OR = {
+				tag = PAP
+				tag = BYZ
+				tag = ITA
+			}
+			NOT = {has_country_flag = form_roman_empire}
+			has_country_flag = claim_roman_empire
 				
-			}
-			allow = {
-				BYZ = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-				PAP = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-				ITA = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
+		}
+		allow = {
+			BYZ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
 						}
 					}
 				}
 			}
+			PAP = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			ITA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
 			
-			effect = {
-				prestige = 10000
+		effect = {
+			prestige = 10000
 				
-				change_tag = SQR
-				capital	= 749
-				set_country_flag = form_roman_empire
+			change_tag = SQR
+			capital	= 749
+			set_country_flag = form_roman_empire
 				
 
-				SQR = {
-					add_country_modifier = {
-						name = rise_of_rome
-						duration = 30000
-					}
-				}				
-				
-			}
-			
-			ai_will_do = {					
-				factor = 1
-				modifier = {
-					factor = 0
-					badboy = 0.01
+			SQR = {
+				add_country_modifier = {
+					name = rise_of_rome
+					duration = 30000
 				}
+			}				
+				
+		}
+			
+		ai_will_do = {					
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.01
 			}
+		}
 	}
 
 	get_more_roman_cores = {
-			potential = {
-				tag = SQR
-				NOT = {has_country_flag = get_more_roman_cores}
-			}
-			allow = {
-				prestige = 200
-				realism = 1
-				revolution_n_counterrevolution = 1
-			}
+		picture = get_more_roman_cores
+		potential = {
+			tag = SQR
+			NOT = {has_country_flag = get_more_roman_cores}
+		}
+		allow = {
+			prestige = 200
+			realism = 1
+			revolution_n_counterrevolution = 1
+		}
 			
-			effect = {
-				set_country_flag = get_more_roman_cores
-				prestige = 25
-				badboy = 25
-				GER = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
+		effect = {
+			set_country_flag = get_more_roman_cores
+			prestige = 25
+			badboy = 25
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
 						}
 					}
 				}
-				
-				ROM = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-				
-				WHA = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-
-				AUS = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-
-				HUN = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-
-				SWI = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-
-				SLO = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-				
-				EGY = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-
-				ETH = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
-					}
-				}
-
 			}
+				
+			ROM = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+				
+			WHA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+
+			AUS = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+
+			HUN = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+
+			SWI = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+
+			SLO = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+				
+			EGY = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+
+			ETH = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+
+		}
 			
-			ai_will_do = {					
-				factor = 0
-			}
+		ai_will_do = {
+			factor = 0
+		}
 	
 	}
 
@@ -358,73 +357,71 @@ political_decisions = {
 
 
 	get_more_roman_cores_arabia = {
-			potential = {
-				tag = SQR
-				NOT = {has_country_flag = get_more_roman_cores}
-			}
-			allow = {
-				prestige = 300
-				realism = 1
-				mass_politics = 1
-			}
-			
-			effect = {
-				set_country_flag = get_more_roman_cores
-				prestige = 15
-				badboy = 5
+		picture = get_more_roman_cores_arabia
+		potential = {
+			tag = SQR
+			NOT = {has_country_flag = get_more_roman_cores}
+		}
+		allow = {
+			prestige = 300
+			realism = 1
+			mass_politics = 1
+		}
+		effect = {
+			set_country_flag = get_more_roman_cores
+			prestige = 15
+			badboy = 5
 
-				ARA = {
-					all_core = {
-						add_core = THIS
-					}
+			ARA = {
+				all_core = {
+					add_core = THIS
 				}
+			}
 				
-				HDJ = {
-					all_core = {
-						add_core = THIS
-					}
+			HDJ = {
+				all_core = {
+					add_core = THIS
 				}
+			}
 
-				NEJ = {
-					all_core = {
-						add_core = THIS
-					}
+			NEJ = {
+				all_core = {
+					add_core = THIS
 				}
+			}
 
-				IRQ = {
-					all_core = {
-						add_core = THIS
-					}
+			IRQ = {
+				all_core = {
+					add_core = THIS
 				}
+			}
 
-				YEM = {
-					all_core = {
-						add_core = THIS
-					}
+			YEM = {
+				all_core = {
+					add_core = THIS
 				}
+			}
 
-				OMA = {
-					all_core = {
-						add_core = THIS
-					}
+			OMA = {
+				all_core = {
+					add_core = THIS
 				}
+			}
 				
-				EGY = {
-					all_core = {
-						add_core = THIS
-					}
+			EGY = {
+				all_core = {
+					add_core = THIS
 				}
+			}
 
-				ETH = {
-					all_core = {
-						add_core = THIS
-					}
+			ETH = {
+				all_core = {
+					add_core = THIS
 				}
-
 			}
-			
-			ai_will_do = {					
-				factor = 0
-			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 }

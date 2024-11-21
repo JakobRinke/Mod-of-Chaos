@@ -1,4 +1,4 @@
-#picture  1
+#picture  0
 
 political_decisions = {
 

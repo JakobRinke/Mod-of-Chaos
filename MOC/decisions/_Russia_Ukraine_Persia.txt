@@ -1,3 +1,5 @@
+#picture 1
+
 political_decisions = {
 	
 	release_ukraine_for_persia = {
@@ -40,13 +42,5 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.0001
 		}
-		
-		
 	}
-	
-	
-	
-	
-	
-	
 }
