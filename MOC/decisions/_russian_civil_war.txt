@@ -1,8 +1,9 @@
-#picture  0
+#picture 1
 
 political_decisions = {
 
 	russia_battle_royal_moc = {
+		picture = russia_battle_royal_moc
 		potential = {
 			tag = RUS
 			NOT = {has_country_flag = russian_battle_royal_moc_moc}
@@ -95,8 +96,6 @@ political_decisions = {
 						add_core = NOV	
 					}
 				}
-				
-				
 			}
 			
 			UKR = {
@@ -123,27 +122,19 @@ political_decisions = {
 				}
 			}
 			
-			
-			
-
 			SWE = {
 				add_core = 348
-      }
-      
+			}
 			338 = {
 				secede_province = SWE
 			}
-			
 			
 			set_country_flag = russian_battle_royal_moc
 			set_global_flag = russian_battle_royal_moc_Glo
 			
 			country_event = 13372000
-			
-			
 		}
-		
-		ai_will_do = {					
+		ai_will_do = {
 			factor = 0.001
 		}
 		
@@ -151,12 +142,12 @@ political_decisions = {
 	
 	
 	mus_annex_rus = {
+		picture = mus_annex_rus
 		potential = {
 			tag = MUS
 			NOT = { has_country_flag = mus_annex_rus }
 
 			exists = RUS
-
 		}
 		allow = {
 			
@@ -171,6 +162,7 @@ political_decisions = {
 	}
 	
 	nov_annex_rus = {
+		picture = nov_annex_rus
 		potential = {
 			tag = NOV
 			NOT = { has_country_flag = mus_annex_rus }
@@ -190,6 +182,7 @@ political_decisions = {
 
 	
 	claim_russia = {
+		picture = claim_russia_moc
 		potential = {
 			OR = {
 				tag = MUS
@@ -211,6 +204,7 @@ political_decisions = {
 	}
 	
 	Boost_School = {
+		picture = Boost_School
 		potential = {
 			OR = {
 				tag = MUS
@@ -238,12 +232,13 @@ political_decisions = {
 	}
 	
 	Claim_Scandinavia = {
+		picture = Claim_Scandinavia
 		potential = {
 			tag = NOV
 			NOT = { has_country_flag = Claim_Scandinavia }
 		}
 		allow = {
-			state_n_government= 1
+			state_n_government = 1
 		}
 		effect = {
 			prestige = 30
@@ -278,6 +273,7 @@ political_decisions = {
 	}
 
 	Claim_Asia = {
+		picture = Claim_Asia
 		potential = {
 			tag = SIB
 			NOT = { has_country_flag = Claim_Scandinavia }
@@ -305,7 +301,6 @@ political_decisions = {
 			add_core = 1645
 			add_core = 1674
 			add_core = 12
-		
 			
 			MCK = {
 				all_core = { add_core = THIS }
@@ -331,6 +326,7 @@ political_decisions = {
 	}
 
 	Claim_Rest_Of_Jpan = {
+		picture = Claim_Rest_Of_Jpan
 		potential = {
 			tag = SIB
 			NOT = { has_country_flag = Claim_Rest_Of_Jpan }
@@ -361,6 +357,7 @@ political_decisions = {
 
 
 	claim_the_south_muscovy = {
+		picture = claim_the_south_muscovy
 		potential = {
 			tag = MUS
 			NOT = { has_country_flag = claim_the_south_muscovy }
@@ -393,6 +390,7 @@ political_decisions = {
 	}
 
 	start_the_great_restoration = {
+		picture = start_the_great_restoration
 		potential = {
 			OR = {
 				tag = MUS
@@ -447,9 +445,4 @@ political_decisions = {
 			factor = 1
 		}
 	}
-
-	
-	
-	
 }
-
