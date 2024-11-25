@@ -1,7 +1,8 @@
-#pictures 0
+#pictures 1
 
 political_decisions = {
 	Expand_our_empire = {
+		picture = Expand_our_empire_serbia
 		potential = {
 			OR = { 
 				tag = SER
@@ -80,7 +81,9 @@ political_decisions = {
 
 
 	}
+
 	get_strong_serbia_based = {
+		picture = get_strong_serbia_based
 		potential = {
 			OR = { 
 				tag = SER
