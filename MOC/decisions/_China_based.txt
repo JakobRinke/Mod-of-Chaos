@@ -124,6 +124,25 @@ political_decisions = {
 		}
 	
 	}
+
+	china_bug_fix = {
+		potential = {
+			OR = {
+				tag = QNG
+				tag = CHI
+			}
+			
+			has_country_flag = tongmenghui
+		}
+		allow = {
+		
+		}
+		effect = {
+			clr_country_flag = tongmenghui
+			prestige = 2
+		}
+	
+	}
 	
 	china_get_southHAN_accepted = {
 		picture = china_get_southHAN_accepted
