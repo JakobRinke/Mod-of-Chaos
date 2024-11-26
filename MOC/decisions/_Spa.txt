@@ -74,8 +74,12 @@ political_decisions = {
 
 		allow = {
 			MOR = {
-				in_sphere = SPA
+				OR = {
+					in_sphere = SPA
+					in_sphere = SPC
+				}
 			}
+
 		}
 		effect = {
 			prestige = 4
