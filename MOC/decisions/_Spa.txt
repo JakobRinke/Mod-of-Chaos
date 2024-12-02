@@ -112,6 +112,7 @@ political_decisions = {
 			add_accepted_culture = mexican
 			MEX = {
 				all_core = {
+					add_core = SPC
 					add_core = SPA
 				}
 			}
