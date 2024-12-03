@@ -142,8 +142,8 @@ The following Nations have at least one decision or event added for them:
 <ul>
 <li> Africa </li>
 <li> European Union (Europe) </li>
-<li> CUM (North Amerika) </li>
-<li> SUs (South Amerika)  </li>
+<li> CUM (North America) </li>
+<li> SUS (South America)  </li>
 </ul>
 
 
