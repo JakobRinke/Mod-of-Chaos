@@ -93,6 +93,8 @@ political_decisions = {
 
 			activate_technology = basic_chemistry
 			set_country_flag = China_Modernize_Country
+			set_global_flag = taiping_has_happened
+			clr_country_flag = heavenly_kingdom
 			set_global_flag  = warlord_era_has_begun
 			any_owned = {
 				any_pop = {
@@ -121,6 +123,7 @@ political_decisions = {
 		}
 		effect = {
 			tech_school = Chinese_Supremacy
+			clr_country_flag = the_new_army
 		}
 	
 	}
@@ -139,6 +142,7 @@ political_decisions = {
 		}
 		effect = {
 			clr_country_flag = tongmenghui
+			clr_country_flag = the_new_army
 			prestige = 2
 		}
 	
