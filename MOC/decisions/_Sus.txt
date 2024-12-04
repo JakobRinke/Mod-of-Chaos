@@ -1,7 +1,6 @@
-#picture 0
+#picture 1
 
-political_decisions
-{
+political_decisions {
 	Argentine_annex_entre_rios_bug_fix = {
 		picture = sus_PICTURE
 		potential = {
@@ -28,7 +27,7 @@ political_decisions
 	
 	
 	SouthAmericanBattleRoyale = {
-		picture = sus_PICTURE
+		picture = SouthAmericanBattleRoyale
 		potential = {
 			OR = {
 				tag = CHL	
@@ -212,6 +211,7 @@ political_decisions
 	}
 
 	Claim_more_lands_in_the_ocean = {
+		picture = Claim_more_lands_in_the_ocean
 		potential = {
 			OR = {
 				tag = SUS
@@ -251,6 +251,7 @@ political_decisions
 	}
 
 	orerganize_sus_ressources = {
+		picture = orerganize_sus_ressources
 		potential = {
 			OR = {
 				tag = CHL	
