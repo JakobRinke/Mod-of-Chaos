@@ -11,7 +11,7 @@ political_decisions = {
 			NOT = { has_country_flag = ozeanien_claim_cores}	
 		}
 		allow = {
-            war = no 
+			war = no 
 			prestige = 50
 			nationalism_n_imperialism = 1
 		}
@@ -25,55 +25,55 @@ political_decisions = {
 
 			add_core = 1451
 			add_core = 1447
-            DAI  = {
+			DAI  = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-            JOH   = {
+			JOH   = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-            BUR   = {
+			BUR   = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-            SIA   = {
+			SIA   = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-            CAM   = {
+			CAM   = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-            GXI   = {
+			GXI   = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-            YNN   = {
+			YNN   = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-            FJN    = {
+			FJN    = {
 				all_core = {
 					add_core = THIS
 				}
 			}
-            GNG = { all_core = { add_core = THIS } }
+			GNG = { all_core = { add_core = THIS } }
 			
 		}
 		ai_will_do = {					
 			factor = 1
 			modifier = {
-                factor = 0
-                badboy = 0.2
-            }
+				factor = 0
+				badboy = 0.2
+			}
 		}
 	}
 	
@@ -87,49 +87,49 @@ political_decisions = {
 			NOT = { has_country_flag = ozeanien_get_DIA_accepted}	
 		}
 		allow = {
-            war = no 
+			war = no 
 			prestige = 200
 			DAI  = {
 				all_core = {
 					IAA = {owns = THIS}
 				}
 			}
-            JOH   = {
+			JOH   = {
 				all_core = {
 					IAA = {owns = THIS}
 				}
 			}
-            BUR   = {
+			BUR   = {
 				all_core = {
 					IAA = {owns = THIS}
 				}
 			}
-            SIA   = {
+			SIA   = {
 				all_core = {
 					IAA = {owns = THIS}
 				}
 			}
-            CAM   = {
+			CAM   = {
 				all_core = {
 					IAA = {owns = THIS}
 				}
 			}
-            GXI   = {
+			GXI   = {
 				all_core = {
 					IAA = {owns = THIS}
 				}
 			}
-            YNN   = {
+			YNN   = {
 				all_core = {
 					IAA = {owns = THIS}
 				}
 			}
-            FJN    = {
+			FJN    = {
 				all_core = {
 					IAA = {owns = THIS}
 				}
 			}
-            GNG      = {all_core = {IAA = {owns = THIS}}}
+			GNG      = {all_core = {IAA = {owns = THIS}}}
 			owns = 1451
 			owns = 1447
 		}
@@ -142,9 +142,9 @@ political_decisions = {
 		ai_will_do = {					
 			factor = 1
 			modifier = {
-                factor = 0
-                badboy = 0.2
-            }
+				factor = 0
+				badboy = 0.2
+			}
 		}
 	}
 	

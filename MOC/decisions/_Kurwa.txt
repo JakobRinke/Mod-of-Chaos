@@ -354,6 +354,7 @@ political_decisions = {
 		allow = {
 			the_historical_theory = 1
 			army_professionalism = 1
+			owns = 703
 		}
 		
 		effect = {
