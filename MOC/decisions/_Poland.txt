@@ -25,11 +25,7 @@ political_decisions = {
 		effect = {
 			badboy = 12
 			add_accepted_culture = polish
-			CPL  = {
-				all_core = {
-					add_core = THIS
-				}
-			}
+			
 			add_core = 684
 			add_core = 685
 			add_core = 694
@@ -38,11 +34,27 @@ political_decisions = {
 			add_core = 703
 			add_core = 704
 			add_core = 705
+			add_core = 707
 			add_core = 714
 			add_core = 951
 			add_core = 952
 			add_core = 953
 			add_core = 719
+
+			#Masovia
+			add_core = 706
+			add_core = 708
+			add_core = 709
+			add_core = 710
+			add_core = 712
+			add_core = 717
+
+			#West Galicia
+			add_core = 711
+			add_core = 713
+			add_core = 715
+			add_core = 716
+
 			set_country_flag = Polish_Embrace
 		}
 		
@@ -53,8 +65,6 @@ political_decisions = {
 				badboy = 0.4
 			}
 		}
-		
-		
 	}
 
 	release_poland_for_education_as_russia = {
