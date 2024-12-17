@@ -123,4 +123,37 @@ political_decisions = {
 		}
 
 	}
+
+	accept_albanian = {
+		picture = Expand_our_empire_serbia
+		potential = {
+			tag = YUG
+
+			NOT = { has_country_flag = accept_albanian}
+		}
+		allow = {
+            		war = no
+		}
+
+		effect = {
+			prestige = 10
+			add_accepted_culture = albanian
+			
+			set_country_flag = accept_albanian
+		}
+		ai_will_do = {
+			factor = 0.001
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+			modifier = {
+				factor = 0
+				year = 1837
+			}
+		}
+
+
+	}
+
 }
