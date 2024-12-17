@@ -7,11 +7,12 @@ political_decisions = {
 			OR = { 
 				tag = SER
 				tag = CRO
+				tag = ALB
 			}
 			NOT = { has_country_flag = Expand_our_empire}
 		}
 		allow = {
-            war = no
+			war = no
 		}
 
 		effect = {
@@ -24,6 +25,7 @@ political_decisions = {
 			add_accepted_culture = croat
 			add_accepted_culture = slovene
 			add_accepted_culture = greek
+			add_accepted_culture = albanian
 			
 			set_country_flag = Expand_our_empire
 			ALB   = {
@@ -92,7 +94,7 @@ political_decisions = {
 			NOT = { has_country_flag = get_strong_serbia_based}
 		}
 		allow = {
-            war = no
+			war = no
 			army_professionalism = 1
 		}
 
@@ -123,37 +125,4 @@ political_decisions = {
 		}
 
 	}
-
-	accept_albanian = {
-		picture = Expand_our_empire_serbia
-		potential = {
-			tag = YUG
-
-			NOT = { has_country_flag = accept_albanian}
-		}
-		allow = {
-            		war = no
-		}
-
-		effect = {
-			prestige = 10
-			add_accepted_culture = albanian
-			
-			set_country_flag = accept_albanian
-		}
-		ai_will_do = {
-			factor = 0.001
-			modifier = {
-				factor = 0
-				badboy = 0.4
-			}
-			modifier = {
-				factor = 0
-				year = 1837
-			}
-		}
-
-
-	}
-
 }
