@@ -1,4 +1,4 @@
-#picture 0
+#picture 1
 
 political_decisions = {
 
@@ -7,7 +7,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = XIN	
-                tag = KOK 
+				tag = KOK 
 				tag = BUK
 				tag = PNJ 
 				tag = BDK 
@@ -17,7 +17,7 @@ political_decisions = {
 			NOT = { has_country_flag = unite_TRD}	
 		}
 		allow = {
-            war = no
+			war = no
 			ai = no
 		}
 		
@@ -27,7 +27,7 @@ political_decisions = {
 	
 			change_tag = TRD
 			set_country_flag = unite_TRD
-            prestige = 5
+			prestige = 5
 			
 			badboy = 12
 			add_accepted_culture = pashtun
@@ -128,7 +128,7 @@ political_decisions = {
 			ai = yes
 			OR = {
 				tag = XIN	
-                tag = KOK 
+				tag = KOK 
 				tag = BUK
 				tag = PNJ 
 				tag = BDK 
@@ -138,7 +138,7 @@ political_decisions = {
 			NOT = { has_country_flag = unite_TRD_AI}	
 		}
 		allow = {
-            war = no
+			war = no
 			year = 1837
 		}
 		
@@ -146,7 +146,7 @@ political_decisions = {
 
 			change_tag = TRD
 			set_country_flag = unite_TRD_AI
-            prestige = 5
+			prestige = 5
 			
 			badboy = 12
 			add_accepted_culture = pashtun
@@ -238,6 +238,7 @@ political_decisions = {
 			factor = 0.0015
 		}
 	}
+
 	claim_russia_as_trd = {
 		picture = timorid_empire_LAsdfkadf_asd
 		potential = {
@@ -247,7 +248,7 @@ political_decisions = {
 		allow = {
 			prestige = 300
 			is_greater_power = yes
-            war = no
+			war = no
 			owns = 1236
 		}
 		
@@ -287,6 +288,7 @@ political_decisions = {
 			factor = 0.0009
 		}
 	}
+
 	claim_uncolonized_LANDS_to_become_strong_af = {
 		picture = claim_country_of_russia_baserd_asda
 		potential = {
