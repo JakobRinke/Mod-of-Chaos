@@ -6,10 +6,7 @@ political_decisions = {
 		picture = form_cum_BASED
 		potential = {
 			OR = {
-				AND = {
-					tag = MEX
-					NOT = {has_country_flag = mex_central_american_ambition}
-				}
+				tag = MEX
 				tag = USA
 				tag = CAN
 				tag = CSA
