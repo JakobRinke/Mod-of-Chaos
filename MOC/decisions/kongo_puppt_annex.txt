@@ -1,8 +1,9 @@
-#picture 0
+#picture 1
 
 political_decisions = {
 	
 	inherit_KONGO_PUPPET = {
+		picture = inherit_KONGO_PUPPET
 		potential = {
 			NOT = { has_country_flag = inherit_KONGO_PUPPET }
 			THIS = {is_sphere_leader_of = CNG}
@@ -25,15 +26,16 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.00035
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 		
 		
 	}
 
 	aquire_part_of_kasai = {
+		picture = aquire_part_of_kasai
 		potential = {
 			NOT = { has_country_flag = aquire_part_of_kasai }
 			1995 = {empty = yes}
@@ -63,9 +65,9 @@ political_decisions = {
 		ai_will_do = {
 			factor = 0.00035
 			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
+				factor = 0
+				badboy = 0.4
+			}
 		}
 		
 		
