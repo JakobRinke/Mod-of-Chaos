@@ -59,9 +59,6 @@ political_decisions = {
 		
 	}
 	
-	
-	
-	
 	annex_swiss = {
 		picture = annex_swiss
 		potential = {
@@ -173,6 +170,7 @@ political_decisions = {
 	}
 
 	swiss_gain_cores_serbia = {
+		picture = swiss_gain_cores_serbia
 		potential = {
 			tag = SWI
 			has_country_flag = greater_swiss_moc
@@ -206,6 +204,7 @@ political_decisions = {
 	}
 
 	swiss_gain_cores_croatia = {
+		picture = swiss_gain_cores_croatia
 		potential = {
 			tag = SWI
 			has_country_flag = greater_swiss_moc
@@ -241,6 +240,7 @@ political_decisions = {
 	}
 
 	swiss_gain_cores_bosnia = {
+		picture = swiss_gain_cores_bosnia
 		potential = {
 			tag = SWI
 			has_country_flag = greater_swiss_moc
@@ -267,6 +267,7 @@ political_decisions = {
 	}
 
 	swiss_gain_cores_albania = {
+		picture = swiss_gain_cores_albania
 		potential = {
 			tag = SWI
 			has_country_flag = greater_swiss_moc
@@ -303,6 +304,7 @@ political_decisions = {
 	}
 
 	swiss_accept_serbian_culture = {
+		picture = swiss_accept_serbian_culture
 		potential = {
 			tag = SWI
 			has_country_flag = greater_swiss_moc
@@ -324,6 +326,7 @@ political_decisions = {
 	}
 
 	swiss_accept_croatian_culture = {
+		picture = swiss_accept_croatian_culture
 		potential = {
 			tag = SWI
 			has_country_flag = greater_swiss_moc
@@ -345,6 +348,7 @@ political_decisions = {
 	}
 
 	swiss_accept_bosnian_culture = {
+		picture = swiss_accept_bosniak_culture
 		potential = {
 			tag = SWI
 			has_country_flag = greater_swiss_moc
@@ -366,6 +370,7 @@ political_decisions = {
 	}
 
 	swiss_accept_albanian_culture = {
+		picture = swiss_accept_albanian_culture
 		potential = {
 			tag = SWI
 			NOT = { has_country_flag = swiss_accept_albanian_culture }
@@ -386,6 +391,7 @@ political_decisions = {
 	}
 
 	swiss_accept_slovenian_culture = {
+		picture = swiss_accept_slovenian_culture
 		potential = {
 			tag = SWI
 			NOT = { has_country_flag = swiss_accept_slovenian_culture }
@@ -404,10 +410,5 @@ political_decisions = {
 			factor = 0
 		}
 	}
-
-
-
-
-
 	
 }
