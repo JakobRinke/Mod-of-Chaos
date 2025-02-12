@@ -1,18 +1,16 @@
+# picture 1
+
+
 political_decisions = {
-
 	ukraine_cores = {
-
+		picture = ukraine_cores_moc
 		potential = {
 			tag = UKR
 			NOT = { has_country_flag = ukraine_cores }
 		}
-
-
 		allow = {
 			nationalism_n_imperialism= 1
 		}
-
-
 		effect = {
 			prestige = 14
 			add_accepted_culture = romanian
@@ -27,36 +25,27 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-
-
 			add_core = 676
 			add_core = 677
 
 			set_country_flag = ukraine_cores
 		}
-
 		ai_will_do = {
 			factor = 0.0005
 		}
 	}
 
 
-
-
 	turn_against_master = {
-
+		picture = turn_against_master_moc
 		potential = {
 			tag = UKR
 			exists = RUS
 			NOT = { has_country_flag = turn_against_master }
 		}
-
-
 		allow = {
 			nationalism_n_imperialism = 1
 		}
-
-
 		effect = {
 			prestige = 14
 			add_accepted_culture = russian
@@ -70,13 +59,11 @@ political_decisions = {
 					months = 6
 				}
 			}
-
 			add_casus_belli = {
 				target = RUS
 				type = conquest
 				months = 6
 			}
-
 			war = {
 				target = RUS
 				attacker_goal = { casus_belli = conquest }
@@ -87,10 +74,8 @@ political_decisions = {
 
 			set_country_flag = turn_against_master
 		}
-
 		ai_will_do = {
 			factor = 0.00019
 		}
-
 	}
 }
