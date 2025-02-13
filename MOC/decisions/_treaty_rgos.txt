@@ -1,6 +1,9 @@
+# picture 1
+
 political_decisions = {
 
 	treaty_port_iron = {
+		picture = treaty_port_iron_moc
 		potential = {
 			ai = no
 			any_owned_province = {
@@ -52,6 +55,7 @@ political_decisions = {
 
 	
 	treaty_port_oil = {
+		picture = treaty_port_oil_moc
 		potential = {
 			ai = no
 			any_owned_province = {
@@ -100,6 +104,7 @@ political_decisions = {
 	}
 	
 	treaty_port_sulphur = {
+		picture = treaty_port_sulphur_moc
 		potential = {
 			ai = no
 			any_owned_province = {
@@ -146,9 +151,5 @@ political_decisions = {
 			}	
 		}
 	}
-
-
-
-
 
 }
