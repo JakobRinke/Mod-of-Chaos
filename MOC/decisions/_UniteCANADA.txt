@@ -9,13 +9,13 @@ political_decisions = {
 			NOT = { has_country_flag = canada_inerhit_PRL_COM_QUE_etc}
 		}
 		allow = {
-            war = no
+			war = no
 			has_global_flag = french_counter_event
 		}
 
 		effect = {
 			set_country_flag = canada_inerhit_PRL_COM_QUE_etc
-            prestige = 30
+			prestige = 30
 			inherit = RPL
 			inherit = QUE
 			inherit = COL
@@ -35,7 +35,7 @@ political_decisions = {
 			NOT = { has_country_flag = canada_make_EM_playable}
 		}
 		allow = {
-            war = no
+			war = no
 			ai = no
 			has_country_flag = canada_inerhit_PRL_COM_QUE_etc
 		}
@@ -43,7 +43,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = canada_make_EM_playable
 			badboy = 20
-            prestige = 5
+			prestige = 5
 			add_accepted_culture = yankee
 			
 			add_country_modifier = {name = CAN_country_modifier duration = 20000}
@@ -128,7 +128,7 @@ political_decisions = {
 			NOT = { has_country_flag = canada_make_increase_influence}
 		}
 		allow = {
-            war = no
+			war = no
 			nationalism_n_imperialism = 1
 			OR = {
 				is_secondary_power = yes

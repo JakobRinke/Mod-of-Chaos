@@ -1,4 +1,4 @@
-#pictures 1
+#picture 1
 
 political_decisions = {
 	Expand_our_empire = {
