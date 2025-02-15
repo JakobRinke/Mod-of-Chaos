@@ -6,6 +6,7 @@ country_event = {
 	desc = "The Last war against an old enemy!"
 	
 	is_triggered_only = yes
+	picture = the_great_showdown_moc
 	
 	immediate = {
 		war = {
@@ -27,7 +28,7 @@ country_event = {
 	desc = "Free our Brothers"
 	
 	is_triggered_only = yes
-	
+	picture = the_xinjang_question_moc
 	 
 	
 	option = {
