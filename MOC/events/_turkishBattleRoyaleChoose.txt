@@ -1,9 +1,10 @@
-#picture 0
+#picture 1
 
 country_event = {
 	id = 13374000
 	title = "Choose a country"
 	desc = "Balkan Battle Royale"
+	picture = balkan_battle_royale_moc
 	
 	is_triggered_only = yes
 	
