@@ -1,9 +1,10 @@
-#picture 0
+#picture 1
 
 country_event = {
 	id = 13370187000
 	title = "The Slave Question"
 	desc = "We encourage slaves. Why don't get them back. AH the good old times. Init FAM?"
+	picture = the_slave_question_mamluk_moc
 	
 	trigger = {
 		has_country_flag = form_mamluk_empire
