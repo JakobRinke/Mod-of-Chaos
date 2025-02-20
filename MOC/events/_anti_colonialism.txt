@@ -4,7 +4,8 @@ country_event = {
 	id = 1337018742
 	title = "NO COLONIES FOR YOU"
 	desc = "You are not allowed to possess any colonies. Release them or this modifier will severely harm your nation."
-	
+	picture = no_colonies_for_you_moc
+
 	trigger = {
 		has_country_flag = no_colonies
 		colonial_nation = yes
