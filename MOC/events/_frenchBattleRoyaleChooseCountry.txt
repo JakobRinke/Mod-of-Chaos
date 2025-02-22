@@ -4,7 +4,7 @@ country_event = {
 	id = 13371000
 	title = "Choose a country"
 	desc = "The former french empire spilt up into a few minor french states. Now it is your job to either reunite France or form an other great empire."
-	
+	picture = chose_country_fra_battle_royale_moc
 	is_triggered_only = yes
 	fire_only_once = yes  
 	trigger = {
