@@ -1,10 +1,10 @@
-#picture 0
+#picture 1
 
 country_event = {
 	id = 13373000
 	title = "Choose a country"
 	desc = "Austrian Battle Royale -> Choose your player for demob remob!!!"
-	
+	picture = chose_country_austrian_battle_royale_moc
 	is_triggered_only = yes
 	
 	option = {
