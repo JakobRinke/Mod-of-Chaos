@@ -1,3 +1,5 @@
+#picture 0
+
 country_event = {
 	id = 2337018742
 	title = "No need for colonies"

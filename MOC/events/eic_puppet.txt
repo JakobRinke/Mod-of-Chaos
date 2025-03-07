@@ -1,3 +1,5 @@
+#picture 0
+
 country_event = {
 	id = 69420
 	title = "The Eichsfeld Demands"
@@ -40,8 +42,6 @@ country_event = {
 	}
 	
 }
-
-
 
 country_event = {
 	id = 69425

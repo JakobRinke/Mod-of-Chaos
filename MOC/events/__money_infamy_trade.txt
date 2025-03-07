@@ -1,3 +1,5 @@
+#picture 0
+
 country_event = {
     id = 1510001
     title = "Trade Infamy for Money"
