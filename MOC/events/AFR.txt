@@ -1,9 +1,10 @@
-#picture 0
+#picture 1
 
 country_event = {
 	id = 66689
 	title = "The African Union"
 	desc = "Our foreign minister reports the creation of the African Union. We, as a sovereign African state have to decide, rather we want to join it or not!"
+	picture = form_african_union_moc
 	
 	is_triggered_only = yes
 	   
