@@ -7,18 +7,22 @@ country_event = {
 	picture = "deliberation"
 
 	 
-	is_triggered_only = yes    
+	is_triggered_only = yes
 	
 	option = {
 		name = "Take the Fuck outa diss guys"
 		any_neighbor_country = { 
-			limit = { capital_scope = { continent = south_america } }
+			limit = { 
+				capital_scope = { continent = south_america } 
+			}
 			any_owned  = { add_core = THIS }
 		}
 		
 		
 		any_neighbor_country = {
-			limit = { capital_scope = { continent = south_america } }		
+			limit = { 
+				capital_scope = { continent = south_america } 
+			}
 			war = {
 				target = THIS
 				war = {
