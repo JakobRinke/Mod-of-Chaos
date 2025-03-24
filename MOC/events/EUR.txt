@@ -4,7 +4,7 @@ country_event = {
 	id = 66688
 	title = "The European Union"
 	desc = "Our foreign minister reports the creation of the European Union. We, as a sovereign European state have to decide, rather we want to join it or not!"
-	
+	picture = le_union_european_moc
 	is_triggered_only = yes
 	   
 	
