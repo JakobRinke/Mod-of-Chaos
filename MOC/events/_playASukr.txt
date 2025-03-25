@@ -4,6 +4,7 @@ country_event = {
 	id = 13370003
 	title = "Change Country?"
 	desc = "Ukraine is an independent nation. Shall we play as Ukraine???"
+	picture = play_as_ukr_from_rus_moc
 	
 	is_triggered_only = yes
 	fire_only_once = yes  
