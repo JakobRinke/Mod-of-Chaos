@@ -1,9 +1,10 @@
-#picture 0
+#picture 1
 
 country_event = {
 	id = 2337018742
 	title = "No need for colonies"
 	desc = "You have released your colinies and therefore. The game no longer hates you : )!"
+	picture = no_need_for_colonies_moc
 	
 	trigger = {
 		has_global_flag = anti_colonial
