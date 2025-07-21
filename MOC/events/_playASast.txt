@@ -1,7 +1,8 @@
-#picture 0
+#picture 1
 
 country_event = {
 	id = 13370002
+	picture = change_country_to_australia_moc
 	title = "Change Country?"
 	desc = "Australia is an independent nation. Shall we play as Australia???"
 	

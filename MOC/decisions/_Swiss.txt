@@ -1,6 +1,28 @@
 #picture 1
 
 political_decisions = {
+
+
+	make_swiss_not_neutral = {
+		picture = rm_neutrality_switzerland
+		potential = {
+			tag = SWI
+			has_country_modifier = neutrality_modifier
+		}
+		
+		
+		allow = {}
+		
+		effect = {
+			remove_country_modifier = neutrality_modifier
+
+			prestige = 5
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	reject_neutrality = {
 		picture = reject_neutarekejmgksajg_swiss
@@ -411,4 +433,90 @@ political_decisions = {
 		}
 	}
 	
+
+	form_HRE_as_swiss = {
+		picture = become_HRE
+		potential = {
+			tag = SWI
+			NOT = { has_country_flag = form_HRE_as_swiss }
+		}
+		allow = {
+			prestige = 200
+			owns = 599 #munich
+			owns = 619 #vienna
+			owns = 564 #Frankfurt
+			realism = 1
+		}
+		effect = {
+			add_accepted_culture = wallonian
+			add_accepted_culture = flemish
+			add_accepted_culture = czech
+			set_country_flag = swiss_accept_slovenian_culture
+			change_tag = HLR
+			badboy = 20
+
+			prestige = 50
+
+			BEL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+
+			#Holland
+			add_core = 375
+			add_core = 376
+			add_core = 377
+			add_core = 382
+
+			#Zeeland
+			add_core = 378
+			add_core = 379
+			add_core = 380
+			add_core = 381
+
+			#Friesland
+			add_core = 383
+			add_core = 384
+			add_core = 385
+			add_core = 386
+
+			#Luxembourgh
+			add_core = 397
+
+			#belgium
+			add_core = 387
+			add_core = 388
+			add_core = 389
+			add_core = 390
+			add_core = 391
+			add_core = 392
+			add_core = 393
+			add_core = 394
+			add_core = 395
+			add_core = 398
+
+			GER = { all_core = { remove_core = GER } }
+			LUX = { all_core = { remove_core = LUX } }
+			BEL = { all_core = { remove_core = BEL } }
+			BOH = { all_core = { remove_core = BOH } }
+			AUS = {
+				all_core = {
+					limit = {
+						AND = {
+							NOT = { is_core = CRO }
+							NOT = { is_core = VEN }
+							NOT = { is_core = POL }
+						}
+					}
+					remove_core = AUS
+					}
+			}
+
+			capital = 619
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

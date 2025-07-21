@@ -904,3 +904,7 @@ change_capital_krakow_title;Move Capital to Krakau;;;;;;;;;;;;;
 change_capital_krakow_desc;Relocate the capital of our nation to the historic city of Krakow and gain some buffs.;;;;;;;;;;;;;
 china_bug_fix_title;CHINA BUG FIX - PLS PRESS;;;;;;;;;;;;;
 china_bug_fix_desc;THIS DECISION prevents you from constantly losing prestige from an event. It removes a flag which was set when forming china.;;;;;;;;;;;;;
+form_HRE_as_swiss_title;FORM HRE;;;;;;;;;;;;;
+form_HRE_as_swiss_desc;FORM HRE and gain cores on the benelux and more accepted pop and set vienna as your new capital.;;;;;;;;;;;;;
+make_swiss_not_neutral_title;WE ARE NOT NEUTRAL;;;;;;;;;;;;;
+make_swiss_not_neutral_desc;Loss your neutrality now you can declare funny wars.;;;;;;;;;;;;;
