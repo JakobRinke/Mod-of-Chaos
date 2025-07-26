@@ -166,7 +166,7 @@ political_decisions = {
 			add_core = 780
 			add_core = 781
 
-			# Bosnia
+			# Bosnia  // could be wrong => like 99% 
 			add_core = 789  # Sarajevo
 			add_core = 791  # Mostar
 			add_core = 792  # Tuzla

@@ -162,6 +162,9 @@ political_decisions = {
 				}
 			}
 
+			#Matla
+			add_core = 854
+
 			#Venetia
 			add_core = 8
 			add_core = 729
@@ -277,6 +280,7 @@ political_decisions = {
 			add_core = 783
 			add_core = 784
 			add_core = 785
+			add_core = 786
 			add_core = 787
 			add_core = 788
 			add_core = 789
