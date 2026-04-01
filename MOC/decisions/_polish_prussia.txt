@@ -1,15 +1,18 @@
-#picture 1
+#picture 0
 
 political_decisions = {
 
 	become_a_polish_nation = {
 		picture = prussia_becomes_not_germany_lpc
 		potential = {
-			tag = PRU
+			OR = {
+				tag = NGF
+				tag = PRU
+			}
 			NOT = {has_country_flag = become_a_polish_nation}
 		}
 		allow = {
-			prestige = 325
+			prestige = 300
 			is_greater_power = yes
 			year = 1845
 		}
@@ -128,7 +131,7 @@ political_decisions = {
 			}
 			modifier = {
 				factor = 0
-				year = 1841
+				year = 1850
 			}
 		}
 	}
@@ -167,6 +170,7 @@ political_decisions = {
 			}
 		}
 	}
+
 	accept_more_cultures = {
 		potential = {
 			tag = POL
@@ -349,7 +353,10 @@ political_decisions = {
 
 	become_PLR = {
 		potential = {
-			tag = PRU
+			OR = {
+				tag = NGF
+				tag = PRU
+			}
 			has_country_flag = become_a_polish_nation
 			NOT = {has_country_flag = become_PLR}
 		}
@@ -488,7 +495,6 @@ political_decisions = {
                 badboy = 0.4
             }
 		}
-	
 	}
 
 	add_czech_culture = {
@@ -619,6 +625,39 @@ political_decisions = {
 			add_core = 335
 
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	
+	}
+
+	embrace_more_of_our_slavic_brothers_plr = {
+		potential = {
+			OR = {
+				has_country_flag = become_PLR
+				tag = PLR
+			}
+			NOT = {has_country_flag = embrace_more_of_our_slavic_brothers_plr}
+		}
+
+		allow = {
+			realism = 1
+			revolution_n_counterrevolution = 1
+			prestige = 500
+			is_greater_power = yes
+		}
+
+		effect = {
+			set_country_flag = embrace_more_of_our_slavic_brothers_plr
+			badboy = 15
+			add_accepted_culture = byelorussian
+			add_accepted_culture = ukrainian
+		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
