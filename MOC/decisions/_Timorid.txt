@@ -369,5 +369,28 @@ political_decisions = {
 			factor = 0.5
 		}
 	}
+
+	bug_fix_adding_missing_culture = {
+		potential = {
+
+			OR = {
+				tag = TRD
+				tag = PER
+			}
+			NOT = { has_country_flag = bug_fix_adding_missing_culture}	
+			NOT = { accepted_culture = panjabi } 
+		}
+		allow = {
+		}
+		
+		effect = {
+			set_country_flag = bug_fix_adding_missing_culture
+			add_accepted_culture = panjabi
+		}
+		
+		ai_will_do = {					
+			factor = 0.5
+		}
+	}
 }
 
